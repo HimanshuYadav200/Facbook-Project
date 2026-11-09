@@ -13,13 +13,11 @@ Owner's rules: **plan → agree → build**; document everything; log decisions 
 - **Local git repo**, 2+ commits, `.gitignore` excludes `.env`, media, caches, venvs. Not pushed: owner will create a GitHub repo.
 - **Research replaced:** numbers only via `fetch_data.py` → `finance_calc.py` → `facts.json`; `check_plan.py` refuses any script/on-screen number not in facts.json. 32 tests pass.
 - **Both style tests converted** to `runs/2026-11-09_test-vintage-nvda` and `runs/2026-11-09_test-flat-timing`, with corrected numbers (66% drop, $41,100, $262,000), new voices (British fix), both pass check_plan.
-- **Not done: rendering with the new renderer.** It type-checks, but renders hang inside Claude Code's sandbox (headless Chrome can't reach Remotion's local server) and the auto-mode safety check refused running outside it. The old project hangs the same way inside the sandbox, so it's the environment, not the code.
+- **Both tests rendered with the new engine** (owner allowed rendering outside the sandbox): `runs/2026-11-09_test-vintage-nvda/out/final.mp4` (43 s) and `runs/2026-11-09_test-flat-timing/out/final.mp4` (18 s), −14 LUFS, reviewed; two vintage images re-cropped to hide numbers Meta AI invented. Renders must run outside the sandbox.
 - `YouTubeAutomation/` untouched. `experiments/` marked retired, kept until owner OKs deletion.
 
 ## 3. Next steps (in order)
-1. **Owner: render the two tests** (outside the sandbox):
-   `! engine/tools/render.sh runs/2026-11-09_test-vintage-nvda` and `! engine/tools/render.sh runs/2026-11-09_test-flat-timing`
-   Then Claude: `finish.py --test`, `contact_sheet.py`, review, fix any renderer bugs.
+1. Owner: watch both test videos and give feedback.
 2. Owner: Tiingo free key (`TIINGO_API_KEY` in `.env`) → re-fetch NVDA daily, re-check facts; `SEC_USER_AGENT` ("Name email") for SEC data.
 3. Owner: create GitHub repo (private recommended); Claude lists files before first push.
 4. Owner OK → delete `experiments/` (1 GB node_modules + 1.6 GB venv).

@@ -2,7 +2,7 @@
 
 | Symptom | Cause | Fix |
 |---|---|---|
-| Render stuck at "Waiting for root component to load" | (a) Node 26 in use; (b) Claude Code's sandbox blocks the local server Remotion's headless Chrome talks to | (a) render.sh forces Node 22; (b) run the render outside the sandbox: owner types `! engine/tools/render.sh runs/<id>` or allows it in settings |
+| Render stuck at "Waiting for root component to load" | (a) Node 26 in use; (b) Claude Code's sandbox blocks the local server Remotion's headless Chrome talks to | (a) render.sh forces Node 22; (b) run render.sh outside the sandbox (owner has allowed this; otherwise the owner types `! engine/tools/render.sh runs/<id>`) |
 | Caption shows a misspelled name | captions come from script.txt | fix spelling in script.txt, re-run voice.py |
 | voice.py warns "only N% heard as written" | Kokoro misread a word/number, or Whisper mis-heard | listen to voice.wav around the odd word; rewrite it ("A I" not "AI", "262 times" not "262x") |
 | Caption word "Skulsy" heard as "Skulce" | Whisper | harmless: captions use the script's spelling |
@@ -15,3 +15,4 @@
 | Meta AI skips a prompt | sent too fast | wait ~30 s between prompts, one chat per video |
 | Meta AI re-sends the previous image | follow-up became an "edit" | match_images.py reports duplicates (md5); regenerate that one |
 | Kokoro reads a British voice oddly | lang code | voice.py takes the language from the voice name (bm_ → British) |
+| Meta AI image contains invented numbers/text (tickers, headlines with %) | image models make up text | crop it out with `zoom` + `focus` (vintage), or regenerate without text; re-check on the contact sheet |

@@ -73,11 +73,11 @@
    "from": 12,
    "type": "image",
    "img": "styleA_02.webp",
-   "motion": "panDown",
-   "zoom": 1.25,
+   "motion": "pushIn",
+   "zoom": 2.4,
    "focus": [
     0.5,
-    0.4
+    0.82
    ],
    "grade": "mono",
    "sfx": "tick"
@@ -168,10 +168,10 @@
    "type": "image",
    "img": "styleA_06.webp",
    "motion": "pushIn",
-   "zoom": 1.15,
+   "zoom": 2.2,
    "focus": [
-    0.5,
-    0.45
+    0.6,
+    0.55
    ],
    "grade": "mono",
    "stamp": "2022",
