@@ -11,7 +11,6 @@
 | `fetch_data`: "Alpha Vantage refused" | free tier ≈ 25 requests/day, 1/s | wait; results are cached for a day (`engine/cache/`) |
 | `fetch_data`: "TIINGO_API_KEY is not set" | key missing | add to `.env`, or use `--source av-weekly --check none` (weekly precision) |
 | `fetch_data`: "sources disagree" | providers differ (missed split, bad data) | stop; show the owner the dates; don't use the data |
-| Meta AI image shows wrong numbers/text | image models invent text | cover with a sticker/overlay showing the fact, or regenerate without text |
 | Meta AI skips a prompt | sent too fast | wait ~30 s between prompts, one chat per video |
 | Meta AI re-sends the previous image | follow-up became an "edit" | match_images.py reports duplicates (md5); regenerate that one |
 | Kokoro reads a British voice oddly | lang code | voice.py takes the language from the voice name (bm_ → British) |
