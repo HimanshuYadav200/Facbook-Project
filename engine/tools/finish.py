@@ -56,7 +56,8 @@ def main(argv=None):
     af = (f"loudnorm=I={TARGET_I}:TP={TARGET_TP}:LRA={TARGET_LRA}:linear=true:"
           f"measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:"
           f"measured_thresh={m['input_thresh']}:offset={m['target_offset']}")
-    r = ffmpeg(["-y", "-i", str(raw), "-af", af, "-ar", "48000", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", str(final)])
+    r = ffmpeg(["-y", "-i", str(raw), "-af", af, "-ar", "48000", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
+                "-movflags", "+faststart", str(final)])  # index at the start: plays/uploads everywhere
     if r.returncode != 0:
         print(f"ERROR: ffmpeg failed:\n{r.stderr[-500:]}", file=sys.stderr)
         return 1
