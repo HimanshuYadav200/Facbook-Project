@@ -1,0 +1,302 @@
+{
+ "version": 1,
+ "style": "vintage-story",
+ "data": {
+  "nvda": "data/nvda.json"
+ },
+ "beds": [
+  {
+   "sfx": "vinyl",
+   "volume": 0.35
+  },
+  {
+   "sfx": "room",
+   "volume": 0.4
+  }
+ ],
+ "endCard": {
+  "text": "SKULSY",
+  "seconds": 2.0
+ },
+ "tailSeconds": 0.4,
+ "charts": {
+  "nvda": {
+   "data": "nvda",
+   "amount": 1000,
+   "start": "2016-01-29",
+   "title": "$1,000 IN NVIDIA",
+   "subtitle": "invested January 2016"
+  }
+ },
+ "shots": [
+  {
+   "from": 0,
+   "type": "image",
+   "img": "styleA_01.webp",
+   "motion": "pullOut",
+   "zoom": 1.15,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "grade": "mono",
+   "stamp": "JAN 2016",
+   "sfx": "thud"
+  },
+  {
+   "from": 2,
+   "type": "image",
+   "img": "styleA_01.webp",
+   "motion": "pushIn",
+   "zoom": 1.7,
+   "focus": [
+    0.42,
+    0.62
+   ],
+   "grade": "mono",
+   "sfx": "whoosh"
+  },
+  {
+   "from": 5,
+   "type": "image",
+   "img": "styleA_04.webp",
+   "motion": "pushIn",
+   "zoom": 1.05,
+   "focus": [
+    0.5,
+    0.55
+   ],
+   "grade": "mono",
+   "sfx": "whoosh"
+  },
+  {
+   "from": 12,
+   "type": "image",
+   "img": "styleA_02.webp",
+   "motion": "panDown",
+   "zoom": 1.25,
+   "focus": [
+    0.5,
+    0.4
+   ],
+   "grade": "mono",
+   "sfx": "tick"
+  },
+  {
+   "from": 15,
+   "type": "image",
+   "img": "styleA_01.webp",
+   "motion": "pushIn",
+   "zoom": 2.1,
+   "focus": [
+    0.33,
+    0.72
+   ],
+   "grade": "mono",
+   "sfx": "ding"
+  },
+  {
+   "from": 16,
+   "type": "image",
+   "img": "styleA_03.webp",
+   "motion": "pushIn",
+   "zoom": 1.05,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "grade": "mono",
+   "sfx": "boing"
+  },
+  {
+   "from": 19,
+   "type": "image",
+   "img": "styleA_03.webp",
+   "motion": "panR",
+   "zoom": 1.8,
+   "focus": [
+    0.3,
+    0.45
+   ],
+   "grade": "mono",
+   "sfx": "tick"
+  },
+  {
+   "from": 24,
+   "type": "image",
+   "img": "styleA_05.webp",
+   "motion": "pushIn",
+   "zoom": 1.1,
+   "focus": [
+    0.6,
+    0.35
+   ],
+   "grade": "mono",
+   "stamp": "DEC 2020",
+   "sfx": "thud"
+  },
+  {
+   "from": 29,
+   "type": "chart",
+   "to": "2020-12-31",
+   "sfx": "tick",
+   "cues": [
+    {
+     "word": 34,
+     "sfx": "cash"
+    }
+   ],
+   "chart": "nvda",
+   "teach": "the $1,000 line climbs to $18,200 by the end of 2020"
+  },
+  {
+   "from": 35,
+   "type": "chart",
+   "to": "2021-12-31",
+   "sfx": "tick",
+   "cues": [
+    {
+     "word": 38,
+     "sfx": "cash"
+    }
+   ],
+   "chart": "nvda",
+   "teach": "the line keeps rising to $41,100 a year later"
+  },
+  {
+   "from": 39,
+   "type": "image",
+   "img": "styleA_06.webp",
+   "motion": "pushIn",
+   "zoom": 1.15,
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "grade": "mono",
+   "stamp": "2022",
+   "shake": true,
+   "sfx": "crash"
+  },
+  {
+   "from": 42,
+   "type": "chart",
+   "to": "2022-10-14",
+   "sfx": "thud",
+   "chart": "nvda",
+   "teach": "the line falls from the late-2021 peak to the Oct 2022 low: more than half gone"
+  },
+  {
+   "from": 50,
+   "type": "image",
+   "img": "styleA_07.webp",
+   "motion": "pushIn",
+   "zoom": 1.9,
+   "focus": [
+    0.8,
+    0.3
+   ],
+   "grade": "mono",
+   "sfx": "whoosh"
+  },
+  {
+   "from": 52,
+   "type": "image",
+   "img": "styleA_07.webp",
+   "motion": "pullOut",
+   "zoom": 1.2,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "grade": "mono",
+   "sfx": "ding"
+  },
+  {
+   "from": 54,
+   "type": "image",
+   "img": "styleA_08.webp",
+   "motion": "pushIn",
+   "zoom": 1.1,
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "grade": "mono",
+   "sfx": "whoosh"
+  },
+  {
+   "from": 60,
+   "type": "image",
+   "img": "styleA_09.webp",
+   "motion": "panL",
+   "zoom": 1.3,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "grade": "mono",
+   "sfx": "tick"
+  },
+  {
+   "from": 67,
+   "type": "image",
+   "img": "styleA_10.webp",
+   "motion": "pushIn",
+   "zoom": 1.1,
+   "focus": [
+    0.6,
+    0.45
+   ],
+   "grade": "warm",
+   "stamp": "TODAY",
+   "flash": true,
+   "sfx": "whoosh",
+   "sticker": {
+    "text": "$262K",
+    "x": 0.79,
+    "y": 0.43
+   }
+  },
+  {
+   "from": 71,
+   "type": "chart",
+   "to": "2026-11-06",
+   "sfx": "tick",
+   "cues": [
+    {
+     "word": 73,
+     "sfx": "cash"
+    }
+   ],
+   "chart": "nvda",
+   "teach": "the line recovers and climbs to about $262,000 today"
+  },
+  {
+   "from": 74,
+   "type": "image",
+   "img": "styleA_11.webp",
+   "motion": "panUp",
+   "zoom": 1.25,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "grade": "warm",
+   "sfx": "ding"
+  },
+  {
+   "from": 79,
+   "type": "image",
+   "img": "styleA_12.webp",
+   "motion": "pushIn",
+   "zoom": 1.05,
+   "focus": [
+    0.5,
+    0.42
+   ],
+   "grade": "warm",
+   "sfx": "thud"
+  }
+ ]
+}

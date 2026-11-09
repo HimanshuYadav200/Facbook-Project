@@ -1,0 +1,423 @@
+{
+ "duration": 40.675,
+ "voice": "bm_george",
+ "speed": 0.95,
+ "match": 0.904,
+ "words": [
+  {
+   "word": "January",
+   "start": 0.0,
+   "end": 0.54
+  },
+  {
+   "word": "2016.",
+   "start": 0.54,
+   "end": 1.52
+  },
+  {
+   "word": "Skulsy",
+   "start": 2.22,
+   "end": 2.54
+  },
+  {
+   "word": "put",
+   "start": 2.54,
+   "end": 2.6
+  },
+  {
+   "word": "$1,000",
+   "start": 2.6,
+   "end": 3.36
+  },
+  {
+   "word": "into",
+   "start": 3.36,
+   "end": 3.78
+  },
+  {
+   "word": "a",
+   "start": 3.78,
+   "end": 3.94
+  },
+  {
+   "word": "company",
+   "start": 3.94,
+   "end": 4.22
+  },
+  {
+   "word": "that",
+   "start": 4.22,
+   "end": 4.46
+  },
+  {
+   "word": "made",
+   "start": 4.46,
+   "end": 4.66
+  },
+  {
+   "word": "graphics",
+   "start": 4.66,
+   "end": 5.04
+  },
+  {
+   "word": "cards",
+   "start": 5.04,
+   "end": 5.38
+  },
+  {
+   "word": "for",
+   "start": 5.38,
+   "end": 5.62
+  },
+  {
+   "word": "video",
+   "start": 5.62,
+   "end": 5.86
+  },
+  {
+   "word": "games.",
+   "start": 5.86,
+   "end": 6.34
+  },
+  {
+   "word": "Nvidia.",
+   "start": 6.88,
+   "end": 7.12
+  },
+  {
+   "word": "His",
+   "start": 7.68,
+   "end": 7.84
+  },
+  {
+   "word": "friends",
+   "start": 7.84,
+   "end": 8.14
+  },
+  {
+   "word": "laughed.",
+   "start": 8.14,
+   "end": 8.6
+  },
+  {
+   "word": "Toys",
+   "start": 9.18,
+   "end": 9.18
+  },
+  {
+   "word": "for",
+   "start": 9.18,
+   "end": 9.44
+  },
+  {
+   "word": "gamers,",
+   "start": 9.44,
+   "end": 9.76
+  },
+  {
+   "word": "they",
+   "start": 9.98,
+   "end": 10.06
+  },
+  {
+   "word": "said.",
+   "start": 10.06,
+   "end": 10.42
+  },
+  {
+   "word": "By",
+   "start": 10.78,
+   "end": 10.92
+  },
+  {
+   "word": "the",
+   "start": 10.92,
+   "end": 11.04
+  },
+  {
+   "word": "end",
+   "start": 11.04,
+   "end": 11.18
+  },
+  {
+   "word": "of",
+   "start": 11.18,
+   "end": 11.3
+  },
+  {
+   "word": "2020,",
+   "start": 11.3,
+   "end": 11.82
+  },
+  {
+   "word": "his",
+   "start": 12.08,
+   "end": 12.18
+  },
+  {
+   "word": "$1,000",
+   "start": 12.18,
+   "end": 12.92
+  },
+  {
+   "word": "had",
+   "start": 12.92,
+   "end": 13.34
+  },
+  {
+   "word": "grown",
+   "start": 13.34,
+   "end": 13.56
+  },
+  {
+   "word": "to",
+   "start": 13.56,
+   "end": 13.74
+  },
+  {
+   "word": "$18,200.",
+   "start": 13.74,
+   "end": 15.04
+  },
+  {
+   "word": "A",
+   "start": 15.7,
+   "end": 15.92
+  },
+  {
+   "word": "year",
+   "start": 15.92,
+   "end": 16.08
+  },
+  {
+   "word": "later?",
+   "start": 16.08,
+   "end": 16.5
+  },
+  {
+   "word": "$41,100.",
+   "start": 16.84,
+   "end": 18.24
+  },
+  {
+   "word": "Then",
+   "start": 18.9,
+   "end": 19.16
+  },
+  {
+   "word": "2022",
+   "start": 19.16,
+   "end": 19.8
+  },
+  {
+   "word": "hit.",
+   "start": 19.8,
+   "end": 20.44
+  },
+  {
+   "word": "The",
+   "start": 20.9,
+   "end": 21.02
+  },
+  {
+   "word": "stock",
+   "start": 21.02,
+   "end": 21.32
+  },
+  {
+   "word": "lost",
+   "start": 21.32,
+   "end": 21.6
+  },
+  {
+   "word": "more",
+   "start": 21.6,
+   "end": 21.88
+  },
+  {
+   "word": "than",
+   "start": 21.88,
+   "end": 22.08
+  },
+  {
+   "word": "half",
+   "start": 22.08,
+   "end": 22.3
+  },
+  {
+   "word": "its",
+   "start": 22.3,
+   "end": 22.54
+  },
+  {
+   "word": "value.",
+   "start": 22.54,
+   "end": 22.92
+  },
+  {
+   "word": "Everyone",
+   "start": 23.34,
+   "end": 23.64
+  },
+  {
+   "word": "sold.",
+   "start": 23.64,
+   "end": 24.14
+  },
+  {
+   "word": "Skulsy",
+   "start": 24.76,
+   "end": 25.32
+  },
+  {
+   "word": "didn't.",
+   "start": 25.32,
+   "end": 25.76
+  },
+  {
+   "word": "Then",
+   "start": 26.37,
+   "end": 26.7
+  },
+  {
+   "word": "the",
+   "start": 26.7,
+   "end": 26.82
+  },
+  {
+   "word": "world",
+   "start": 26.82,
+   "end": 27.06
+  },
+  {
+   "word": "discovered",
+   "start": 27.06,
+   "end": 27.54
+  },
+  {
+   "word": "A",
+   "start": 27.54,
+   "end": 27.7
+  },
+  {
+   "word": "I,",
+   "start": 27.7,
+   "end": 28.0
+  },
+  {
+   "word": "and",
+   "start": 28.0,
+   "end": 28.44
+  },
+  {
+   "word": "every",
+   "start": 28.44,
+   "end": 28.76
+  },
+  {
+   "word": "A",
+   "start": 28.76,
+   "end": 29.04
+  },
+  {
+   "word": "I",
+   "start": 29.04,
+   "end": 29.26
+  },
+  {
+   "word": "needed",
+   "start": 29.26,
+   "end": 29.56
+  },
+  {
+   "word": "Nvidia's",
+   "start": 29.56,
+   "end": 30.26
+  },
+  {
+   "word": "chips.",
+   "start": 30.26,
+   "end": 30.56
+  },
+  {
+   "word": "Today,",
+   "start": 31.12,
+   "end": 31.44
+  },
+  {
+   "word": "that",
+   "start": 31.72,
+   "end": 31.92
+  },
+  {
+   "word": "$1,000",
+   "start": 31.92,
+   "end": 32.8
+  },
+  {
+   "word": "is",
+   "start": 32.8,
+   "end": 33.36
+  },
+  {
+   "word": "worth",
+   "start": 33.36,
+   "end": 33.64
+  },
+  {
+   "word": "about",
+   "start": 33.64,
+   "end": 34.02
+  },
+  {
+   "word": "$262,000.",
+   "start": 34.02,
+   "end": 36.24
+  },
+  {
+   "word": "He",
+   "start": 36.7,
+   "end": 36.94
+  },
+  {
+   "word": "wasn't",
+   "start": 36.94,
+   "end": 37.34
+  },
+  {
+   "word": "smarter",
+   "start": 37.34,
+   "end": 37.64
+  },
+  {
+   "word": "than",
+   "start": 37.64,
+   "end": 37.98
+  },
+  {
+   "word": "anyone.",
+   "start": 37.98,
+   "end": 38.46
+  },
+  {
+   "word": "He",
+   "start": 38.94,
+   "end": 39.08
+  },
+  {
+   "word": "just",
+   "start": 39.08,
+   "end": 39.26
+  },
+  {
+   "word": "sat",
+   "start": 39.26,
+   "end": 39.56
+  },
+  {
+   "word": "still.",
+   "start": 39.56,
+   "end": 39.96
+  }
+ ]
+}

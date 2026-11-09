@@ -1,0 +1,78 @@
+[
+ {
+  "id": "nvda_1000_end2020",
+  "say": "$18,200",
+  "value": 18219.385608,
+  "what": "$1,000 in NVDA on 2016-01-29 worth on 2020-12-31",
+  "period": [
+   "2016-01-29",
+   "2020-12-31"
+  ],
+  "basis": "adjusted close (splits + dividends)",
+  "source": "Alpha Vantage TIME_SERIES_WEEKLY_ADJUSTED",
+  "data_file": "data/nvda.json",
+  "check": "not cross-checked",
+  "computed": "2026-11-09",
+  "also": {
+   "amount": "$1,000",
+   "change": "1722%",
+   "multiple": "18x"
+  }
+ },
+ {
+  "id": "nvda_1000_end2021",
+  "say": "$41,100",
+  "value": 41080.656474,
+  "what": "$1,000 in NVDA on 2016-01-29 worth on 2021-12-31",
+  "period": [
+   "2016-01-29",
+   "2021-12-31"
+  ],
+  "basis": "adjusted close (splits + dividends)",
+  "source": "Alpha Vantage TIME_SERIES_WEEKLY_ADJUSTED",
+  "data_file": "data/nvda.json",
+  "check": "not cross-checked",
+  "computed": "2026-11-09",
+  "also": {
+   "amount": "$1,000",
+   "change": "4008%",
+   "multiple": "41x"
+  }
+ },
+ {
+  "id": "nvda_2022_drop",
+  "say": "66%",
+  "value": -0.659362,
+  "what": "NVDA peak-to-trough drop, peak 2021-11-19, trough 2022-10-14",
+  "period": [
+   "2021-11-19",
+   "2022-10-14"
+  ],
+  "basis": "adjusted close (splits + dividends)",
+  "source": "Alpha Vantage TIME_SERIES_WEEKLY_ADJUSTED",
+  "data_file": "data/nvda.json",
+  "check": "not cross-checked",
+  "computed": "2026-11-09",
+  "note": "script says \"lost more than half\" (66% drop): qualitative wording of this fact"
+ },
+ {
+  "id": "nvda_1000_today",
+  "say": "$262,000",
+  "value": 261803.899565,
+  "what": "$1,000 in NVDA on 2016-01-29 worth on 2026-11-06",
+  "period": [
+   "2016-01-29",
+   "2026-11-06"
+  ],
+  "basis": "adjusted close (splits + dividends)",
+  "source": "Alpha Vantage TIME_SERIES_WEEKLY_ADJUSTED",
+  "data_file": "data/nvda.json",
+  "check": "not cross-checked",
+  "computed": "2026-11-09",
+  "also": {
+   "amount": "$1,000",
+   "change": "26080%",
+   "multiple": "262x"
+  }
+ }
+]

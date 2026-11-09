@@ -33,7 +33,7 @@ engine/cache/
 runs/*/out/
 runs/*/incoming/
 runs/*/review/*.jpg
-engine/remotion/public/run
+engine/remotion/.stage/
 
 # --- Legacy project: code only, never its media folders ---
 YouTubeAutomation/output/

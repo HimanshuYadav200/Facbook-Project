@@ -1,0 +1,5 @@
+[
+ {"id": "story_start", "say": "$1,000", "kind": "illustrative", "what": "Skulsy's made-up starting money (story, not market data)"},
+ {"id": "story_end", "say": "$400", "kind": "illustrative", "what": "what was left after over-trading (story, not market data)"},
+ {"id": "story_trades", "say": "12", "kind": "illustrative", "what": "number of trades in the story"}
+]

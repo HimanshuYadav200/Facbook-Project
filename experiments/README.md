@@ -1,3 +1,5 @@
+> **RETIRED (2026-11-09):** the engine now lives in `engine/` (see `engine/README.md`). This folder is kept until the owner approves its removal.
+
 # Experiments: style test clips
 
 Throwaway test area for checking what quality each style can reach. Not the final engine.

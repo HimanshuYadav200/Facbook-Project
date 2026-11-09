@@ -1,6 +1,6 @@
 # Architecture: faceless video engine
 
-> Status: **v1.1 PROPOSED, 2026-11-09. Not approved yet. Nothing below is built until the owner agrees.**
+> Status: **v1.2 APPROVED (2026-11-09) and BUILT (B1–B5)**, except the first render through the new renderer (blocked by the sandbox, see §13). Audit of old code: `docs/LEGACY_AUDIT.md`.
 > Read with `docs/CONTEXT.md` (requirements and decisions). This file explains *how the engine works*, *where each part lives*, and *how to fix it*. The change log is at the bottom.
 
 ---
@@ -29,7 +29,7 @@ Claude Code (owner's Pro plan) is the **director**: it researches, writes the sc
                            ⚙ match_images.py → img/   (rename by shot, remove duplicates)
 6. ⚙ check_plan.py            → stops here if anything is wrong (§6)
 7. ⚙ render.sh                → out/raw.mp4   (Remotion, Node 22)
-8. ⚙ finish.sh                → out/final.mp4 (−14 LUFS, length + black-frame checks)
+8. ⚙ finish.py                → out/final.mp4 (−14 LUFS two-pass, length + black-frame checks)
 9. ⚙ contact_sheet.py         → review/sheet_N.jpg  (one frame per shot + caption)
    🧠 Review against checklist → fix plan → back to 6   (max 2 rounds)
 10. 🧠 upload.md              → title, description, hashtags
@@ -124,12 +124,13 @@ video-core/
 | `voices.py` | → `library/voice_samples/*.wav` | Audition many Kokoro voices with one sentence (open item) |
 | `match_images.py` | `incoming/` → `img/shot_XX.png` | Order by time, drop duplicates (md5), report missing |
 | `check_plan.py` | run folder → OK or a list of errors | §6 |
-| `render.sh` | run folder → `out/raw.mp4` | Uses Node 22; copies needed SFX/music from `library/` into the run so the run is self-contained |
-| `finish.sh` | `raw.mp4` → `final.mp4` | −14 LUFS; fails if length outside 2:00–2:48 or black frames found |
-| `contact_sheet.py` | `final.mp4` + plan → `review/sheet_N.jpg` | One frame per shot with its words, numbered |
+| `render.sh` | run folder → `out/raw.mp4` | Node 22; stages plan/words/voice/data/img + library SFX/music as APFS clones in `engine/remotion/.stage/` and passes it as `--public-dir` (keeps big out/ files out of the bundle) |
+| `finish.py` | `raw.mp4` → `final.mp4` | −14 LUFS (two-pass); fails if length outside 2:00–2:48, black frames, or loudness off |
+| `facts_review.py` | `facts.json` → `review/facts_review.md` | owner's manual check table |
+| `contact_sheet.py` | `final.mp4` + plan → `review/sheet_N.jpg` + `sheets.txt` | One frame per shot, 40 per sheet; labels in sheets.txt (this ffmpeg can't draw text) |
 | `make_sfx.py` | → placeholder SFX | Kept until a real SFX library exists |
 
-Remotion: one project in `engine/remotion/`. `common/` holds shared parts (captions, timing, charts, counters, SFX track, film grain, end card). `styles/<style>/` holds what is unique to a style. Each style registers one composition that reads the run folder (via Remotion's `--public-dir`; **to verify in build step B2**).
+Remotion: one project in `engine/remotion/`. `common/` holds shared parts (captions, timing, charts, counters, SFX track, film grain, end card). `styles/<style>/` holds what is unique to a style. Each style registers one composition that reads the run folder via Remotion's `--public-dir` (verified: the flag exists in 4.0.537).
 
 ## 6. `plan.json` and automatic checks
 
@@ -262,7 +263,9 @@ Later (not in v1): real SFX/music library, voice auditions, Skulsy pose set, Ble
 
 | Symptom | Where |
 |---|---|
-| Render hangs "Waiting for root component" | Node 26 in use → `render.sh` must use Node 22 |
+| Render hangs "Waiting for root component" | (a) Node 26 in use → `render.sh` uses Node 22; (b) Claude Code sandbox blocks headless Chrome ↔ local server → run the render outside the sandbox (`! engine/tools/render.sh runs/<id>`) |
+| check_plan: number not in facts | fetch + `finance_calc.py`, add the fact; or fix the script |
+| Caption covers a sign (flat) | move the sign out of y 760–930 (check_plan warns) |
 | Caption word wrong | `script.txt` (captions come from it), then `voice.py` |
 | Shot starts at wrong moment | `from` word index in `plan.json`; check `words.json` |
 | check_plan says number missing | add it with its source to `facts.json`, or fix the script |
@@ -276,3 +279,4 @@ Later (not in v1): real SFX/music library, voice auditions, Skulsy pose set, Ble
 |---|---|---|
 | 2026-11-09 | v1 proposed | Turn the approved style tests into a repeatable engine; owner asked for per-niche skills refined with screenshots |
 | 2026-11-09 | v1.1: new research approach (§6a), Claude in Chrome = default image source with extension as manual option, GitHub push rules (§11), build step B1b | Old research code produced wrong numbers (wrong ticker, unadjusted prices, cached errors); owner's choice on images; owner will push to GitHub after cleanup |
+| 2026-11-09 | v1.2 built: B1 (git, layout, archive), B1b (fetch_data, finance_calc + tests), B2 (engine/remotion renders any run; both tests converted with corrected numbers), B3 (check_plan, finish.py two-pass, contact_sheet, facts_review), B4 (skills video-core, style-vintage-story, style-flat-fastcut, niche-skulsy-finance), B5 (library/sfx + sfx.json, match_images). 16 issues fixed in our test code (`docs/LEGACY_AUDIT.md`) | Owner approved the plan and asked to fix every weak piece found on the way |
