@@ -1,6 +1,6 @@
 # Reference Reel Analysis
 
-Source files: `YouTubeAutomation/reference_reels/reel1/`, `reel2/` (videos + owner screenshots).
+Source files: `references/skulsy-finance/reel1_wolf_story/`, `reel2_rewrat_fastcut/` (videos + owner screenshots; originally in `YouTubeAutomation/reference_reels/`).
 Measured with ffmpeg on 2026-11-09 (scene detection, contact sheets, EBU R128 loudness).
 These numbers become the starting values for each style skill.
 

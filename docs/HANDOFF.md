@@ -14,12 +14,11 @@ Owner's rules: **plan → agree → build**; document everything; log decisions 
 - **Research replaced:** numbers only via `fetch_data.py` → `finance_calc.py` → `facts.json`; `check_plan.py` refuses any script/on-screen number not in facts.json. 32 tests pass.
 - **Both style tests converted** to `runs/2026-11-09_test-vintage-nvda` and `runs/2026-11-09_test-flat-timing`, with corrected numbers (66% drop, $41,100, $262,000), new voices (British fix), both pass check_plan.
 - **Both tests rendered with the new engine** (owner allowed rendering outside the sandbox): `runs/2026-11-09_test-vintage-nvda/out/final.mp4` (43 s) and `runs/2026-11-09_test-flat-timing/out/final.mp4` (18 s), −14 LUFS, reviewed; two vintage images re-cropped to hide numbers Meta AI invented. Renders must run outside the sandbox.
-- `YouTubeAutomation/` untouched. `experiments/` marked retired, kept until owner OKs deletion.
+- **Cleanup done (owner's request):** legacy `YouTubeAutomation/` (code + 30 old videos + assets) and `experiments/` moved to the macOS Trash; legacy code also in git history (`git show 3c768e1:YouTubeAutomation/<path>`). Project folder now ~2.8 GB (mostly `engine/` venv + node_modules).
 
 ## 3. Next steps (in order)
 1. Owner: watch both test videos and give feedback.
 2. Owner: Tiingo free key (`TIINGO_API_KEY` in `.env`) → re-fetch NVDA daily, re-check facts; `SEC_USER_AGENT` ("Name email") for SEC data.
 3. Owner: create GitHub repo (private recommended); Claude lists files before first push.
-4. Owner OK → delete `experiments/` (1 GB node_modules + 1.6 GB venv).
-5. First production-length video (2:00–2:48) following `video-core` + measure Pro usage with `/usage`.
-6. Open items: licensed music + real SFX, more Kokoro voice auditions, Skulsy pose set for vintage style.
+4. First production-length video (2:00–2:48) following `video-core` + measure Pro usage with `/usage`.
+5. Open items: licensed music + real SFX, more Kokoro voice auditions, Skulsy pose set for vintage style.

@@ -1,5 +1,7 @@
 # Research method review (2026-11-09)
 
+> Legacy code referenced below was removed 2026-11-09; restore any file with `git show 3c768e1:YouTubeAutomation/<path>`.
+
 Owner's question: is the old research method (`YouTubeAutomation/agents/research_agent.py` + APIs) good enough for finance, where a wrong number is a real problem? Or should it change?
 
 **Short answer: change it.** The data sources were mostly fine; the code that used them produced wrong numbers, and nothing checked the numbers that ended up in the script.

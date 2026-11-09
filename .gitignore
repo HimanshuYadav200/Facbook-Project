@@ -35,11 +35,6 @@ runs/*/incoming/
 runs/*/review/*.jpg
 engine/remotion/.stage/
 
-# --- Legacy project: code only, never its media folders ---
-YouTubeAutomation/output/
-YouTubeAutomation/assets/
-YouTubeAutomation/reference_reels/
-
 # --- OS / editor junk ---
 .DS_Store
 .vscode/

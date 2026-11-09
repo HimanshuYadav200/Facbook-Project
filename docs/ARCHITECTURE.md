@@ -69,7 +69,7 @@ Finance-Agent(short-form)/
 └─ archive/                   old files kept for reference, not used by the engine
 ```
 
-`YouTubeAutomation/` (legacy, 4.4 GB) stays where it is, **untouched**. `experiments/` is retired once the engine re-makes both test videos (§11).
+Removed in the 2026-11-09 cleanup (owner's request): `YouTubeAutomation/` (legacy code + 4.3 GB media) and `experiments/` (replaced by `engine/`). Both are in the macOS Trash until emptied; legacy code is also in git history (commit `3c768e1`).
 
 ## 4. Skills: how styles and niches are written down
 
@@ -233,15 +233,15 @@ Real usage per video is measured with `/usage` on the first production video (bu
 
 | Item | Action |
 |---|---|
-| `YouTubeAutomation/` | untouched |
+| `YouTubeAutomation/` | **removed 2026-11-09** (owner): code in git history `3c768e1`; old videos/assets/temp files to Trash |
 | Root leftovers: `debug_audio.py`, `debug_env.py`, `temp_skulsy_code.py`, `test_pattern_gen.py`, `test_validation_fix.py`, `validation_output*.txt`, `research_cache.db` | move to `archive/root_leftovers_2026-02/` (nothing deleted) |
 | `.agent/skills/` (script patterns, humanizer, research agent) | useful parts rewritten into `niche-skulsy-finance` + `video-core`; originals moved to `archive/` |
 | `.agents/skills/` (Tavily search/crawl) | move to `archive/` (Claude Code has its own web search) |
-| `experiments/` | code moves into `engine/`; Python venv re-created from `requirements.txt` (venvs break when moved). Folder deleted **only after** the engine re-makes both test videos and the owner says OK |
+| `experiments/` | code moved into `engine/`; folder **removed 2026-11-09** (owner) after both tests re-rendered with the engine |
 
 **Version control + GitHub:** `git init` in B1 with a `.gitignore` written **before the first commit**. After cleanup the owner creates a GitHub repo and we push. Never pushed:
-- `.env` and `YouTubeAutomation/.env` (API keys; checked: keys exist only in these two files);
-- `YouTubeAutomation/` media (`output/` 2.4 GB, `assets/` 1.9 GB, temp mp4s) and all `*.db` caches;
+- `.env` (API keys);
+- all `*.db` caches;
 - `.venv/`, `node_modules/`, `runs/*/out/`, rendered/downloaded media (GitHub blocks files > 100 MB).
 Before the first push, Claude lists exactly what will be uploaded for the owner to confirm. Recommend a **private** repo.
 
@@ -280,3 +280,4 @@ Later (not in v1): real SFX/music library, voice auditions, Skulsy pose set, Ble
 | 2026-11-09 | v1 proposed | Turn the approved style tests into a repeatable engine; owner asked for per-niche skills refined with screenshots |
 | 2026-11-09 | v1.1: new research approach (§6a), Claude in Chrome = default image source with extension as manual option, GitHub push rules (§11), build step B1b | Old research code produced wrong numbers (wrong ticker, unadjusted prices, cached errors); owner's choice on images; owner will push to GitHub after cleanup |
 | 2026-11-09 | v1.2 built: B1 (git, layout, archive), B1b (fetch_data, finance_calc + tests), B2 (engine/remotion renders any run; both tests converted with corrected numbers), B3 (check_plan, finish.py two-pass, contact_sheet, facts_review), B4 (skills video-core, style-vintage-story, style-flat-fastcut, niche-skulsy-finance), B5 (library/sfx + sfx.json, match_images). 16 issues fixed in our test code (`docs/LEGACY_AUDIT.md`) | Owner approved the plan and asked to fix every weak piece found on the way |
+| 2026-11-09 | Cleanup: legacy `YouTubeAutomation/` and `experiments/` removed (Trash; legacy code in git `3c768e1`); prompts from the Style A test kept as `runs/2026-11-09_test-vintage-nvda/image_prompts.txt` | Owner asked to remove everything the project doesn't use |

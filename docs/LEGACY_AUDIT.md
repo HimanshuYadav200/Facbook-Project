@@ -1,6 +1,8 @@
 # Code audit during the rebuild (2026-11-09)
 
 Owner's request: while building the engine, find and fix every wrong / weak / breaking piece in the earlier code, not only the research code.
+> `experiments/` and `YouTubeAutomation/` were removed 2026-11-09; restore any file with `git show 3c768e1:YouTubeAutomation/<path>` (experiments: commit `3c768e1` too, path `experiments/<path>`).
+
 Scope: everything carried forward into the engine (our `experiments/` test code, the legacy skills and patterns) plus a scan of the legacy `YouTubeAutomation/` modules for lessons. Legacy Python modules are **retired, not fixed**: the engine replaces them (see "Retired" below).
 
 ## A. Wrong numbers found in content
