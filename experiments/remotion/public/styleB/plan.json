@@ -1,0 +1,535 @@
+{
+ "style": "flat2d_fastcut",
+ "notes": "Each shot starts at word index `from`. Layers are placed by centre (x,y) and size (w,h) in a 1080x1920 frame. enter: pop | drop | rise | slideL | slideR | none. shake: 0-3 camera shake.",
+ "shots": [
+  {
+   "from": 0,
+   "bg": "#f2df7c",
+   "sfx": "pop",
+   "layers": [
+    {
+     "type": "skulsy",
+     "x": 540,
+     "y": 1180,
+     "w": 620,
+     "h": 1085,
+     "enter": "pop",
+     "props": {
+      "expression": "happy",
+      "leftArm": 10,
+      "rightArm": 70,
+      "holding": "phone-flat"
+     }
+    }
+   ]
+  },
+  {
+   "from": 2,
+   "bg": "#9fd8ff",
+   "sfx": "tick",
+   "layers": [
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 980,
+     "w": 560,
+     "h": 980,
+     "enter": "rise",
+     "props": {
+      "trend": "flat"
+     }
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "bg": "#5a1e1e",
+   "sfx": "thud",
+   "shake": 2,
+   "layers": [
+    {
+     "type": "arrow",
+     "x": 540,
+     "y": 640,
+     "w": 420,
+     "h": 560,
+     "enter": "drop",
+     "props": {
+      "dir": "down"
+     }
+    },
+    {
+     "type": "skulsy",
+     "x": 540,
+     "y": 1480,
+     "w": 440,
+     "h": 770,
+     "enter": "none",
+     "props": {
+      "expression": "shocked"
+     }
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "bg": "#4a2d6b",
+   "sfx": "boing",
+   "shake": 3,
+   "layers": [
+    {
+     "type": "skulsy",
+     "x": 540,
+     "y": 1250,
+     "w": 1000,
+     "h": 1750,
+     "enter": "pop",
+     "props": {
+      "expression": "panic",
+      "leftArm": 150,
+      "rightArm": 150
+     }
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "bg": "#f08a3c",
+   "sfx": "whoosh",
+   "speedLines": true,
+   "layers": [
+    {
+     "type": "money",
+     "x": 260,
+     "y": 520,
+     "w": 320,
+     "h": 320,
+     "enter": "slideL",
+     "props": {
+      "count": 3
+     }
+    },
+    {
+     "type": "money",
+     "x": 820,
+     "y": 420,
+     "w": 300,
+     "h": 300,
+     "enter": "slideR",
+     "props": {
+      "count": 2
+     }
+    },
+    {
+     "type": "skulsy",
+     "x": 540,
+     "y": 1250,
+     "w": 620,
+     "h": 1085,
+     "enter": "none",
+     "props": {
+      "expression": "panic",
+      "leftArm": 165,
+      "rightArm": 165
+     }
+    }
+   ]
+  },
+  {
+   "from": 12,
+   "bg": "#bfe6ff",
+   "sfx": "ding",
+   "layers": [
+    {
+     "type": "sign",
+     "x": 540,
+     "y": 640,
+     "w": 820,
+     "h": 410,
+     "enter": "drop",
+     "props": {
+      "lines": [
+       "NEXT",
+       "MORNING"
+      ],
+      "bg": "#fff7d6"
+     }
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "bg": "#2f8f46",
+   "sfx": "whoosh",
+   "speedLines": true,
+   "layers": [
+    {
+     "type": "arrow",
+     "x": 540,
+     "y": 960,
+     "w": 600,
+     "h": 800,
+     "enter": "rise",
+     "props": {
+      "dir": "up"
+     }
+    }
+   ]
+  },
+  {
+   "from": 17,
+   "bg": "#f2df7c",
+   "sfx": "cash",
+   "layers": [
+    {
+     "type": "skulsy",
+     "x": 480,
+     "y": 1180,
+     "w": 620,
+     "h": 1085,
+     "enter": "slideR",
+     "props": {
+      "expression": "smug",
+      "leftArm": 10,
+      "rightArm": 95,
+      "holding": "money"
+     }
+    }
+   ]
+  },
+  {
+   "from": 22,
+   "bg": "#7fd1c7",
+   "sfx": "pop",
+   "layers": [
+    {
+     "type": "sign",
+     "x": 540,
+     "y": 640,
+     "w": 760,
+     "h": 380,
+     "enter": "pop",
+     "props": {
+      "lines": [
+       "HIGHER $$$"
+      ],
+      "bg": "#fff"
+     }
+    },
+    {
+     "type": "arrow",
+     "x": 540,
+     "y": 1350,
+     "w": 300,
+     "h": 400,
+     "enter": "rise",
+     "props": {
+      "dir": "up"
+     }
+    }
+   ]
+  },
+  {
+   "from": 23,
+   "bg": "#5a1e1e",
+   "sfx": "thud",
+   "shake": 2,
+   "layers": [
+    {
+     "type": "arrow",
+     "x": 300,
+     "y": 600,
+     "w": 340,
+     "h": 450,
+     "enter": "drop",
+     "props": {
+      "dir": "down"
+     }
+    },
+    {
+     "type": "skulsy",
+     "x": 600,
+     "y": 1300,
+     "w": 620,
+     "h": 1085,
+     "enter": "none",
+     "props": {
+      "expression": "crying"
+     }
+    }
+   ]
+  },
+  {
+   "from": 26,
+   "bg": "#f08a3c",
+   "sfx": "whoosh",
+   "speedLines": true,
+   "layers": [
+    {
+     "type": "skulsy",
+     "x": 540,
+     "y": 1200,
+     "w": 620,
+     "h": 1085,
+     "enter": "slideL",
+     "props": {
+      "expression": "panic",
+      "leftArm": 160,
+      "rightArm": 160
+     }
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "bg": "#2f8f46",
+   "sfx": "pop",
+   "layers": [
+    {
+     "type": "arrow",
+     "x": 540,
+     "y": 960,
+     "w": 520,
+     "h": 700,
+     "enter": "rise",
+     "props": {
+      "dir": "up"
+     }
+    }
+   ]
+  },
+  {
+   "from": 28,
+   "bg": "#f2df7c",
+   "sfx": "cash",
+   "layers": [
+    {
+     "type": "skulsy",
+     "x": 480,
+     "y": 1180,
+     "w": 620,
+     "h": 1085,
+     "enter": "pop",
+     "props": {
+      "expression": "smug",
+      "leftArm": 10,
+      "rightArm": 95,
+      "holding": "money"
+     }
+    }
+   ]
+  },
+  {
+   "from": 29,
+   "bg": "#5a1e1e",
+   "sfx": "thud",
+   "shake": 3,
+   "layers": [
+    {
+     "type": "arrow",
+     "x": 540,
+     "y": 960,
+     "w": 520,
+     "h": 700,
+     "enter": "drop",
+     "props": {
+      "dir": "down"
+     }
+    }
+   ]
+  },
+  {
+   "from": 30,
+   "bg": "#4a2d6b",
+   "sfx": "tick",
+   "layers": [
+    {
+     "type": "sign",
+     "x": 540,
+     "y": 600,
+     "w": 860,
+     "h": 430,
+     "enter": "pop",
+     "props": {
+      "lines": [
+       "12 TRADES",
+       "LATER..."
+      ],
+      "bg": "#fff7d6"
+     }
+    }
+   ]
+  },
+  {
+   "from": 33,
+   "bg": "#9fd8ff",
+   "sfx": "pop",
+   "layers": [
+    {
+     "type": "money",
+     "x": 300,
+     "y": 1300,
+     "w": 420,
+     "h": 420,
+     "enter": "drop",
+     "props": {
+      "count": 5
+     }
+    },
+    {
+     "type": "skulsy",
+     "x": 760,
+     "y": 1300,
+     "w": 480,
+     "h": 840,
+     "enter": "none",
+     "props": {
+      "expression": "normal"
+     }
+    }
+   ]
+  },
+  {
+   "from": 37,
+   "bg": "#5b5b5b",
+   "sfx": "crash",
+   "shake": 2,
+   "layers": [
+    {
+     "type": "money",
+     "x": 300,
+     "y": 1350,
+     "w": 420,
+     "h": 420,
+     "enter": "none",
+     "props": {
+      "count": 1
+     }
+    },
+    {
+     "type": "skulsy",
+     "x": 760,
+     "y": 1300,
+     "w": 480,
+     "h": 840,
+     "enter": "none",
+     "props": {
+      "expression": "crying"
+     }
+    }
+   ]
+  },
+  {
+   "from": 40,
+   "bg": "#f6b6c9",
+   "sfx": "pop",
+   "layers": [
+    {
+     "type": "grandma",
+     "x": 540,
+     "y": 1150,
+     "w": 780,
+     "h": 1014,
+     "enter": "pop",
+     "props": {
+      "asleep": false
+     }
+    }
+   ],
+   "push": true
+  },
+  {
+   "from": 44,
+   "bg": "#23335c",
+   "sfx": "ding",
+   "layers": [
+    {
+     "type": "grandma",
+     "x": 540,
+     "y": 1150,
+     "w": 780,
+     "h": 1014,
+     "enter": "none",
+     "props": {
+      "asleep": true
+     }
+    }
+   ]
+  },
+  {
+   "from": 48,
+   "bg": "#2f8f46",
+   "sfx": "cash",
+   "layers": [
+    {
+     "type": "arrow",
+     "x": 800,
+     "y": 560,
+     "w": 300,
+     "h": 400,
+     "enter": "rise",
+     "props": {
+      "dir": "up"
+     }
+    },
+    {
+     "type": "grandma",
+     "x": 480,
+     "y": 1250,
+     "w": 700,
+     "h": 910,
+     "enter": "none",
+     "props": {
+      "asleep": true
+     }
+    }
+   ],
+   "push": true
+  },
+  {
+   "from": 50,
+   "bg": "#f2df7c",
+   "sfx": "ding",
+   "layers": [
+    {
+     "type": "sign",
+     "x": 540,
+     "y": 560,
+     "w": 900,
+     "h": 450,
+     "enter": "drop",
+     "props": {
+      "lines": [
+       "TIME IN",
+       "> TIMING"
+      ],
+      "bg": "#fff7d6"
+     }
+    },
+    {
+     "type": "skulsy",
+     "x": 290,
+     "y": 1350,
+     "w": 460,
+     "h": 805,
+     "enter": "slideL",
+     "props": {
+      "expression": "crying"
+     }
+    },
+    {
+     "type": "grandma",
+     "x": 790,
+     "y": 1400,
+     "w": 480,
+     "h": 624,
+     "enter": "slideR",
+     "props": {
+      "asleep": true
+     }
+    }
+   ],
+   "push": true
+  }
+ ]
+}

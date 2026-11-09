@@ -1,0 +1,50 @@
+[DEBUG] Loading .env from: C:\Users\Himanshu Yadav\Downloads\Finance-Agent(short-form)\.env
+Testing Validation Logic Fixes...
+
+--- Testing Extraction ---
+Extracted Research Nums: {'prices': ['10.50', '15.75', '50', '10.50'], 'years': ['2001'], 'percentages': ['50', '50']}
+
+--- Testing Correct Script ---
+Score (Should be high): 85.0
+
+--- Testing Flawed Script ---
+    [WARNING] Number precision is 0.0% (target: 100%)
+Score (Should be low): 25.0
+
+--- Testing Feedback ---
+{
+  "priority_fixes": [
+    {
+      "dimension": "accuracy",
+      "issue": "Script contains wrong numbers or missing research data",
+      "action": "You MUST use these exact numbers:",
+      "required_numbers": {
+        "prices": [
+          "10.50",
+          "15.75",
+          "50"
+        ],
+        "years": [
+          "2001"
+        ],
+        "percentages": [
+          "50",
+          "50"
+        ]
+      },
+      "example": "Correct: 'Amazon stock was $10.50' (if applicable)"
+    },
+    {
+      "dimension": "accuracy",
+      "issue": "Script contains numbers that don't match research data",
+      "action": "Verify all dollar amounts and dates against research_data.json",
+      "research_reference": [
+        "Skulsy bought Amazon stock at $10.50 in 2001",
+        "He sold it when it reached $15.75 per share",
+        "This resulted in a 50% ROI"
+      ]
+    }
+  ],
+  "suggestions": [],
+  "specific_edits": []
+}

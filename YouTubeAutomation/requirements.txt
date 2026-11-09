@@ -1,0 +1,6 @@
+google-generativeai
+elevenlabs
+moviepy
+pillow
+requests
+python-dotenv
