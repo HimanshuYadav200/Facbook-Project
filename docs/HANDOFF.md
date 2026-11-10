@@ -26,7 +26,7 @@ A local, Claude-directed engine that makes **faceless vertical short videos** fo
 | Music | `library/music/the-end-soundaudio.mp3` (owner: non-copyright) |
 | Images | Meta AI driven by Claude in Chrome (one chat per video; `saveNewest`, 2 images per batch). ~32 images per strange-money video ≈ 20 min: the throughput bottleneck at 3–4 videos/day |
 | Blender | 5.3 installed (Homebrew). Test in the Eiffel run's `blender_test/`. **Parked for R&D** (output too crude); next try: Blender MCP with real models/textures |
-| Git | Local repo, branch `main`, **not pushed, session 3 work not committed** (many files). Commit only when the owner asks |
+| Git | Local repo, **not pushed**. Session 3 work committed on branch `session-3-niches` (221663d), not yet merged into `main`. Commit only when the owner asks |
 
 ## 4. Decided, not yet done
 - **Local SFX model: Stable Audio 3 Small SFX** (owner, 2026-11-10: "we will go with the sfx local model", for future niches). Only commercially usable local option found (Stability Community License: free under $1M yearly revenue). Others (MMAudio, AudioGen, AudioLDM 2, Tango) are non-commercial. **Owner first:** (1) Hugging Face account → accept terms on `stabilityai/stable-audio-3-small-sfx`; (2) register with Stability AI for commercial use; (3) HF read token → `hf auth login`. **Then Claude:** install in a **separate venv** (`~/tools/stable-audio-3`, MLX path; it pins torch 2.7.1, so not in `engine/.venv`), test on the M5, add a `make_sfx`-style generator, licence entries in `sfx.json`. Research details: CONTEXT.md session log cont. 15.
@@ -37,7 +37,7 @@ A local, Claude-directed engine that makes **faceless vertical short videos** fo
 2. Local SFX model accounts (§4).
 3. skulsy-finance: Tiingo key + SEC contact in `.env`; feedback on the two tests.
 4. GitHub repo (private recommended): Claude lists files first; Mixkit WAVs must stay out.
-5. Say when to commit session 3 work.
+5. Merge branch `session-3-niches` into `main` when happy (Claude can do it).
 
 ## 6. Next steps
 1. Produce strange-money videos from the first-week order in topics.md (video-core skill + niche/style skills).
