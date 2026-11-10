@@ -5,10 +5,14 @@ import { Composition } from "remotion";
 import { BasePlan, DataFile, FPS, WordsFile, loadJson } from "./common/timing";
 import { VintageStory } from "./styles/vintage-story/VintageStory";
 import { FlatFastcut } from "./styles/flat-fastcut/FlatFastcut";
+import { StickmanCalm } from "./styles/stickman-calm/StickmanCalm";
+import { ExplainerFast } from "./styles/explainer-fast/ExplainerFast";
 
 const STYLES: Record<string, React.FC<any>> = {
   "vintage-story": VintageStory,
   "flat-fastcut": FlatFastcut,
+  "stickman-calm": StickmanCalm,
+  "explainer-fast": ExplainerFast,
 };
 
 async function loadRun(styleId: string) {
@@ -17,8 +21,10 @@ async function loadRun(styleId: string) {
   const w = await loadJson<WordsFile>("words.json");
   const data: Record<string, DataFile> = {};
   for (const [name, file] of Object.entries(plan.data ?? {})) data[name] = await loadJson<DataFile>(file);
+  // Optional: eye positions for blinking (stickman-calm), made by find_eyes.py.
+  const eyes = await loadJson<Record<string, unknown>>("eyes.json").catch(() => ({}));
   const seconds = w.duration + (plan.tailSeconds ?? 0.5) + (plan.endCard?.seconds ?? 0);
-  return { durationInFrames: Math.ceil(seconds * FPS), props: { words: w.words, duration: w.duration, plan, data } };
+  return { durationInFrames: Math.ceil(seconds * FPS), props: { words: w.words, duration: w.duration, plan, data, eyes } };
 }
 
 export const RemotionRoot: React.FC = () => (
@@ -32,7 +38,7 @@ export const RemotionRoot: React.FC = () => (
         height={1920}
         fps={FPS}
         durationInFrames={FPS}
-        defaultProps={{ words: [], duration: 0, plan: { version: 1, style: id, shots: [] }, data: {} }}
+        defaultProps={{ words: [], duration: 0, plan: { version: 1, style: id, shots: [] }, data: {}, eyes: {} }}
         calculateMetadata={() => loadRun(id)}
       />
     ))}

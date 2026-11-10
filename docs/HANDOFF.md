@@ -1,71 +1,66 @@
-# Session Handoff (end of session 2, 2026-11-10)
+# Session Handoff (end of session 3, 2026-11-10)
 
-> **New chat? Read this file first.** It is the complete, compact state of the project up to now.
+> **New chat? Read this file first.** It is the complete, compact state of the project.
 > Then, as needed: `docs/CONTEXT.md` (requirements, every decision, session log) · `docs/ARCHITECTURE.md` (how the engine works, change log) · `.claude/skills/video-core/SKILL.md` (how to make a video, exact commands) · `engine/README.md` (setup + tools).
-> Rules (from `CLAUDE.md`): **plan → owner agrees → build**; log every decision in `docs/CONTEXT.md`; follow the "Coding rules" section in `CLAUDE.md`.
+> Rules (from `CLAUDE.md`): **plan → owner agrees → build**; log every decision in `docs/CONTEXT.md`; follow the "Coding rules" in `CLAUDE.md`.
 
 ---
 
 ## 1. What we're building
-A local, Claude-directed engine that makes **faceless vertical videos (2:00–2:48)** for **Facebook first, then YouTube**, uploaded **manually** by the owner.
-- First niche: **Skulsy (friendly cartoon skeleton) + USA finance**. Later more niches, each as its own skill.
-- Must be **monetizable**: real data, a story, motion graphics. Not an AI slideshow (that got the old channel demonetized).
-- Free / open-source first. Runs on the owner's MacBook Pro (24 GB).
-- Brain = **Claude Code on the owner's personal Pro plan** (never the office/enterprise account).
-- Target later: ~3 videos/day.
+A local, Claude-directed engine that makes **faceless vertical short videos** for **Facebook and YouTube**, uploaded **manually** by the owner. One skill per **niche** (content) and per **style** (look); Claude drives every step. Free / open-source first, runs on the owner's MacBook Pro (M5, 24 GB). Brain = Claude Code on the owner's personal Pro plan. Target: **3–4 reels/day per niche**, every video original (YouTube "inauthentic content" + Meta "unoriginal content" rules: `video-core/references/upload-policy.md`).
 
-## 2. Current state (everything built so far)
+## 2. Niches: readiness for posting
+| Niche | Style | Length | Status | First video | Before posting at volume |
+|---|---|---|---|---|---|
+| **strange-money**: true strange money stories, scams, loopholes; fast excited explainer | `explainer-fast` (AI 3D-cartoon images, camera moves incl. 3D tilts, green-keyed cut-out actors, **motion graphics**, recorded SFX pools, 1–3-word captions) | 45–70 s | **Ready.** Owner approved look + motion graphics + SFX | `runs/strange-money/2026-11-10_eiffel-tower-sale/out/final.mp4` (= `~/Downloads/strange_money_eiffel_sfx2.mp4`) + `upload.md` (SEO) | Owner ticks 2 manual facts in its `facts.json`; topic bank being grown to ~120 (see §5); pick voice (default `am_puck` 1.15) |
+| **stickman-money**: calm stickman parables, one money lesson | `stickman-calm` (grey pencil-sketch images, slow camera, dissolves, karaoke captions, blinks, optional owner-supplied clips) | ~1:30 | **Ready** ("done for now") | `runs/stickman-money/2026-11-10_two-brothers-paycheck/out/final.mp4` (v4, 87.7 s) + `upload.md` | 100-seed topic bank ready; Meta AI *video* isn't available in Claude's browser (owner supplies clips if wanted) |
+| **skulsy-finance**: Skulsy cartoon skeleton + real USA finance data | `vintage-story` / `flat-fastcut` | 2:00–2:48 | **Not ready.** Only two short tests (43 s, 18 s) | `runs/skulsy-finance/2026-11-09_test-*` | Needs a production-length video, owner feedback, `TIINGO_API_KEY` + `SEC_USER_AGENT` in `.env` (real market data) |
+
+## 3. Engine state
 | Area | State |
 |---|---|
-| Architecture | **v1.2 approved and built** (steps B1–B5). `docs/ARCHITECTURE.md` |
-| Engine tools | `engine/tools/`: new_run, fetch_data, finance_calc, voice, match_images, check_plan, render.sh, finish, contact_sheet, facts_review, make_sfx. **32 tests pass** (`engine/.venv/bin/python -m unittest discover -s engine/tests`) |
-| Renderer | `engine/remotion/` (Remotion 4.0.537, Node 22). One composition per style; renders any run folder. **Working**: both tests rendered |
-| Skills | `.claude/skills/`: `video-core`, `style-vintage-story`, `style-flat-fastcut`, `niche-skulsy-finance` |
-| Library | `library/sfx/` (10 generated placeholder SFX) + `sfx.json`; `library/music.json` (empty: no licensed music yet) |
-| Test videos | `runs/2026-11-09_test-vintage-nvda/out/final.mp4` (43 s, NVIDIA story, corrected numbers) and `runs/2026-11-09_test-flat-timing/out/final.mp4` (18 s, over-trading comedy). Both −14 LUFS, reviewed. Copy of vintage in `~/Downloads/skulsy_vintage_nvda_test.mp4` |
-| Git | Local repo, branch `main`, **not pushed**. `.gitignore` excludes `.env`, media, caches, venvs, node_modules. Checked: no API keys in tracked files |
-| Cleanup | Legacy `YouTubeAutomation/` and `experiments/` **removed** (owner's request) → in `~/.Trash/finance-agent-cleanup-2026-11-09/` until the owner empties it. Old code also restorable: `git show 3c768e1:YouTubeAutomation/<path>`. Project folder ≈ 2.8 GB |
+| Tools | `engine/tools/`: new_run, fetch_data, finance_calc, voice (Kokoro + whisper), match_images, check_plan, render.sh, finish (−14 LUFS), contact_sheet, facts_review, make_sfx, find_eyes (blinks), key_green (green-screen cut-outs). **53 tests pass**: `engine/.venv/bin/python -m unittest discover -s engine/tests` |
+| Renderer | `engine/remotion/` (Remotion 4.0.537, Node 22). Styles: vintage-story, flat-fastcut, stickman-calm, explainer-fast (`ExplainerFast.tsx`, `Graphics.tsx`, `sounds.json`) |
+| explainer-fast extras | `mg` motion graphics per shot (stamp, label, counter, arrow, money, speedLines, marks, cross, circle, pointer; no own wobble; each ≥ 1 s on screen, checker-enforced), `bg` colour-card shots, `hold` (delay a cut 0–0.6 s), sound pools with per-cut variants; default volumes cut 0.22 / mg 0.35 / sfx 0.3 (measured: whooshes ~9 dB, hits ~6–8 dB under voice) |
+| SFX library | `library/sfx/`: 21 generated + **47 recorded** (`*_r*`, Mixkit free licence + freesound CC0) → `library/sfx.json`, `library/sfx_incoming/review.md`, `preview.wav`. Owner removed `impact_r2`. **Mixkit licence: never share the files on their own, never use Content ID**; `*.wav` is git-ignored |
+| Music | `library/music/the-end-soundaudio.mp3` (owner: non-copyright) |
+| Images | Meta AI driven by Claude in Chrome (one chat per video; `saveNewest`, 2 images per batch). ~32 images per strange-money video ≈ 20 min: the throughput bottleneck at 3–4 videos/day |
+| Blender | 5.3 installed (Homebrew). Test in the Eiffel run's `blender_test/`. **Parked for R&D** (output too crude); next try: Blender MCP with real models/textures |
+| Git | Local repo, branch `main`, **not pushed, session 3 work not committed** (many files). Commit only when the owner asks |
 
-## 3. Folder map
+## 4. Decided, not yet done
+- **Local SFX model: Stable Audio 3 Small SFX** (owner, 2026-11-10: "we will go with the sfx local model", for future niches). Only commercially usable local option found (Stability Community License: free under $1M yearly revenue). Others (MMAudio, AudioGen, AudioLDM 2, Tango) are non-commercial. **Owner first:** (1) Hugging Face account → accept terms on `stabilityai/stable-audio-3-small-sfx`; (2) register with Stability AI for commercial use; (3) HF read token → `hf auth login`. **Then Claude:** install in a **separate venv** (`~/tools/stable-audio-3`, MLX path; it pins torch 2.7.1, so not in `engine/.venv`), test on the M5, add a `make_sfx`-style generator, licence entries in `sfx.json`. Research details: CONTEXT.md session log cont. 15.
+- **Topic bank (strange-money): done.** `.claude/skills/niche-strange-money/references/topics.md` has **120 seeds** (S 25, L 24, B 24, O 24, D 23) with `Key facts` + `Sources`, series links (Lustig 1→21→31 Capone, Ponzi 8↔46, Prohibition 66→67→68…), a rejects list and a **first-week order** (21 videos, 3/day, type never twice in a row; starts with #31 Lustig cons Capone). Flagged: #10 (living private person: no name or skip), #11 tulips (tell "legend vs record"), #26 Gillette razor myth (tell "the story is backwards"), #27 cobra bounty + #28 salami fraud excluded, #30 Woolworth hook corrected. Weak sources to fix during research: #55, #57, #60, #62, #90. Every seed still needs its own research pass into `facts.json` (Wikipedia + 1 more source, read in full).
+
+## 5. Waiting on the owner
+1. strange-money: tick facts `lustig_1925` + `poisson_bribe` (manual), choose a title from `upload.md`, upload.
+2. Local SFX model accounts (§4).
+3. skulsy-finance: Tiingo key + SEC contact in `.env`; feedback on the two tests.
+4. GitHub repo (private recommended): Claude lists files first; Mixkit WAVs must stay out.
+5. Say when to commit session 3 work.
+
+## 6. Next steps
+1. Produce strange-money videos from the first-week order in topics.md (video-core skill + niche/style skills).
+2. Install the local SFX model once the owner's accounts are ready.
+3. Later scope (logged): multi-angle AI animation, Blender R&D, blinks on explainer actors, Lustig redesign (resembles a board-game mascot), more voices.
+
+## 7. Traps (read before working)
+- **Render outside the sandbox** (`render.sh` with sandbox disabled; owner allowed it). Otherwise headless Chrome can't reach Remotion.
+- **zsh doesn't word-split `$VAR`**; `$n:l` is a zsh modifier. No `timeout` on macOS. ffmpeg here has **no drawtext**; PIL and librosa aren't installed (no new packages without owner OK).
+- Never overwrite renders/plans: back up as `out/<tag>_final.mp4`, `plan_<tag>.json` first (the Eiffel run has v1, v2, mg1, mg2, sfx1 versions).
+- Meta AI: invented text/numbers in images → check the contact sheet; a late image arrives as "2 new candidates".
+- Kokoro: write "A I" not "AI"; numbers as digits in the script (checker); every on-screen number must be in `facts.json`.
+- Blender headless: physics needs `bpy.ops.ptcache.bake_all(bake=True)`; `transform_apply` defaults also apply location.
+- Owner preview without sound: use QuickTime/VLC.
+
+## 8. Folder map
 ```
-CLAUDE.md               project rules + coding rules (read every session)
+CLAUDE.md               project rules + coding rules
 .env                    API keys (never commit/print)
-docs/                   HANDOFF (this), CONTEXT, ARCHITECTURE, RESEARCH_REVIEW, LEGACY_AUDIT,
-                        REFERENCE_ANALYSIS, OPENCHATCUT_SKILL_ANALYSIS, PONYTAIL_SKILL_ANALYSIS
-.claude/skills/         video-core, style-vintage-story, style-flat-fastcut, niche-skulsy-finance
-engine/                 tools/, tests/, remotion/, requirements.txt, .venv/ (Python 3.12), cache/
-library/                sfx/ + sfx.json, music/ + music.json, characters/, fonts/
-references/             README.md (how owner refines a niche) + skulsy-finance/ reel1 + reel2
-runs/<date>_<slug>/     one folder per video: brief, data, facts.json, script, voice, words, plan, img, review, out
-archive/                old skills/patterns + root leftovers (credited by the new skills)
+docs/                   HANDOFF (this), CONTEXT, ARCHITECTURE, analyses
+.claude/skills/         video-core, style-*, niche-* (skulsy-finance, stickman-money, strange-money)
+engine/                 tools/, tests/, remotion/, .venv/ (Python 3.12)
+library/                sfx/ + sfx.json + sfx_incoming/, music/ + music.json
+references/             per-niche reference reels + analysis.md (skulsy-finance, stickman-psychology, Ricks-clips)
+runs/<niche>/<date>_<slug>/   one folder per video: script, facts.json, voice, words, plan, img, review, out, upload.md, log.md
 ```
-
-## 4. Key decisions (short; full list in `docs/CONTEXT.md` §6)
-- **Renderer = Remotion only** (Node 22; Node 26 hangs it). ffmpeg for finishing. No MoviePy, no HyperFrames.
-- **Skills:** one shared `video-core` + one skill per **style** (look) + one per **niche** (content). Owner refines a niche by dropping screenshots/reels/notes into `references/<niche>/` → Claude analyses → proposes skill changes → applies after OK.
-- **OpenChatCut "explainer-video"** skill analysed, not installed; its ideas (explanation test, claim → visual table, honest charts, sync QA) rewritten in our own words (its text is GPL). **Ponytail** analysed (coding-minimalism, not video), not installed; its useful rules are the "Coding rules" in `CLAUDE.md`.
-- **Research / numbers (finance: a wrong number is a real problem):** old research code was broken (every stock looked up as SPY, unadjusted prices, cached rate-limit errors). Now: `fetch_data.py` (Tiingo daily adjusted + Alpha Vantage cross-check, FRED, SEC EDGAR) → `finance_calc.py` (tested) → `facts.json`. **Every number in a script or on screen must be a facts.json `say` value** (years excepted), written as digits; `check_plan.py` refuses anything else. Story-only numbers = `"kind": "illustrative"`. Owner gets `review/facts_review.md` to tick before upload.
-- **Images:** Claude drives meta.ai via Claude in Chrome by default; Meta extension = manual option. No numbers/text in prompts (Meta AI invents them); check the contact sheet and crop out any.
-- **Voices:** Kokoro local. vintage = `bm_george` 0.95; flat = `am_puck` 1.1. Owner wants to audition more.
-- **Video length 2:00–2:48**, −14 LUFS. Shot limits: vintage 0.5–7 s; flat 0.25–2.5 s (last ≤ 4 s); flat signs out of the caption band.
-- **GitHub:** owner will create a repo (private recommended); Claude must show the file list before the first push.
-
-## 5. Things a new session must know (traps)
-- **Rendering must run outside Claude Code's sandbox** (headless Chrome can't reach Remotion's local server inside it). The owner has given permission. If refused, the owner types `! engine/tools/render.sh runs/<id>`.
-- **zsh does not word-split `$VAR`**: `$P $T args` fails; write commands out in full or use `${=VAR}`. macOS has no `timeout` command.
-- **No new Python packages without owner OK** (Pillow is not installed; contact-sheet labels go in `review/sheets.txt`).
-- Alpha Vantage free tier ≈ 25 requests/day, and daily adjusted prices are paid there → use Tiingo (key missing) or `--source av-weekly --check none`.
-- Owner couldn't hear audio when previewing a final video: the file is fine (verified by transcription); use QuickTime/VLC, not an editor preview pane.
-- Kokoro: write "A I" not "AI", "262 times" not "262x". Whisper misspells "Skulsy" (harmless: captions come from the script).
-
-## 6. Waiting on the owner
-1. Watch both test videos and give feedback (look, voice, pacing, SFX).
-2. Free **Tiingo** key → `TIINGO_API_KEY=` in `.env` (then re-fetch NVDA daily and re-check the Style A facts; weekly data may shift numbers slightly).
-3. Contact for SEC data → `SEC_USER_AGENT="Name email"` in `.env`.
-4. Create the **GitHub repo**; Claude lists files, owner confirms, then first push.
-5. Empty the Trash when sure nothing is missing (frees 7 GB).
-
-## 7. Next steps (after the owner's items)
-1. First **production-length video (2:00–2:48)** end to end with `video-core`; measure Pro usage with `/usage`.
-2. Refine styles from the owner's feedback / new references (`references/skulsy-finance/`).
-3. Open items: licensed background music + real SFX (licences recorded in the json indexes), more Kokoro voice auditions, a Skulsy pose set for the vintage style, maybe image generation off Claude to save tokens.

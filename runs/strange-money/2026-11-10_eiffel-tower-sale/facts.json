@@ -1,0 +1,7 @@
+[
+ {"id": "lustig_1925", "say": "In 1925 Victor Lustig, posing as a deputy director-general of the Ministry of Posts and Telegraphs, used fake government letterheads and invited scrap metal dealers to a confidential meeting at an expensive hotel, saying the tower would be sold for scrap and must stay secret to avoid public outcry.", "source": "https://en.wikipedia.org/wiki/Victor_Lustig ; https://www.smithsonianmag.com/history/the-smoothest-con-man-that-ever-lived-29861908/", "check": "manual: names and story only, no numbers"},
+ {"id": "poisson_bribe", "say": "Andre Poisson paid for the tower plus a large bribe; Lustig fled to Austria with the money; Poisson was too embarrassed to go to the police; Lustig returned later that year, tried again, police were informed, he fled to the US.", "source": "https://en.wikipedia.org/wiki/Victor_Lustig ; https://www.todayifoundout.com/?p=38482", "check": "manual: sources disagree on amounts and the delay before the second attempt (one month vs six months), so the script names neither"},
+ {"id": "tower_1889", "say": "The Eiffel Tower was built as the centrepiece of the 1889 World's Fair.", "source": "https://en.wikipedia.org/wiki/Eiffel_Tower"},
+ {"id": "paint", "say": "Maintenance needs 60 tons of paint every 7 years to prevent rust.", "source": "https://en.wikipedia.org/wiki/Eiffel_Tower"},
+ {"id": "iron", "say": "The wrought iron structure weighs 7,300 tons (tonnes).", "source": "https://en.wikipedia.org/wiki/Eiffel_Tower"}
+]

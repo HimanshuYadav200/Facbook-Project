@@ -1,7 +1,8 @@
 """Finish a render: loudness to -14 LUFS (two-pass), then check length and black frames.
 
-Usage: engine/.venv/bin/python engine/tools/finish.py runs/<id> [--test]
-  reads out/raw.mp4, writes out/final.mp4. --test skips the 2:00-2:48 length rule (short test clips).
+Usage: engine/.venv/bin/python engine/tools/finish.py runs/<niche>/<id> [--test]
+  reads out/raw.mp4, writes out/final.mp4. Length limits come from the run's niche.json;
+  --test skips them (short test clips).
 
 Two-pass: pass 1 measures the audio, pass 2 applies one fixed gain. The test version used one pass,
 which adjusts volume on the fly and can make it "pump".
@@ -13,8 +14,9 @@ import subprocess
 import sys
 from pathlib import Path
 
+from check_plan import load_niche
+
 TARGET_I, TARGET_TP, TARGET_LRA = -14.0, -1.5, 11.0
-MIN_LEN, MAX_LEN = 120.0, 168.0  # 2:00-2:48 (owner's rule; under YouTube Shorts' 3-min cap)
 
 
 def ffmpeg(args):
@@ -47,6 +49,11 @@ def main(argv=None):
     ap.add_argument("--test", action="store_true")
     a = ap.parse_args(argv)
     run = Path(a.run)
+    try:
+        min_len, max_len = load_niche(run)["length_seconds"]
+    except ValueError as e:
+        print(f"ERROR: {e}", file=sys.stderr)
+        return 1
     raw, final = run / "out" / "raw.mp4", run / "out" / "final.mp4"
     if not raw.exists():
         print(f"ERROR: {raw} missing (run render.sh first)", file=sys.stderr)
@@ -68,8 +75,8 @@ def main(argv=None):
     if abs(lufs - TARGET_I) > 1.0:
         problems.append(f"loudness {lufs:.1f} LUFS (target {TARGET_I})")
     length = duration(final)
-    if not a.test and not (MIN_LEN <= length <= MAX_LEN):
-        problems.append(f"length {length:.1f}s outside {MIN_LEN:.0f}-{MAX_LEN:.0f}s")
+    if not a.test and not (min_len <= length <= max_len):
+        problems.append(f"length {length:.1f}s outside {min_len:.0f}-{max_len:.0f}s")
     blacks = [b for b in black_frames(final) if float(b[0]) < length - 3]  # an end-card fade is fine
     if blacks:
         problems.append("black frames at " + ", ".join(f"{float(s):.1f}-{float(e):.1f}s" for s, e in blacks))

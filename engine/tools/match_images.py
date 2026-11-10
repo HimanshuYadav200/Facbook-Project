@@ -1,6 +1,6 @@
 """Move generated images from a run's incoming/ into img/, named after image_prompts.txt.
 
-Usage: engine/.venv/bin/python engine/tools/match_images.py runs/<id>
+Usage: engine/.venv/bin/python engine/tools/match_images.py runs/<niche>/<id>
 image_prompts.txt has one prompt per line: "<name>: <prompt>", e.g. "01_office: Skulsy at a desk, 1990s ..."
 Files in incoming/ are taken oldest first (the order they were generated/downloaded) and get those names,
 keeping their extension: img/01_office.webp. Duplicates (same bytes) are reported and skipped.

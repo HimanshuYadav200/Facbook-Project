@@ -1,0 +1,9 @@
+-> for each reel views are over 2 million
+-> platform is facebook and the page posts around 3-4 reels every day
+-> length is arounf 1.5 to 2.5 minutes
+-> targetted audience is USA , voice over is in english 
+-> a peacefull , caml and soothing music plays in the background like the meditation music
+-> there are no sound effects on transitions so we can cover this but we need to keep in mind that the transition sound effects are not very hard since gackground music is slow and calm
+-> we need to figure out if we are going for 3-4 reels a day how can we get so many stories , moral lessons or facts 
+-> art style is 2d stickman and not animation so there is a scoe for up , this page only has slideshow
+-> average like on high performing reels like this re 40-50 k, comments are 400-600 and shares are 4-6 k

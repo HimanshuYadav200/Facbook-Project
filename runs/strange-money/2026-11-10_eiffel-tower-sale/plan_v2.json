@@ -1,0 +1,326 @@
+{
+ "version": 1,
+ "style": "explainer-fast",
+ "music": {
+  "track": "the-end-soundaudio",
+  "volume": 0.05
+ },
+ "cutSfxVolume": 0.3,
+ "tailSeconds": 0.8,
+ "notes": "Draft 1: 33 shots, ~1.6 s each; actors = green-keyed cut-outs from img/green/ (key_green.py).",
+ "shots": [
+  {
+   "from": 0,
+   "img": "bg_paris_street.webp",
+   "cam": "pushIn",
+   "actors": [
+    {
+     "img": "g_lustig_point.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "pop",
+     "idle": "bob",
+     "at": 2
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "img": "s_eiffel_low.webp",
+   "cam": "tiltUp",
+   "fx": [
+    "punch"
+   ],
+   "sfx": "impact",
+   "sfxVolume": 0.35
+  },
+  {
+   "from": 8,
+   "img": "s_parisians_annoyed.webp",
+   "cam": "panR"
+  },
+  {
+   "from": 16,
+   "img": "s_worlds_fair.webp",
+   "cam": "dive",
+   "sfx": "sparkle",
+   "sfxVolume": 0.3
+  },
+  {
+   "from": 25,
+   "img": "s_rust_closeup.webp",
+   "cam": "pushIn"
+  },
+  {
+   "from": 31,
+   "img": "s_painters.webp",
+   "cam": "orbitL"
+  },
+  {
+   "from": 38,
+   "img": "bg_office_dark.webp",
+   "cam": "pullOut",
+   "actors": [
+    {
+     "img": "g_lustig_point.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "slideL",
+     "idle": "lean"
+    }
+   ]
+  },
+  {
+   "from": 45,
+   "img": "s_printing.webp",
+   "cam": "dive",
+   "sfx": "click"
+  },
+  {
+   "from": 49,
+   "img": "bg_ministry.webp",
+   "cam": "tiltDown",
+   "actors": [
+    {
+     "img": "g_lustig_point.png",
+     "x": 0.55,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "drop",
+     "idle": "breathe",
+     "flip": true
+    }
+   ]
+  },
+  {
+   "from": 57,
+   "img": "s_scrapyard.webp",
+   "cam": "panL"
+  },
+  {
+   "from": 65,
+   "img": "bg_hotel_lobby.webp",
+   "cam": "craneDown"
+  },
+  {
+   "from": 69,
+   "img": "s_meeting.webp",
+   "cam": "pushIn"
+  },
+  {
+   "from": 76,
+   "img": "s_tower_down.webp",
+   "cam": "roll",
+   "fx": [
+    "shake"
+   ],
+   "sfx": "crash",
+   "sfxVolume": 0.35
+  },
+  {
+   "from": 80,
+   "img": "s_iron_pile.webp",
+   "cam": "craneUp",
+   "sfx": "impact",
+   "sfxVolume": 0.3
+  },
+  {
+   "from": 87,
+   "img": "s_bidding.webp",
+   "cam": "whip"
+  },
+  {
+   "from": 91,
+   "img": "bg_hotel_lobby.webp",
+   "cam": "pushIn",
+   "actors": [
+    {
+     "img": "g_lustig_shh.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "pop",
+     "idle": "wobble"
+    }
+   ]
+  },
+  {
+   "from": 96,
+   "img": "s_outcry.webp",
+   "cam": "orbitR",
+   "sfx": "crowd_whoa",
+   "sfxVolume": 0.35
+  },
+  {
+   "from": 103,
+   "img": "s_paris_aerial.webp",
+   "cam": "dive"
+  },
+  {
+   "from": 110,
+   "img": "s_laughing.webp",
+   "cam": "roll",
+   "sfx": "crowd_laugh",
+   "sfxVolume": 0.35,
+   "focus": [
+    0.5,
+    0.78
+   ]
+  },
+  {
+   "from": 116,
+   "img": "bg_poisson_office.webp",
+   "cam": "pushIn",
+   "fx": [
+    "flash"
+   ],
+   "actors": [
+    {
+     "img": "g_poisson_happy.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.5,
+     "enter": "slideR",
+     "idle": "breathe"
+    }
+   ]
+  },
+  {
+   "from": 121,
+   "img": "s_poisson_dreamy.webp",
+   "cam": "tiltDown",
+   "sfx": "sparkle",
+   "sfxVolume": 0.3
+  },
+  {
+   "from": 126,
+   "img": "s_handshake.webp",
+   "cam": "pushIn",
+   "sfx": "cash",
+   "sfxVolume": 0.35
+  },
+  {
+   "from": 131,
+   "img": "s_bribe.webp",
+   "cam": "panR",
+   "sfx": "slide"
+  },
+  {
+   "from": 140,
+   "img": "bg_hotel_lobby.webp",
+   "cam": "pullOut",
+   "actors": [
+    {
+     "img": "g_poisson_happy.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.5,
+     "enter": "pop",
+     "idle": "hop"
+    }
+   ]
+  },
+  {
+   "from": 146,
+   "img": "s_poisson_gate.webp",
+   "cam": "orbitL"
+  },
+  {
+   "from": 155,
+   "img": "bg_station.webp",
+   "cam": "whip",
+   "actors": [
+    {
+     "img": "g_lustig_run.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.5,
+     "enter": "slideL",
+     "idle": "bob"
+    }
+   ]
+  },
+  {
+   "from": 165,
+   "img": "s_police_station.webp",
+   "cam": "craneDown"
+  },
+  {
+   "from": 173,
+   "img": "bg_poisson_office.webp",
+   "cam": "pushIn",
+   "actors": [
+    {
+     "img": "g_poisson_hide.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.52,
+     "enter": "pop",
+     "idle": "shake"
+    }
+   ]
+  },
+  {
+   "from": 179,
+   "img": "s_eiffel_low.webp",
+   "cam": "pullOut"
+  },
+  {
+   "from": 185,
+   "img": "bg_paris_street.webp",
+   "cam": "panL",
+   "actors": [
+    {
+     "img": "g_lustig_point.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "drop",
+     "idle": "breathe"
+    }
+   ]
+  },
+  {
+   "from": 194,
+   "img": "s_meeting.webp",
+   "cam": "orbitR"
+  },
+  {
+   "from": 200,
+   "img": "bg_hotel_lobby.webp",
+   "cam": "pushIn",
+   "fx": [
+    "flash"
+   ],
+   "sfx": "impact",
+   "sfxVolume": 0.3,
+   "actors": [
+    {
+     "img": "g_gendarme.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.5,
+     "enter": "slideR",
+     "idle": "shake"
+    }
+   ]
+  },
+  {
+   "from": 206,
+   "img": "bg_ship.webp",
+   "cam": "craneUp",
+   "actors": [
+    {
+     "img": "g_lustig_run.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.48,
+     "enter": "slideL",
+     "idle": "bob"
+    }
+   ]
+  }
+ ]
+}

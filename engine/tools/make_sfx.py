@@ -1,7 +1,9 @@
 """Generate simple placeholder sound effects from code (no licences needed).
 
 Usage: engine/.venv/bin/python engine/tools/make_sfx.py [output_dir]   (default: library/sfx)
-Creates whoosh, pop, thud, ding, boing, crash, tick, cash, vinyl bed and room tone as WAV files.
+Creates whoosh, pop, thud, ding, boing, crash, tick, cash, vinyl bed, room tone, and the explainer-fast set
+(swoosh1-4, riser, impact, sparkle, click, slide, crowd_laugh, crowd_whoa via Kokoro) as WAV files.
+Files that already exist are skipped (never overwritten).
 These are placeholders; real, licensed SFX get added to library/sfx with an entry in library/sfx.json.
 """
 import sys
@@ -124,6 +126,102 @@ def room_tone(sec=40):
     return loop_edges(norm(brown, 0.12))
 
 
+# --- explainer-fast set (2026-11-10): one hit per shot, so several variants that don't sound repeated ---
+# Each uses its own seeded generator, so making one never changes another.
+
+def swoosh(sec, f0, f1, seed, peak=0.7):
+    """Air whoosh: filtered noise sweeping f0 -> f1, fast rise and a longer tail (feels like a camera move)."""
+    global rng
+    rng = np.random.default_rng(seed)
+    x = sweep_noise(sec, f0, f1)
+    n = len(x)
+    rise = int(n * 0.35)
+    shape = np.concatenate([np.linspace(0, 1, rise) ** 2, np.exp(-np.linspace(0, 4, n - rise))])
+    return norm(x * shape, peak)
+
+
+def riser():
+    """Rising tone + noise for 1.2 s: tension before a reveal."""
+    global rng
+    rng = np.random.default_rng(21)
+    tt = t(1.2)
+    f = np.geomspace(180, 1400, len(tt))
+    tone = np.sin(2 * np.pi * np.cumsum(f) / SR) * 0.4
+    air = sweep_noise(1.2, 400, 8000) * 0.8
+    shape = np.linspace(0, 1, len(tt)) ** 2
+    shape[-int(0.03 * SR):] *= np.linspace(1, 0, int(0.03 * SR))
+    return norm((tone + air) * shape, 0.7)
+
+
+def impact():
+    """Deep boom + crack: a big reveal or something falling."""
+    global rng
+    rng = np.random.default_rng(22)
+    tt = t(0.9)
+    body = np.sin(2 * np.pi * np.cumsum(np.geomspace(90, 30, len(tt))) / SR) * np.exp(-tt * 5)
+    crack = rng.standard_normal(len(tt)) * np.exp(-tt * 40)
+    return norm(body + 0.5 * crack)
+
+
+def sparkle():
+    """Quick rising bell notes: an idea, a shiny object, money appearing."""
+    notes = [1760, 2217, 2637, 3520]
+    out = np.zeros(int(SR * 0.7))
+    for k, f in enumerate(notes):
+        tt = t(0.4)
+        s = np.sin(2 * np.pi * f * tt) * np.exp(-tt * 12) * (0.6 + 0.1 * k)
+        a = int(k * 0.06 * SR)
+        out[a:a + len(s)] += s
+    return norm(out, 0.5)
+
+
+def click():
+    """Camera shutter / stamp click: two tiny noise bursts."""
+    global rng
+    rng = np.random.default_rng(23)
+    b = lambda: rng.standard_normal(int(SR * 0.012)) * np.exp(-np.linspace(0, 8, int(SR * 0.012)))
+    return norm(np.concatenate([b(), np.zeros(int(SR * 0.05)), b() * 0.7]), 0.6)
+
+
+def slide():
+    """Paper / object sliding across a table: soft band-passed noise, 0.5 s."""
+    global rng
+    rng = np.random.default_rng(24)
+    x = sweep_noise(0.5, 1500, 2500) - sweep_noise(0.5, 300, 500)
+    return norm(x * np.sin(np.linspace(0, np.pi, len(x))), 0.4)
+
+
+def kokoro_crowd(line, voices, seed):
+    """A few Kokoro voices saying the same short reaction, offset and panned to sound like a small crowd.
+    shortcut: synthetic voices, a bit robotic; swap for a CC0 crowd recording when we add a pack."""
+    from kokoro import KPipeline
+    from scipy.signal import resample_poly
+    r = np.random.default_rng(seed)
+    pipes, tracks = {}, []
+    for v in voices:
+        p = pipes.setdefault(v[0], KPipeline(lang_code=v[0]))
+        a = np.concatenate([np.asarray(x) for _, _, x in p(line, voice=v, speed=1.15 + 0.15 * r.random())])
+        tracks.append(resample_poly(a.astype(np.float64), 147, 80))  # 24 kHz -> 44.1 kHz
+    n = max(len(a) for a in tracks) + int(0.3 * SR)
+    st = np.zeros((n, 2))
+    for a in tracks:
+        off, pan = int(r.uniform(0, 0.25) * SR), r.uniform(0.2, 0.8)
+        st[off:off + len(a), 0] += a * (1 - pan)
+        st[off:off + len(a), 1] += a * pan
+    return norm(st, 0.6)
+
+
+NEW = {
+    "swoosh1": lambda: swoosh(0.30, 400, 7000, 11),
+    "swoosh2": lambda: swoosh(0.45, 250, 5000, 12),
+    "swoosh3": lambda: swoosh(0.22, 800, 9000, 13, 0.6),
+    "swoosh4": lambda: swoosh(0.60, 6000, 300, 14),  # falling: camera dives down
+    "riser": riser, "impact": impact, "sparkle": sparkle, "click": click, "slide": slide,
+    "crowd_laugh": lambda: kokoro_crowd("Ha ha ha ha!", ["am_adam", "am_echo", "am_michael", "af_bella", "am_eric"], 31),
+    "crowd_whoa": lambda: kokoro_crowd("Whoa!", ["am_adam", "am_liam", "af_nicole", "am_onyx"], 32),
+}
+
+
 def main():
     out = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parents[2] / "library" / "sfx"
     out.mkdir(parents=True, exist_ok=True)
@@ -131,6 +229,13 @@ def main():
         "whoosh": whoosh, "pop": pop, "thud": thud, "ding": ding, "boing": boing,
         "crash": crash, "tick": tick, "cash": cash, "vinyl": vinyl_bed, "room": room_tone,
     }.items():
+        if (out / f"{name}.wav").exists():
+            continue  # never overwrite a sound already in use
+        sf.write(out / f"{name}.wav", fn().astype(np.float32), SR)
+        print("wrote", out / f"{name}.wav")
+    for name, fn in NEW.items():
+        if (out / f"{name}.wav").exists():
+            continue
         sf.write(out / f"{name}.wav", fn().astype(np.float32), SR)
         print("wrote", out / f"{name}.wav")
 

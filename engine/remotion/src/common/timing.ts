@@ -1,5 +1,5 @@
 // Shared timing + run-folder loading. The render's "public dir" IS the run folder
-// (render.sh passes --public-dir runs/<id>), so staticFile("plan.json") reads that run's plan.
+// (render.sh passes --public-dir runs/<niche>/<id>), so staticFile("plan.json") reads that run's plan.
 import { staticFile } from "remotion";
 
 export type Word = { word: string; start: number; end: number };

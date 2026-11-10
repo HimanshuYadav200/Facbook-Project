@@ -1,0 +1,24 @@
+# STYLE (prepend to every prompt): Black and white pencil sketch illustration, vertical 9:16. Simple stickman characters with big round blank white heads, two small dot eyes, a small mouth, no nose, no hair (women have long hair), smooth white bodies with soft grey shading. Clean, detailed hand-drawn background in light grey. Soft vignette. No text, no words, no letters, no numbers, no logos anywhere.
+# CAST: OLDER BROTHER = stickman in a fitted dark blazer with a wristwatch. YOUNGER BROTHER = stickman in a plain light hoodie with a small backpack. Same height, same round heads.
+01_first_day: The older brother and the younger brother standing side by side in a modern office lobby on their first day, each holding an envelope, smiling.
+02_new_car: The older brother proudly standing next to a shiny new car in a car dealership, arms spread wide.
+03_dinners: The older brother in new clothes eating at a fancy restaurant table with shopping bags at his feet.
+04_old_bike: The younger brother pushing an old bicycle along a quiet street, calm smile.
+05_saving_jar: The younger brother at a small kitchen table putting folded money into a glass jar, before anything else.
+06_laughing: The older brother laughing and pointing at the younger brother, who stands calmly beside his old bicycle, in front of a house.
+07_company_closed: An office building with closed glass doors, chains on the handles, grey cloudy sky, empty parking lot.
+08_lost_jobs: The older brother and the younger brother walking out of the office building, each carrying a cardboard box of belongings, heads down.
+09_car_debt: The older brother standing beside his car in a driveway holding a stack of bills, worried face.
+10_empty_wallet: Close view of the older brother holding an open empty wallet, sad face, sitting on a sofa.
+11_bank_calls: The older brother at night in a dark living room, holding a ringing phone, stressed, sweat drops, one lamp on.
+12_did_the_math: The younger brother sitting at a desk with a notebook, a pencil and a calculator, thinking calmly, warm desk lamp.
+13_calm_home: The younger brother relaxing in a tidy small apartment with groceries on the counter, peaceful face.
+14_new_job: The younger brother shaking hands with a smiling manager in a bright new office.
+15_knock_night: Night, the older brother knocking on the front door of a small house, porch light on.
+16_doorway: The younger brother opening the door, the older brother standing outside looking sad and tired, night.
+17_explaining: The two brothers sitting at a kitchen table at night, the younger brother explaining gently with an open hand, the older brother listening.
+18_paid_everyone: The older brother handing money to a car salesman, a waiter and a shop cashier, money flowing away from him, three small scenes in one picture.
+19_paid_myself: The younger brother putting a coin into a glass savings jar that is half full, small smile, soft light.
+20_time: The younger brother sitting peacefully on a park bench at sunrise, a big old clock tower behind him, birds in the sky.
+21_trapped_free: Split picture: on the left the older brother behind a window looking at bills, on the right the younger brother walking freely on an open road.
+22_first_paycheck: A young stickman holding his first paycheck envelope and looking at a phone, standing in a bright room, hopeful.

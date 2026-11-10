@@ -1,4 +1,25 @@
 {
  "_about": "Index of library/music/*.mp3. Plans name a track by `name`. Only tracks licensed for monetized Facebook + YouTube use.",
- "tracks": []
+ "tracks": [
+  {
+   "name": "the-end-soundaudio",
+   "title": "The End",
+   "artist": "unknown",
+   "mood": "calm, soft",
+   "length_s": 162,
+   "loudness_lufs": -13.3,
+   "volume_hint": "0.08 under a Kokoro voice",
+   "licence": "non-copyright / royalty-free (owner, 2026-11-10); keep the download page or licence note in case of a claim",
+   "source": "owner, 2026-11-10 (renamed from The-End-SoundAudio.mp3)",
+   "used_by": [
+    "stickman-calm"
+   ]
+  }
+ ],
+ "removed": [
+  {
+   "name": "okaya-whispers",
+   "why": "owner replaced it with the-end-soundaudio on 2026-11-10 (file deleted by owner); used in runs/stickman-money/2026-11-10_two-brothers-paycheck v3"
+  }
+ ]
 }

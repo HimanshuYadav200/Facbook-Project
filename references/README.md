@@ -17,3 +17,5 @@ Media files here are **not** pushed to GitHub (they may be other people's videos
 Current material:
 - `skulsy-finance/reel1_wolf_story/`: wolf + pig vintage story → style `vintage-story` (analysis: `docs/REFERENCE_ANALYSIS.md`)
 - `skulsy-finance/reel2_rewrat_fastcut/`: RewRat flat 2D fast cuts → style `flat-fastcut`
+- `stickman-psychology/`: 5 stickman relationship / moral-lesson reels (calm slideshow) → analysis in `stickman-psychology/analysis.md`; style + niche not decided yet
+- `Ricks-clips/`: 5 fast animated explainer shorts (strange true stories, loopholes) → analysis in `Ricks-clips/analysis.md`; niche + style not decided yet (reel 2 has no audio)

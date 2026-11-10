@@ -2,7 +2,7 @@
 
 | Symptom | Cause | Fix |
 |---|---|---|
-| Render stuck at "Waiting for root component to load" | (a) Node 26 in use; (b) Claude Code's sandbox blocks the local server Remotion's headless Chrome talks to | (a) render.sh forces Node 22; (b) run render.sh outside the sandbox (owner has allowed this; otherwise the owner types `! engine/tools/render.sh runs/<id>`) |
+| Render stuck at "Waiting for root component to load" | (a) Node 26 in use; (b) Claude Code's sandbox blocks the local server Remotion's headless Chrome talks to | (a) render.sh forces Node 22; (b) run render.sh outside the sandbox (owner has allowed this; otherwise the owner types `! engine/tools/render.sh runs/<niche>/<id>`) |
 | Caption shows a misspelled name | captions come from script.txt | fix spelling in script.txt, re-run voice.py |
 | voice.py warns "only N% heard as written" | Kokoro misread a word/number, or Whisper mis-heard | listen to voice.wav around the odd word; rewrite it ("A I" not "AI", "262 times" not "262x") |
 | Caption word "Skulsy" heard as "Skulce" | Whisper | harmless: captions use the script's spelling |

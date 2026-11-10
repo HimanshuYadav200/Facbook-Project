@@ -1,0 +1,526 @@
+{
+ "version": 1,
+ "style": "explainer-fast",
+ "music": {
+  "track": "the-end-soundaudio",
+  "volume": 0.05
+ },
+ "tailSeconds": 0.8,
+ "notes": "Draft 1: 33 shots, ~1.6 s each; actors = green-keyed cut-outs from img/green/ (key_green.py).",
+ "shots": [
+  {
+   "from": 0,
+   "img": "bg_paris_street.webp",
+   "cam": "pushIn",
+   "actors": [
+    {
+     "img": "g_lustig_point.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "pop",
+     "idle": "bob",
+     "at": 2
+    }
+   ],
+   "mg": [
+    {
+     "type": "label",
+     "text": "1925",
+     "y": 0.18,
+     "at": 1
+    },
+    {
+     "type": "stamp",
+     "text": "SOLD!",
+     "y": 0.36,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "img": "s_eiffel_low.webp",
+   "cam": "tiltUp",
+   "fx": [
+    "punch"
+   ],
+   "sfx": "impact",
+   "hold": 0.35
+  },
+  {
+   "from": 8,
+   "img": "s_parisians_annoyed.webp",
+   "cam": "panR",
+   "hold": 0.15
+  },
+  {
+   "from": 16,
+   "img": "s_worlds_fair.webp",
+   "cam": "dive",
+   "sfx": "sparkle",
+   "mg": [
+    {
+     "type": "label",
+     "text": "1889",
+     "y": 0.2,
+     "rot": 4,
+     "at": 22
+    }
+   ]
+  },
+  {
+   "from": 25,
+   "img": "s_rust_closeup.webp",
+   "cam": "pushIn",
+   "mg": [
+    {
+     "type": "circle",
+     "x": 0.5,
+     "y": 0.45,
+     "size": 0.55
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "img": "s_painters.webp",
+   "cam": "orbitL",
+   "mg": [
+    {
+     "type": "counter",
+     "to": 60,
+     "text": "tons of paint",
+     "y": 0.2,
+     "at": 31
+    },
+    {
+     "type": "label",
+     "text": "every 7 years",
+     "y": 0.42,
+     "at": 35
+    }
+   ],
+   "hold": 0.2
+  },
+  {
+   "from": 38,
+   "img": "bg_office_dark.webp",
+   "cam": "pullOut",
+   "actors": [
+    {
+     "img": "g_lustig_point.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "slideL",
+     "idle": "lean"
+    }
+   ],
+   "mg": [
+    {
+     "type": "label",
+     "text": "Victor Lustig",
+     "y": 0.2,
+     "at": 41
+    }
+   ]
+  },
+  {
+   "from": 45,
+   "img": "s_printing.webp",
+   "cam": "dive",
+   "sfx": "click",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "FAKE",
+     "y": 0.4,
+     "at": 46
+    }
+   ],
+   "hold": 0.2
+  },
+  {
+   "from": 49,
+   "img": "bg_ministry.webp",
+   "cam": "tiltDown",
+   "actors": [
+    {
+     "img": "g_lustig_point.png",
+     "x": 0.55,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "drop",
+     "idle": "breathe",
+     "flip": true
+    }
+   ]
+  },
+  {
+   "from": 57,
+   "img": "s_scrapyard.webp",
+   "cam": "panL"
+  },
+  {
+   "from": 65,
+   "img": "bg_hotel_lobby.webp",
+   "cam": "craneDown"
+  },
+  {
+   "from": 69,
+   "img": "s_meeting.webp",
+   "cam": "pushIn",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "TOP SECRET",
+     "y": 0.25,
+     "rot": -8,
+     "at": 72
+    }
+   ]
+  },
+  {
+   "from": 76,
+   "img": "s_tower_down.webp",
+   "cam": "roll",
+   "fx": [
+    "shake"
+   ],
+   "sfx": "crash",
+   "mg": [
+    {
+     "type": "arrow",
+     "dir": "down",
+     "x": 0.8,
+     "y": 0.28,
+     "size": 0.22
+    }
+   ],
+   "hold": 0.35
+  },
+  {
+   "from": 80,
+   "img": "s_iron_pile.webp",
+   "cam": "craneUp",
+   "mg": [
+    {
+     "type": "counter",
+     "to": 7300,
+     "text": "tons of iron",
+     "y": 0.2,
+     "at": 83
+    }
+   ],
+   "hold": 0.35
+  },
+  {
+   "from": 87,
+   "bg": "#2f8f46",
+   "cam": "pushIn",
+   "fx": [
+    "punch"
+   ],
+   "mg": [
+    {
+     "type": "speedLines"
+    },
+    {
+     "type": "money",
+     "dir": "rain",
+     "size": 0.22
+    },
+    {
+     "type": "arrow",
+     "dir": "up",
+     "y": 0.38,
+     "size": 0.34,
+     "sfx": null
+    }
+   ]
+  },
+  {
+   "from": 91,
+   "img": "bg_hotel_lobby.webp",
+   "cam": "pushIn",
+   "actors": [
+    {
+     "img": "g_lustig_shh.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "pop",
+     "idle": "wobble"
+    }
+   ],
+   "mg": [
+    {
+     "type": "label",
+     "text": "shhh!",
+     "y": 0.2,
+     "rot": 6
+    }
+   ]
+  },
+  {
+   "from": 96,
+   "img": "s_outcry.webp",
+   "cam": "orbitR",
+   "sfx": "crowd_whoa",
+   "hold": 0.2,
+   "sfxVolume": 0.25
+  },
+  {
+   "from": 103,
+   "img": "s_paris_aerial.webp",
+   "cam": "dive",
+   "mg": [
+    {
+     "type": "circle",
+     "x": 0.5,
+     "y": 0.5,
+     "size": 0.45,
+     "at": 104
+    }
+   ]
+  },
+  {
+   "from": 110,
+   "img": "s_laughing.webp",
+   "cam": "roll",
+   "sfx": "crowd_laugh",
+   "focus": [
+    0.5,
+    0.78
+   ],
+   "mg": [
+    {
+     "type": "marks",
+     "text": "?!",
+     "y": 0.2,
+     "at": 112
+    }
+   ],
+   "sfxVolume": 0.25
+  },
+  {
+   "from": 116,
+   "img": "bg_poisson_office.webp",
+   "cam": "pushIn",
+   "fx": [
+    "flash"
+   ],
+   "actors": [
+    {
+     "img": "g_poisson_happy.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.5,
+     "enter": "slideR",
+     "idle": "breathe"
+    }
+   ]
+  },
+  {
+   "from": 121,
+   "img": "s_poisson_dreamy.webp",
+   "cam": "tiltDown",
+   "sfx": "sparkle"
+  },
+  {
+   "from": 126,
+   "img": "s_handshake.webp",
+   "cam": "pushIn",
+   "mg": [
+    {
+     "type": "money",
+     "dir": "rain"
+    }
+   ]
+  },
+  {
+   "from": 131,
+   "img": "s_bribe.webp",
+   "cam": "panR",
+   "sfx": "slide",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "BRIBE!",
+     "y": 0.25,
+     "at": 135
+    }
+   ],
+   "hold": 0.25
+  },
+  {
+   "from": 140,
+   "img": "bg_hotel_lobby.webp",
+   "cam": "pullOut",
+   "actors": [
+    {
+     "img": "g_poisson_happy.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.5,
+     "enter": "pop",
+     "idle": "hop"
+    }
+   ],
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "DEAL!",
+     "y": 0.25,
+     "rot": 8,
+     "at": 144
+    }
+   ],
+   "hold": 0.3
+  },
+  {
+   "from": 146,
+   "img": "s_poisson_gate.webp",
+   "cam": "orbitL",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "NO DEAL",
+     "y": 0.22,
+     "at": 152
+    }
+   ]
+  },
+  {
+   "from": 155,
+   "img": "bg_station.webp",
+   "cam": "whip",
+   "actors": [
+    {
+     "img": "g_lustig_run.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.5,
+     "enter": "slideL",
+     "idle": "bob"
+    }
+   ],
+   "mg": [
+    {
+     "type": "speedLines"
+    },
+    {
+     "type": "money",
+     "dir": "left",
+     "size": 0.2
+    }
+   ],
+   "hold": 0.25
+  },
+  {
+   "from": 165,
+   "img": "s_police_station.webp",
+   "cam": "craneDown",
+   "mg": [
+    {
+     "type": "cross",
+     "x": 0.55,
+     "y": 0.28,
+     "size": 0.42,
+     "at": 168
+    }
+   ]
+  },
+  {
+   "from": 173,
+   "img": "bg_poisson_office.webp",
+   "cam": "pushIn",
+   "actors": [
+    {
+     "img": "g_poisson_hide.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.52,
+     "enter": "pop",
+     "idle": "shake"
+    }
+   ]
+  },
+  {
+   "from": 179,
+   "img": "s_eiffel_low.webp",
+   "cam": "pullOut"
+  },
+  {
+   "from": 185,
+   "img": "bg_paris_street.webp",
+   "cam": "panL",
+   "actors": [
+    {
+     "img": "g_lustig_point.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "drop",
+     "idle": "breathe"
+    }
+   ]
+  },
+  {
+   "from": 194,
+   "img": "s_meeting.webp",
+   "cam": "orbitR",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "AGAIN?!",
+     "y": 0.25,
+     "rot": -10,
+     "at": 196
+    }
+   ]
+  },
+  {
+   "from": 200,
+   "img": "bg_hotel_lobby.webp",
+   "cam": "pushIn",
+   "fx": [
+    "flash"
+   ],
+   "sfx": "impact",
+   "actors": [
+    {
+     "img": "g_gendarme.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.5,
+     "enter": "slideR",
+     "idle": "shake"
+    }
+   ],
+   "hold": 0.3
+  },
+  {
+   "from": 206,
+   "img": "bg_ship.webp",
+   "cam": "craneUp",
+   "actors": [
+    {
+     "img": "g_lustig_run.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.48,
+     "enter": "slideL",
+     "idle": "bob"
+    }
+   ],
+   "mg": [
+    {
+     "type": "speedLines",
+     "at": 207
+    }
+   ]
+  }
+ ]
+}

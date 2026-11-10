@@ -1,6 +1,6 @@
 """Narration + word timings for a run: script.txt → voice.wav (Kokoro) → words.json (mlx-whisper).
 
-Usage: engine/.venv/bin/python engine/tools/voice.py runs/<id> --voice bm_george --speed 0.95 [--reuse-voice]
+Usage: engine/.venv/bin/python engine/tools/voice.py runs/<niche>/<id> --voice bm_george --speed 0.95 [--sentence-gap 0.45] [--reuse-voice]
 
 - Caption words always come from script.txt; Whisper only supplies the timing (it misspells names).
 - The Kokoro language comes from the voice name's first letter (a = American, b = British, ...).
@@ -23,10 +23,33 @@ WHISPER = "mlx-community/whisper-small.en-mlx"
 MIN_MATCH = 0.85  # below this share of matched words, the voice probably misread the script
 
 
-def make_voice(text, voice, speed, wav_path):
+def split_sentences(text):
+    """Split after . ? ! (keeping them); 'Time.' stays its own sentence."""
+    return [s for s in re.split(r"(?<=[.?!])\s+", text.strip()) if s]
+
+
+def trim_silence(audio, threshold=0.01, keep=0.04):
+    """Cut Kokoro's own lead-in/out silence (it pads every call), keeping a few ms so words aren't clipped."""
+    loud = np.flatnonzero(np.abs(audio) > threshold)
+    if not len(loud):
+        return audio
+    k = int(keep * SR)
+    return audio[max(0, loud[0] - k): loud[-1] + k + 1]
+
+
+def make_voice(text, voice, speed, wav_path, sentence_gap=0.0):
     from kokoro import KPipeline
     pipe = KPipeline(lang_code=voice[0])
-    chunks = [audio for _, _, audio in pipe(text, voice=voice, speed=speed)]
+    if sentence_gap <= 0:
+        chunks = [audio for _, _, audio in pipe(text, voice=voice, speed=speed)]
+    else:
+        # Kokoro runs long text together with almost no pauses; calm styles need a breath between sentences.
+        gap = np.zeros(int(sentence_gap * SR), dtype=np.float32)
+        chunks = []
+        for s in split_sentences(text):
+            audio = np.concatenate([np.asarray(a) for _, _, a in pipe(s, voice=voice, speed=speed)])
+            chunks += [trim_silence(audio), gap]
+        chunks = chunks[:-1]
     if not chunks:
         raise RuntimeError("Kokoro produced no audio")
     audio = np.concatenate([np.asarray(c) for c in chunks])
@@ -78,6 +101,8 @@ def main(argv=None):
     ap.add_argument("run")
     ap.add_argument("--voice", required=True, help="Kokoro voice, e.g. bm_george, am_puck")
     ap.add_argument("--speed", type=float, default=1.0)
+    ap.add_argument("--sentence-gap", type=float, default=0.0,
+                    help="seconds of silence between sentences (0 = Kokoro's own pacing; stickman-calm uses ~0.45)")
     ap.add_argument("--reuse-voice", action="store_true", help="only redo timings for an existing voice.wav")
     a = ap.parse_args(argv)
     run = Path(a.run)
@@ -89,10 +114,10 @@ def main(argv=None):
     if a.reuse_voice and wav.exists():
         dur = sf.info(wav).duration
     else:
-        dur = make_voice(text, a.voice, a.speed, wav)
+        dur = make_voice(text, a.voice, a.speed, wav, a.sentence_gap)
     words, match = align_to_script(text, word_timings(wav), dur)
     (run / "words.json").write_text(json.dumps(
-        {"duration": round(dur, 3), "voice": a.voice, "speed": a.speed, "match": round(match, 3), "words": words}, indent=1))
+        {"duration": round(dur, 3), "voice": a.voice, "speed": a.speed, "sentence_gap": a.sentence_gap, "match": round(match, 3), "words": words}, indent=1))
     print(f"voice {dur:.2f}s, {len(words)} words, {match:.0%} heard as written -> {run}")
     if match < MIN_MATCH:
         print(f"WARNING: only {match:.0%} of words heard as written. Listen to voice.wav: the voice may have misread "

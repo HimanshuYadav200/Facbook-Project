@@ -1,6 +1,6 @@
 # Architecture: faceless video engine
 
-> Status: **v1.2 APPROVED (2026-11-09) and BUILT (B1–B5)**, except the first render through the new renderer (blocked by the sandbox, see §13). Audit of old code: `docs/LEGACY_AUDIT.md`.
+> Status: **v1.3 (2026-11-10)**: v1.2 built (B1–B5) + niches isolated (N1, §4a). Plan N2–N6 for the stickman-money niche approved, in progress (§12). Audit of old code: `docs/LEGACY_AUDIT.md`.
 > Read with `docs/CONTEXT.md` (requirements and decisions). This file explains *how the engine works*, *where each part lives*, and *how to fix it*. The change log is at the bottom.
 
 ---
@@ -16,7 +16,7 @@ Claude Code (owner's Pro plan) is the **director**: it researches, writes the sc
 ```
 👤 topic / niche
    │
-1. 🧠 Brief + research        → runs/<id>/brief.md, data/*.json, facts.json
+1. 🧠 Brief + research        → runs/<niche>/<id>/brief.md, data/*.json, facts.json
    │   ⚙ fetch_data.py (Tiingo, Alpha Vantage, FRED, SEC EDGAR; cached)
    │   ⚙ finance_calc.py (returns, drops, inflation; tested)   (§6a)
 2. 🧠 Script                  → script.txt          (niche skill: patterns, tone, length)
@@ -53,7 +53,9 @@ Finance-Agent(short-form)/
 │   ├─ video-core/
 │   ├─ style-vintage-story/   (today's Style A)
 │   ├─ style-flat-fastcut/    (today's Style B)
-│   └─ niche-skulsy-finance/
+│   ├─ niche-skulsy-finance/  SKILL.md + niche.json (machine rules: length, styles, banned)
+│   ├─ niche-stickman-money/
+│   └─ style-stickman-calm/
 ├─ engine/                    the code
 │   ├─ tools/                 small Python/shell scripts, one job each (§5)
 │   ├─ remotion/              renderer: common/ parts + styles/<style>/
@@ -65,7 +67,7 @@ Finance-Agent(short-form)/
 │   ├─ characters/skulsy/     owned character art (SVG rig, pose images)
 │   └─ fonts/
 ├─ references/<niche>/        owner's screenshots, reels, notes → analysis.md
-├─ runs/<date>_<slug>/        one folder per video (§7)
+├─ runs/<niche>/<date>_<slug>/  one folder per video, grouped by niche (§7)
 └─ archive/                   old files kept for reference, not used by the engine
 ```
 
@@ -111,13 +113,25 @@ video-core/
 3. Claude proposes the exact changes to the style or niche skill (and Remotion code if a new visual is needed); owner agrees; Claude applies them.
 4. Change logged in `docs/CONTEXT.md`. Next video uses the new rules automatically.
 
-**New niche** = new `niche-*` skill (+ a new `style-*` skill and Remotion style folder only if the look is new). Core and tools stay the same.
+**New niche** = new `niche-*` skill with its `niche.json` (+ a new `style-*` skill and Remotion style folder only if the look is new). Core and tools stay the same.
+
+## 4a. Niche isolation
+
+Several niches run side by side (Skulsy finance, stickman money, later stickman relationships…). They must never share rules by accident.
+
+| Separate per niche | Shared by all niches |
+|---|---|
+| `.claude/skills/niche-<n>/` (SKILL.md, topic bank, `niche.json`) | engine tools, Remotion styles (a look can serve many niches) |
+| `references/<n>/`, `library/characters/<n or cast>/` | `library/sfx/`, `library/music/` |
+| `runs/<n>/<date>_<slug>/` | `video-core` skill |
+
+**`niche.json`** holds the rules the tools enforce: `length_seconds` [min, max], `styles` (first = default), `banned` phrases. `new_run.py --niche <n>` (required) copies it into the run; `check_plan.py` and `finish.py` read the run's copy (shared `load_niche()` in check_plan.py). Why a copy: editing a niche later never changes or breaks old runs. Voice + speed stay in the niche SKILL.md, because Claude picks them, not a tool.
 
 ## 5. Engine tools (each one small, one job, runnable by hand)
 
 | Tool | In → Out | Notes |
 |---|---|---|
-| `new_run.py <slug>` | → `runs/<date>_<slug>/` with empty files | So every run has the same shape |
+| `new_run.py <slug> --niche <n>` | → `runs/<n>/<date>_<slug>/` with empty files + `niche.json` copy | So every run has the same shape and its niche's rules |
 | `fetch_data.py` | exact ticker/series + dates → `data/<name>.json` | Tiingo daily adjusted + Alpha Vantage adjusted (cross-check), FRED, SEC EDGAR. Errors/rate limits never cached (§6a) |
 | `finance_calc.py` | data → numbers for `facts.json` | $X invested, return %, CAGR, peak-to-trough, inflation-adjusted. Has tests |
 | `voice.py` | `script.txt` → `voice.wav`, `words.json` | Today's `voice_and_timing.py`. Voice + speed come from the niche skill. Caption words from script, timing from Whisper |
@@ -125,7 +139,7 @@ video-core/
 | `match_images.py` | `incoming/` → `img/shot_XX.png` | Order by time, drop duplicates (md5), report missing |
 | `check_plan.py` | run folder → OK or a list of errors | §6 |
 | `render.sh` | run folder → `out/raw.mp4` | Node 22; stages plan/words/voice/data/img + library SFX/music as APFS clones in `engine/remotion/.stage/` and passes it as `--public-dir` (keeps big out/ files out of the bundle) |
-| `finish.py` | `raw.mp4` → `final.mp4` | −14 LUFS (two-pass); fails if length outside 2:00–2:48, black frames, or loudness off |
+| `finish.py` | `raw.mp4` → `final.mp4` | −14 LUFS (two-pass); fails if length outside the run's `niche.json` limits, black frames, or loudness off |
 | `facts_review.py` | `facts.json` → `review/facts_review.md` | owner's manual check table |
 | `contact_sheet.py` | `final.mp4` + plan → `review/sheet_N.jpg` + `sheets.txt` | One frame per shot, 40 per sheet; labels in sheets.txt (this ffmpeg can't draw text) |
 | `make_sfx.py` | → placeholder SFX | Kept until a real SFX library exists |
@@ -161,7 +175,7 @@ Style-specific shot fields (motion, grade, layers, rig poses, …) are listed in
 - an image, SFX or music file it names doesn't exist;
 - a chart/teaching shot has no `teach` sentence (explanation test, written down);
 - **a number in `script.txt` is not in `facts.json`** (every $ / % / year must have a source);
-- total length will fall outside 2:00–2:48.
+- total length will fall outside the run's `niche.json` limits.
 
 `facts.json` = every number the script uses: value, unit, date, source URL/API, how it was computed (e.g. "peak 2021-11-29 → trough 2022-10-14, adjusted close").
 
@@ -178,7 +192,8 @@ Full reasoning and the bugs found in the old method: `docs/RESEARCH_REVIEW.md`.
 ## 7. A run folder
 
 ```
-runs/2026-11-12_nvda-1000/
+runs/skulsy-finance/2026-11-12_nvda-1000/
+  niche.json        copy of the niche's rules at creation time
   brief.md          topic, angle, niche, style, target length
   facts.json        every number + its source
   data/             raw data (nvda.json …)
@@ -242,7 +257,7 @@ Real usage per video is measured with `/usage` on the first production video (bu
 **Version control + GitHub:** `git init` in B1 with a `.gitignore` written **before the first commit**. After cleanup the owner creates a GitHub repo and we push. Never pushed:
 - `.env` (API keys);
 - all `*.db` caches;
-- `.venv/`, `node_modules/`, `runs/*/out/`, rendered/downloaded media (GitHub blocks files > 100 MB).
+- `.venv/`, `node_modules/`, `runs/*/*/out/`, rendered/downloaded media (GitHub blocks files > 100 MB).
 Before the first push, Claude lists exactly what will be uploaded for the owner to confirm. Recommend a **private** repo.
 
 ## 12. Build order (after approval)
@@ -259,11 +274,22 @@ Before the first push, Claude lists exactly what will be uploaded for the owner 
 
 Later (not in v1): real SFX/music library, voice auditions, Skulsy pose set, Blender scenes, more niches.
 
+**Stickman-money niche (approved 2026-11-10)**, from `references/stickman-psychology/analysis.md`:
+
+| Step | What | Done when |
+|---|---|---|
+| N1 | Niche isolation (§4a) | done: tests pass, old runs moved to `runs/skulsy-finance/` |
+| N2 | Voice auditions: ~4 deep male + ~4 smooth female Kokoro voices, same paragraph | done: owner picked `af_kore` 0.9 |
+| N3 | Stickman cast sheet: one fixed drawing-style prompt + cast (dad, mom, kids, grandparent, boss, worker) with simple identifiers; Meta AI via Chrome | done differently: owner chose no fixed cast; each story makes its own characters (style block + clothing identifiers, `style-stickman-calm`) |
+| N4 | Style `stickman-calm`: Remotion folder, check_plan entry, skill (grey images, slow push-in/pan, ~0.4 s cross-dissolve, vignette, 2-line karaoke captions upper third, music + soft ambience, shots 2–7 s) | done: `runs/stickman-money/2026-11-10_two-brothers-paycheck` |
+| N5 | Niche skill `niche-stickman-money`: formulas, 230–270 words, story numbers illustrative, real stats via facts.json, moral line + share cue, 100-idea topic bank | skill written; topic bank has 1 of 100 ideas |
+| N6 | First 1:20–1:40 video | rendered 87.7 s; waiting on owner review + music |
+
 ## 13. If something breaks, look here
 
 | Symptom | Where |
 |---|---|
-| Render hangs "Waiting for root component" | (a) Node 26 in use → `render.sh` uses Node 22; (b) Claude Code sandbox blocks headless Chrome ↔ local server → run the render outside the sandbox (`! engine/tools/render.sh runs/<id>`) |
+| Render hangs "Waiting for root component" | (a) Node 26 in use → `render.sh` uses Node 22; (b) Claude Code sandbox blocks headless Chrome ↔ local server → run the render outside the sandbox (`! engine/tools/render.sh runs/<niche>/<id>`) |
 | check_plan: number not in facts | fetch + `finance_calc.py`, add the fact; or fix the script |
 | Caption covers a sign (flat) | move the sign out of y 760–930 (check_plan warns) |
 | Caption word wrong | `script.txt` (captions come from it), then `voice.py` |
@@ -281,3 +307,11 @@ Later (not in v1): real SFX/music library, voice auditions, Skulsy pose set, Ble
 | 2026-11-09 | v1.1: new research approach (§6a), Claude in Chrome = default image source with extension as manual option, GitHub push rules (§11), build step B1b | Old research code produced wrong numbers (wrong ticker, unadjusted prices, cached errors); owner's choice on images; owner will push to GitHub after cleanup |
 | 2026-11-09 | v1.2 built: B1 (git, layout, archive), B1b (fetch_data, finance_calc + tests), B2 (engine/remotion renders any run; both tests converted with corrected numbers), B3 (check_plan, finish.py two-pass, contact_sheet, facts_review), B4 (skills video-core, style-vintage-story, style-flat-fastcut, niche-skulsy-finance), B5 (library/sfx + sfx.json, match_images). 16 issues fixed in our test code (`docs/LEGACY_AUDIT.md`) | Owner approved the plan and asked to fix every weak piece found on the way |
 | 2026-11-09 | Cleanup: legacy `YouTubeAutomation/` and `experiments/` removed (Trash; legacy code in git `3c768e1`); prompts from the Style A test kept as `runs/2026-11-09_test-vintage-nvda/image_prompts.txt` | Owner asked to remove everything the project doesn't use |
+| 2026-11-10 | v1.3: niche isolation: `niche.json` per niche (length, styles, banned) copied into each run; `new_run.py --niche` required; runs grouped as `runs/<niche>/`; check_plan/finish read the run's copy; banned list moved out of check_plan.py into niche.json; build steps N1–N6 for stickman-money | Owner starts a second niche (stickman money, 1:30) and asked for niches to be isolated; old hard-coded 2:00–2:48 rule would have refused every stickman video |
+| 2026-11-10 | v1.3: style `stickman-calm` (Remotion: slow eased camera, 0.4 s cross-dissolve, vignette, 2-line karaoke captions with per-shot `captionTop`); `voice.py --sentence-gap` (voice each sentence, trim Kokoro's padding, add a fixed pause); check_plan `TAIL_DEFAULT` per style; skills `style-stickman-calm`, `niche-stickman-money` | Kokoro runs long text together (64 s, 236 wpm, no pauses); per-sentence calls alone added ~1 s padding each (117 s). Meta images put heads at 20–45% height, so captions moved from the reference's 23% to 15% |
+| 2026-11-10 | AudioBed: music fades in 1 s and out over the last 2 s (all styles); first licensed track `okaya-whispers` in `library/music.json` | Track is 266 s, longer than videos: without a fade it stopped abruptly at the end |
+| 2026-11-10 | Stickman blinks: `find_eyes.py` (numpy + scipy, already pinned) finds round head + two solid dots → `eyes.json`; renderer paints the eyes shut 4 frames every 2.8–4.5 s, inside the moving image layer. `clip` shots (animated video, ≤ clip length, up to 8.5 s) in stickman-calm. Root loads optional `eyes.json`; render.sh stages it. Topic bank: 100 seeds | Owner approved blinks + animated shots + story bank. Meta AI video isn't available in Claude's browser session, so clips come from the owner. Breathing skipped: needs characters cut out of the background |
+| 2026-11-10 | v1.4: niche `strange-money` (true money stories, 45–70 s) + style `explainer-fast` (Remotion: 13 camera moves incl. CSS-3D tilts/orbits/dives, handheld wobble, 0.2 s dissolves, green-keyed cut-out **actors** with enter/idle motions, `fx` flash/shake/punch, 1–3-word captions at 70%, automatic whoosh per shot change). New tool `key_green.py` (numpy, no new package) + 4 tests; check_plan `check_explainer_shot` + 3 tests (47 total). `make_sfx.py`: 9 new generated sounds + 2 Kokoro crowd reactions; never overwrites existing files | Owner chose option B after the Ricks-clips analysis: the reference moves constantly inside every shot (animated 3D) and changes camera angle all the time; we get motion from camera moves + cut-out characters without new software. Blender (real 2.5D/3D) deferred until after draft 1 |
+| 2026-11-10 | v1.5: explainer-fast **motion graphics** (`mg` per shot, `Graphics.tsx`: stamp, label, counter, arrow, money, speedLines, marks, cross, circle, pointer; own sound per graphic; `mgVolume`) and `bg` colour-card shots. Reuses flat-fastcut `Props.tsx` (arrow, money, speed lines). check_plan: graphic types/dirs/fields/words, caption-overlap warning, on-screen graphic numbers must be in facts.json; 4 tests (51 total) | Blender test looked crude (owner); Blender parked for R&D. Owner liked the flat-fastcut motion graphics and asked to try them over the AI pictures (trial; v2 kept) |
+| 2026-11-10 | v1.5.1: explainer-fast graphics lose their own jitter/line boil; shot field `hold` delays a cut (0–0.6 s, renderer + checker lengths); checker: each graphic ≥ 1 s on screen | Owner: graphic effects collided with the shot wobble/shake, and cuts came before graphics could be seen |
+| 2026-11-10 | v1.6: 47 recorded SFX (Mixkit free licence + freesound CC0) in `library/sfx/*_r*`; explainer-fast **sound pools** (`styles/explainer-fast/sounds.json`, read by the renderer and check_plan): a plan names a pool, the renderer picks a variant per shot/graphic; per-file gain; new default volumes from a measured voice-muted render | Owner: SFX must improve (generated sounds weak, Kokoro crowd robotic); same whoosh on every cut sounded repetitive |

@@ -1,6 +1,6 @@
 """Contact sheets for review: one frame from the middle of every shot, 40 per sheet (8 x 5).
 
-Usage: engine/.venv/bin/python engine/tools/contact_sheet.py runs/<id> [--video out/preview.mp4]
+Usage: engine/.venv/bin/python engine/tools/contact_sheet.py runs/<niche>/<id> [--video out/preview.mp4]
 Writes review/sheet_1.jpg, sheet_2.jpg, ... and review/sheets.txt, which says what each tile is
 (tiles are numbered left to right, top to bottom, starting at 1). This ffmpeg build can't draw text,
 so the labels live in the .txt file instead of on the image.

@@ -1,0 +1,9 @@
+-> this guy ricks-clips make animation explainer vidoes 
+-> these get millions of views , and thousands of shares and comments 
+-> he uploads on youtube but i will upload on yt and fb both
+-> the voiceover in his video has a excitement and emotion mainly joy
+-> also it has very low background music 
+-> every video has various cuts and on every cut or new scene there is a sound effect matching to the theme of the song , but the volume of the song is less than that of the narrator
+-> hes post daily 1 reel
+-> in this i think he does all this with the motion graphics so make content like this channel we have focus more on the motion graphics even if we use ai image or video that needs to have some motion some wobblyness or some shaking effect and it can not last on the screen for more than 1 second since cuts in this type of video are very fast
+-> we need to generate better sfx for our video

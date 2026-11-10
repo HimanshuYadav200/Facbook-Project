@@ -1,6 +1,6 @@
 """Write review/facts_review.md: every number in the video with its source, for the owner to tick before upload.
 
-Usage: engine/.venv/bin/python engine/tools/facts_review.py runs/<id>
+Usage: engine/.venv/bin/python engine/tools/facts_review.py runs/<niche>/<id>
 Manual-check facts come first, then data facts, then illustrative (story-only) numbers.
 """
 import json

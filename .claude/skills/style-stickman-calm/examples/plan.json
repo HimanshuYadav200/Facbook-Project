@@ -1,0 +1,141 @@
+{
+ "version": 1,
+ "style": "stickman-calm",
+ "tailSeconds": 1.2,
+ "notes": "No music yet: owner is choosing tracks. Add \"music\": {\"track\": <name>, \"volume\": 0.12} when ready.",
+ "shots": [
+  {
+   "from": 0,
+   "type": "image",
+   "img": "01_first_day.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 18,
+   "type": "image",
+   "img": "02_new_car.webp",
+   "motion": "panR"
+  },
+  {
+   "from": 30,
+   "type": "image",
+   "img": "03_dinners.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 36,
+   "type": "image",
+   "img": "04_old_bike.webp",
+   "motion": "panL"
+  },
+  {
+   "from": 44,
+   "type": "image",
+   "img": "05_saving_jar.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 61,
+   "type": "image",
+   "img": "06_laughing.webp",
+   "motion": "pullOut"
+  },
+  {
+   "from": 81,
+   "type": "image",
+   "img": "07_company_closed.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 89,
+   "type": "image",
+   "img": "08_lost_jobs.webp",
+   "motion": "panUp"
+  },
+  {
+   "from": 98,
+   "type": "image",
+   "img": "09_car_debt.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 107,
+   "type": "image",
+   "img": "10_empty_wallet.webp",
+   "motion": "pushIn",
+   "captionTop": 0.68
+  },
+  {
+   "from": 112,
+   "type": "image",
+   "img": "11_bank_calls.webp",
+   "motion": "pullOut"
+  },
+  {
+   "from": 121,
+   "type": "image",
+   "img": "12_did_the_math.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 132,
+   "type": "image",
+   "img": "13_calm_home.webp",
+   "motion": "panR"
+  },
+  {
+   "from": 147,
+   "type": "image",
+   "img": "14_new_job.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 159,
+   "type": "image",
+   "img": "15_knock_night.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 170,
+   "type": "image",
+   "img": "16_doorway.webp",
+   "motion": "pullOut"
+  },
+  {
+   "from": 182,
+   "type": "image",
+   "img": "17_explaining.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 191,
+   "type": "image",
+   "img": "18_paid_everyone.webp",
+   "motion": "pullOut"
+  },
+  {
+   "from": 198,
+   "type": "image",
+   "img": "19_paid_myself.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 213,
+   "type": "image",
+   "img": "20_time.webp",
+   "motion": "panUp"
+  },
+  {
+   "from": 227,
+   "type": "image",
+   "img": "21_trapped_free.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 239,
+   "type": "image",
+   "img": "22_first_paycheck.webp",
+   "motion": "pushIn"
+  }
+ ]
+}

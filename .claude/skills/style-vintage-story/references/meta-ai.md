@@ -9,4 +9,4 @@ Default path: Claude drives meta.ai via Claude in Chrome. Manual option: owner r
 - Meta AI only keeps the newest 2 images loaded, and some follow-ups become "edits" with the old image layered underneath. Always check saved files for duplicates (`md5`).
 - The Meta Automation side panel can't be driven by Claude in Chrome (extensions can't control each other).
 
-- After downloading: move files into the run's `incoming/`, then `engine/.venv/bin/python engine/tools/match_images.py runs/<id>`.
+- After downloading: move files into the run's `incoming/`, then `engine/.venv/bin/python engine/tools/match_images.py runs/<niche>/<id>`.

@@ -16,5 +16,5 @@ Budget: read each sheet once per round; max 2 fix rounds. Write findings to `rev
 - [ ] Hook in the first 3 s states a specific situation or number.
 - [ ] Pace matches the style (shot lengths in sheets.txt).
 - [ ] SFX on cuts as the style says; music/beds not louder than voice (listen to 10 s at start, middle, end).
-- [ ] finish.py reported −14 ±1 LUFS, length 2:00–2:48, no black frames.
+- [ ] finish.py reported −14 ±1 LUFS, length inside the niche's limits (`niche.json`), no black frames.
 - [ ] `facts_review.md` and `upload.md` written; manual-check facts listed first.

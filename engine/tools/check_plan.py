@@ -1,12 +1,15 @@
 """Check a run before rendering. Prints every problem; exit code 1 if any ERROR.
 
-Usage: engine/.venv/bin/python engine/tools/check_plan.py runs/<id> [--test]
-  --test: skip the 2:00-2:48 total length rule (short test clips)
+Usage: engine/.venv/bin/python engine/tools/check_plan.py runs/<niche>/<id> [--test]
+  --test: skip the total length rule (short test clips)
+
+Niche rules (length, allowed styles, banned phrases) come from the run's own niche.json,
+copied in by new_run.py, so each niche's rules stay separate.
 
 What it checks (see .claude/skills/video-core/references/plan-schema.md):
   numbers   every number in script.txt and in on-screen text matches a facts.json entry (years excepted);
             amounts are written as digits ("$41,100", not "forty one thousand")
-  wording   no banned hype / advice phrases
+  wording   no banned phrases (from niche.json)
   plan      known style, only known fields, word indexes in range and increasing, shot lengths in limits
   files     images, SFX, music, data files exist; chart dates inside the data; chart shots have a `teach` line
   sync      words.json matches script.txt (voice is not stale); total length
@@ -14,12 +17,13 @@ What it checks (see .claude/skills/video-core/references/plan-schema.md):
 import argparse
 import json
 import re
+import subprocess
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-MIN_LEN, MAX_LEN = 120.0, 168.0
 LAST_SHOT_MAX = 4.0
+CLIP_MAX = 8.5
 
 # Per style: allowed shot fields, required ones, shot length limits in seconds (hard min/max).
 STYLES = {
@@ -39,11 +43,38 @@ STYLES = {
         "caption_band": (760, 930),  # caption centre at 44% of 1920 px, ~118 px font
         "shot_len": (0.25, 2.5),  # reference reel: average 0.95 s; under ~8 frames can't be seen
     },
+    "stickman-calm": {
+        "plan_fields": {"version", "style", "beds", "music", "tailSeconds", "shots", "notes"},
+        "shot_fields": {"from", "type", "img", "clip", "motion", "zoom", "focus", "sfx", "captionTop"},
+        "types": {"image": {"img"}, "clip": {"clip"}},
+        "motions": {"pushIn", "pullOut", "panL", "panR", "panUp", "panDown", None},
+        "shot_len": (2.0, 7.0),  # reference reels: ~3.7-4.4 s average; calm pace, nothing flashes by
+    },
+    "explainer-fast": {
+        "plan_fields": {"version", "style", "beds", "music", "tailSeconds", "cutSfxVolume", "mgVolume", "shots", "notes"},
+        "shot_fields": {"from", "img", "bg", "cam", "zoom", "focus", "actors", "mg", "fx", "sfx", "sfxVolume", "cutSfx", "captionY", "hold"},
+        "types": None,
+        # must match CAMS in ExplainerFast.tsx
+        "cams": {"pushIn", "pullOut", "craneDown", "craneUp", "panL", "panR", "tiltDown", "tiltUp",
+                 "orbitL", "orbitR", "dive", "roll", "whip", None},
+        "actor_fields": {"img", "x", "y", "h", "flip", "at", "enter", "idle"},
+        "enters": {"pop", "slideL", "slideR", "drop", "none", None},
+        "idles": {"breathe", "bob", "wobble", "hop", "shake", "lean", "none", None},
+        "fx": {"flash", "shake", "punch"},
+        # motion graphics ("mg"); must match Graphics.tsx. Value = allowed "dir" values (None = no dir).
+        "mg_types": {"stamp": None, "label": None, "counter": None, "arrow": {"up", "down"},
+                     "money": {"rain", "left", "right"}, "speedLines": None, "marks": None, "cross": None,
+                     "circle": None, "pointer": {"left", "right", "up", "down"}},
+        "mg_fields": {"type", "x", "y", "size", "at", "text", "to", "dir", "rot", "sfx"},
+        "shot_len": (0.7, 4.0),  # reference reels: a new picture every ~1.5-2 s; 4 s max keeps the pace up
+    },
 }
+# Pause after the last word when plan.json has no tailSeconds; must match each style's renderer default.
+# explainer-fast sound pools ("whoosh" -> one of whoosh_r1, ...); shared with the renderer
+SOUND_POOLS = json.loads((ROOT / "engine/remotion/src/styles/explainer-fast/sounds.json").read_text())["pools"]
+MG_MIN = 1.0  # seconds a motion graphic must stay on screen before the cut
+TAIL_DEFAULT = {"vintage-story": 0.4, "flat-fastcut": 0.5, "stickman-calm": 1.0, "explainer-fast": 0.6}
 
-BANNED = ["guaranteed", "risk-free", "risk free", "can't lose", "cannot lose", "get rich quick", "buy now",
-          "you should buy", "you should sell", "will go up", "will go to the moon", "sure thing", "financial freedom in",
-          "100x", "1000x", "not a scam", "secret method"]
 NUMBER_WORDS = re.compile(r"\b(hundred|thousand|million|billion|trillion|percent)\b", re.I)
 NUM = re.compile(r"(?<![\w.-])(\$?)(\d[\d,]*(?:\.\d+)?)\s?([kKmMbB](?![a-zA-Z])|%|x(?![a-zA-Z])|times\b)?")
 
@@ -78,6 +109,99 @@ def matches(unit, v, known):
     return any((u == unit or not unit or not u) and abs(v - kv) <= 0.005 * max(abs(kv), 1) for u, kv in known)
 
 
+def media_seconds(path):
+    """Length of a video file in seconds (ffprobe), or None if missing/unreadable."""
+    if not path.exists():
+        return None
+    r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)],
+                       capture_output=True, text=True)
+    try:
+        return float(r.stdout.strip())
+    except ValueError:
+        return None
+
+
+def load_niche(run):
+    """The run's niche.json, checked. Raises ValueError with a plain message if missing or malformed."""
+    p = Path(run) / "niche.json"
+    if not p.exists():
+        raise ValueError(f"{p} missing: runs made before niches were separated need a copy of "
+                         ".claude/skills/niche-<name>/niche.json")
+    try:
+        n = json.loads(p.read_text())
+    except json.JSONDecodeError as e:
+        raise ValueError(f"{p} is not valid JSON: {e}")
+    lo_hi = n.get("length_seconds")
+    if not (isinstance(lo_hi, list) and len(lo_hi) == 2 and all(isinstance(x, (int, float)) for x in lo_hi)
+            and 0 < lo_hi[0] < lo_hi[1]):
+        raise ValueError(f"{p}: length_seconds must be [min, max] seconds")
+    if not (isinstance(n.get("styles"), list) and n["styles"]):
+        raise ValueError(f"{p}: styles must be a non-empty list")
+    if not isinstance(n.get("banned", []), list):
+        raise ValueError(f"{p}: banned must be a list")
+    return n
+
+
+def check_explainer_shot(s, i, where, run, words, nxt, style, E, W):
+    """explainer-fast: background image, camera move, cut-out actors, effects, caption height."""
+    if not s.get("img") and not s.get("bg"):
+        E(f"{where}: needs 'img' (a picture) or 'bg' (a colour card)")
+    elif s.get("img") and not (run / "img" / s["img"]).exists():
+        E(f"{where}: image img/{s['img']} missing")
+    if s.get("bg") and not re.fullmatch(r"#[0-9a-fA-F]{6}", str(s["bg"])):
+        E(f"{where}: bg must be a colour like \"#2f8f46\"")
+    if s.get("cam") not in style["cams"]:
+        E(f"{where}: unknown cam {s.get('cam')!r} (known: {', '.join(sorted(c for c in style['cams'] if c))})")
+    for f in s.get("fx") or []:
+        if f not in style["fx"]:
+            E(f"{where}: unknown fx {f!r}")
+    if "captionY" in s and not (0.05 <= s["captionY"] <= 0.9):
+        E(f"{where}: captionY {s['captionY']} outside 0.05-0.9")
+    last_word = (nxt if isinstance(nxt, int) else len(words)) - 1
+    for j, a in enumerate(s.get("actors") or []):
+        aw = f"{where} actor {j}"
+        for k in set(a) - style["actor_fields"]:
+            E(f"{aw}: unknown field {k!r}")
+        for k in ("img", "x", "y", "h"):
+            if k not in a:
+                E(f"{aw}: needs {k!r}")
+        if a.get("img") and not (run / "img" / a["img"]).exists():
+            E(f"{aw}: cut-out img/{a['img']} missing (made by key_green.py from img/green/)")
+        if not all(0 <= a.get(k, 0.5) <= 1.2 for k in ("x", "y")) or not (0.05 <= a.get("h", 0.5) <= 1.2):
+            E(f"{aw}: x/y must be 0-1.2 and h 0.05-1.2 (shares of the frame)")
+        if a.get("enter") not in style["enters"]:
+            E(f"{aw}: unknown enter {a.get('enter')!r}")
+        if a.get("idle") not in style["idles"]:
+            E(f"{aw}: unknown idle {a.get('idle')!r}")
+        if "at" in a and not (s["from"] <= a["at"] <= last_word):
+            E(f"{aw}: enters at word {a['at']}, outside this shot (words {s['from']}-{last_word})")
+    cap = s.get("captionY", 0.7)
+    for j, g in enumerate(s.get("mg") or []):
+        gw = f"{where} mg {j}"
+        t = g.get("type")
+        if t not in style["mg_types"]:
+            E(f"{gw}: unknown type {t!r} (known: {', '.join(style['mg_types'])})")
+            continue
+        for k in set(g) - style["mg_fields"]:
+            E(f"{gw}: unknown field {k!r}")
+        if t in ("stamp", "label") and not g.get("text"):
+            E(f"{gw}: {t} needs 'text'")
+        if t == "counter" and not isinstance(g.get("to"), (int, float)):
+            E(f"{gw}: counter needs a number 'to'")
+        dirs = style["mg_types"][t]
+        if "dir" in g and (dirs is None or g["dir"] not in dirs):
+            E(f"{gw}: dir {g['dir']!r} not allowed for {t} (allowed: {', '.join(sorted(dirs or [])) or 'none'})")
+        if not all(0 <= g.get(k, 0.5) <= 1 for k in ("x", "y")) or not (0.05 <= g.get("size", 0.5) <= 1.2):
+            E(f"{gw}: x/y must be 0-1 and size 0.05-1.2 (shares of the frame)")
+        if "at" in g and not (s["from"] <= g["at"] <= last_word):
+            E(f"{gw}: appears at word {g['at']}, outside this shot (words {s['from']}-{last_word})")
+        if g.get("sfx") and g["sfx"] not in SOUND_POOLS and not (ROOT / "library" / "sfx" / f"{g['sfx']}.wav").exists():
+            E(f"{gw}: sfx {g['sfx']!r} not in library/sfx")
+        # Text graphics centred near the caption get covered by it.
+        if t in ("stamp", "label", "counter", "marks") and abs(g.get("y", 0.3) - cap) < 0.1:
+            W(f"{gw}: {t} at y {g.get('y', 0.3)} sits on the caption (y {cap}); move it up")
+
+
 def check(run, test=False):
     errors, warnings = [], []
     E, W = errors.append, warnings.append
@@ -94,6 +218,12 @@ def check(run, test=False):
             E(f"{name} is not valid JSON: {e}")
             return None
 
+    try:
+        niche = load_niche(run)
+    except ValueError as e:
+        E(str(e))
+        return errors, warnings
+    min_len, max_len = niche["length_seconds"]
     plan, words_file = load("plan.json"), load("words.json")
     facts = load("facts.json") or []
     script = (run / "script.txt").read_text() if (run / "script.txt").exists() else ""
@@ -109,7 +239,7 @@ def check(run, test=False):
 
     # --- wording ---
     low = script.lower()
-    for b in BANNED:
+    for b in niche.get("banned", []):
         if b in low:
             E(f'banned phrase in script: "{b}"')
     for m in NUMBER_WORDS.finditer(script):
@@ -134,6 +264,10 @@ def check(run, test=False):
             on_screen.append(s["sticker"].get("text", ""))
         for l in s.get("layers", []):
             on_screen += (l.get("props") or {}).get("lines", [])
+        for g in s.get("mg") or []:
+            on_screen.append(str(g.get("text", "")))
+            if isinstance(g.get("to"), (int, float)):
+                on_screen.append(f"{g['to']:,}")
     for c in (plan.get("charts") or {}).values():
         on_screen += [c.get("title", ""), c.get("subtitle", "")]
     for where, text in [("script", script)] + [("on screen", t) for t in on_screen]:
@@ -146,6 +280,8 @@ def check(run, test=False):
     if not style:
         E(f"unknown style {plan.get('style')!r} (known: {', '.join(STYLES)})")
         return errors, warnings
+    if plan["style"] not in niche["styles"]:
+        E(f"style {plan['style']!r} is not used by niche {niche.get('niche')!r} (allowed: {', '.join(niche['styles'])})")
     if plan.get("version") != 1:
         E("plan.json version must be 1")
     for k in set(plan) - style["plan_fields"]:
@@ -158,8 +294,9 @@ def check(run, test=False):
         E("first shot must start at word 0")
 
     sfx_dir, music_dir = ROOT / "library" / "sfx", ROOT / "library" / "music"
+    pools = SOUND_POOLS if "cams" in style else {}  # only explainer-fast plays pools
     def need_sfx(name, where):
-        if not (sfx_dir / f"{name}.wav").exists():
+        if name not in pools and not (sfx_dir / f"{name}.wav").exists():
             E(f"{where}: sfx {name!r} not in library/sfx")
     for b in plan.get("beds") or []:
         need_sfx(b.get("sfx"), "beds")
@@ -172,7 +309,7 @@ def check(run, test=False):
         if d:
             data[name] = d
 
-    end_time = words_file["duration"] + plan.get("tailSeconds", 0.4 if plan["style"] == "vintage-story" else 0.5)
+    end_time = words_file["duration"] + plan.get("tailSeconds", TAIL_DEFAULT[plan["style"]])
     lo, hi = style["shot_len"]
     chart_pos = {}
     prev = -1
@@ -187,15 +324,29 @@ def check(run, test=False):
         if w <= prev:
             E(f"{where}: starts at word {w}, not after previous shot (word {prev})")
         prev = w
-        start = 0 if i == 0 else words[w]["start"]
+        # hold (explainer-fast): the cut comes that many seconds after its word
+        start = 0 if i == 0 else words[w]["start"] + s.get("hold", 0)
         nxt = shots[i + 1].get("from") if i + 1 < len(shots) else None
-        end = words[nxt]["start"] if isinstance(nxt, int) and 0 <= nxt < len(words) else end_time
+        end = (words[nxt]["start"] + shots[i + 1].get("hold", 0)) if isinstance(nxt, int) and 0 <= nxt < len(words) else end_time
+        if not (0 <= s.get("hold", 0) <= 0.6):
+            E(f"{where}: hold {s.get('hold')} outside 0-0.6 s (a longer lag makes the picture miss the words)")
+        # A graphic must stay long enough to be read (owner: "scene shifted way early, could not see the graphic").
+        for j, g in enumerate(s.get("mg") or []):
+            at = g.get("at")
+            appear = max(start, words[at]["start"]) if isinstance(at, int) and 0 <= at < len(words) else start
+            if end - appear < MG_MIN:
+                E(f"{where} mg {j} ({g.get('type')} {g.get('text', '')!r}): on screen only {end - appear:.2f}s, needs {MG_MIN}s; "
+                  f"move 'at' earlier or give the next shot a 'hold'")
         length = end - start
         hi_here = max(hi, LAST_SHOT_MAX) if i == len(shots) - 1 else hi  # the closing line may hold longer
+        if s.get("type") == "clip":
+            hi_here = max(hi_here, CLIP_MAX)  # animated clips are 5-8 s; the clip-length check below is the real limit
         if not (lo <= length <= hi_here):
             E(f"{where} (word {w} \"{words[w]['word']}\"): {length:.2f}s long, style allows {lo}-{hi_here}s")
         if s.get("sfx"):
             need_sfx(s["sfx"], where)
+        if s.get("cutSfx"):
+            need_sfx(s["cutSfx"], where)
         for c in s.get("cues") or []:
             if not (0 <= c.get("word", -1) < len(words)):
                 E(f"{where}: cue word {c.get('word')} out of range")
@@ -210,6 +361,12 @@ def check(run, test=False):
                 E(f"{where}: {t} shot needs {k!r}")
             if t == "image" and s.get("img") and not (run / "img" / s["img"]).exists():
                 E(f"{where}: image img/{s['img']} missing")
+            if t == "clip" and s.get("clip"):
+                clip_len = media_seconds(run / "img" / s["clip"])
+                if clip_len is None:
+                    E(f"{where}: clip img/{s['clip']} missing or unreadable")
+                elif length > clip_len:
+                    E(f"{where}: shot is {length:.2f}s but clip img/{s['clip']} is only {clip_len:.2f}s; start the next shot earlier")
             if s.get("motion") not in style["motions"]:
                 E(f"{where}: unknown motion {s.get('motion')!r}")
             if t == "chart" and s.get("chart"):
@@ -228,6 +385,8 @@ def check(run, test=False):
                 if to <= chart_pos.get(s["chart"], ""):
                     E(f"{where}: chart {s['chart']!r} goes backwards to {to}")
                 chart_pos[s["chart"]] = to
+        elif "cams" in style:
+            check_explainer_shot(s, i, where, run, words, nxt, style, E, W)
         else:
             for l in s.get("layers") or []:
                 if l.get("type") not in style["layer_types"]:
@@ -238,8 +397,8 @@ def check(run, test=False):
                     W(f"{where}: {l['type']} overlaps the caption band (y {cap_lo}-{cap_hi}); move it up or down")
 
     total = end_time + (plan.get("endCard") or {}).get("seconds", 0)
-    if not test and not (MIN_LEN <= total <= MAX_LEN):
-        E(f"total length {total:.1f}s outside {MIN_LEN:.0f}-{MAX_LEN:.0f}s")
+    if not test and not (min_len <= total <= max_len):
+        E(f"total length {total:.1f}s outside {min_len:.0f}-{max_len:.0f}s (niche {niche.get('niche')})")
     return errors, warnings
 
 

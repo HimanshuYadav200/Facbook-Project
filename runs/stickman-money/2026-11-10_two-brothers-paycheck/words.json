@@ -1,0 +1,1269 @@
+{
+ "duration": 86.398,
+ "voice": "af_kore",
+ "speed": 0.9,
+ "sentence_gap": 0.45,
+ "match": 1.0,
+ "words": [
+  {
+   "word": "Two",
+   "start": 0.0,
+   "end": 0.24
+  },
+  {
+   "word": "brothers",
+   "start": 0.24,
+   "end": 0.62
+  },
+  {
+   "word": "got",
+   "start": 0.62,
+   "end": 0.92
+  },
+  {
+   "word": "their",
+   "start": 0.92,
+   "end": 1.1
+  },
+  {
+   "word": "first",
+   "start": 1.1,
+   "end": 1.42
+  },
+  {
+   "word": "job",
+   "start": 1.42,
+   "end": 1.8
+  },
+  {
+   "word": "on",
+   "start": 1.8,
+   "end": 2.02
+  },
+  {
+   "word": "the",
+   "start": 2.02,
+   "end": 2.16
+  },
+  {
+   "word": "same",
+   "start": 2.16,
+   "end": 2.42
+  },
+  {
+   "word": "day,",
+   "start": 2.42,
+   "end": 2.78
+  },
+  {
+   "word": "at",
+   "start": 2.78,
+   "end": 3.1
+  },
+  {
+   "word": "the",
+   "start": 3.1,
+   "end": 3.24
+  },
+  {
+   "word": "same",
+   "start": 3.24,
+   "end": 3.52
+  },
+  {
+   "word": "company,",
+   "start": 3.52,
+   "end": 3.98
+  },
+  {
+   "word": "for",
+   "start": 3.98,
+   "end": 4.26
+  },
+  {
+   "word": "the",
+   "start": 4.26,
+   "end": 4.44
+  },
+  {
+   "word": "same",
+   "start": 4.44,
+   "end": 4.7
+  },
+  {
+   "word": "pay.",
+   "start": 4.7,
+   "end": 5.1
+  },
+  {
+   "word": "The",
+   "start": 5.64,
+   "end": 5.78
+  },
+  {
+   "word": "older",
+   "start": 5.78,
+   "end": 6.1
+  },
+  {
+   "word": "brother",
+   "start": 6.1,
+   "end": 6.4
+  },
+  {
+   "word": "bought",
+   "start": 6.4,
+   "end": 6.74
+  },
+  {
+   "word": "a",
+   "start": 6.74,
+   "end": 6.9
+  },
+  {
+   "word": "new",
+   "start": 6.9,
+   "end": 7.1
+  },
+  {
+   "word": "car",
+   "start": 7.1,
+   "end": 7.44
+  },
+  {
+   "word": "in",
+   "start": 7.44,
+   "end": 7.72
+  },
+  {
+   "word": "the",
+   "start": 7.72,
+   "end": 7.84
+  },
+  {
+   "word": "very",
+   "start": 7.84,
+   "end": 8.04
+  },
+  {
+   "word": "first",
+   "start": 8.04,
+   "end": 8.42
+  },
+  {
+   "word": "month.",
+   "start": 8.42,
+   "end": 8.78
+  },
+  {
+   "word": "Nice",
+   "start": 9.5,
+   "end": 9.64
+  },
+  {
+   "word": "clothes.",
+   "start": 9.64,
+   "end": 10.02
+  },
+  {
+   "word": "Dinners",
+   "start": 10.84,
+   "end": 11.0
+  },
+  {
+   "word": "out",
+   "start": 11.0,
+   "end": 11.22
+  },
+  {
+   "word": "every",
+   "start": 11.22,
+   "end": 11.56
+  },
+  {
+   "word": "weekend.",
+   "start": 11.56,
+   "end": 12.0
+  },
+  {
+   "word": "The",
+   "start": 12.66,
+   "end": 12.8
+  },
+  {
+   "word": "younger",
+   "start": 12.8,
+   "end": 13.16
+  },
+  {
+   "word": "brother",
+   "start": 13.16,
+   "end": 13.5
+  },
+  {
+   "word": "kept",
+   "start": 13.5,
+   "end": 13.8
+  },
+  {
+   "word": "his",
+   "start": 13.8,
+   "end": 14.02
+  },
+  {
+   "word": "old",
+   "start": 14.02,
+   "end": 14.28
+  },
+  {
+   "word": "bike,",
+   "start": 14.28,
+   "end": 14.64
+  },
+  {
+   "word": "and",
+   "start": 14.64,
+   "end": 14.96
+  },
+  {
+   "word": "every",
+   "start": 14.96,
+   "end": 15.32
+  },
+  {
+   "word": "payday,",
+   "start": 15.32,
+   "end": 15.7
+  },
+  {
+   "word": "he",
+   "start": 15.7,
+   "end": 16.04
+  },
+  {
+   "word": "put",
+   "start": 16.04,
+   "end": 16.18
+  },
+  {
+   "word": "a",
+   "start": 16.18,
+   "end": 16.34
+  },
+  {
+   "word": "small",
+   "start": 16.34,
+   "end": 16.64
+  },
+  {
+   "word": "part",
+   "start": 16.64,
+   "end": 16.96
+  },
+  {
+   "word": "of",
+   "start": 16.96,
+   "end": 17.08
+  },
+  {
+   "word": "his",
+   "start": 17.08,
+   "end": 17.22
+  },
+  {
+   "word": "pay",
+   "start": 17.22,
+   "end": 17.52
+  },
+  {
+   "word": "away",
+   "start": 17.52,
+   "end": 17.86
+  },
+  {
+   "word": "before",
+   "start": 17.86,
+   "end": 18.32
+  },
+  {
+   "word": "he",
+   "start": 18.32,
+   "end": 18.54
+  },
+  {
+   "word": "spent",
+   "start": 18.54,
+   "end": 18.78
+  },
+  {
+   "word": "a",
+   "start": 18.78,
+   "end": 18.98
+  },
+  {
+   "word": "single",
+   "start": 18.98,
+   "end": 19.34
+  },
+  {
+   "word": "dollar.",
+   "start": 19.34,
+   "end": 19.76
+  },
+  {
+   "word": "His",
+   "start": 20.36,
+   "end": 20.52
+  },
+  {
+   "word": "brother",
+   "start": 20.52,
+   "end": 20.84
+  },
+  {
+   "word": "laughed",
+   "start": 20.84,
+   "end": 21.18
+  },
+  {
+   "word": "at",
+   "start": 21.18,
+   "end": 21.38
+  },
+  {
+   "word": "him.",
+   "start": 21.38,
+   "end": 21.62
+  },
+  {
+   "word": "You",
+   "start": 22.2,
+   "end": 22.28
+  },
+  {
+   "word": "work",
+   "start": 22.28,
+   "end": 22.5
+  },
+  {
+   "word": "just",
+   "start": 22.5,
+   "end": 22.76
+  },
+  {
+   "word": "as",
+   "start": 22.76,
+   "end": 23.0
+  },
+  {
+   "word": "hard",
+   "start": 23.0,
+   "end": 23.22
+  },
+  {
+   "word": "as",
+   "start": 23.22,
+   "end": 23.36
+  },
+  {
+   "word": "I",
+   "start": 23.36,
+   "end": 23.52
+  },
+  {
+   "word": "do.",
+   "start": 23.52,
+   "end": 23.74
+  },
+  {
+   "word": "Why",
+   "start": 24.4,
+   "end": 24.5
+  },
+  {
+   "word": "do",
+   "start": 24.5,
+   "end": 24.6
+  },
+  {
+   "word": "you",
+   "start": 24.6,
+   "end": 24.72
+  },
+  {
+   "word": "live",
+   "start": 24.72,
+   "end": 24.86
+  },
+  {
+   "word": "like",
+   "start": 24.86,
+   "end": 25.08
+  },
+  {
+   "word": "you're",
+   "start": 25.08,
+   "end": 25.28
+  },
+  {
+   "word": "poor?",
+   "start": 25.28,
+   "end": 25.54
+  },
+  {
+   "word": "Three",
+   "start": 26.2,
+   "end": 26.4
+  },
+  {
+   "word": "years",
+   "start": 26.4,
+   "end": 26.62
+  },
+  {
+   "word": "later,",
+   "start": 26.62,
+   "end": 27.0
+  },
+  {
+   "word": "the",
+   "start": 27.0,
+   "end": 27.22
+  },
+  {
+   "word": "company",
+   "start": 27.22,
+   "end": 27.54
+  },
+  {
+   "word": "closed",
+   "start": 27.54,
+   "end": 27.96
+  },
+  {
+   "word": "its",
+   "start": 27.96,
+   "end": 28.16
+  },
+  {
+   "word": "doors.",
+   "start": 28.16,
+   "end": 28.5
+  },
+  {
+   "word": "Both",
+   "start": 29.16,
+   "end": 29.44
+  },
+  {
+   "word": "brothers",
+   "start": 29.44,
+   "end": 29.82
+  },
+  {
+   "word": "lost",
+   "start": 29.82,
+   "end": 30.2
+  },
+  {
+   "word": "their",
+   "start": 30.2,
+   "end": 30.48
+  },
+  {
+   "word": "jobs",
+   "start": 30.48,
+   "end": 30.88
+  },
+  {
+   "word": "on",
+   "start": 30.88,
+   "end": 31.04
+  },
+  {
+   "word": "the",
+   "start": 31.04,
+   "end": 31.18
+  },
+  {
+   "word": "same",
+   "start": 31.18,
+   "end": 31.4
+  },
+  {
+   "word": "afternoon.",
+   "start": 31.4,
+   "end": 31.94
+  },
+  {
+   "word": "The",
+   "start": 32.7,
+   "end": 32.7
+  },
+  {
+   "word": "older",
+   "start": 32.7,
+   "end": 33.0
+  },
+  {
+   "word": "brother",
+   "start": 33.0,
+   "end": 33.26
+  },
+  {
+   "word": "still",
+   "start": 33.26,
+   "end": 33.66
+  },
+  {
+   "word": "owed",
+   "start": 33.66,
+   "end": 33.98
+  },
+  {
+   "word": "money",
+   "start": 33.98,
+   "end": 34.26
+  },
+  {
+   "word": "on",
+   "start": 34.26,
+   "end": 34.46
+  },
+  {
+   "word": "the",
+   "start": 34.46,
+   "end": 34.56
+  },
+  {
+   "word": "car.",
+   "start": 34.56,
+   "end": 34.88
+  },
+  {
+   "word": "His",
+   "start": 35.5,
+   "end": 35.62
+  },
+  {
+   "word": "savings",
+   "start": 35.62,
+   "end": 35.94
+  },
+  {
+   "word": "lasted",
+   "start": 35.94,
+   "end": 36.32
+  },
+  {
+   "word": "two",
+   "start": 36.32,
+   "end": 36.66
+  },
+  {
+   "word": "weeks.",
+   "start": 36.66,
+   "end": 37.0
+  },
+  {
+   "word": "A",
+   "start": 37.64,
+   "end": 37.74
+  },
+  {
+   "word": "month",
+   "start": 37.74,
+   "end": 37.94
+  },
+  {
+   "word": "later,",
+   "start": 37.94,
+   "end": 38.34
+  },
+  {
+   "word": "the",
+   "start": 38.34,
+   "end": 38.54
+  },
+  {
+   "word": "calls",
+   "start": 38.54,
+   "end": 38.78
+  },
+  {
+   "word": "from",
+   "start": 38.78,
+   "end": 39.02
+  },
+  {
+   "word": "the",
+   "start": 39.02,
+   "end": 39.14
+  },
+  {
+   "word": "bank",
+   "start": 39.14,
+   "end": 39.32
+  },
+  {
+   "word": "started.",
+   "start": 39.32,
+   "end": 39.82
+  },
+  {
+   "word": "The",
+   "start": 40.4,
+   "end": 40.54
+  },
+  {
+   "word": "younger",
+   "start": 40.54,
+   "end": 40.82
+  },
+  {
+   "word": "brother",
+   "start": 40.82,
+   "end": 41.16
+  },
+  {
+   "word": "went",
+   "start": 41.16,
+   "end": 41.44
+  },
+  {
+   "word": "home,",
+   "start": 41.44,
+   "end": 41.82
+  },
+  {
+   "word": "sat",
+   "start": 42.02,
+   "end": 42.2
+  },
+  {
+   "word": "down,",
+   "start": 42.2,
+   "end": 42.56
+  },
+  {
+   "word": "and",
+   "start": 42.56,
+   "end": 42.86
+  },
+  {
+   "word": "did",
+   "start": 42.86,
+   "end": 43.0
+  },
+  {
+   "word": "the",
+   "start": 43.0,
+   "end": 43.14
+  },
+  {
+   "word": "math.",
+   "start": 43.14,
+   "end": 43.4
+  },
+  {
+   "word": "He",
+   "start": 44.06,
+   "end": 44.18
+  },
+  {
+   "word": "could",
+   "start": 44.18,
+   "end": 44.32
+  },
+  {
+   "word": "pay",
+   "start": 44.32,
+   "end": 44.56
+  },
+  {
+   "word": "his",
+   "start": 44.56,
+   "end": 44.76
+  },
+  {
+   "word": "rent",
+   "start": 44.76,
+   "end": 45.04
+  },
+  {
+   "word": "and",
+   "start": 45.04,
+   "end": 45.28
+  },
+  {
+   "word": "his",
+   "start": 45.28,
+   "end": 45.44
+  },
+  {
+   "word": "food",
+   "start": 45.44,
+   "end": 45.74
+  },
+  {
+   "word": "for",
+   "start": 45.74,
+   "end": 45.96
+  },
+  {
+   "word": "almost",
+   "start": 45.96,
+   "end": 46.26
+  },
+  {
+   "word": "a",
+   "start": 46.26,
+   "end": 46.48
+  },
+  {
+   "word": "year.",
+   "start": 46.48,
+   "end": 46.72
+  },
+  {
+   "word": "He",
+   "start": 47.26,
+   "end": 47.48
+  },
+  {
+   "word": "didn't",
+   "start": 47.48,
+   "end": 47.78
+  },
+  {
+   "word": "panic.",
+   "start": 47.78,
+   "end": 48.12
+  },
+  {
+   "word": "He",
+   "start": 48.72,
+   "end": 48.88
+  },
+  {
+   "word": "took",
+   "start": 48.88,
+   "end": 49.08
+  },
+  {
+   "word": "his",
+   "start": 49.08,
+   "end": 49.26
+  },
+  {
+   "word": "time,",
+   "start": 49.26,
+   "end": 49.6
+  },
+  {
+   "word": "and",
+   "start": 49.6,
+   "end": 49.9
+  },
+  {
+   "word": "found",
+   "start": 49.9,
+   "end": 50.14
+  },
+  {
+   "word": "a",
+   "start": 50.14,
+   "end": 50.32
+  },
+  {
+   "word": "better",
+   "start": 50.32,
+   "end": 50.56
+  },
+  {
+   "word": "job",
+   "start": 50.56,
+   "end": 51.0
+  },
+  {
+   "word": "four",
+   "start": 51.0,
+   "end": 51.3
+  },
+  {
+   "word": "months",
+   "start": 51.3,
+   "end": 51.6
+  },
+  {
+   "word": "later.",
+   "start": 51.6,
+   "end": 52.02
+  },
+  {
+   "word": "One",
+   "start": 52.6,
+   "end": 52.82
+  },
+  {
+   "word": "night,",
+   "start": 52.82,
+   "end": 53.08
+  },
+  {
+   "word": "the",
+   "start": 53.08,
+   "end": 53.3
+  },
+  {
+   "word": "older",
+   "start": 53.3,
+   "end": 53.64
+  },
+  {
+   "word": "brother",
+   "start": 53.64,
+   "end": 53.94
+  },
+  {
+   "word": "knocked",
+   "start": 53.94,
+   "end": 54.28
+  },
+  {
+   "word": "on",
+   "start": 54.28,
+   "end": 54.52
+  },
+  {
+   "word": "his",
+   "start": 54.52,
+   "end": 54.68
+  },
+  {
+   "word": "door",
+   "start": 54.68,
+   "end": 54.98
+  },
+  {
+   "word": "and",
+   "start": 54.98,
+   "end": 55.18
+  },
+  {
+   "word": "asked,",
+   "start": 55.18,
+   "end": 55.6
+  },
+  {
+   "word": "we",
+   "start": 55.96,
+   "end": 56.02
+  },
+  {
+   "word": "earned",
+   "start": 56.02,
+   "end": 56.26
+  },
+  {
+   "word": "the",
+   "start": 56.26,
+   "end": 56.44
+  },
+  {
+   "word": "same",
+   "start": 56.44,
+   "end": 56.7
+  },
+  {
+   "word": "money.",
+   "start": 56.7,
+   "end": 57.06
+  },
+  {
+   "word": "How",
+   "start": 57.48,
+   "end": 57.76
+  },
+  {
+   "word": "are",
+   "start": 57.76,
+   "end": 57.9
+  },
+  {
+   "word": "you",
+   "start": 57.9,
+   "end": 58.02
+  },
+  {
+   "word": "okay,",
+   "start": 58.02,
+   "end": 58.36
+  },
+  {
+   "word": "and",
+   "start": 58.36,
+   "end": 58.56
+  },
+  {
+   "word": "I'm",
+   "start": 58.56,
+   "end": 58.74
+  },
+  {
+   "word": "not?",
+   "start": 58.74,
+   "end": 59.04
+  },
+  {
+   "word": "The",
+   "start": 59.72,
+   "end": 59.72
+  },
+  {
+   "word": "younger",
+   "start": 59.72,
+   "end": 60.06
+  },
+  {
+   "word": "brother",
+   "start": 60.06,
+   "end": 60.36
+  },
+  {
+   "word": "said,",
+   "start": 60.36,
+   "end": 60.74
+  },
+  {
+   "word": "you",
+   "start": 60.74,
+   "end": 61.08
+  },
+  {
+   "word": "paid",
+   "start": 61.08,
+   "end": 61.32
+  },
+  {
+   "word": "everyone",
+   "start": 61.32,
+   "end": 61.82
+  },
+  {
+   "word": "else",
+   "start": 61.82,
+   "end": 62.1
+  },
+  {
+   "word": "first.",
+   "start": 62.1,
+   "end": 62.46
+  },
+  {
+   "word": "The",
+   "start": 63.02,
+   "end": 63.24
+  },
+  {
+   "word": "car",
+   "start": 63.24,
+   "end": 63.44
+  },
+  {
+   "word": "dealer.",
+   "start": 63.44,
+   "end": 63.7
+  },
+  {
+   "word": "The",
+   "start": 64.44,
+   "end": 64.56
+  },
+  {
+   "word": "restaurants.",
+   "start": 64.56,
+   "end": 64.92
+  },
+  {
+   "word": "The",
+   "start": 65.74,
+   "end": 65.92
+  },
+  {
+   "word": "stores.",
+   "start": 65.92,
+   "end": 66.24
+  },
+  {
+   "word": "I",
+   "start": 66.96,
+   "end": 67.1
+  },
+  {
+   "word": "just",
+   "start": 67.1,
+   "end": 67.3
+  },
+  {
+   "word": "paid",
+   "start": 67.3,
+   "end": 67.52
+  },
+  {
+   "word": "myself",
+   "start": 67.52,
+   "end": 67.84
+  },
+  {
+   "word": "first.",
+   "start": 67.84,
+   "end": 68.28
+  },
+  {
+   "word": "Every",
+   "start": 68.92,
+   "end": 69.2
+  },
+  {
+   "word": "month,",
+   "start": 69.2,
+   "end": 69.44
+  },
+  {
+   "word": "before",
+   "start": 69.44,
+   "end": 69.82
+  },
+  {
+   "word": "anyone",
+   "start": 69.82,
+   "end": 70.12
+  },
+  {
+   "word": "else.",
+   "start": 70.12,
+   "end": 70.44
+  },
+  {
+   "word": "It",
+   "start": 71.0,
+   "end": 71.2
+  },
+  {
+   "word": "never",
+   "start": 71.2,
+   "end": 71.44
+  },
+  {
+   "word": "felt",
+   "start": 71.44,
+   "end": 71.72
+  },
+  {
+   "word": "like",
+   "start": 71.72,
+   "end": 71.96
+  },
+  {
+   "word": "much.",
+   "start": 71.96,
+   "end": 72.3
+  },
+  {
+   "word": "But",
+   "start": 72.9,
+   "end": 73.08
+  },
+  {
+   "word": "that",
+   "start": 73.08,
+   "end": 73.28
+  },
+  {
+   "word": "small",
+   "start": 73.28,
+   "end": 73.66
+  },
+  {
+   "word": "part",
+   "start": 73.66,
+   "end": 74.0
+  },
+  {
+   "word": "bought",
+   "start": 74.0,
+   "end": 74.28
+  },
+  {
+   "word": "me",
+   "start": 74.28,
+   "end": 74.5
+  },
+  {
+   "word": "the",
+   "start": 74.5,
+   "end": 74.66
+  },
+  {
+   "word": "one",
+   "start": 74.66,
+   "end": 74.88
+  },
+  {
+   "word": "thing",
+   "start": 74.88,
+   "end": 75.14
+  },
+  {
+   "word": "your",
+   "start": 75.14,
+   "end": 75.34
+  },
+  {
+   "word": "car",
+   "start": 75.34,
+   "end": 75.62
+  },
+  {
+   "word": "never",
+   "start": 75.62,
+   "end": 75.9
+  },
+  {
+   "word": "could.",
+   "start": 75.9,
+   "end": 76.32
+  },
+  {
+   "word": "Time.",
+   "start": 77.0,
+   "end": 77.28
+  },
+  {
+   "word": "Saving",
+   "start": 78.22,
+   "end": 78.22
+  },
+  {
+   "word": "isn't",
+   "start": 78.22,
+   "end": 78.62
+  },
+  {
+   "word": "about",
+   "start": 78.62,
+   "end": 78.86
+  },
+  {
+   "word": "living",
+   "start": 78.86,
+   "end": 79.12
+  },
+  {
+   "word": "poor",
+   "start": 79.12,
+   "end": 79.42
+  },
+  {
+   "word": "today.",
+   "start": 79.42,
+   "end": 79.74
+  },
+  {
+   "word": "It's",
+   "start": 80.34,
+   "end": 80.52
+  },
+  {
+   "word": "about",
+   "start": 80.52,
+   "end": 80.74
+  },
+  {
+   "word": "not",
+   "start": 80.74,
+   "end": 80.98
+  },
+  {
+   "word": "being",
+   "start": 80.98,
+   "end": 81.26
+  },
+  {
+   "word": "trapped",
+   "start": 81.26,
+   "end": 81.56
+  },
+  {
+   "word": "tomorrow.",
+   "start": 81.56,
+   "end": 81.96
+  },
+  {
+   "word": "If",
+   "start": 82.66,
+   "end": 82.86
+  },
+  {
+   "word": "you",
+   "start": 82.86,
+   "end": 83.0
+  },
+  {
+   "word": "know",
+   "start": 83.0,
+   "end": 83.22
+  },
+  {
+   "word": "someone",
+   "start": 83.22,
+   "end": 83.64
+  },
+  {
+   "word": "who",
+   "start": 83.64,
+   "end": 83.88
+  },
+  {
+   "word": "just",
+   "start": 83.88,
+   "end": 84.1
+  },
+  {
+   "word": "got",
+   "start": 84.1,
+   "end": 84.32
+  },
+  {
+   "word": "their",
+   "start": 84.32,
+   "end": 84.5
+  },
+  {
+   "word": "first",
+   "start": 84.5,
+   "end": 84.82
+  },
+  {
+   "word": "paycheck,",
+   "start": 84.82,
+   "end": 85.3
+  },
+  {
+   "word": "send",
+   "start": 85.64,
+   "end": 85.74
+  },
+  {
+   "word": "them",
+   "start": 85.74,
+   "end": 85.94
+  },
+  {
+   "word": "this.",
+   "start": 85.94,
+   "end": 86.2
+  }
+ ]
+}

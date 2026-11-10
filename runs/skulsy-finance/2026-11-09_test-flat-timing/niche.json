@@ -1,0 +1,31 @@
+{
+ "_about": "Rules the engine tools read for this niche. new_run.py copies this file into each run, so later edits never change old runs.",
+ "niche": "skulsy-finance",
+ "length_seconds": [
+  120,
+  168
+ ],
+ "styles": [
+  "vintage-story",
+  "flat-fastcut"
+ ],
+ "banned": [
+  "guaranteed",
+  "risk-free",
+  "risk free",
+  "can't lose",
+  "cannot lose",
+  "get rich quick",
+  "buy now",
+  "you should buy",
+  "you should sell",
+  "will go up",
+  "will go to the moon",
+  "sure thing",
+  "financial freedom in",
+  "100x",
+  "1000x",
+  "not a scam",
+  "secret method"
+ ]
+}

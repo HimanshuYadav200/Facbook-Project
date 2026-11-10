@@ -30,12 +30,14 @@ engine/cache/
 # owned character art is vector (SVG) and IS committed
 
 # --- Render / run outputs ---
-runs/*/out/
-runs/*/incoming/
-runs/*/review/*.jpg
+runs/*/*/out/
+runs/*/*/incoming/
+runs/*/*/review/*.jpg
 engine/remotion/.stage/
 
 # --- OS / editor junk ---
 .DS_Store
 .vscode/
 .idea/
+runs/*/*/blender_test/frames_*/
+runs/*/*/blender_test/*.mp4

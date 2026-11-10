@@ -12,6 +12,8 @@ description: The Skulsy USA-finance niche (cartoon skeleton Skulsy, personal fin
 - **Monetization rule:** every video must teach something with real data; no slideshow of AI images over generic narration.
 
 ## Defaults
+Machine rules (length 120–168 s, styles, banned phrases) live in `niche.json` next to this file; new runs copy it.
+
 | Setting | vintage-story | flat-fastcut |
 |---|---|---|
 | Voice (Kokoro) | `bm_george`, speed 0.95 | `am_puck`, speed 1.1 |
@@ -25,7 +27,7 @@ Other voices: audition with care, the owner wants to try more (open item).
 3. **Hook (first 3 s, ≤ 12 words):** a specific situation or number. "January 2016. Skulsy put $1,000 into a company that made graphics cards."
 4. **Time anchors:** 3+ dates/years so the story moves ("By the end of 2020…", "A year later?").
 5. **One idea.** Everything serves one takeaway, said in one plain line near the end ("He just sat still.").
-6. **No advice or predictions.** Tell what happened, not what to buy. Banned: guaranteed, risk-free, can't lose, buy now, will go up, get rich quick (check_plan refuses them).
+6. **No advice or predictions.** Tell what happened, not what to buy. Banned: guaranteed, risk-free, can't lose, buy now, will go up, get rich quick (full list in this skill's `niche.json`; check_plan refuses them).
 7. **Sound human:** `references/writing-style.md`.
 8. **Pronunciation:** "A I" not "AI"; "262 times" not "262x"; check names in voice.py's match % and listen.
 

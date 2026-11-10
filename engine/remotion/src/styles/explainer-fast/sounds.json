@@ -1,0 +1,27 @@
+{
+ "_about": "explainer-fast sound pools. A plan (or a default) names a pool, e.g. \"whoosh\"; the renderer plays one variant, chosen by shot/graphic number so neighbours differ and re-renders sound the same. Any exact file name in library/sfx (e.g. \"whoosh_r3\") still works. gain = extra volume for files that are recorded quiet. Read by ExplainerFast.tsx, Graphics.tsx and engine/tools/check_plan.py. Files: library/sfx_incoming/review.md. Removed by the owner (annoying, off-theme): impact_r2.",
+ "pools": {
+  "whoosh": ["whoosh_r1", "whoosh_r2", "whoosh_r4", "whoosh_r5", "whoosh_r7"],
+  "whip": ["whoosh_r3", "whoosh_r8"],
+  "dive": ["whoosh_r6"],
+  "stamp": ["stamp_r1", "stamp_r2"],
+  "impact": ["impact_r1", "impact_r3"],
+  "cash": ["cash_r1", "cash_r2", "coins_r1", "coins_r2"],
+  "coins": ["coins_r1", "coins_r2"],
+  "pop": ["pop_r1", "pop_r2", "pop_r3"],
+  "ding": ["ding_r1", "ding_r2", "ding_r3"],
+  "tick": ["tick_r1"],
+  "boing": ["boing_r1", "boing_r2"],
+  "thud": ["thud_r1", "thud_r2"],
+  "slide": ["slide_r1", "slide_r2"],
+  "scratch": ["scratch_r1", "scratch_r2"],
+  "camera": ["camera_r1"],
+  "riser": ["riser_r1", "riser_r2"],
+  "crash": ["crash_r1", "crash_r2"],
+  "sparkle": ["sparkle_r1", "sparkle_r2"],
+  "crowd_laugh": ["crowd_laugh_r1", "crowd_laugh_r2"],
+  "crowd_whoa": ["crowd_ooh_r1", "crowd_gasp_r1", "crowd_gasp_r2"],
+  "applause": ["crowd_applause_r1", "crowd_applause_r2"]
+ },
+ "gain": {"tick_r1": 1.4, "slide_r1": 1.4, "boing_r1": 0.6, "boing_r2": 0.6}
+}

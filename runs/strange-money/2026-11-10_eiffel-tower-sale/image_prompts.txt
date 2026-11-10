@@ -1,0 +1,40 @@
+# STYLE: Stylized 3D cartoon render, vertical 9:16, like a cozy animated movie or a miniature diorama: soft global illumination, warm rich saturated colours, rounded chunky shapes, slight depth of field. 1920s Paris. Characters are cute simple cartoon people with big round cream-coloured heads, small black dot eyes, simple eyebrows, small mouths, no nose, and short rounded bean-shaped bodies with short arms and legs. No text, no letters, no numbers, no signs with writing, no logos anywhere.
+# CAST (never green clothes, so green-screen cut-outs work):
+#   Lustig  = thin man, tall black top hat, thin curled black moustache, navy pinstripe suit, red tie
+#   Poisson = round chubby man, brown bowler hat, brown tweed suit, round glasses, grey walrus moustache
+#   dealers = 3-4 men in flat caps and work jackets (grey, brown, blue)
+#   gendarme = French policeman, dark blue uniform, round kepi hat, whistle
+# Green actors: "... standing alone on a plain flat solid bright green background (#00FF00), full body, whole figure visible with space around it, no shadow, no floor"
+# name | prompt
+bg_paris_street | 1920s Paris street at golden hour, cobblestones, cafe awnings, the Eiffel Tower in the distance, empty street with no people, eye-level wide view, open space in the lower middle
+s_eiffel_low | the Eiffel Tower seen from directly below at a dramatic low angle, warm sunset sky, birds, slightly rusty iron, no people
+s_parisians_annoyed | three Parisians on a balcony frowning and rolling their eyes at the Eiffel Tower in the background, one holding a newspaper with no writing, 1920s clothes
+s_worlds_fair | the 1889 World's Fair in Paris, the brand new Eiffel Tower shining, crowds of tiny cartoon people, flags without writing, fireworks, high wide aerial view
+s_rust_closeup | extreme close-up of old riveted iron beams covered in orange rust and flaking paint, dramatic side light
+s_painters | tiny cartoon painters hanging on ropes from the Eiffel Tower's iron beams with paint buckets and brushes, high above Paris, side angle
+bg_office_dark | a small dim 1920s room at night with a wooden desk, a green-shaded desk lamp glowing, a window with the Eiffel Tower lit far away, no people, open floor space in the lower middle
+s_printing | top-down view of a desk with a small hand printing press stamping fake official papers with a red wax seal, gloved hands, papers with only wavy lines instead of writing
+bg_ministry | grand 1920s government building entrance with tall columns and wide stone steps, French flags without writing, morning light, no people, low angle
+s_scrapyard | a 1920s scrap metal yard with piles of old iron, four scrap dealers in flat caps and work jackets each reading a letter with a red wax seal, curious faces
+bg_hotel_lobby | a luxurious 1920s Paris hotel lobby with a huge crystal chandelier, marble floor, red carpet, gold details, no people, wide view, open floor in the lower middle
+s_meeting | an elegant hotel meeting room, Lustig (thin man, tall black top hat, thin curled moustache, navy pinstripe suit, red tie) at the head of a long table whispering secretly, four scrap dealers in flat caps leaning in with wide eyes, cigar smoke
+s_tower_down | imagination scene: giant cranes taking the Eiffel Tower apart piece by piece, iron beams falling into a pile, dust clouds, dramatic sky
+s_iron_pile | a gigantic mountain of iron beams and rivets piled in a field, tiny cartoon dealers at the bottom looking up amazed, low angle
+s_bidding | four excited scrap dealers in flat caps around a table raising their hands to bid, sweating, eyes shining, close-up, dynamic angle
+s_outcry | an angry crowd of Parisians with raised fists and blank protest signs (no writing) in front of the Eiffel Tower, dramatic angle
+s_paris_aerial | straight top-down aerial view of Paris rooftops with the Eiffel Tower in the middle, the river Seine, soft clouds
+s_laughing | four scrap dealers in flat caps laughing so hard they hold their bellies and wipe tears, in the elegant hotel meeting room
+s_poisson_dreamy | close-up of Poisson (round chubby man, brown bowler hat, brown tweed suit, round glasses, grey walrus moustache) gazing dreamily at the Eiffel Tower through a window, sparkles in his glasses
+s_handshake | close-up of two hands shaking over a table, one in a navy pinstripe sleeve, one in a brown tweed sleeve, a thick envelope of banknotes (no numbers) on the table
+s_bribe | under a table view: Poisson (brown tweed suit) secretly sliding a fat envelope of money to Lustig (navy pinstripe suit) under the tablecloth, sneaky expressions
+s_poisson_gate | Poisson (round chubby man, brown bowler hat, brown tweed suit, round glasses) standing at the foot of the Eiffel Tower holding a document with a red seal, confused face, question marks floating, a guard shrugging
+bg_station | a 1920s Paris train station platform with a steam locomotive puffing steam, iron and glass roof, no people, wide view
+s_police_station | Poisson (round chubby man, brown bowler hat, brown tweed suit, round glasses) outside a police station door with a blue lamp, turning away embarrassed, hand on his face
+bg_poisson_office | a cluttered scrap dealer office with old iron parts, a wooden desk, a window to a scrap yard, warm light, no people, open floor space in the lower middle
+bg_ship | the deck of a 1920s ocean liner arriving in New York, the Statue of Liberty in the distance, seagulls, morning light, no people
+g_lustig_point | Lustig (thin man, tall black top hat, thin curled moustache, navy pinstripe suit, red tie) smiling slyly and pointing up, standing alone on a plain flat solid bright green background (#00FF00), full body, whole figure visible with space around it, no shadow, no floor
+g_lustig_shh | Lustig (same) holding a finger to his lips saying shh, sneaky eyes, standing alone on a plain flat solid bright green background (#00FF00), full body, no shadow, no floor
+g_lustig_run | Lustig (same) running fast to the right holding a brown suitcase with money sticking out, top hat flying, standing alone on a plain flat solid bright green background (#00FF00), full body, no shadow, no floor
+g_poisson_happy | Poisson (round chubby man, brown bowler hat, brown tweed suit, round glasses, grey walrus moustache) jumping with joy, arms up, standing alone on a plain flat solid bright green background (#00FF00), full body, no shadow, no floor
+g_poisson_hide | Poisson (same) covering his face with both hands, embarrassed, red cheeks, standing alone on a plain flat solid bright green background (#00FF00), full body, no shadow, no floor
+g_gendarme | a French gendarme (dark blue uniform, round kepi hat) blowing a whistle and pointing angrily, standing alone on a plain flat solid bright green background (#00FF00), full body, no shadow, no floor
