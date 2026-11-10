@@ -98,10 +98,13 @@ Build an **automated faceless video engine** that produces engaging, *monetizabl
 
 1. ~~Claude access~~ → resolved: Claude Code on personal Pro subscription.
 2. ~~Length~~ → resolved: 2:00–2:48.
-3. Reference: owner to supply wolf/pig channel videos in `YouTubeAutomation/reference_reels/` (created 2026-11-09; `YouTubeAutomation/` made owner-writable, it was read-only) + detailed edit/style breakdown with screenshots.
-4. ~~Meta AI extension~~ → feasible (see decisions); final adoption after style is locked.
-5. Skulsy character assets and sidekick design: deferred until format/style is decided.
-6. Setup prerequisite: `ffmpeg` is not installed on the Mac yet.
+3. ~~Reference reels~~ → supplied and analysed; now in `references/skulsy-finance/`. More screenshots/notes welcome to refine styles.
+4. ~~Meta AI extension~~ → kept as manual image option; Claude in Chrome is the default.
+5. Skulsy character assets (pose set for vintage style) and any sidekick: open.
+6. ~~ffmpeg~~ → installed.
+7. Owner feedback on the two re-rendered test videos.
+8. Tiingo key, SEC contact, GitHub repo (see `docs/HANDOFF.md` §6).
+9. Licensed music + real SFX sources.
 
 ## 8. Session log
 
@@ -118,3 +121,4 @@ Build an **automated faceless video engine** that produces engaging, *monetizabl
 - **2026-11-09, session 2 (cont. 6):** Owner gave permission to render outside the sandbox. Both tests rendered with the new engine and finished (flat 17.6 s −14.4 LUFS; vintage 43.2 s −14.1 LUFS). Contact-sheet review: flat OK (signs clear of captions); vintage had two Meta AI images with invented numbers (ticker "NVDA 78.32", newspaper "NVDA DOWN 40%" vs real 66%) → re-cropped, re-rendered, verified clean. Outputs: `runs/*/out/final.mp4`. **Waiting on owner:** watch both; Tiingo key; SEC contact; GitHub repo; OK to delete `experiments/`.
 - **2026-11-09, session 2 (cont. 7):** Owner couldn't hear audio in the vintage final. Checked: audio track present (AAC stereo 48 kHz, −14 LUFS) and narration transcribes correctly → playback issue in the viewer used. Added `-movflags +faststart` to finish.py for wider player/upload compatibility. Copied to `~/Downloads/skulsy_vintage_nvda_test.mp4`.
 - **2026-11-09, session 2 (cont. 8):** Cleanup on owner's request. Moved to macOS Trash (`~/.Trash/finance-agent-cleanup-2026-11-09/`, 7.0 GB): `experiments/`, whole `YouTubeAutomation/` (owner chose: trash old videos and assets, remove old code, keep `archive/`). Mistake: a first batch of confirmed junk/duplicates (5 MoviePy temp mp4s, duplicate reference reels, old `.env` with identical keys, old research cache, a test mp3, `__pycache__`) was permanently deleted instead of kept in Trash. Saved the Style A Meta AI prompts as `runs/2026-11-09_test-vintage-nvda/image_prompts.txt`. Project now ~2.8 GB.
+- **2026-11-10, end of session 2:** Owner is moving to a new session. `docs/HANDOFF.md` rewritten as the complete starting point (state, folder map, decisions, traps, owner to-dos, next steps); open questions above refreshed.
