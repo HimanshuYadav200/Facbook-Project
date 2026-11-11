@@ -10,14 +10,14 @@ Mark a used seed with `[x]` and the run id. Pick seeds so the same formula doesn
 | # | Seed (hook → turn → moral) | F | Inspiration | Share with | Stat? |
 |---|---|---|---|---|---|
 | 1 | [x] Two brothers, same first paycheck; one spends, one pays himself first; company closes → "Saving buys time." (runs/stickman-money/2026-11-10_two-brothers-paycheck) | A | Ant and the Grasshopper | someone with a first paycheck | |
-| 2 | Two neighbours get the same raise; one buys a bigger house, one keeps the old one; five years later only one can say no to a bad boss → "A raise is freedom only if you don't spend it." | A | lifestyle creep | someone who just got a raise | |
-| 3 | A father gives his son $100 to spend, then asks him to earn $10 → "Money you earn feels heavier." | B | reference reel 5 shape; retell with a daughter and a garden job | your kids | |
+| 2 | [x] Two neighbours get the same raise; one buys a bigger house, one keeps the old one; five years later only one can say no to a bad boss → "A raise is freedom only if you don't spend it." (runs/stickman-money/2026-11-10_same-raise) | A | lifestyle creep | someone who just got a raise | |
+| 3 | [x] A father gives his son $100 to spend, then asks him to earn $10 → "Money you earn feels heavier." (runs/stickman-money/2026-11-10_earn-ten-dollars) | B | reference reel 5 shape; retell with a daughter and a garden job | your kids | |
 | 4 | A girl gets a goose that lays one golden egg a week; she sells the goose for a big price → "Don't sell what keeps paying you." | B | The Goose that Laid the Golden Eggs | someone selling an investment early | |
 | 5 | A dog with a bone sees a bigger bone in the water and loses both → a man quits a steady job for a "sure" crypto tip | A | The Dog and its Reflection | someone chasing quick money | |
 | 6 | Grandma's jar: one jar for spending, one for saving; the boy learns why the second jar is heavy | B | own (used in voice audition) | grandparents | |
 | 7 | The tortoise and the hare as two savers: one invests a little every month, one waits for "the perfect time" | A | Tortoise and the Hare; compounding | someone waiting to start | yes: long-run index return |
 | 8 | A milkmaid plans what she'll buy with milk money and drops the pail → a man spends his bonus before it arrives | A | The Milkmaid and Her Pail | someone counting a bonus | |
-| 9 | "Your parents never told you how many times they said no to themselves." | C | parental sacrifice | your parents | |
+| 9 | [x] "Your parents never told you how many times they said no to themselves." (runs/stickman-money/2026-11-10_parents-said-no) | C | parental sacrifice | your parents | |
 | 10 | Four stages of a money habit: easy, invisible, expensive, hard to stop (a daily coffee/takeout) | D | habit loop (cue, routine, reward) | anyone | yes: avg food-away-from-home spend |
 | 11 | Two friends see the same sale; one buys because it's 50% off, one asks "would I buy it at full price?" | A | anchoring | a bargain hunter | |
 | 12 | A boy borrows $20 from each friend to look rich at school; by graduation nobody lends him anything | A | Jay and the peacock feathers | teens | |

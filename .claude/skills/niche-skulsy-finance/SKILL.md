@@ -34,5 +34,9 @@ Other voices: audition with care, the owner wants to try more (open item).
 ## Topic ideas (each needs real data)
 $1,000 in a famous stock at a famous moment (and the drawdowns on the way) · the cost of panic-selling in 2008 / 2020 · inflation: what $100 from 2000 buys today · a fee of 1% over 30 years · credit-card minimum payments · S&P 500 vs "safe" savings since 2010 · mortgage rates 2021 vs 2023 on the same house · lifestyle creep with a raise.
 
+## Upload text
+`upload.md` per run following `video-core/references/upload-policy.md` incl. §4 (US audience: Post at slot, English (US) settings) and a **"Data:"** line naming the sources (Tiingo, FRED, SEC). Base hashtags (pick 3): #PersonalFinance #Investing #StockMarket #MoneyTips #FinancialLiteracy + 1–2 story-specific.
+Facebook Page categories (max 3): **Digital creator**, **Education**, **Personal blog**. Not "Financial Service".
+
 ## Refining this niche
 Owner adds screenshots / reels / notes to `references/skulsy-finance/` → Claude measures, writes `analysis.md`, proposes skill changes, applies after OK, logs in `docs/CONTEXT.md` (see `references/README.md`).

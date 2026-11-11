@@ -41,3 +41,8 @@ engine/remotion/.stage/
 .idea/
 runs/*/*/blender_test/frames_*/
 runs/*/*/blender_test/*.mp4
+
+# sfx.json backups made by gen_sfx.py / imports (local safety copies)
+library/sfx.json.bak-*
+# facts.json backups made by fact_check.py --apply / hand edits
+runs/*/*/facts.json.bak-*

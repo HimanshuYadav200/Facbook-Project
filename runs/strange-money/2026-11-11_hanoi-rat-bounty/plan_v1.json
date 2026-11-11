@@ -1,0 +1,445 @@
+{
+ "version": 1,
+ "style": "explainer-fast",
+ "music": {
+  "track": "the-end-soundaudio",
+  "volume": 0.05
+ },
+ "tailSeconds": 0.8,
+ "notes": "Hanoi rat bounty, v1: 34 shots (~1.5 s), green-keyed actors (official, smuggler, inspector), motion graphics like the Eiffel mg2/sfx2 run. s_tails_pile zoomed to hide a garbled sign.",
+ "shots": [
+  {
+   "from": 0,
+   "img": "bg_hanoi_street.webp",
+   "cam": "pushIn",
+   "actors": [
+    {
+     "img": "g_official_point.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.52,
+     "enter": "pop",
+     "idle": "bob",
+     "at": 2
+    }
+   ],
+   "mg": [
+    {
+     "type": "label",
+     "text": "1902",
+     "y": 0.18,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "img": "s_rats_swarm.webp",
+   "cam": "tiltUp",
+   "fx": [
+    "punch"
+   ],
+   "sfx": "impact",
+   "mg": [
+    {
+     "type": "arrow",
+     "dir": "up",
+     "x": 0.8,
+     "y": 0.28,
+     "size": 0.22,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "from": 15,
+   "img": "s_hanoi_aerial.webp",
+   "cam": "dive",
+   "mg": [
+    {
+     "type": "label",
+     "text": "Hanoi",
+     "y": 0.2,
+     "rot": -4,
+     "at": 15
+    }
+   ]
+  },
+  {
+   "from": 23,
+   "img": "s_sewer_new.webp",
+   "cam": "pushIn",
+   "sfx": "sparkle"
+  },
+  {
+   "from": 33,
+   "img": "s_villas.webp",
+   "cam": "panR"
+  },
+  {
+   "from": 37,
+   "img": "s_rats_party.webp",
+   "cam": "orbitL"
+  },
+  {
+   "from": 47,
+   "img": "s_toilet_rat.webp",
+   "cam": "tiltDown",
+   "fx": [
+    "shake"
+   ],
+   "sfx": "boing"
+  },
+  {
+   "from": 53,
+   "img": "s_plague_scare.webp",
+   "cam": "pushIn",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "PLAGUE!",
+     "y": 0.25,
+     "rot": -6,
+     "at": 54
+    }
+   ]
+  },
+  {
+   "from": 60,
+   "img": "s_catchers_lineup.webp",
+   "cam": "panL"
+  },
+  {
+   "from": 66,
+   "img": "s_catchers_sewer.webp",
+   "cam": "craneDown"
+  },
+  {
+   "from": 71,
+   "img": "s_rat_sacks.webp",
+   "cam": "tiltUp",
+   "mg": [
+    {
+     "type": "counter",
+     "to": 20000,
+     "text": "rats in one day",
+     "y": 0.2,
+     "at": 71
+    }
+   ]
+  },
+  {
+   "from": 81,
+   "img": "s_rats_more.webp",
+   "cam": "pullOut",
+   "hold": 0.2
+  },
+  {
+   "from": 87,
+   "img": "bg_office.webp",
+   "cam": "pushIn",
+   "sfx": "sparkle",
+   "actors": [
+    {
+     "img": "g_official_idea.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.52,
+     "enter": "pop",
+     "idle": "bob",
+     "at": 88
+    }
+   ]
+  },
+  {
+   "from": 93,
+   "img": "s_townsfolk_hunt.webp",
+   "cam": "orbitR"
+  },
+  {
+   "from": 97,
+   "img": "s_coin.webp",
+   "cam": "pushIn",
+   "fx": [
+    "punch"
+   ],
+   "sfx": "coins",
+   "mg": [
+    {
+     "type": "label",
+     "text": "1 cent per rat",
+     "y": 0.2,
+     "at": 97
+    }
+   ]
+  },
+  {
+   "from": 102,
+   "img": "s_cityhall_clerk.webp",
+   "cam": "panR",
+   "mg": [
+    {
+     "type": "cross",
+     "x": 0.6,
+     "y": 0.62,
+     "size": 0.4,
+     "at": 105
+    }
+   ]
+  },
+  {
+   "from": 112,
+   "img": "s_tail_desk.webp",
+   "cam": "pushIn",
+   "mg": [
+    {
+     "type": "pointer",
+     "x": 0.3,
+     "y": 0.62,
+     "dir": "left",
+     "at": 114
+    }
+   ]
+  },
+  {
+   "from": 121,
+   "img": "s_tails_pile.webp",
+   "cam": "craneUp",
+   "zoom": 1.3,
+   "focus": [
+    0.5,
+    0.68
+   ],
+   "mg": [
+    {
+     "type": "arrow",
+     "dir": "up",
+     "x": 0.82,
+     "y": 0.3,
+     "size": 0.2,
+     "at": 122
+    }
+   ]
+  },
+  {
+   "from": 127,
+   "img": "bg_office.webp",
+   "cam": "pullOut",
+   "actors": [
+    {
+     "img": "g_official_point.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.52,
+     "enter": "pop",
+     "idle": "hop"
+    }
+   ],
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "SOLVED!",
+     "y": 0.25,
+     "rot": 8,
+     "at": 127
+    }
+   ]
+  },
+  {
+   "from": 130,
+   "img": "s_people_spot.webp",
+   "cam": "tiltDown",
+   "sfx": "crowd_whoa",
+   "sfxVolume": 0.25,
+   "hold": 0.1
+  },
+  {
+   "from": 134,
+   "img": "s_tailless_rat.webp",
+   "cam": "dive",
+   "mg": [
+    {
+     "type": "marks",
+     "text": "?!",
+     "y": 0.2,
+     "at": 134
+    },
+    {
+     "type": "circle",
+     "x": 0.42,
+     "y": 0.78,
+     "size": 0.4,
+     "at": 136
+    }
+   ]
+  },
+  {
+   "from": 140,
+   "img": "s_hunter_catch.webp",
+   "cam": "panL"
+  },
+  {
+   "from": 145,
+   "img": "s_snip.webp",
+   "cam": "pushIn",
+   "fx": [
+    "shake"
+   ],
+   "sfx": "scratch"
+  },
+  {
+   "from": 153,
+   "img": "s_rat_babies.webp",
+   "cam": "orbitL",
+   "sfx": "sparkle",
+   "mg": [
+    {
+     "type": "arrow",
+     "dir": "up",
+     "x": 0.82,
+     "y": 0.28,
+     "size": 0.2,
+     "at": 157
+    }
+   ]
+  },
+  {
+   "from": 162,
+   "img": "s_smuggle.webp",
+   "cam": "panR"
+  },
+  {
+   "from": 167,
+   "img": "bg_city_gate.webp",
+   "cam": "pullOut",
+   "actors": [
+    {
+     "img": "g_smuggler.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.52,
+     "enter": "slideL",
+     "idle": "bob"
+    }
+   ]
+  },
+  {
+   "from": 171,
+   "img": "bg_countryside.webp",
+   "cam": "craneDown",
+   "actors": [
+    {
+     "img": "g_inspector.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.52,
+     "enter": "drop",
+     "idle": "shake"
+    }
+   ]
+  },
+  {
+   "from": 175,
+   "img": "s_rat_farm.webp",
+   "cam": "pushIn",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "RAT FARM",
+     "y": 0.22,
+     "rot": -8,
+     "at": 175
+    }
+   ]
+  },
+  {
+   "from": 181,
+   "img": "s_rat_farm_close.webp",
+   "cam": "tiltUp"
+  },
+  {
+   "from": 187,
+   "bg": "#c0392b",
+   "cam": "pushIn",
+   "fx": [
+    "punch"
+   ],
+   "mg": [
+    {
+     "type": "speedLines"
+    },
+    {
+     "type": "marks",
+     "text": "!",
+     "y": 0.38,
+     "at": 187
+    }
+   ]
+  },
+  {
+   "from": 190,
+   "img": "s_tail_desk.webp",
+   "cam": "orbitR",
+   "hold": 0.2,
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "PAID",
+     "y": 0.25,
+     "rot": 6,
+     "at": 191
+    }
+   ]
+  },
+  {
+   "from": 197,
+   "img": "s_tailless_rat.webp",
+   "cam": "pullOut",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "NOT DEAD",
+     "y": 0.25,
+     "rot": -6,
+     "at": 198
+    }
+   ]
+  },
+  {
+   "from": 204,
+   "img": "bg_office.webp",
+   "cam": "tiltDown",
+   "actors": [
+    {
+     "img": "g_official_angry.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.52,
+     "enter": "pop",
+     "idle": "shake"
+    }
+   ],
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "CANCELLED",
+     "y": 0.25,
+     "rot": 8,
+     "at": 206
+    }
+   ]
+  },
+  {
+   "from": 209,
+   "img": "s_rats_rooftops.webp",
+   "cam": "craneUp",
+   "mg": [
+    {
+     "type": "money",
+     "dir": "rain",
+     "at": 212
+    }
+   ]
+  }
+ ]
+}

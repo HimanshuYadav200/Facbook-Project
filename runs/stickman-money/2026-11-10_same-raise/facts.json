@@ -1,0 +1,4 @@
+[
+ {"id": "story_raise", "say": "$800", "kind": "illustrative", "what": "the same monthly raise both neighbours got (story, not real data)"},
+ {"id": "story_savings", "say": "$48,000", "kind": "illustrative", "what": "Maya's savings after five years: $800 x 60 months, no interest (story, not real data)"}
+]

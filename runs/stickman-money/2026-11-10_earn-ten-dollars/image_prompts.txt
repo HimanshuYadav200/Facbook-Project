@@ -1,0 +1,24 @@
+# STYLE (prepend to every prompt): Black and white pencil sketch illustration, vertical 9:16. Simple stickman characters with big round blank white heads, two small dot eyes, a small mouth, no nose, no hair (women have long hair), smooth white bodies with soft grey shading. Clean, detailed hand-drawn background in light grey. Soft vignette. No text, no words, no letters, no numbers, no logos anywhere. Characters in the lower two thirds, top of the picture kept simple.
+# CAST: MOTHER = woman stickman with long hair, wearing a simple apron over a dress. DAUGHTER = small girl stickman about ten years old, long hair in two pigtails, wearing a striped t-shirt. GROWN DAUGHTER (shots 18-21) = young woman stickman, long hair in a ponytail, wearing a striped sweater. Money is always plain folded paper bills with no numbers or printing.
+01_gift: In a cosy living room, the mother kneels and hands the daughter a few folded paper bills; the daughter's eyes are wide with excitement.
+02_mall: The daughter running happily through the bright entrance of a shopping mall, arms out, shop windows around her.
+03_bear_candy: The daughter at a shop counter hugging a big stuffed teddy bear, a bag of candy in her other hand, delighted.
+04_shoes_toy: The daughter wearing new sparkly shoes, a toy lying already forgotten on the floor beside her, shopping bags around her.
+05_money_gone: Evening, the daughter at the dinner table with shopping bags piled beside her chair, an empty little purse open on the table, she looks unbothered.
+06_gloves: Morning on the back porch, the mother handing the daughter a pair of garden gloves, sunny day.
+07_earn_request: The mother crouching and holding up one finger, calmly explaining; the daughter laughing confidently with her hands on her hips, garden gloves on.
+08_big_garden: Seen from behind, the small daughter in garden gloves standing in front of a large backyard garden overgrown with tall wild weeds.
+09_pulling: The daughter pulling a stubborn weed out of the ground with both hands, under a hot bright sun, sweat drops, a pile of weeds beside her.
+10_blisters: The daughter sitting tired on the grass, gloves off, looking at her sore red palms, one hand on her aching back.
+11_clean_garden: Golden evening, a neat clean garden with tidy flower beds, a big pile of pulled weeds in a wheelbarrow, the tired daughter standing proudly beside it.
+12_paid: The mother gently placing one folded paper bill into the daughter's small dirty hand, both smiling softly, evening light.
+13_under_pillow: Night bedroom lit by a small lamp, the mother lifting the daughter's pillow and finding one folded paper bill hidden underneath, the daughter in bed.
+14_why: Night, the mother sitting on the edge of the bed asking a gentle question, the daughter sitting up in bed holding the folded bill close to her chest.
+15_what_it_cost: The daughter in bed showing her blistered palms to her mother, the mother smiling warmly, small lamp glow.
+16_forgotten_toys: A dusty cardboard box in the corner of a room with a stuffed teddy bear, sparkly shoes and a toy inside, forgotten, soft shadows.
+17_scale: An old balance scale on a wooden table: one small folded paper bill on one side pulling it down heavily, a pile of shopping bags and toys on the other side floating up, light.
+18_paycheck: The grown daughter at her first office job receiving a paycheck envelope from a smiling manager.
+19_store: The grown daughter in a clothing store holding up a nice jacket, pausing to think, a hand on her chin.
+20_hours: The grown daughter holding a jacket in one hand and looking at a large hourglass with falling sand in her other hand, thoughtful face.
+21_porch: Sunset, the older mother and the grown daughter sitting together on the back porch steps, a beautiful clean garden in front of them.
+22_new_child: Sunrise, a different little girl stickman with short hair and a small cap putting on garden gloves at the edge of a garden, determined small smile.

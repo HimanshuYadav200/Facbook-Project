@@ -1,0 +1,549 @@
+{
+ "version": 1,
+ "style": "explainer-fast",
+ "music": {
+  "track": "the-end-soundaudio",
+  "volume": 0.05
+ },
+ "tailSeconds": 0.8,
+ "notes": "Ford Transit Connect / chicken tax. 33 shots incl. 3 green colour cards; actors = green-keyed cut-outs (key_green.py). Model: Eiffel run (sfx2).",
+ "shots": [
+  {
+   "from": 0,
+   "img": "s_ship_vans.webp",
+   "cam": "pushIn",
+   "mg": [
+    {
+     "type": "label",
+     "text": "Ford",
+     "y": 0.18,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "img": "s_van_seats_inside.webp",
+   "cam": "tiltDown",
+   "mg": [
+    {
+     "type": "circle",
+     "x": 0.5,
+     "y": 0.6,
+     "size": 0.6,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "img": "bg_dock.webp",
+   "cam": "orbitL",
+   "fx": [
+    "shake"
+   ],
+   "sfx": "scratch",
+   "actors": [
+    {
+     "img": "g_worker_seat.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "drop",
+     "idle": "hop"
+    }
+   ],
+   "mg": [
+    {
+     "type": "marks",
+     "text": "?!",
+     "y": 0.2,
+     "at": 15
+    }
+   ],
+   "hold": 0.15
+  },
+  {
+   "from": 20,
+   "img": "s_port_1964.webp",
+   "cam": "craneDown",
+   "mg": [
+    {
+     "type": "label",
+     "text": "1964",
+     "y": 0.2,
+     "at": 20
+    }
+   ],
+   "hold": 0.2
+  },
+  {
+   "from": 24,
+   "img": "s_chicken_tug.webp",
+   "cam": "pushIn",
+   "sfx": "boing",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "CHICKEN WAR",
+     "y": 0.2,
+     "rot": -6,
+     "at": 28
+    }
+   ],
+   "hold": 0.15
+  },
+  {
+   "from": 33,
+   "img": "s_chicken_blocked.webp",
+   "cam": "panR",
+   "mg": [
+    {
+     "type": "cross",
+     "x": 0.5,
+     "y": 0.5,
+     "size": 0.5,
+     "at": 34
+    }
+   ]
+  },
+  {
+   "from": 39,
+   "bg": "#2f8f46",
+   "cam": "dive",
+   "fx": [
+    "punch"
+   ],
+   "mg": [
+    {
+     "type": "counter",
+     "to": 25,
+     "text": "% tax",
+     "y": 0.3,
+     "at": 40
+    },
+    {
+     "type": "arrow",
+     "dir": "up",
+     "y": 0.62,
+     "size": 0.3,
+     "sfx": null
+    }
+   ]
+  },
+  {
+   "from": 46,
+   "img": "s_light_trucks.webp",
+   "cam": "tiltUp",
+   "sfx": "impact",
+   "mg": [
+    {
+     "type": "label",
+     "text": "trucks + vans",
+     "y": 0.2,
+     "at": 47
+    }
+   ]
+  },
+  {
+   "from": 53,
+   "img": "s_chicken_taxman.webp",
+   "cam": "pullOut",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "CHICKEN TAX",
+     "y": 0.2,
+     "rot": 6,
+     "at": 54
+    }
+   ],
+   "hold": 0.2
+  },
+  {
+   "from": 59,
+   "img": "s_dusty_stamp.webp",
+   "cam": "roll"
+  },
+  {
+   "from": 64,
+   "img": "s_factory_line.webp",
+   "cam": "craneUp",
+   "mg": [
+    {
+     "type": "label",
+     "text": "Ford",
+     "y": 0.2,
+     "at": 66
+    }
+   ]
+  },
+  {
+   "from": 73,
+   "img": "s_istanbul.webp",
+   "cam": "panL",
+   "mg": [
+    {
+     "type": "label",
+     "text": "Transit Connect",
+     "y": 0.18,
+     "at": 74
+    },
+    {
+     "type": "label",
+     "text": "Turkey",
+     "y": 0.36,
+     "rot": 4,
+     "at": 77
+    }
+   ]
+  },
+  {
+   "from": 79,
+   "img": "s_cargo_van_open.webp",
+   "cam": "orbitR",
+   "mg": [
+    {
+     "type": "label",
+     "text": "cargo van",
+     "y": 0.18,
+     "at": 84
+    },
+    {
+     "type": "counter",
+     "to": 25,
+     "text": "% tax",
+     "y": 0.38,
+     "at": 88
+    }
+   ],
+   "hold": 0.25
+  },
+  {
+   "from": 90,
+   "img": "s_family_wagon.webp",
+   "cam": "pushIn",
+   "sfx": "sparkle",
+   "mg": [
+    {
+     "type": "label",
+     "text": "passenger: only 2.5%",
+     "y": 0.2,
+     "at": 91
+    },
+    {
+     "type": "arrow",
+     "dir": "down",
+     "x": 0.82,
+     "y": 0.36,
+     "size": 0.2,
+     "at": 93
+    }
+   ],
+   "hold": 0.2
+  },
+  {
+   "from": 96,
+   "img": "s_seat_install.webp",
+   "cam": "dive"
+  },
+  {
+   "from": 106,
+   "img": "s_seatbelt_window.webp",
+   "cam": "panR",
+   "sfx": "click"
+  },
+  {
+   "from": 111,
+   "img": "s_paperwork.webp",
+   "cam": "tiltDown",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "PASSENGER",
+     "y": 0.3,
+     "rot": -8,
+     "at": 113
+    }
+   ],
+   "hold": 0.2
+  },
+  {
+   "from": 118,
+   "img": "s_baltimore_port.webp",
+   "cam": "craneDown",
+   "mg": [
+    {
+     "type": "label",
+     "text": "Baltimore",
+     "y": 0.18,
+     "at": 121
+    }
+   ]
+  },
+  {
+   "from": 124,
+   "img": "s_workers_pull_seat.webp",
+   "cam": "whip",
+   "fx": [
+    "shake"
+   ],
+   "sfx": "scratch"
+  },
+  {
+   "from": 130,
+   "img": "s_metal_panel.webp",
+   "cam": "pushIn",
+   "sfx": "impact",
+   "mg": [
+    {
+     "type": "pointer",
+     "x": 0.42,
+     "y": 0.5,
+     "dir": "left",
+     "at": 133
+    }
+   ]
+  },
+  {
+   "from": 137,
+   "img": "s_cargo_lot.webp",
+   "cam": "dive",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "CARGO VAN",
+     "y": 0.22,
+     "rot": 6,
+     "at": 138
+    }
+   ],
+   "hold": 0.2
+  },
+  {
+   "from": 145,
+   "img": "bg_office.webp",
+   "cam": "pullOut",
+   "actors": [
+    {
+     "img": "g_boss_coins.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "slideL",
+     "idle": "breathe"
+    }
+   ],
+   "mg": [
+    {
+     "type": "label",
+     "text": "hundreds per van",
+     "y": 0.18,
+     "at": 148
+    }
+   ]
+  },
+  {
+   "from": 155,
+   "bg": "#2f8f46",
+   "cam": "pushIn",
+   "fx": [
+    "punch"
+   ],
+   "mg": [
+    {
+     "type": "speedLines"
+    },
+    {
+     "type": "money",
+     "dir": "rain",
+     "size": 0.22
+    },
+    {
+     "type": "label",
+     "text": "thousands saved per van",
+     "y": 0.3,
+     "at": 157,
+     "sfx": null
+    }
+   ]
+  },
+  {
+   "from": 162,
+   "img": "bg_office.webp",
+   "cam": "orbitL",
+   "actors": [
+    {
+     "img": "g_boss_thumbs.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "pop",
+     "idle": "hop"
+    }
+   ]
+  },
+  {
+   "from": 166,
+   "img": "s_customs_inspect.webp",
+   "cam": "tiltUp",
+   "sfx": "impact",
+   "mg": [
+    {
+     "type": "marks",
+     "text": "?!",
+     "x": 0.75,
+     "y": 0.2,
+     "at": 166
+    }
+   ]
+  },
+  {
+   "from": 170,
+   "img": "bg_customs_office.webp",
+   "cam": "pushIn",
+   "fx": [
+    "flash"
+   ],
+   "actors": [
+    {
+     "img": "g_officer_point.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "slideR",
+     "idle": "shake"
+    }
+   ],
+   "mg": [
+    {
+     "type": "label",
+     "text": "2013",
+     "y": 0.16,
+     "at": 171
+    },
+    {
+     "type": "stamp",
+     "text": "CARGO!",
+     "y": 0.34,
+     "rot": -8,
+     "at": 176
+    }
+   ],
+   "hold": 0.25
+  },
+  {
+   "from": 181,
+   "img": "s_puppet_book.webp",
+   "cam": "roll",
+   "mg": [
+    {
+     "type": "label",
+     "text": "\"manipulate\"",
+     "y": 0.2,
+     "at": 187
+    }
+   ]
+  },
+  {
+   "from": 191,
+   "img": "s_supreme_court.webp",
+   "cam": "tiltUp",
+   "sfx": "riser",
+   "mg": [
+    {
+     "type": "label",
+     "text": "Supreme Court",
+     "y": 0.18,
+     "at": 196
+    }
+   ]
+  },
+  {
+   "from": 201,
+   "img": "s_court_doors.webp",
+   "cam": "pushIn",
+   "fx": [
+    "shake"
+   ],
+   "sfx": "crash",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "REFUSED",
+     "y": 0.3,
+     "rot": -8,
+     "at": 202
+    }
+   ],
+   "hold": 0.2
+  },
+  {
+   "from": 207,
+   "img": "s_big_check.webp",
+   "cam": "craneDown",
+   "mg": [
+    {
+     "type": "label",
+     "text": "2024",
+     "y": 0.16,
+     "at": 208
+    }
+   ]
+  },
+  {
+   "from": 213,
+   "bg": "#2f8f46",
+   "cam": "dive",
+   "fx": [
+    "punch"
+   ],
+   "mg": [
+    {
+     "type": "counter",
+     "to": 365,
+     "text": "million dollars",
+     "y": 0.3,
+     "at": 213
+    },
+    {
+     "type": "money",
+     "dir": "rain",
+     "size": 0.22,
+     "sfx": null
+    }
+   ],
+   "hold": 0.2
+  },
+  {
+   "from": 215,
+   "img": "bg_office.webp",
+   "cam": "panL",
+   "actors": [
+    {
+     "img": "g_boss_shrug.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "pop",
+     "idle": "wobble"
+    }
+   ],
+   "mg": [
+    {
+     "type": "label",
+     "text": "no liability admitted",
+     "y": 0.18,
+     "at": 217
+    }
+   ]
+  },
+  {
+   "from": 222,
+   "img": "s_chicken_on_van.webp",
+   "cam": "pullOut",
+   "sfx": "crowd_laugh",
+   "sfxVolume": 0.25
+  }
+ ]
+}

@@ -28,10 +28,11 @@ export type Graphic = {
   sfx?: string | null;
 };
 
-// Default sound per graphic: pool names from sounds.json.
+// Default sound per graphic: pool names from sounds.json. Labels, arrows, ?! marks and pointers are silent
+// (owner 2026-11-11: too many sounds, cartoon pops/boings sounded cheap); a plan can still set `sfx`.
 const SOUND: Record<Graphic["type"], string | null> = {
-  stamp: "stamp", label: "pop", counter: "tick", arrow: "whip", money: "cash", speedLines: null,
-  marks: "boing", cross: "thud", circle: "slide", pointer: "pop",
+  stamp: "stamp", label: null, counter: "tick", arrow: null, money: "cash", speedLines: null,
+  marks: null, cross: "thud", circle: "writing", pointer: null,
 };
 const SIZE: Record<Graphic["type"], number> = {
   stamp: 0.62, label: 0.5, counter: 0.8, arrow: 0.3, money: 0.26, speedLines: 1, marks: 0.3, cross: 0.4, circle: 0.45, pointer: 0.28,
@@ -47,6 +48,14 @@ const ease = Easing.out(Easing.cubic);
 
 // Font size so `text` fills about `w` px (Arial Black capitals are ~0.75 em wide).
 const fit = (text: string, w: number, max: number) => Math.min(max, w / (0.75 * Math.max(3, text.length)));
+// Long text on one line came out tiny; past 14 letters it breaks into two lines at the space nearest the middle.
+export const lines = (text: string): string[] => {
+  const sp = [...text].map((c, i) => (c === " " ? i : -1)).filter((i) => i > 0);
+  if (text.length <= 14 || !sp.length) return [text];
+  const cut = sp.reduce((a, b) => (Math.abs(b - text.length / 2) < Math.abs(a - text.length / 2) ? b : a));
+  return [text.slice(0, cut), text.slice(cut + 1)];
+};
+const longest = (ls: string[]) => ls.reduce((a, b) => (b.length > a.length ? b : a));
 
 const Body: React.FC<{ g: Graphic; seed: number }> = ({ g, seed }) => {
   const f = useCurrentFrame();
@@ -72,12 +81,18 @@ const Body: React.FC<{ g: Graphic; seed: number }> = ({ g, seed }) => {
         `rotate(${g.rot ?? -12}deg) scale(${interpolate(s, [0, 1], [2.6, 1])})`,
       );
     }
-    case "label":
+    case "label": {
+      const ls = lines(text);
+      // two-line labels may use up to 80% of the frame width, so they stay readable
+      const lw = ls.length > 1 ? Math.max(w, 0.8 * W) : w;
       return at(
-        <div style={{ fontFamily: FONT, fontSize: fit(text, w, 120), color: INK, background: "#fff7d6", border: `10px solid ${INK}`,
-          borderRadius: 22, padding: "8px 30px", whiteSpace: "nowrap", lineHeight: 1.15, boxShadow: "0 10px 20px rgba(0,0,0,0.4)" }}>{text}</div>,
+        <div style={{ fontFamily: FONT, fontSize: fit(longest(ls), lw, 120), color: INK, background: "#fff7d6", border: `10px solid ${INK}`,
+          borderRadius: 22, padding: "8px 30px", whiteSpace: "nowrap", lineHeight: 1.15, textAlign: "center", boxShadow: "0 10px 20px rgba(0,0,0,0.4)" }}>
+          {ls.map((l, i) => <div key={i}>{l}</div>)}
+        </div>,
         `rotate(${g.rot ?? -4}deg) scale(${0.4 + 0.6 * pop})`,
       );
+    }
     case "counter": {
       const p = interpolate(f, [0, COUNT_FRAMES], [0, 1], { extrapolateRight: "clamp", easing: ease });
       const n = Math.round((g.to ?? 0) * p).toLocaleString("en-US");
@@ -99,7 +114,7 @@ const Body: React.FC<{ g: Graphic; seed: number }> = ({ g, seed }) => {
       return at(<div style={{ width: w, height: w * 4 / 3 }}><BigArrow dir={down ? "down" : "up"} /></div>, `translateY(${enter}px)`);
     }
     case "money": {
-      // Bills tumbling down the frame (rain) or flying across it (left/right).
+      // Bills tumbling down the frame (rain) or flying across it (left/right) in a band centred on y.
       const bills = Array.from({ length: 9 }, (_, i) => {
         const r = (k: string) => random(`m${seed}-${i}-${k}`);
         const speed = 34 + r("s") * 22;
@@ -107,7 +122,7 @@ const Body: React.FC<{ g: Graphic; seed: number }> = ({ g, seed }) => {
         if (g.dir === "left" || g.dir === "right") {
           const run = ((f * speed * 1.4 + r("o") * (W + 600)) % (W + 600)) - 300;
           bx = g.dir === "right" ? run : W - run;
-          by = (0.15 + r("y") * 0.55) * H + 40 * Math.sin(f / 5 + i);
+          by = ((g.y ?? 0.42) + (r("y") - 0.5) * 0.4) * H + 40 * Math.sin(f / 5 + i);
         } else {
           bx = r("x") * W;
           by = ((f * speed + r("o") * (H + 600)) % (H + 600)) - 300;

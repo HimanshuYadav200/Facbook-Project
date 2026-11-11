@@ -7,7 +7,8 @@ Images where no face is found get an empty list: those shots simply don't blink.
 Also writes review/eyes_check.jpg: every image with a red mark on each eye found (check it once).
 
 How: a stickman head is a big, round, near-white blob; its eyes are two small dark dots side by side
-in its upper part. Works for the stickman-calm look only (round blank heads, dot eyes).
+in its upper part. Round glasses are found too (two alike white lenses side by side, one dot each).
+Works for the stickman-calm look only (round blank heads, dot eyes).
 """
 import json
 import subprocess
@@ -38,7 +39,8 @@ def find_faces(g):
             continue
         ys, xs = np.nonzero(m)
         h, w = np.ptp(ys) + 1, np.ptp(xs) + 1
-        if not (0.7 < h / w < 1.35 and area / (h * w) > 0.6):
+        # hair over the head or an ear cuts into the blob, so measure roundness with its holes filled
+        if not (0.7 < h / w < 1.35 and nd.binary_fill_holes(m).sum() / (h * w) > 0.55):
             continue  # not round enough to be a head
         holes, k = nd.label(nd.binary_fill_holes(m) & ~m & (g < 90))
         if k < 2:
@@ -68,7 +70,44 @@ def find_faces(g):
         r = float(np.sqrt(max(e1[2], e2[2]) / np.pi))
         faces.append({"eyes": [[round(e1[1] / W, 4), round(e1[0] / H, 4)], [round(e2[1] / W, 4), round(e2[0] / H, 4)]],
                       "r": round(r / W, 4), "tone": int(np.median(g[m]))})
-    return faces
+    return faces + find_glasses(g, lab, n, faces)
+
+
+def find_glasses(g, lab, n, faces):
+    """Faces with round glasses: each lens is its own small white disc with one dark eye dot inside,
+    so the head test above never sees both eyes. A face = two alike lenses side by side, one solid dot each."""
+    lenses = []
+    for i, b in enumerate(nd.find_objects(lab), start=1):
+        bh, bw = b[0].stop - b[0].start, b[1].stop - b[1].start
+        if not (6 <= bw <= 90 and 0.75 < bh / bw < 1.35):
+            continue
+        m = lab[b] == i
+        filled = nd.binary_fill_holes(m)
+        if filled.sum() < 0.6 * bh * bw:
+            continue  # not a disc
+        dots, k = nd.label(filled & ~m & (g[b] < 90))
+        if k != 1:
+            continue  # a lens holds exactly one eye
+        s = int((dots > 0).sum())
+        if not 3 <= s <= 0.35 * filled.sum():
+            continue
+        cy, cx = nd.center_of_mass(dots > 0)
+        lenses.append((b[0].start + cy, b[1].start + cx, bw, s, int(np.median(g[b][m]))))
+    taken = {tuple(map(tuple, f["eyes"])) for f in faces}
+    out, used = [], set()
+    for a in range(len(lenses)):
+        for c in range(a + 1, len(lenses)):
+            (y1, x1, w1, s1, t1), (y2, x2, w2, s2, _) = lenses[a], lenses[c]
+            dx, dy = abs(x1 - x2), abs(y1 - y2)
+            if a in used or c in used or not (max(w1, w2) < 1.4 * min(w1, w2) and 1.0 * w1 < dx < 2.6 * w1
+                                              and dy < 0.25 * dx and max(s1, s2) < 3 * min(s1, s2)):
+                continue
+            eyes = [[round(x1 / W, 4), round(y1 / H, 4)], [round(x2 / W, 4), round(y2 / H, 4)]]
+            if tuple(map(tuple, eyes)) in taken:
+                continue
+            used |= {a, c}
+            out.append({"eyes": eyes, "r": round(float(np.sqrt(max(s1, s2) / np.pi)) / W, 4), "tone": t1})
+    return out
 
 
 def check_sheet(run, results):

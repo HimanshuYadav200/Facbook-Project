@@ -1,4 +1,4 @@
-"""Finish a render: loudness to -14 LUFS (two-pass), then check length and black frames.
+"""Finish a render: loudness to -14 LUFS (two-pass), then check length, true peak and black frames.
 
 Usage: engine/.venv/bin/python engine/tools/finish.py runs/<niche>/<id> [--test]
   reads out/raw.mp4, writes out/final.mp4. Length limits come from the run's niche.json;
@@ -74,6 +74,9 @@ def main(argv=None):
     lufs = float(out["input_i"])
     if abs(lufs - TARGET_I) > 1.0:
         problems.append(f"loudness {lufs:.1f} LUFS (target {TARGET_I})")
+    tp = float(out["input_tp"])
+    if tp > TARGET_TP + 0.5:  # a hot SFX hit can clip after the platform's own encode
+        problems.append(f"true peak {tp:.1f} dB (max {TARGET_TP}): turn down the loudest sound effect and re-render")
     length = duration(final)
     if not a.test and not (min_len <= length <= max_len):
         problems.append(f"length {length:.1f}s outside {min_len:.0f}-{max_len:.0f}s")
@@ -81,7 +84,7 @@ def main(argv=None):
     if blacks:
         problems.append("black frames at " + ", ".join(f"{float(s):.1f}-{float(e):.1f}s" for s, e in blacks))
 
-    print(f"{final}: {length:.1f}s, {lufs:.1f} LUFS, true peak {float(out['input_tp']):.1f} dB")
+    print(f"{final}: {length:.1f}s, {lufs:.1f} LUFS, true peak {tp:.1f} dB")
     for p in problems:
         print(f"PROBLEM: {p}", file=sys.stderr)
     return 1 if problems else 0

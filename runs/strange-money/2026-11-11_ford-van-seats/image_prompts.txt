@@ -1,0 +1,41 @@
+# STYLE (pasted IN FULL at the start of every prompt): Stylized 3D cartoon render, vertical 9:16, like a cozy animated movie or a miniature diorama: soft global illumination, warm rich saturated colors, rounded chunky shapes, slight depth of field. Characters are cute simple cartoon people with big round cream-colored heads, small black dot eyes, simple eyebrows, small mouths, no nose, and short rounded bean-shaped bodies with short arms and legs. No text, no letters, no numbers, no signs with writing, no logos anywhere.
+# CAST (never green clothes, so green-screen cut-outs work):
+#   van     = a small white boxy compact work van with a tall roof, no logos, no badges
+#   boss    = car company manager: round man, grey suit, light blue shirt, navy tie, neat brown hair
+#   workers = dock workers in orange overalls and yellow hard hats
+#   officer = US customs officer: navy blue uniform, peaked cap, gold badge
+# Green actors: "... standing alone on a plain flat solid bright green background (#00FF00), full body, whole figure visible with space around it, no shadow, no floor, nothing else in the image"
+# name: prompt
+s_ship_vans: a huge cargo ship crossing a blue ocean, its open deck packed with rows of identical small white boxy compact vans with tall roofs, seagulls, golden morning light, high aerial angle
+s_van_seats_inside: inside the back of a small white compact van: a cozy padded grey back seat with seat belts, side windows letting in sunlight, seen from the open rear doors
+bg_dock: a modern harbor dock at a port, concrete ground, stacked shipping containers in bright colors, a big crane, blue sky, no people, eye-level wide view, open space in the lower middle
+g_worker_seat: a dock worker in orange overalls and a yellow hard hat carrying a grey van back seat over his head with a cheeky grin, standing alone on a plain flat solid bright green background (#00FF00), full body, whole figure visible with space around it, no shadow, no floor, nothing else in the image
+s_port_1964: a 1960s American harbor, old cargo ships, wooden crates of frozen chickens stacked on the dock, vintage trucks, warm retro colors, wide view
+s_chicken_tug: two 1960s diplomats in suits playing tug-of-war over a giant roast chicken across a long meeting table, one in a dark suit, one in a beige suit, small flags on the table with no writing, funny angry faces
+s_chicken_blocked: a European border gate closed with a red and white barrier in front of a truck full of chicken crates, a border guard holding up his hand to stop it, sad cartoon chickens peeking out of the crates
+s_light_trucks: a row of small 1960s pickup trucks and boxy little vans waiting at a port, a big red barrier arm coming down in front of them, dramatic low angle
+s_chicken_taxman: a funny cartoon chicken wearing a tiny dark blue tax collector visor and holding a blank paper receipt, standing proudly on a pile of coins, close-up, low angle
+s_dusty_stamp: an old rubber stamp and an old law book on a wooden desk covered in dust and cobwebs, a wall clock behind, many calendar pages flying through the air, dramatic light
+s_factory_line: a bright modern car factory assembly line building rows of small white boxy compact vans with tall roofs, robot arms, cartoon workers in blue overalls, wide high angle
+s_istanbul: the skyline of Istanbul at sunset with domes and minarets over the Bosphorus water, a small white boxy compact van parked on the waterfront road in front, wide view
+s_cargo_van_open: a small white compact van with both rear doors open, the back stuffed with cardboard boxes, ladders and toolboxes, no seats, no side windows, side view
+s_family_wagon: a small white compact van with big side windows, a happy cartoon family inside waving through the windows, sunny suburban street, side view
+s_seat_install: in a car factory, two cartoon workers in blue overalls lifting a grey back seat into a small white compact van through its side door, sparks of excitement, close-up
+s_seatbelt_window: extreme close-up inside a van: a seat belt buckle clicking into place on a grey back seat, a bright side window behind it, dramatic light
+s_paperwork: top-down view of a desk with official customs forms covered only in wavy lines, a rubber stamp, a fountain pen and a tiny toy white van on top of the papers
+s_baltimore_port: a big cargo ship docking at an American harbor at sunrise, gantry cranes, hundreds of small white compact vans lined up on the dock, low angle from the water
+s_workers_pull_seat: two dock workers in orange overalls and yellow hard hats pulling a grey back seat out of a small white compact van with all their strength, funny strained faces, side door open
+s_metal_panel: a dock worker in orange overalls and a welding mask fixing a plain white metal panel over the side window of a small white van, bright orange sparks flying, close-up
+s_cargo_lot: a car dealer lot with long rows of identical small white compact vans with no side windows, blue sky, little flags without writing, high wide angle
+bg_office: a modern corporate office with a big window over a city skyline, a glass desk, potted plant, warm light, no people, open floor space in the lower middle
+g_boss_coins: car company manager (round man, grey suit, light blue shirt, navy tie, neat brown hair) holding out a few small coins in his open palm with a shrug, standing alone on a plain flat solid bright green background (#00FF00), full body, whole figure visible with space around it, no shadow, no floor, nothing else in the image
+g_boss_thumbs: car company manager (round man, grey suit, light blue shirt, navy tie, neat brown hair) grinning and giving a big double thumbs up, standing alone on a plain flat solid bright green background (#00FF00), full body, whole figure visible with space around it, no shadow, no floor, nothing else in the image
+s_customs_inspect: a US customs officer (navy blue uniform, peaked cap, gold badge) bending down with a big magnifying glass to inspect a small white van, a pile of removed grey van seats next to it, suspicious face, harbor background
+bg_customs_office: a government customs office with filing cabinets, an American flag without writing, a wooden desk with a rubber stamp, no people, open floor space in the lower middle
+g_officer_point: a US customs officer (navy blue uniform, peaked cap, gold badge) pointing forward sternly with one hand, other hand on hip, standing alone on a plain flat solid bright green background (#00FF00), full body, whole figure visible with space around it, no shadow, no floor, nothing else in the image
+s_puppet_book: a giant thick rule book lying open on a table, tied with puppet strings pulled from above by a hand in a grey suit sleeve, papers flying, dramatic angle
+s_supreme_court: a grand white marble court building with tall columns and wide stone steps under a blue sky, no writing on the building, dramatic low angle
+s_court_doors: huge heavy wooden courtroom doors slamming shut, a tiny small white van outside in front of them, dramatic low angle
+s_big_check: car company manager (round man, grey suit, light blue shirt, navy tie) signing a giant oversized paper check with a huge pen, sweating, the check has only wavy lines and no numbers
+g_boss_shrug: car company manager (round man, grey suit, light blue shirt, navy tie, neat brown hair) shrugging with both hands up and an innocent face, standing alone on a plain flat solid bright green background (#00FF00), full body, whole figure visible with space around it, no shadow, no floor, nothing else in the image
+s_chicken_on_van: a funny cartoon chicken sitting proudly on the roof of a small white compact van at a harbor at sunset, the chicken looking smug, warm golden light

@@ -75,12 +75,14 @@ SOUND_POOLS = json.loads((ROOT / "engine/remotion/src/styles/explainer-fast/soun
 MG_MIN = 1.0  # seconds a motion graphic must stay on screen before the cut
 TAIL_DEFAULT = {"vintage-story": 0.4, "flat-fastcut": 0.5, "stickman-calm": 1.0, "explainer-fast": 0.6}
 
-NUMBER_WORDS = re.compile(r"\b(hundred|thousand|million|billion|trillion|percent)\b", re.I)
-NUM = re.compile(r"(?<![\w.-])(\$?)(\d[\d,]*(?:\.\d+)?)\s?([kKmMbB](?![a-zA-Z])|%|x(?![a-zA-Z])|times\b)?")
+# million/billion/trillion are fine after digits ("$365 million": Kokoro reads it right, "$365M" it reads "dollars em")
+NUMBER_WORDS = re.compile(r"\b(hundred|thousand|percent)\b", re.I)
+NUM = re.compile(r"(?<![\w.-])(\$?)(\d[\d,]*(?:\.\d+)?)\s?(million\b|billion\b|trillion\b|[kKmMbB](?![a-zA-Z])|%|x(?![a-zA-Z])|times\b)?", re.I)
 
 
 def parse_numbers(text):
-    """'$41,100' -> ('$', 41100.0); '66%' -> ('%', 66); '$262K' -> ('$', 262000); years 1900-2099 skipped."""
+    """'$41,100' -> ('$', 41100.0); '66%' -> ('%', 66); '$262K' -> ('$', 262000); '$365 million' -> ('$', 365e6);
+    years 1900-2099 skipped."""
     out = []
     for m in NUM.finditer(text):
         dollar, digits, suffix = m.group(1), m.group(2).replace(",", ""), (m.group(3) or "").strip().lower()
@@ -90,7 +92,7 @@ def parse_numbers(text):
             continue
         if not dollar and not suffix and re.fullmatch(r"(19|20)\d\d", digits):
             continue  # a year
-        v *= {"k": 1e3, "m": 1e6, "b": 1e9}.get(suffix, 1)
+        v *= {"k": 1e3, "m": 1e6, "b": 1e9, "million": 1e6, "billion": 1e9, "trillion": 1e12}.get(suffix, 1)
         unit = "$" if dollar else "%" if suffix == "%" else "x" if suffix in ("x", "times") else ""
         out.append((m.group(0).strip(), unit, v))
     return out
@@ -267,7 +269,8 @@ def check(run, test=False):
         for g in s.get("mg") or []:
             on_screen.append(str(g.get("text", "")))
             if isinstance(g.get("to"), (int, float)):
-                on_screen.append(f"{g['to']:,}")
+                # a counter's word belongs to its number: 365 + "MILLION DOLLARS" = $365 million
+                on_screen.append(f"{g['to']:,} {g.get('text', '')}")
     for c in (plan.get("charts") or {}).values():
         on_screen += [c.get("title", ""), c.get("subtitle", "")]
     for where, text in [("script", script)] + [("on screen", t) for t in on_screen]:

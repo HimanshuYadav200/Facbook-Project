@@ -5,7 +5,7 @@ Usage: engine/.venv/bin/python engine/tools/voice.py runs/<niche>/<id> --voice b
 - Caption words always come from script.txt; Whisper only supplies the timing (it misspells names).
 - The Kokoro language comes from the voice name's first letter (a = American, b = British, ...).
   The test version always used American, so British voices mispronounced some words.
-- Write numbers as digits in the script ("$41,100", "66%", "2016"); Kokoro reads them correctly
+- Write numbers as digits in the script ("$41,100", "66%", "2016", "$365 million"); Kokoro reads them correctly ("$365M" it does not)
   and captions show them as one word. Write "262 times", not "262x" (read as "ex").
 """
 import argparse

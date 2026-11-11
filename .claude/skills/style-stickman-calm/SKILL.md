@@ -43,5 +43,6 @@ Meta AI video was **not available** to Claude's browser session (2026-11-10: "Vi
 - **Cast:** the niche skill's cast list; every character gets one clothing identifier (blazer + watch, hoodie + backpack, glasses, apron…) repeated in every prompt that shows them.
 - **Keep the top 20% simple** (sky, wall): ask for "characters in the lower two thirds" so captions don't sit on faces.
 - A little warm colour (lamp glow, sunrise) is welcome; Meta adds it by itself.
-- Save with a page helper that fetches the newest large image and downloads it as `skm_<name>.webp` (worked in the first video: ~30 s per image, 2 images per browser batch to avoid time-outs). Then move into `incoming/` and run `match_images.py`.
+- Save with `engine/tools/meta_save.js` (see video-core step 7; ~30 s per image, max 2 prompts per browser batch, save in the order sent). After a page reload call `metaSave.init` again: a reload lazy-loads old images. Then move into `incoming/` and run `match_images.py`.
+- Put the **full style block in every prompt**, not just "same style" (alone it drifted to realistic people), and type into the composer for real (pasted text sometimes isn't sent).
 - Check the contact sheet for invented numbers or text (money bills, calculators, clocks).

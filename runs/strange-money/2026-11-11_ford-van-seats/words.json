@@ -1,0 +1,1154 @@
+{
+ "duration": 58.525,
+ "voice": "am_puck",
+ "speed": 1.15,
+ "sentence_gap": 0.0,
+ "match": 0.978,
+ "words": [
+  {
+   "word": "For",
+   "start": 0.0,
+   "end": 0.32
+  },
+  {
+   "word": "years,",
+   "start": 0.32,
+   "end": 0.54
+  },
+  {
+   "word": "Ford",
+   "start": 0.78,
+   "end": 0.8
+  },
+  {
+   "word": "shipped",
+   "start": 0.8,
+   "end": 1.02
+  },
+  {
+   "word": "new",
+   "start": 1.02,
+   "end": 1.26
+  },
+  {
+   "word": "vans",
+   "start": 1.26,
+   "end": 1.46
+  },
+  {
+   "word": "to",
+   "start": 1.46,
+   "end": 1.66
+  },
+  {
+   "word": "America",
+   "start": 1.66,
+   "end": 1.92
+  },
+  {
+   "word": "with",
+   "start": 1.92,
+   "end": 2.12
+  },
+  {
+   "word": "back",
+   "start": 2.12,
+   "end": 2.3
+  },
+  {
+   "word": "seats,",
+   "start": 2.3,
+   "end": 2.54
+  },
+  {
+   "word": "just",
+   "start": 2.8,
+   "end": 2.88
+  },
+  {
+   "word": "so",
+   "start": 2.88,
+   "end": 3.04
+  },
+  {
+   "word": "it",
+   "start": 3.04,
+   "end": 3.1
+  },
+  {
+   "word": "could",
+   "start": 3.1,
+   "end": 3.2
+  },
+  {
+   "word": "rip",
+   "start": 3.2,
+   "end": 3.32
+  },
+  {
+   "word": "the",
+   "start": 3.32,
+   "end": 3.44
+  },
+  {
+   "word": "seats",
+   "start": 3.44,
+   "end": 3.56
+  },
+  {
+   "word": "right",
+   "start": 3.56,
+   "end": 3.78
+  },
+  {
+   "word": "out.",
+   "start": 3.78,
+   "end": 4.1
+  },
+  {
+   "word": "You",
+   "start": 4.4,
+   "end": 4.44
+  },
+  {
+   "word": "see,",
+   "start": 4.44,
+   "end": 4.56
+  },
+  {
+   "word": "in",
+   "start": 4.64,
+   "end": 4.66
+  },
+  {
+   "word": "1964,",
+   "start": 4.66,
+   "end": 5.28
+  },
+  {
+   "word": "America",
+   "start": 5.56,
+   "end": 5.7
+  },
+  {
+   "word": "got",
+   "start": 5.7,
+   "end": 5.9
+  },
+  {
+   "word": "into",
+   "start": 5.9,
+   "end": 6.06
+  },
+  {
+   "word": "a",
+   "start": 6.06,
+   "end": 6.16
+  },
+  {
+   "word": "fight",
+   "start": 6.16,
+   "end": 6.3
+  },
+  {
+   "word": "with",
+   "start": 6.3,
+   "end": 6.44
+  },
+  {
+   "word": "Europe",
+   "start": 6.44,
+   "end": 6.62
+  },
+  {
+   "word": "over",
+   "start": 6.62,
+   "end": 6.86
+  },
+  {
+   "word": "chicken.",
+   "start": 6.86,
+   "end": 7.1
+  },
+  {
+   "word": "Europe",
+   "start": 7.62,
+   "end": 7.66
+  },
+  {
+   "word": "slapped",
+   "start": 7.66,
+   "end": 7.92
+  },
+  {
+   "word": "tariffs",
+   "start": 7.92,
+   "end": 8.26
+  },
+  {
+   "word": "on",
+   "start": 8.26,
+   "end": 8.42
+  },
+  {
+   "word": "American",
+   "start": 8.42,
+   "end": 8.74
+  },
+  {
+   "word": "chicken,",
+   "start": 8.74,
+   "end": 9.06
+  },
+  {
+   "word": "so",
+   "start": 9.2,
+   "end": 9.3
+  },
+  {
+   "word": "America",
+   "start": 9.3,
+   "end": 9.56
+  },
+  {
+   "word": "hit",
+   "start": 9.56,
+   "end": 9.74
+  },
+  {
+   "word": "back",
+   "start": 9.74,
+   "end": 9.92
+  },
+  {
+   "word": "with",
+   "start": 9.92,
+   "end": 10.04
+  },
+  {
+   "word": "a",
+   "start": 10.04,
+   "end": 10.14
+  },
+  {
+   "word": "25%",
+   "start": 10.14,
+   "end": 10.5
+  },
+  {
+   "word": "tax",
+   "start": 10.82,
+   "end": 11.12
+  },
+  {
+   "word": "on",
+   "start": 11.12,
+   "end": 11.28
+  },
+  {
+   "word": "imported",
+   "start": 11.28,
+   "end": 11.52
+  },
+  {
+   "word": "light",
+   "start": 11.52,
+   "end": 11.74
+  },
+  {
+   "word": "trucks",
+   "start": 11.74,
+   "end": 12.02
+  },
+  {
+   "word": "and",
+   "start": 12.02,
+   "end": 12.18
+  },
+  {
+   "word": "vans.",
+   "start": 12.18,
+   "end": 12.48
+  },
+  {
+   "word": "People",
+   "start": 12.76,
+   "end": 12.94
+  },
+  {
+   "word": "called",
+   "start": 12.94,
+   "end": 13.16
+  },
+  {
+   "word": "it",
+   "start": 13.16,
+   "end": 13.28
+  },
+  {
+   "word": "the",
+   "start": 13.28,
+   "end": 13.36
+  },
+  {
+   "word": "chicken",
+   "start": 13.36,
+   "end": 13.58
+  },
+  {
+   "word": "tax.",
+   "start": 13.58,
+   "end": 13.92
+  },
+  {
+   "word": "And",
+   "start": 14.08,
+   "end": 14.16
+  },
+  {
+   "word": "it",
+   "start": 14.16,
+   "end": 14.24
+  },
+  {
+   "word": "never",
+   "start": 14.24,
+   "end": 14.38
+  },
+  {
+   "word": "went",
+   "start": 14.38,
+   "end": 14.54
+  },
+  {
+   "word": "away.",
+   "start": 14.54,
+   "end": 14.8
+  },
+  {
+   "word": "Decades",
+   "start": 15.16,
+   "end": 15.42
+  },
+  {
+   "word": "later,",
+   "start": 15.42,
+   "end": 15.7
+  },
+  {
+   "word": "Ford",
+   "start": 15.88,
+   "end": 16.0
+  },
+  {
+   "word": "was",
+   "start": 16.0,
+   "end": 16.16
+  },
+  {
+   "word": "building",
+   "start": 16.16,
+   "end": 16.4
+  },
+  {
+   "word": "a",
+   "start": 16.4,
+   "end": 16.54
+  },
+  {
+   "word": "little",
+   "start": 16.54,
+   "end": 16.64
+  },
+  {
+   "word": "work",
+   "start": 16.64,
+   "end": 16.84
+  },
+  {
+   "word": "van",
+   "start": 16.84,
+   "end": 17.06
+  },
+  {
+   "word": "called",
+   "start": 17.06,
+   "end": 17.26
+  },
+  {
+   "word": "the",
+   "start": 17.26,
+   "end": 17.42
+  },
+  {
+   "word": "Transit",
+   "start": 17.42,
+   "end": 17.7
+  },
+  {
+   "word": "Connect,",
+   "start": 17.7,
+   "end": 17.96
+  },
+  {
+   "word": "in",
+   "start": 17.96,
+   "end": 18.24
+  },
+  {
+   "word": "Turkey.",
+   "start": 18.24,
+   "end": 18.66
+  },
+  {
+   "word": "Bring",
+   "start": 19.52,
+   "end": 19.6
+  },
+  {
+   "word": "it",
+   "start": 19.6,
+   "end": 19.68
+  },
+  {
+   "word": "in",
+   "start": 19.68,
+   "end": 19.76
+  },
+  {
+   "word": "as",
+   "start": 19.76,
+   "end": 19.86
+  },
+  {
+   "word": "a",
+   "start": 19.86,
+   "end": 19.96
+  },
+  {
+   "word": "cargo",
+   "start": 19.96,
+   "end": 20.2
+  },
+  {
+   "word": "van,",
+   "start": 20.2,
+   "end": 20.48
+  },
+  {
+   "word": "and",
+   "start": 20.56,
+   "end": 20.66
+  },
+  {
+   "word": "Ford",
+   "start": 20.66,
+   "end": 20.82
+  },
+  {
+   "word": "pays",
+   "start": 20.82,
+   "end": 21.06
+  },
+  {
+   "word": "25%.",
+   "start": 21.06,
+   "end": 22.2
+  },
+  {
+   "word": "But",
+   "start": 22.2,
+   "end": 22.42
+  },
+  {
+   "word": "passenger",
+   "start": 22.42,
+   "end": 22.74
+  },
+  {
+   "word": "vehicles",
+   "start": 22.74,
+   "end": 23.1
+  },
+  {
+   "word": "only",
+   "start": 23.1,
+   "end": 23.3
+  },
+  {
+   "word": "paid",
+   "start": 23.3,
+   "end": 23.5
+  },
+  {
+   "word": "2.5%.",
+   "start": 23.5,
+   "end": 24.38
+  },
+  {
+   "word": "So",
+   "start": 24.38,
+   "end": 24.8
+  },
+  {
+   "word": "every",
+   "start": 24.8,
+   "end": 24.98
+  },
+  {
+   "word": "van",
+   "start": 24.98,
+   "end": 25.12
+  },
+  {
+   "word": "left",
+   "start": 25.12,
+   "end": 25.24
+  },
+  {
+   "word": "the",
+   "start": 25.24,
+   "end": 25.4
+  },
+  {
+   "word": "factory",
+   "start": 25.4,
+   "end": 25.68
+  },
+  {
+   "word": "with",
+   "start": 25.68,
+   "end": 25.86
+  },
+  {
+   "word": "a",
+   "start": 25.86,
+   "end": 25.94
+  },
+  {
+   "word": "back",
+   "start": 25.94,
+   "end": 26.14
+  },
+  {
+   "word": "seat,",
+   "start": 26.14,
+   "end": 26.34
+  },
+  {
+   "word": "seat",
+   "start": 26.48,
+   "end": 26.62
+  },
+  {
+   "word": "belts",
+   "start": 26.62,
+   "end": 26.82
+  },
+  {
+   "word": "and",
+   "start": 26.98,
+   "end": 27.06
+  },
+  {
+   "word": "rear",
+   "start": 27.06,
+   "end": 27.2
+  },
+  {
+   "word": "windows.",
+   "start": 27.2,
+   "end": 27.54
+  },
+  {
+   "word": "On",
+   "start": 27.54,
+   "end": 27.94
+  },
+  {
+   "word": "paper,",
+   "start": 27.94,
+   "end": 28.14
+  },
+  {
+   "word": "it",
+   "start": 28.34,
+   "end": 28.34
+  },
+  {
+   "word": "was",
+   "start": 28.34,
+   "end": 28.42
+  },
+  {
+   "word": "a",
+   "start": 28.42,
+   "end": 28.54
+  },
+  {
+   "word": "passenger",
+   "start": 28.54,
+   "end": 28.86
+  },
+  {
+   "word": "wagon.",
+   "start": 28.86,
+   "end": 29.24
+  },
+  {
+   "word": "Then",
+   "start": 29.42,
+   "end": 29.5
+  },
+  {
+   "word": "the",
+   "start": 29.5,
+   "end": 29.6
+  },
+  {
+   "word": "ships",
+   "start": 29.6,
+   "end": 29.74
+  },
+  {
+   "word": "landed",
+   "start": 29.74,
+   "end": 29.98
+  },
+  {
+   "word": "in",
+   "start": 29.98,
+   "end": 30.2
+  },
+  {
+   "word": "Baltimore.",
+   "start": 30.2,
+   "end": 30.46
+  },
+  {
+   "word": "Workers",
+   "start": 31.04,
+   "end": 31.04
+  },
+  {
+   "word": "pulled",
+   "start": 31.04,
+   "end": 31.26
+  },
+  {
+   "word": "out",
+   "start": 31.26,
+   "end": 31.4
+  },
+  {
+   "word": "the",
+   "start": 31.4,
+   "end": 31.52
+  },
+  {
+   "word": "back",
+   "start": 31.52,
+   "end": 31.72
+  },
+  {
+   "word": "seats,",
+   "start": 31.72,
+   "end": 31.9
+  },
+  {
+   "word": "swapped",
+   "start": 32.04,
+   "end": 32.2
+  },
+  {
+   "word": "the",
+   "start": 32.2,
+   "end": 32.38
+  },
+  {
+   "word": "rear",
+   "start": 32.38,
+   "end": 32.5
+  },
+  {
+   "word": "windows",
+   "start": 32.5,
+   "end": 32.8
+  },
+  {
+   "word": "for",
+   "start": 32.8,
+   "end": 32.98
+  },
+  {
+   "word": "metal",
+   "start": 32.98,
+   "end": 33.14
+  },
+  {
+   "word": "panels,",
+   "start": 33.14,
+   "end": 33.46
+  },
+  {
+   "word": "and",
+   "start": 33.62,
+   "end": 33.66
+  },
+  {
+   "word": "the",
+   "start": 33.66,
+   "end": 33.78
+  },
+  {
+   "word": "vans",
+   "start": 33.78,
+   "end": 33.96
+  },
+  {
+   "word": "were",
+   "start": 33.96,
+   "end": 34.14
+  },
+  {
+   "word": "sold",
+   "start": 34.14,
+   "end": 34.32
+  },
+  {
+   "word": "as",
+   "start": 34.32,
+   "end": 34.48
+  },
+  {
+   "word": "cargo",
+   "start": 34.48,
+   "end": 34.74
+  },
+  {
+   "word": "vans.",
+   "start": 34.74,
+   "end": 35.02
+  },
+  {
+   "word": "The",
+   "start": 35.3,
+   "end": 35.38
+  },
+  {
+   "word": "extra",
+   "start": 35.38,
+   "end": 35.58
+  },
+  {
+   "word": "work",
+   "start": 35.58,
+   "end": 35.76
+  },
+  {
+   "word": "cost",
+   "start": 35.76,
+   "end": 35.96
+  },
+  {
+   "word": "Ford",
+   "start": 35.96,
+   "end": 36.16
+  },
+  {
+   "word": "hundreds",
+   "start": 36.16,
+   "end": 36.4
+  },
+  {
+   "word": "of",
+   "start": 36.4,
+   "end": 36.56
+  },
+  {
+   "word": "dollars",
+   "start": 36.56,
+   "end": 36.8
+  },
+  {
+   "word": "per",
+   "start": 36.8,
+   "end": 37.02
+  },
+  {
+   "word": "van.",
+   "start": 37.02,
+   "end": 37.26
+  },
+  {
+   "word": "The",
+   "start": 37.58,
+   "end": 37.64
+  },
+  {
+   "word": "tax",
+   "start": 37.64,
+   "end": 37.86
+  },
+  {
+   "word": "it",
+   "start": 37.86,
+   "end": 38.02
+  },
+  {
+   "word": "dodged",
+   "start": 38.02,
+   "end": 38.24
+  },
+  {
+   "word": "was",
+   "start": 38.24,
+   "end": 38.44
+  },
+  {
+   "word": "worth",
+   "start": 38.44,
+   "end": 38.66
+  },
+  {
+   "word": "thousands.",
+   "start": 38.66,
+   "end": 39.06
+  },
+  {
+   "word": "For",
+   "start": 40.04,
+   "end": 40.12
+  },
+  {
+   "word": "years,",
+   "start": 40.12,
+   "end": 40.32
+  },
+  {
+   "word": "it",
+   "start": 40.48,
+   "end": 40.54
+  },
+  {
+   "word": "worked.",
+   "start": 40.54,
+   "end": 40.78
+  },
+  {
+   "word": "Then",
+   "start": 40.84,
+   "end": 41.02
+  },
+  {
+   "word": "customs",
+   "start": 41.02,
+   "end": 41.32
+  },
+  {
+   "word": "caught",
+   "start": 41.32,
+   "end": 41.64
+  },
+  {
+   "word": "on.",
+   "start": 41.64,
+   "end": 41.9
+  },
+  {
+   "word": "In",
+   "start": 42.22,
+   "end": 42.28
+  },
+  {
+   "word": "2013,",
+   "start": 42.28,
+   "end": 42.66
+  },
+  {
+   "word": "they",
+   "start": 43.0,
+   "end": 43.0
+  },
+  {
+   "word": "ruled",
+   "start": 43.0,
+   "end": 43.2
+  },
+  {
+   "word": "the",
+   "start": 43.2,
+   "end": 43.38
+  },
+  {
+   "word": "vans",
+   "start": 43.38,
+   "end": 43.6
+  },
+  {
+   "word": "were",
+   "start": 43.6,
+   "end": 43.76
+  },
+  {
+   "word": "cargo",
+   "start": 43.76,
+   "end": 44.08
+  },
+  {
+   "word": "vans",
+   "start": 44.08,
+   "end": 44.38
+  },
+  {
+   "word": "all",
+   "start": 44.38,
+   "end": 44.56
+  },
+  {
+   "word": "along,",
+   "start": 44.56,
+   "end": 44.82
+  },
+  {
+   "word": "and",
+   "start": 44.82,
+   "end": 44.98
+  },
+  {
+   "word": "said",
+   "start": 44.98,
+   "end": 45.16
+  },
+  {
+   "word": "Ford",
+   "start": 45.16,
+   "end": 45.36
+  },
+  {
+   "word": "was",
+   "start": 45.36,
+   "end": 45.52
+  },
+  {
+   "word": "trying",
+   "start": 45.52,
+   "end": 45.74
+  },
+  {
+   "word": "to",
+   "start": 45.74,
+   "end": 45.9
+  },
+  {
+   "word": "\"manipulate",
+   "start": 45.9,
+   "end": 46.26
+  },
+  {
+   "word": "the",
+   "start": 46.26,
+   "end": 46.46
+  },
+  {
+   "word": "tariff",
+   "start": 46.46,
+   "end": 46.7
+  },
+  {
+   "word": "schedule.\"",
+   "start": 46.7,
+   "end": 47.12
+  },
+  {
+   "word": "Ford",
+   "start": 47.52,
+   "end": 47.68
+  },
+  {
+   "word": "fought",
+   "start": 47.68,
+   "end": 47.9
+  },
+  {
+   "word": "it",
+   "start": 47.9,
+   "end": 48.0
+  },
+  {
+   "word": "all",
+   "start": 48.0,
+   "end": 48.14
+  },
+  {
+   "word": "the",
+   "start": 48.14,
+   "end": 48.28
+  },
+  {
+   "word": "way",
+   "start": 48.28,
+   "end": 48.38
+  },
+  {
+   "word": "to",
+   "start": 48.38,
+   "end": 48.52
+  },
+  {
+   "word": "the",
+   "start": 48.52,
+   "end": 48.64
+  },
+  {
+   "word": "Supreme",
+   "start": 48.64,
+   "end": 48.88
+  },
+  {
+   "word": "Court,",
+   "start": 48.88,
+   "end": 49.18
+  },
+  {
+   "word": "which",
+   "start": 49.3,
+   "end": 49.4
+  },
+  {
+   "word": "refused",
+   "start": 49.4,
+   "end": 49.68
+  },
+  {
+   "word": "to",
+   "start": 49.68,
+   "end": 49.9
+  },
+  {
+   "word": "hear",
+   "start": 49.9,
+   "end": 50.0
+  },
+  {
+   "word": "the",
+   "start": 50.0,
+   "end": 50.16
+  },
+  {
+   "word": "case.",
+   "start": 50.16,
+   "end": 50.38
+  },
+  {
+   "word": "In",
+   "start": 50.76,
+   "end": 50.84
+  },
+  {
+   "word": "2024,",
+   "start": 50.84,
+   "end": 51.36
+  },
+  {
+   "word": "Ford",
+   "start": 51.8,
+   "end": 51.84
+  },
+  {
+   "word": "agreed",
+   "start": 51.84,
+   "end": 52.06
+  },
+  {
+   "word": "to",
+   "start": 52.06,
+   "end": 52.22
+  },
+  {
+   "word": "pay",
+   "start": 52.22,
+   "end": 52.38
+  },
+  {
+   "word": "$365,000,000",
+   "start": 52.38,
+   "end": 53.64
+  },
+  {
+   "word": "to",
+   "start": 53.64,
+   "end": 54.26
+  },
+  {
+   "word": "settle,",
+   "start": 54.26,
+   "end": 54.54
+  },
+  {
+   "word": "without",
+   "start": 54.66,
+   "end": 54.88
+  },
+  {
+   "word": "admitting",
+   "start": 54.88,
+   "end": 55.18
+  },
+  {
+   "word": "it",
+   "start": 55.18,
+   "end": 55.38
+  },
+  {
+   "word": "did",
+   "start": 55.38,
+   "end": 55.48
+  },
+  {
+   "word": "anything",
+   "start": 55.48,
+   "end": 55.78
+  },
+  {
+   "word": "wrong.",
+   "start": 55.78,
+   "end": 56.1
+  },
+  {
+   "word": "All",
+   "start": 56.4,
+   "end": 56.52
+  },
+  {
+   "word": "because",
+   "start": 56.52,
+   "end": 56.76
+  },
+  {
+   "word": "of",
+   "start": 56.76,
+   "end": 56.9
+  },
+  {
+   "word": "a",
+   "start": 56.9,
+   "end": 57.0
+  },
+  {
+   "word": "fight",
+   "start": 57.0,
+   "end": 57.16
+  },
+  {
+   "word": "over",
+   "start": 57.16,
+   "end": 57.42
+  },
+  {
+   "word": "chicken.",
+   "start": 57.42,
+   "end": 57.66
+  }
+ ]
+}

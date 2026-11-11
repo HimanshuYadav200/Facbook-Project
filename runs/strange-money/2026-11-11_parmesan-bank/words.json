@@ -1,0 +1,1074 @@
+{
+ "duration": 53.775,
+ "voice": "am_puck",
+ "speed": 1.15,
+ "sentence_gap": 0.0,
+ "match": 0.953,
+ "words": [
+  {
+   "word": "In",
+   "start": 0.0,
+   "end": 0.213
+  },
+  {
+   "word": "Italy,",
+   "start": 0.213,
+   "end": 0.427
+  },
+  {
+   "word": "a",
+   "start": 0.427,
+   "end": 0.64
+  },
+  {
+   "word": "bank",
+   "start": 0.64,
+   "end": 0.76
+  },
+  {
+   "word": "keeps",
+   "start": 0.76,
+   "end": 1.02
+  },
+  {
+   "word": "500,000",
+   "start": 1.02,
+   "end": 1.86
+  },
+  {
+   "word": "wheels",
+   "start": 1.86,
+   "end": 2.04
+  },
+  {
+   "word": "of",
+   "start": 2.04,
+   "end": 2.24
+  },
+  {
+   "word": "cheese",
+   "start": 2.24,
+   "end": 2.42
+  },
+  {
+   "word": "in",
+   "start": 2.42,
+   "end": 2.58
+  },
+  {
+   "word": "its",
+   "start": 2.58,
+   "end": 2.68
+  },
+  {
+   "word": "vaults.",
+   "start": 2.68,
+   "end": 3.08
+  },
+  {
+   "word": "You",
+   "start": 3.42,
+   "end": 3.5
+  },
+  {
+   "word": "see,",
+   "start": 3.5,
+   "end": 3.64
+  },
+  {
+   "word": "this",
+   "start": 3.74,
+   "end": 3.78
+  },
+  {
+   "word": "is",
+   "start": 3.78,
+   "end": 3.94
+  },
+  {
+   "word": "Parmigiano",
+   "start": 3.94,
+   "end": 4.46
+  },
+  {
+   "word": "Reggiano,",
+   "start": 4.46,
+   "end": 4.94
+  },
+  {
+   "word": "the",
+   "start": 5.1,
+   "end": 5.14
+  },
+  {
+   "word": "real",
+   "start": 5.14,
+   "end": 5.32
+  },
+  {
+   "word": "Parmesan.",
+   "start": 5.32,
+   "end": 5.9
+  },
+  {
+   "word": "Each",
+   "start": 6.04,
+   "end": 6.18
+  },
+  {
+   "word": "wheel",
+   "start": 6.18,
+   "end": 6.38
+  },
+  {
+   "word": "weighs",
+   "start": 6.38,
+   "end": 6.58
+  },
+  {
+   "word": "about",
+   "start": 6.58,
+   "end": 6.8
+  },
+  {
+   "word": "80",
+   "start": 6.8,
+   "end": 7.02
+  },
+  {
+   "word": "pounds,",
+   "start": 7.02,
+   "end": 7.26
+  },
+  {
+   "word": "and",
+   "start": 7.26,
+   "end": 7.5
+  },
+  {
+   "word": "it",
+   "start": 7.5,
+   "end": 7.6
+  },
+  {
+   "word": "has",
+   "start": 7.6,
+   "end": 7.72
+  },
+  {
+   "word": "to",
+   "start": 7.72,
+   "end": 7.86
+  },
+  {
+   "word": "age",
+   "start": 7.86,
+   "end": 8.02
+  },
+  {
+   "word": "for",
+   "start": 8.02,
+   "end": 8.2
+  },
+  {
+   "word": "at",
+   "start": 8.2,
+   "end": 8.28
+  },
+  {
+   "word": "least",
+   "start": 8.28,
+   "end": 8.42
+  },
+  {
+   "word": "12",
+   "start": 8.42,
+   "end": 8.66
+  },
+  {
+   "word": "months",
+   "start": 8.66,
+   "end": 8.88
+  },
+  {
+   "word": "before",
+   "start": 8.88,
+   "end": 9.12
+  },
+  {
+   "word": "it",
+   "start": 9.12,
+   "end": 9.24
+  },
+  {
+   "word": "can",
+   "start": 9.24,
+   "end": 9.32
+  },
+  {
+   "word": "be",
+   "start": 9.32,
+   "end": 9.44
+  },
+  {
+   "word": "sold.",
+   "start": 9.44,
+   "end": 9.66
+  },
+  {
+   "word": "Often",
+   "start": 9.92,
+   "end": 10.08
+  },
+  {
+   "word": "2",
+   "start": 10.08,
+   "end": 10.32
+  },
+  {
+   "word": "years.",
+   "start": 10.32,
+   "end": 10.56
+  },
+  {
+   "word": "But",
+   "start": 10.66,
+   "end": 10.78
+  },
+  {
+   "word": "the",
+   "start": 10.78,
+   "end": 10.9
+  },
+  {
+   "word": "cows",
+   "start": 10.9,
+   "end": 11.08
+  },
+  {
+   "word": "need",
+   "start": 11.08,
+   "end": 11.32
+  },
+  {
+   "word": "feeding",
+   "start": 11.32,
+   "end": 11.6
+  },
+  {
+   "word": "every",
+   "start": 11.6,
+   "end": 11.84
+  },
+  {
+   "word": "single",
+   "start": 11.84,
+   "end": 12.1
+  },
+  {
+   "word": "day.",
+   "start": 12.1,
+   "end": 12.34
+  },
+  {
+   "word": "So",
+   "start": 12.34,
+   "end": 12.56
+  },
+  {
+   "word": "the",
+   "start": 12.56,
+   "end": 12.68
+  },
+  {
+   "word": "cheesemakers",
+   "start": 12.68,
+   "end": 13.08
+  },
+  {
+   "word": "are",
+   "start": 13.08,
+   "end": 13.24
+  },
+  {
+   "word": "stuck.",
+   "start": 13.24,
+   "end": 13.46
+  },
+  {
+   "word": "Their",
+   "start": 13.62,
+   "end": 13.72
+  },
+  {
+   "word": "money",
+   "start": 13.72,
+   "end": 13.84
+  },
+  {
+   "word": "is",
+   "start": 13.84,
+   "end": 14.02
+  },
+  {
+   "word": "sitting",
+   "start": 14.02,
+   "end": 14.14
+  },
+  {
+   "word": "on",
+   "start": 14.14,
+   "end": 14.32
+  },
+  {
+   "word": "a",
+   "start": 14.32,
+   "end": 14.42
+  },
+  {
+   "word": "shelf,",
+   "start": 14.42,
+   "end": 14.62
+  },
+  {
+   "word": "slowly",
+   "start": 14.9,
+   "end": 14.94
+  },
+  {
+   "word": "getting",
+   "start": 14.94,
+   "end": 15.26
+  },
+  {
+   "word": "older.",
+   "start": 15.26,
+   "end": 15.62
+  },
+  {
+   "word": "Cheese",
+   "start": 15.88,
+   "end": 15.94
+  },
+  {
+   "word": "as",
+   "start": 15.94,
+   "end": 16.1
+  },
+  {
+   "word": "collateral",
+   "start": 16.1,
+   "end": 16.44
+  },
+  {
+   "word": "for",
+   "start": 16.44,
+   "end": 16.7
+  },
+  {
+   "word": "a",
+   "start": 16.7,
+   "end": 16.82
+  },
+  {
+   "word": "loan?",
+   "start": 16.82,
+   "end": 17.0
+  },
+  {
+   "word": "It",
+   "start": 17.14,
+   "end": 17.22
+  },
+  {
+   "word": "sounds",
+   "start": 17.22,
+   "end": 17.42
+  },
+  {
+   "word": "like",
+   "start": 17.42,
+   "end": 17.62
+  },
+  {
+   "word": "a",
+   "start": 17.62,
+   "end": 17.72
+  },
+  {
+   "word": "joke.",
+   "start": 17.72,
+   "end": 17.9
+  },
+  {
+   "word": "But",
+   "start": 17.9,
+   "end": 18.9
+  },
+  {
+   "word": "since",
+   "start": 18.9,
+   "end": 19.08
+  },
+  {
+   "word": "the",
+   "start": 19.08,
+   "end": 19.22
+  },
+  {
+   "word": "1950s,",
+   "start": 19.22,
+   "end": 19.96
+  },
+  {
+   "word": "a",
+   "start": 20.04,
+   "end": 20.06
+  },
+  {
+   "word": "bank",
+   "start": 20.06,
+   "end": 20.22
+  },
+  {
+   "word": "called",
+   "start": 20.22,
+   "end": 20.42
+  },
+  {
+   "word": "Credito",
+   "start": 20.42,
+   "end": 20.78
+  },
+  {
+   "word": "Emiliano",
+   "start": 20.78,
+   "end": 21.18
+  },
+  {
+   "word": "has",
+   "start": 21.18,
+   "end": 21.34
+  },
+  {
+   "word": "said",
+   "start": 21.34,
+   "end": 21.5
+  },
+  {
+   "word": "yes.",
+   "start": 21.5,
+   "end": 21.74
+  },
+  {
+   "word": "A",
+   "start": 22.2,
+   "end": 22.24
+  },
+  {
+   "word": "cheesemaker",
+   "start": 22.24,
+   "end": 22.6
+  },
+  {
+   "word": "brings",
+   "start": 22.6,
+   "end": 22.82
+  },
+  {
+   "word": "in",
+   "start": 22.82,
+   "end": 22.98
+  },
+  {
+   "word": "young",
+   "start": 22.98,
+   "end": 23.1
+  },
+  {
+   "word": "wheels.",
+   "start": 23.1,
+   "end": 23.48
+  },
+  {
+   "word": "The",
+   "start": 23.84,
+   "end": 23.94
+  },
+  {
+   "word": "bank",
+   "start": 23.94,
+   "end": 24.06
+  },
+  {
+   "word": "stores",
+   "start": 24.06,
+   "end": 24.28
+  },
+  {
+   "word": "them",
+   "start": 24.28,
+   "end": 24.48
+  },
+  {
+   "word": "in",
+   "start": 24.48,
+   "end": 24.62
+  },
+  {
+   "word": "giant",
+   "start": 24.62,
+   "end": 24.8
+  },
+  {
+   "word": "climate-controlled",
+   "start": 24.8,
+   "end": 25.42
+  },
+  {
+   "word": "warehouses,",
+   "start": 25.42,
+   "end": 25.84
+  },
+  {
+   "word": "and",
+   "start": 25.84,
+   "end": 26.12
+  },
+  {
+   "word": "staff",
+   "start": 26.12,
+   "end": 26.36
+  },
+  {
+   "word": "walk",
+   "start": 26.36,
+   "end": 26.56
+  },
+  {
+   "word": "the",
+   "start": 26.56,
+   "end": 26.76
+  },
+  {
+   "word": "aisles",
+   "start": 26.76,
+   "end": 26.92
+  },
+  {
+   "word": "every",
+   "start": 26.92,
+   "end": 27.08
+  },
+  {
+   "word": "day,",
+   "start": 27.08,
+   "end": 27.24
+  },
+  {
+   "word": "checking",
+   "start": 27.24,
+   "end": 27.52
+  },
+  {
+   "word": "for",
+   "start": 27.52,
+   "end": 27.76
+  },
+  {
+   "word": "cracks.",
+   "start": 27.76,
+   "end": 28.04
+  },
+  {
+   "word": "Each",
+   "start": 28.3,
+   "end": 28.4
+  },
+  {
+   "word": "wheel",
+   "start": 28.4,
+   "end": 28.6
+  },
+  {
+   "word": "carries",
+   "start": 28.6,
+   "end": 28.86
+  },
+  {
+   "word": "its",
+   "start": 28.86,
+   "end": 29.02
+  },
+  {
+   "word": "own",
+   "start": 29.02,
+   "end": 29.16
+  },
+  {
+   "word": "code,",
+   "start": 29.16,
+   "end": 29.4
+  },
+  {
+   "word": "so",
+   "start": 29.4,
+   "end": 29.6
+  },
+  {
+   "word": "a",
+   "start": 29.6,
+   "end": 29.74
+  },
+  {
+   "word": "stolen",
+   "start": 29.74,
+   "end": 29.9
+  },
+  {
+   "word": "one",
+   "start": 29.9,
+   "end": 30.1
+  },
+  {
+   "word": "can",
+   "start": 30.1,
+   "end": 30.22
+  },
+  {
+   "word": "be",
+   "start": 30.22,
+   "end": 30.32
+  },
+  {
+   "word": "traced.",
+   "start": 30.32,
+   "end": 30.56
+  },
+  {
+   "word": "And",
+   "start": 30.84,
+   "end": 30.9
+  },
+  {
+   "word": "yes,",
+   "start": 30.9,
+   "end": 31.06
+  },
+  {
+   "word": "thieves",
+   "start": 31.24,
+   "end": 31.36
+  },
+  {
+   "word": "really",
+   "start": 31.36,
+   "end": 31.58
+  },
+  {
+   "word": "do",
+   "start": 31.58,
+   "end": 31.78
+  },
+  {
+   "word": "steal",
+   "start": 31.78,
+   "end": 32.04
+  },
+  {
+   "word": "Parmesan.",
+   "start": 32.04,
+   "end": 32.6
+  },
+  {
+   "word": "Then",
+   "start": 32.6,
+   "end": 32.76
+  },
+  {
+   "word": "the",
+   "start": 32.76,
+   "end": 32.84
+  },
+  {
+   "word": "bank",
+   "start": 32.84,
+   "end": 32.94
+  },
+  {
+   "word": "lends",
+   "start": 32.94,
+   "end": 33.14
+  },
+  {
+   "word": "up",
+   "start": 33.14,
+   "end": 33.28
+  },
+  {
+   "word": "to",
+   "start": 33.28,
+   "end": 33.4
+  },
+  {
+   "word": "80%",
+   "start": 33.4,
+   "end": 33.58
+  },
+  {
+   "word": "of",
+   "start": 33.88,
+   "end": 34.02
+  },
+  {
+   "word": "the",
+   "start": 34.02,
+   "end": 34.14
+  },
+  {
+   "word": "cheese's",
+   "start": 34.14,
+   "end": 34.44
+  },
+  {
+   "word": "value.",
+   "start": 34.44,
+   "end": 34.78
+  },
+  {
+   "word": "Cash",
+   "start": 35.12,
+   "end": 35.16
+  },
+  {
+   "word": "today,",
+   "start": 35.16,
+   "end": 35.44
+  },
+  {
+   "word": "for",
+   "start": 35.44,
+   "end": 35.64
+  },
+  {
+   "word": "cheese",
+   "start": 35.64,
+   "end": 35.9
+  },
+  {
+   "word": "that",
+   "start": 35.9,
+   "end": 36.04
+  },
+  {
+   "word": "isn't",
+   "start": 36.04,
+   "end": 36.22
+  },
+  {
+   "word": "ready",
+   "start": 36.22,
+   "end": 36.38
+  },
+  {
+   "word": "yet.",
+   "start": 36.38,
+   "end": 36.66
+  },
+  {
+   "word": "And",
+   "start": 36.88,
+   "end": 36.96
+  },
+  {
+   "word": "if",
+   "start": 36.96,
+   "end": 37.04
+  },
+  {
+   "word": "the",
+   "start": 37.04,
+   "end": 37.16
+  },
+  {
+   "word": "loan",
+   "start": 37.16,
+   "end": 37.32
+  },
+  {
+   "word": "isn't",
+   "start": 37.32,
+   "end": 37.6
+  },
+  {
+   "word": "paid",
+   "start": 37.6,
+   "end": 37.76
+  },
+  {
+   "word": "back?",
+   "start": 37.76,
+   "end": 38.06
+  },
+  {
+   "word": "The",
+   "start": 38.82,
+   "end": 39.04
+  },
+  {
+   "word": "bank",
+   "start": 39.04,
+   "end": 39.2
+  },
+  {
+   "word": "sells",
+   "start": 39.2,
+   "end": 39.46
+  },
+  {
+   "word": "the",
+   "start": 39.46,
+   "end": 39.72
+  },
+  {
+   "word": "cheese,",
+   "start": 39.72,
+   "end": 40.02
+  },
+  {
+   "word": "keeps",
+   "start": 40.16,
+   "end": 40.32
+  },
+  {
+   "word": "what",
+   "start": 40.32,
+   "end": 40.5
+  },
+  {
+   "word": "it's",
+   "start": 40.5,
+   "end": 40.68
+  },
+  {
+   "word": "owed,",
+   "start": 40.68,
+   "end": 40.86
+  },
+  {
+   "word": "and",
+   "start": 41.04,
+   "end": 41.08
+  },
+  {
+   "word": "hands",
+   "start": 41.08,
+   "end": 41.32
+  },
+  {
+   "word": "back",
+   "start": 41.32,
+   "end": 41.58
+  },
+  {
+   "word": "the",
+   "start": 41.58,
+   "end": 41.76
+  },
+  {
+   "word": "rest.",
+   "start": 41.76,
+   "end": 41.98
+  },
+  {
+   "word": "Here's",
+   "start": 42.28,
+   "end": 42.48
+  },
+  {
+   "word": "the",
+   "start": 42.48,
+   "end": 42.62
+  },
+  {
+   "word": "trick.",
+   "start": 42.62,
+   "end": 42.82
+  },
+  {
+   "word": "Most",
+   "start": 43.14,
+   "end": 43.28
+  },
+  {
+   "word": "collateral",
+   "start": 43.28,
+   "end": 43.68
+  },
+  {
+   "word": "loses",
+   "start": 43.68,
+   "end": 44.04
+  },
+  {
+   "word": "value.",
+   "start": 44.04,
+   "end": 44.52
+  },
+  {
+   "word": "Cars",
+   "start": 44.98,
+   "end": 44.98
+  },
+  {
+   "word": "rust.",
+   "start": 44.98,
+   "end": 45.26
+  },
+  {
+   "word": "Machines",
+   "start": 45.62,
+   "end": 45.86
+  },
+  {
+   "word": "break.",
+   "start": 45.86,
+   "end": 46.24
+  },
+  {
+   "word": "But",
+   "start": 46.52,
+   "end": 46.6
+  },
+  {
+   "word": "Parmesan",
+   "start": 46.6,
+   "end": 47.12
+  },
+  {
+   "word": "gets",
+   "start": 47.12,
+   "end": 47.26
+  },
+  {
+   "word": "better",
+   "start": 47.26,
+   "end": 47.58
+  },
+  {
+   "word": "with",
+   "start": 47.58,
+   "end": 47.76
+  },
+  {
+   "word": "age,",
+   "start": 47.76,
+   "end": 47.96
+  },
+  {
+   "word": "and",
+   "start": 47.96,
+   "end": 48.22
+  },
+  {
+   "word": "older",
+   "start": 48.22,
+   "end": 48.5
+  },
+  {
+   "word": "wheels",
+   "start": 48.5,
+   "end": 48.78
+  },
+  {
+   "word": "sell",
+   "start": 48.78,
+   "end": 49.06
+  },
+  {
+   "word": "for",
+   "start": 49.06,
+   "end": 49.28
+  },
+  {
+   "word": "more.",
+   "start": 49.28,
+   "end": 49.52
+  },
+  {
+   "word": "That's",
+   "start": 49.78,
+   "end": 50.0
+  },
+  {
+   "word": "why",
+   "start": 50.0,
+   "end": 50.12
+  },
+  {
+   "word": "the",
+   "start": 50.12,
+   "end": 50.24
+  },
+  {
+   "word": "bank",
+   "start": 50.24,
+   "end": 50.42
+  },
+  {
+   "word": "says",
+   "start": 50.42,
+   "end": 50.62
+  },
+  {
+   "word": "it",
+   "start": 50.62,
+   "end": 50.78
+  },
+  {
+   "word": "has",
+   "start": 50.78,
+   "end": 50.9
+  },
+  {
+   "word": "never",
+   "start": 50.9,
+   "end": 51.14
+  },
+  {
+   "word": "lost",
+   "start": 51.14,
+   "end": 51.4
+  },
+  {
+   "word": "a",
+   "start": 51.4,
+   "end": 51.58
+  },
+  {
+   "word": "single",
+   "start": 51.58,
+   "end": 51.86
+  },
+  {
+   "word": "euro",
+   "start": 51.86,
+   "end": 52.08
+  },
+  {
+   "word": "on",
+   "start": 52.08,
+   "end": 52.32
+  },
+  {
+   "word": "these",
+   "start": 52.32,
+   "end": 52.48
+  },
+  {
+   "word": "loans.",
+   "start": 52.48,
+   "end": 52.78
+  }
+ ]
+}

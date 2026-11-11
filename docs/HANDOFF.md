@@ -13,7 +13,7 @@ A local, Claude-directed engine that makes **faceless vertical short videos** fo
 | Niche | Style | Length | Status | First video | Before posting at volume |
 |---|---|---|---|---|---|
 | **strange-money**: true strange money stories, scams, loopholes; fast excited explainer | `explainer-fast` (AI 3D-cartoon images, camera moves incl. 3D tilts, green-keyed cut-out actors, **motion graphics**, recorded SFX pools, 1–3-word captions) | 45–70 s | **Ready.** Owner approved look + motion graphics + SFX | `runs/strange-money/2026-11-10_eiffel-tower-sale/out/final.mp4` (= `~/Downloads/strange_money_eiffel_sfx2.mp4`) + `upload.md` (SEO) | Owner ticks 2 manual facts in its `facts.json`; topic bank being grown to ~120 (see §5); pick voice (default `am_puck` 1.15) |
-| **stickman-money**: calm stickman parables, one money lesson | `stickman-calm` (grey pencil-sketch images, slow camera, dissolves, karaoke captions, blinks, optional owner-supplied clips) | ~1:30 | **Ready** ("done for now") | `runs/stickman-money/2026-11-10_two-brothers-paycheck/out/final.mp4` (v4, 87.7 s) + `upload.md` | 100-seed topic bank ready; Meta AI *video* isn't available in Claude's browser (owner supplies clips if wanted) |
+| **stickman-money**: calm stickman parables, one money lesson | `stickman-calm` (grey pencil-sketch images, slow camera, dissolves, karaoke captions, blinks, optional owner-supplied clips) | ~1:30 | **Ready** ("done for now") | `runs/stickman-money/2026-11-10_two-brothers-paycheck/out/final.mp4` (v4, 87.7 s) + `upload.md`. **Session 4: 3 more** (earn-ten-dollars, same-raise, parents-said-no), each with `upload.md` | Owner watches the 3 new videos + ticks their illustrative facts; 4 of 100 seeds used; fixes proposed for blinks/matching/image helper (CONTEXT session 4); Meta AI *video* isn't available in Claude's browser (owner supplies clips if wanted) |
 | **skulsy-finance**: Skulsy cartoon skeleton + real USA finance data | `vintage-story` / `flat-fastcut` | 2:00–2:48 | **Not ready.** Only two short tests (43 s, 18 s) | `runs/skulsy-finance/2026-11-09_test-*` | Needs a production-length video, owner feedback, `TIINGO_API_KEY` + `SEC_USER_AGENT` in `.env` (real market data) |
 
 ## 3. Engine state
@@ -40,8 +40,12 @@ A local, Claude-directed engine that makes **faceless vertical short videos** fo
 5. Merge branch `session-3-niches` into `main` when happy (Claude can do it).
 
 ## 6. Next steps
+0. (Session 4 cont. 6) Engine fixes done (ARCHITECTURE v1.8): `fact_check.py` (Tavily auto fact check; facts get `search` + `key`), `meta_save.js`, match_images by name, blinks under hair/glasses, `$365 million` allowed, true-peak check, 2-line labels, money `y`. 68 tests. Owner: pick a voice from `~/Downloads/voice_samples_strange_money/`; read the Eiffel (+0.1 dB peak) note. The 4 stickman videos still have their old eyes.json (re-run find_eyes + re-render only if the owner wants blinks added).
+0. (Session 4) SFX overhaul done 2026-11-11: 147 sounds, local Stable Audio 3 (`engine/tools/gen_sfx.py`, model in `~/tools/stable-audio-3`), quieter/fewer explainer-fast sounds. Owner: register with Stability AI; download Sonniss GDC 2026 zips by hand. See CONTEXT session 4 (cont. 4).
+0. (Session 4) Strange-money: 4 more videos done 2026-11-11 (Lustig-Capone, Ford van seats, Hanoi rats, Parmesan bank), each waiting on owner fact ticks; next in the first-week order: #105, #32, #4, #70. Engine issue list: CONTEXT session 4 (cont. 3). Run agents in serial browser mode (heat).
+0. (Session 4) Stickman-money: parallel agents work (one per video, own Chrome tab, render lock in `runs/stickman-money/.render.lock`). Owner to decide on the 4 engine/skill fixes listed in CONTEXT.md session 4.
 1. Produce strange-money videos from the first-week order in topics.md (video-core skill + niche/style skills).
-2. Install the local SFX model once the owner's accounts are ready.
+2. Stability AI licence applied for (no confirmation yet): keep `gen_*` sounds out of uploads until it arrives.
 3. Later scope (logged): multi-angle AI animation, Blender R&D, blinks on explainer actors, Lustig redesign (resembles a board-game mascot), more voices.
 
 ## 7. Traps (read before working)

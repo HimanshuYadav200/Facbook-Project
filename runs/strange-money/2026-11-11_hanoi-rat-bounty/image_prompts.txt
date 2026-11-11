@@ -1,0 +1,42 @@
+# STYLE (sent in FULL with every prompt): Stylized 3D cartoon render, vertical 9:16, like a cozy animated movie or a miniature diorama: soft global illumination, warm rich saturated colours, rounded chunky shapes, slight depth of field. Hanoi in 1902, French colonial Vietnam. Characters are cute simple cartoon people with big round cream-coloured heads, small black dot eyes, simple eyebrows, small mouths, no nose, and short rounded bean-shaped bodies with short arms and legs. Rats are cute chubby cartoon rats, grey-brown fur, big round ears, pink noses, shiny black eyes, friendly and funny like an animated family movie, never scary, no blood, no gore. No text, no letters, no numbers, no signs with writing, no logos anywhere.
+# CAST (never green clothes, so green-screen cut-outs work):
+#   official  = plump French colonial official, white linen suit, white pith helmet, big curly brown moustache, red bow tie
+#   hunters   = Vietnamese men in conical straw hats, simple brown and indigo tunics, rolled-up trousers
+#   inspector = thin French health inspector, long white coat, white pith helmet, round glasses, magnifying glass
+#   smuggler  = Vietnamese man in a conical straw hat and brown tunic, bamboo shoulder pole with two covered baskets
+# Green actors: "... standing alone on a plain flat solid bright green background (#00FF00), full body, whole figure visible with space around it, no shadow, no floor, nothing else in the image"
+# name: prompt (match_images format)
+bg_hanoi_street: a 1902 Hanoi street in the French colonial quarter at golden hour, yellow colonial villas with brown wooden shutters, tamarind trees, a rickshaw parked at the side, empty street with no people, eye-level wide view, open space in the lower middle
+s_rats_swarm: a huge crowd of cute chubby cartoon rats pouring out of a round sewer drain onto a cobblestone street, low angle, comic and funny
+s_hanoi_aerial: high aerial view of Hanoi in 1902: a lake with a small temple on an island, red tiled roofs of the old quarter on one side, wide tree-lined boulevards with white colonial villas on the other, morning haze
+s_sewer_new: inside a brand-new brick sewer tunnel, clean arched bricks glowing in warm lamp light, a little water at the bottom, perspective down the tunnel, no people
+s_villas: a fancy white French colonial villa with a garden and a fountain, elegant cartoon French ladies and gentlemen in white clothes sipping tea on the terrace, low angle
+s_rats_party: a gang of cute chubby cartoon rats having a happy party inside a sewer tunnel, dancing, one wearing a tiny party hat made of a leaf, warm lamp light
+s_toilet_rat: inside a fancy bathroom with a white porcelain toilet: a cute cartoon rat popping its head out of the toilet bowl with a cheeky grin, a shocked French lady in a white dress jumping back, close-up, funny
+s_plague_scare: worried French colonial doctors in white coats and pith helmets looking at a cute cartoon rat under a big magnifying glass, a dark worried mood, dramatic side light
+s_catchers_lineup: a row of Vietnamese rat hunters in conical straw hats and brown tunics standing proudly with nets, wooden cages and lanterns, in front of an open sewer manhole on a colonial street, low angle
+s_catchers_sewer: Vietnamese rat hunters in conical straw hats climbing down a ladder into a dark sewer tunnel with lanterns and nets, seen from below, dramatic
+s_rat_sacks: a gigantic mountain of closed brown burlap sacks and wooden cages stacked high in a courtyard, tiny Vietnamese hunters in conical hats on top cheering, low angle
+s_rats_more: inside a sewer tunnel still packed with hundreds of cute cartoon rats, one tired Vietnamese hunter in a conical hat sitting in the middle with an empty net, sweaty and exhausted
+bg_office: a French colonial government office in 1902 with a big wooden desk, a ceiling fan, tall shuttered windows with tropical light, a map with no writing on the wall, no people, open floor space in the lower middle
+s_townsfolk_hunt: a crowd of excited Vietnamese townspeople, men and women in conical hats, kids, an old grandma, all running down a street holding brooms, nets and baskets, chasing cute cartoon rats, funny and energetic
+s_coin: extreme close-up of a single shiny small copper coin with a hole in the middle lying on a wooden table, dramatic spotlight, plain coin without any writing or numbers
+s_cityhall_clerk: a French clerk at a desk in a colonial town hall holding his nose in disgust, pushing away a big messy pile of sleeping cartoon rats with x-shaped eyes (cartoon style, not gory), comic
+s_tail_desk: close-up of a wooden desk at a town hall: a Vietnamese hand in a brown sleeve placing one long pink cartoon rat tail on the desk, a French clerk in a white suit nodding and handing over one small copper coin
+s_tails_pile: a town hall office overflowing with woven baskets full of long pink cartoon rat tails, French clerks in white suits buried up to their waists, astonished faces, wide view, funny
+s_people_spot: a group of French people in white clothes on a street pointing and gasping at something on the ground, shocked faces, low angle
+s_tailless_rat: a cute chubby cartoon rat with NO tail at all, running happily down a cobblestone street, a little bandage on its bottom, grinning, close-up at ground level
+s_hunter_catch: a sneaky Vietnamese hunter in a conical straw hat catching a cute cartoon rat in a wooden cage, grinning slyly, in a dark alley with lantern light
+s_snip: comic scene: a sneaky Vietnamese hunter in a conical straw hat tiptoeing with giant cartoon scissors toward a nervous cartoon rat's tail, the rat sweating with big eyes, no blood, funny
+s_rat_babies: a happy tailless cartoon rat mother surrounded by a dozen tiny cute baby rats with long pink tails, in a cozy nest in a sewer, hearts floating, warm light
+s_smuggle: night scene at the edge of a town: Vietnamese men with bamboo shoulder poles carrying covered baskets with cute rat faces peeking out, tiptoeing sneakily, moonlight
+bg_city_gate: an old Hanoi city gate made of stone with a tiled roof, a dirt road leading into the town, rice fields behind, dusk light, no people, open space in the lower middle
+bg_countryside: rice fields and bamboo huts on the outskirts of Hanoi in 1902, a dirt path, palm trees, warm late afternoon, no people, open space in the lower middle
+s_rat_farm: a secret rat farm behind a bamboo hut: rows of wooden pens full of cute chubby cartoon rats eating rice, a Vietnamese farmer in a conical hat feeding them happily, wide view
+s_rat_farm_close: close-up of a wooden pen packed with cute chubby cartoon rats with long pink tails, all looking at the camera, one waving, farmer's hands pouring rice
+s_rats_rooftops: sunset over the red tile rooftops of Hanoi, hundreds of cute cartoon rats sitting on the roofs and chimneys looking at the sunset, wide view, funny and epic
+g_official_point: the official (plump French colonial official, white linen suit, white pith helmet, big curly brown moustache, red bow tie) smiling proudly and pointing up with one finger, standing alone on a plain flat solid bright green background (#00FF00), full body, whole figure visible with space around it, no shadow, no floor
+g_official_idea: the official (same) with a bright idea, finger raised, eyes sparkling, a glowing light bulb above his head, standing alone on a plain flat solid bright green background (#00FF00), full body, no shadow, no floor
+g_official_angry: the official (same) furious, red face, tearing a sheet of paper (blank, no writing) in half, standing alone on a plain flat solid bright green background (#00FF00), full body, no shadow, no floor
+g_smuggler: the smuggler (Vietnamese man, conical straw hat, brown tunic) tiptoeing sneakily with a bamboo shoulder pole and two covered baskets, cute rat faces peeking out of the baskets, standing alone on a plain flat solid bright green background (#00FF00), full body, no shadow, no floor
+g_inspector: the inspector (thin French health inspector, long white coat, white pith helmet, round glasses) looking shocked through a big magnifying glass, standing alone on a plain flat solid bright green background (#00FF00), full body, no shadow, no floor

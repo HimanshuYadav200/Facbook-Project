@@ -1,0 +1,1254 @@
+{
+ "duration": 88.459,
+ "voice": "af_kore",
+ "speed": 0.9,
+ "sentence_gap": 0.45,
+ "match": 0.996,
+ "words": [
+  {
+   "word": "A",
+   "start": 0.0,
+   "end": 0.16
+  },
+  {
+   "word": "mother",
+   "start": 0.16,
+   "end": 0.38
+  },
+  {
+   "word": "gave",
+   "start": 0.38,
+   "end": 0.66
+  },
+  {
+   "word": "her",
+   "start": 0.66,
+   "end": 0.88
+  },
+  {
+   "word": "daughter",
+   "start": 0.88,
+   "end": 1.16
+  },
+  {
+   "word": "$100",
+   "start": 1.16,
+   "end": 1.92
+  },
+  {
+   "word": "and",
+   "start": 1.92,
+   "end": 2.66
+  },
+  {
+   "word": "said,",
+   "start": 2.66,
+   "end": 2.98
+  },
+  {
+   "word": "spend",
+   "start": 3.44,
+   "end": 3.48
+  },
+  {
+   "word": "it",
+   "start": 3.48,
+   "end": 3.6
+  },
+  {
+   "word": "however",
+   "start": 3.6,
+   "end": 3.82
+  },
+  {
+   "word": "you",
+   "start": 3.82,
+   "end": 4.2
+  },
+  {
+   "word": "like.",
+   "start": 4.2,
+   "end": 4.52
+  },
+  {
+   "word": "No",
+   "start": 5.02,
+   "end": 5.28
+  },
+  {
+   "word": "rules.",
+   "start": 5.28,
+   "end": 5.62
+  },
+  {
+   "word": "The",
+   "start": 6.32,
+   "end": 6.44
+  },
+  {
+   "word": "girl",
+   "start": 6.44,
+   "end": 6.62
+  },
+  {
+   "word": "ran",
+   "start": 6.62,
+   "end": 6.94
+  },
+  {
+   "word": "to",
+   "start": 6.94,
+   "end": 7.12
+  },
+  {
+   "word": "the",
+   "start": 7.12,
+   "end": 7.22
+  },
+  {
+   "word": "mall",
+   "start": 7.22,
+   "end": 7.42
+  },
+  {
+   "word": "that",
+   "start": 7.42,
+   "end": 7.66
+  },
+  {
+   "word": "same",
+   "start": 7.66,
+   "end": 7.96
+  },
+  {
+   "word": "afternoon.",
+   "start": 7.96,
+   "end": 8.56
+  },
+  {
+   "word": "A",
+   "start": 9.18,
+   "end": 9.3
+  },
+  {
+   "word": "stuffed",
+   "start": 9.3,
+   "end": 9.54
+  },
+  {
+   "word": "bear.",
+   "start": 9.54,
+   "end": 9.94
+  },
+  {
+   "word": "A",
+   "start": 10.58,
+   "end": 10.68
+  },
+  {
+   "word": "bag",
+   "start": 10.68,
+   "end": 10.88
+  },
+  {
+   "word": "of",
+   "start": 10.88,
+   "end": 11.04
+  },
+  {
+   "word": "candy.",
+   "start": 11.04,
+   "end": 11.44
+  },
+  {
+   "word": "Sparkly",
+   "start": 12.3,
+   "end": 12.54
+  },
+  {
+   "word": "shoes.",
+   "start": 12.54,
+   "end": 12.82
+  },
+  {
+   "word": "A",
+   "start": 13.52,
+   "end": 13.68
+  },
+  {
+   "word": "toy",
+   "start": 13.68,
+   "end": 13.88
+  },
+  {
+   "word": "she",
+   "start": 13.88,
+   "end": 14.06
+  },
+  {
+   "word": "played",
+   "start": 14.06,
+   "end": 14.28
+  },
+  {
+   "word": "with",
+   "start": 14.28,
+   "end": 14.46
+  },
+  {
+   "word": "only",
+   "start": 14.46,
+   "end": 14.68
+  },
+  {
+   "word": "once.",
+   "start": 14.68,
+   "end": 15.18
+  },
+  {
+   "word": "By",
+   "start": 15.66,
+   "end": 15.82
+  },
+  {
+   "word": "dinner,",
+   "start": 15.82,
+   "end": 16.1
+  },
+  {
+   "word": "the",
+   "start": 16.22,
+   "end": 16.38
+  },
+  {
+   "word": "money",
+   "start": 16.38,
+   "end": 16.58
+  },
+  {
+   "word": "was",
+   "start": 16.58,
+   "end": 16.84
+  },
+  {
+   "word": "gone,",
+   "start": 16.84,
+   "end": 17.18
+  },
+  {
+   "word": "and",
+   "start": 17.18,
+   "end": 17.5
+  },
+  {
+   "word": "she",
+   "start": 17.5,
+   "end": 17.7
+  },
+  {
+   "word": "didn't",
+   "start": 17.7,
+   "end": 17.96
+  },
+  {
+   "word": "feel",
+   "start": 17.96,
+   "end": 18.14
+  },
+  {
+   "word": "a",
+   "start": 18.14,
+   "end": 18.34
+  },
+  {
+   "word": "thing.",
+   "start": 18.34,
+   "end": 18.56
+  },
+  {
+   "word": "The",
+   "start": 19.14,
+   "end": 19.26
+  },
+  {
+   "word": "next",
+   "start": 19.26,
+   "end": 19.5
+  },
+  {
+   "word": "Saturday,",
+   "start": 19.5,
+   "end": 19.96
+  },
+  {
+   "word": "her",
+   "start": 20.2,
+   "end": 20.3
+  },
+  {
+   "word": "mother",
+   "start": 20.3,
+   "end": 20.52
+  },
+  {
+   "word": "handed",
+   "start": 20.52,
+   "end": 20.96
+  },
+  {
+   "word": "her",
+   "start": 20.96,
+   "end": 21.2
+  },
+  {
+   "word": "a",
+   "start": 21.2,
+   "end": 21.4
+  },
+  {
+   "word": "pair",
+   "start": 21.4,
+   "end": 21.6
+  },
+  {
+   "word": "of",
+   "start": 21.6,
+   "end": 21.84
+  },
+  {
+   "word": "garden",
+   "start": 21.84,
+   "end": 22.1
+  },
+  {
+   "word": "gloves.",
+   "start": 22.1,
+   "end": 22.54
+  },
+  {
+   "word": "This",
+   "start": 23.28,
+   "end": 23.42
+  },
+  {
+   "word": "time,",
+   "start": 23.42,
+   "end": 23.72
+  },
+  {
+   "word": "I",
+   "start": 23.86,
+   "end": 23.96
+  },
+  {
+   "word": "want",
+   "start": 23.96,
+   "end": 24.1
+  },
+  {
+   "word": "you",
+   "start": 24.1,
+   "end": 24.22
+  },
+  {
+   "word": "to",
+   "start": 24.22,
+   "end": 24.32
+  },
+  {
+   "word": "earn",
+   "start": 24.32,
+   "end": 24.52
+  },
+  {
+   "word": "$10.",
+   "start": 24.52,
+   "end": 24.92
+  },
+  {
+   "word": "The",
+   "start": 25.76,
+   "end": 26.06
+  },
+  {
+   "word": "girl",
+   "start": 26.06,
+   "end": 26.28
+  },
+  {
+   "word": "laughed.",
+   "start": 26.28,
+   "end": 26.64
+  },
+  {
+   "word": "That's",
+   "start": 27.38,
+   "end": 27.64
+  },
+  {
+   "word": "easy.",
+   "start": 27.64,
+   "end": 27.94
+  },
+  {
+   "word": "Then",
+   "start": 28.5,
+   "end": 28.74
+  },
+  {
+   "word": "she",
+   "start": 28.74,
+   "end": 28.96
+  },
+  {
+   "word": "saw",
+   "start": 28.96,
+   "end": 29.16
+  },
+  {
+   "word": "the",
+   "start": 29.16,
+   "end": 29.3
+  },
+  {
+   "word": "garden.",
+   "start": 29.3,
+   "end": 29.64
+  },
+  {
+   "word": "Weeds",
+   "start": 30.34,
+   "end": 30.48
+  },
+  {
+   "word": "everywhere,",
+   "start": 30.48,
+   "end": 30.92
+  },
+  {
+   "word": "tall",
+   "start": 30.92,
+   "end": 31.22
+  },
+  {
+   "word": "and",
+   "start": 31.22,
+   "end": 31.42
+  },
+  {
+   "word": "stubborn.",
+   "start": 31.42,
+   "end": 31.76
+  },
+  {
+   "word": "She",
+   "start": 32.52,
+   "end": 32.56
+  },
+  {
+   "word": "pulled",
+   "start": 32.56,
+   "end": 32.8
+  },
+  {
+   "word": "them",
+   "start": 32.8,
+   "end": 33.02
+  },
+  {
+   "word": "one",
+   "start": 33.02,
+   "end": 33.26
+  },
+  {
+   "word": "by",
+   "start": 33.26,
+   "end": 33.42
+  },
+  {
+   "word": "one",
+   "start": 33.42,
+   "end": 33.76
+  },
+  {
+   "word": "under",
+   "start": 33.76,
+   "end": 33.94
+  },
+  {
+   "word": "the",
+   "start": 33.94,
+   "end": 34.1
+  },
+  {
+   "word": "hot",
+   "start": 34.1,
+   "end": 34.26
+  },
+  {
+   "word": "sun.",
+   "start": 34.26,
+   "end": 34.62
+  },
+  {
+   "word": "Her",
+   "start": 35.22,
+   "end": 35.32
+  },
+  {
+   "word": "back",
+   "start": 35.32,
+   "end": 35.56
+  },
+  {
+   "word": "ached.",
+   "start": 35.56,
+   "end": 35.98
+  },
+  {
+   "word": "Her",
+   "start": 36.58,
+   "end": 36.66
+  },
+  {
+   "word": "hands",
+   "start": 36.66,
+   "end": 36.94
+  },
+  {
+   "word": "got",
+   "start": 36.94,
+   "end": 37.16
+  },
+  {
+   "word": "blisters.",
+   "start": 37.16,
+   "end": 37.54
+  },
+  {
+   "word": "Twice,",
+   "start": 38.36,
+   "end": 38.56
+  },
+  {
+   "word": "she",
+   "start": 38.56,
+   "end": 38.8
+  },
+  {
+   "word": "almost",
+   "start": 38.8,
+   "end": 39.04
+  },
+  {
+   "word": "quit.",
+   "start": 39.04,
+   "end": 39.36
+  },
+  {
+   "word": "By",
+   "start": 40.04,
+   "end": 40.18
+  },
+  {
+   "word": "evening,",
+   "start": 40.18,
+   "end": 40.6
+  },
+  {
+   "word": "the",
+   "start": 40.82,
+   "end": 40.92
+  },
+  {
+   "word": "garden",
+   "start": 40.92,
+   "end": 41.22
+  },
+  {
+   "word": "was",
+   "start": 41.22,
+   "end": 41.46
+  },
+  {
+   "word": "clean,",
+   "start": 41.46,
+   "end": 41.84
+  },
+  {
+   "word": "and",
+   "start": 41.84,
+   "end": 42.2
+  },
+  {
+   "word": "her",
+   "start": 42.2,
+   "end": 42.34
+  },
+  {
+   "word": "mother",
+   "start": 42.34,
+   "end": 42.58
+  },
+  {
+   "word": "placed",
+   "start": 42.58,
+   "end": 42.94
+  },
+  {
+   "word": "$10",
+   "start": 42.94,
+   "end": 43.42
+  },
+  {
+   "word": "in",
+   "start": 43.42,
+   "end": 43.94
+  },
+  {
+   "word": "her",
+   "start": 43.94,
+   "end": 44.12
+  },
+  {
+   "word": "dirty",
+   "start": 44.12,
+   "end": 44.42
+  },
+  {
+   "word": "little",
+   "start": 44.42,
+   "end": 44.62
+  },
+  {
+   "word": "hand.",
+   "start": 44.62,
+   "end": 45.1
+  },
+  {
+   "word": "The",
+   "start": 45.7,
+   "end": 45.84
+  },
+  {
+   "word": "girl",
+   "start": 45.84,
+   "end": 46.02
+  },
+  {
+   "word": "held",
+   "start": 46.02,
+   "end": 46.28
+  },
+  {
+   "word": "it",
+   "start": 46.28,
+   "end": 46.42
+  },
+  {
+   "word": "for",
+   "start": 46.42,
+   "end": 46.56
+  },
+  {
+   "word": "a",
+   "start": 46.56,
+   "end": 46.68
+  },
+  {
+   "word": "long",
+   "start": 46.68,
+   "end": 46.88
+  },
+  {
+   "word": "time.",
+   "start": 46.88,
+   "end": 47.34
+  },
+  {
+   "word": "That",
+   "start": 47.94,
+   "end": 48.1
+  },
+  {
+   "word": "night,",
+   "start": 48.1,
+   "end": 48.4
+  },
+  {
+   "word": "her",
+   "start": 48.6,
+   "end": 48.7
+  },
+  {
+   "word": "mother",
+   "start": 48.7,
+   "end": 48.92
+  },
+  {
+   "word": "found",
+   "start": 48.92,
+   "end": 49.28
+  },
+  {
+   "word": "the",
+   "start": 49.28,
+   "end": 49.46
+  },
+  {
+   "word": "bill",
+   "start": 49.46,
+   "end": 49.68
+  },
+  {
+   "word": "still",
+   "start": 49.68,
+   "end": 50.04
+  },
+  {
+   "word": "folded",
+   "start": 50.04,
+   "end": 50.54
+  },
+  {
+   "word": "under",
+   "start": 50.54,
+   "end": 50.8
+  },
+  {
+   "word": "her",
+   "start": 50.8,
+   "end": 50.98
+  },
+  {
+   "word": "pillow.",
+   "start": 50.98,
+   "end": 51.28
+  },
+  {
+   "word": "Why",
+   "start": 51.98,
+   "end": 52.1
+  },
+  {
+   "word": "don't",
+   "start": 52.1,
+   "end": 52.22
+  },
+  {
+   "word": "you",
+   "start": 52.22,
+   "end": 52.38
+  },
+  {
+   "word": "spend",
+   "start": 52.38,
+   "end": 52.58
+  },
+  {
+   "word": "it?",
+   "start": 52.58,
+   "end": 52.94
+  },
+  {
+   "word": "The",
+   "start": 53.4,
+   "end": 53.6
+  },
+  {
+   "word": "girl",
+   "start": 53.6,
+   "end": 53.8
+  },
+  {
+   "word": "said,",
+   "start": 53.8,
+   "end": 54.12
+  },
+  {
+   "word": "because",
+   "start": 54.32,
+   "end": 54.46
+  },
+  {
+   "word": "I",
+   "start": 54.46,
+   "end": 54.64
+  },
+  {
+   "word": "know",
+   "start": 54.64,
+   "end": 54.82
+  },
+  {
+   "word": "what",
+   "start": 54.82,
+   "end": 54.98
+  },
+  {
+   "word": "it",
+   "start": 54.98,
+   "end": 55.1
+  },
+  {
+   "word": "cost.",
+   "start": 55.1,
+   "end": 55.38
+  },
+  {
+   "word": "A",
+   "start": 56.12,
+   "end": 56.22
+  },
+  {
+   "word": "whole",
+   "start": 56.22,
+   "end": 56.44
+  },
+  {
+   "word": "day.",
+   "start": 56.44,
+   "end": 56.76
+  },
+  {
+   "word": "Two",
+   "start": 57.27,
+   "end": 57.52
+  },
+  {
+   "word": "blisters.",
+   "start": 57.52,
+   "end": 58.04
+  },
+  {
+   "word": "A",
+   "start": 58.8,
+   "end": 58.86
+  },
+  {
+   "word": "sore",
+   "start": 58.86,
+   "end": 59.1
+  },
+  {
+   "word": "back.",
+   "start": 59.1,
+   "end": 59.44
+  },
+  {
+   "word": "Her",
+   "start": 60.06,
+   "end": 60.16
+  },
+  {
+   "word": "mother",
+   "start": 60.16,
+   "end": 60.4
+  },
+  {
+   "word": "smiled.",
+   "start": 60.4,
+   "end": 60.98
+  },
+  {
+   "word": "The",
+   "start": 61.64,
+   "end": 61.66
+  },
+  {
+   "word": "$100",
+   "start": 61.66,
+   "end": 62.38
+  },
+  {
+   "word": "cost",
+   "start": 62.38,
+   "end": 63.04
+  },
+  {
+   "word": "you",
+   "start": 63.04,
+   "end": 63.34
+  },
+  {
+   "word": "nothing,",
+   "start": 63.34,
+   "end": 63.58
+  },
+  {
+   "word": "so",
+   "start": 63.98,
+   "end": 64.08
+  },
+  {
+   "word": "it",
+   "start": 64.08,
+   "end": 64.24
+  },
+  {
+   "word": "left",
+   "start": 64.24,
+   "end": 64.44
+  },
+  {
+   "word": "you",
+   "start": 64.44,
+   "end": 64.7
+  },
+  {
+   "word": "just",
+   "start": 64.7,
+   "end": 64.9
+  },
+  {
+   "word": "as",
+   "start": 64.9,
+   "end": 65.14
+  },
+  {
+   "word": "fast.",
+   "start": 65.14,
+   "end": 65.48
+  },
+  {
+   "word": "This",
+   "start": 66.22,
+   "end": 66.34
+  },
+  {
+   "word": "one",
+   "start": 66.34,
+   "end": 66.56
+  },
+  {
+   "word": "cost",
+   "start": 66.56,
+   "end": 66.8
+  },
+  {
+   "word": "you",
+   "start": 66.8,
+   "end": 67.06
+  },
+  {
+   "word": "a",
+   "start": 67.06,
+   "end": 67.2
+  },
+  {
+   "word": "piece",
+   "start": 67.2,
+   "end": 67.36
+  },
+  {
+   "word": "of",
+   "start": 67.36,
+   "end": 67.52
+  },
+  {
+   "word": "your",
+   "start": 67.52,
+   "end": 67.64
+  },
+  {
+   "word": "day,",
+   "start": 67.64,
+   "end": 67.88
+  },
+  {
+   "word": "and",
+   "start": 67.88,
+   "end": 68.14
+  },
+  {
+   "word": "your",
+   "start": 68.14,
+   "end": 68.28
+  },
+  {
+   "word": "sweat.",
+   "start": 68.28,
+   "end": 68.62
+  },
+  {
+   "word": "That's",
+   "start": 69.32,
+   "end": 69.58
+  },
+  {
+   "word": "why",
+   "start": 69.58,
+   "end": 69.72
+  },
+  {
+   "word": "it",
+   "start": 69.72,
+   "end": 69.82
+  },
+  {
+   "word": "feels",
+   "start": 69.82,
+   "end": 70.08
+  },
+  {
+   "word": "heavier.",
+   "start": 70.08,
+   "end": 70.52
+  },
+  {
+   "word": "Years",
+   "start": 71.18,
+   "end": 71.34
+  },
+  {
+   "word": "later,",
+   "start": 71.34,
+   "end": 71.68
+  },
+  {
+   "word": "the",
+   "start": 71.82,
+   "end": 71.9
+  },
+  {
+   "word": "girl",
+   "start": 71.9,
+   "end": 72.08
+  },
+  {
+   "word": "got",
+   "start": 72.08,
+   "end": 72.3
+  },
+  {
+   "word": "her",
+   "start": 72.3,
+   "end": 72.44
+  },
+  {
+   "word": "own",
+   "start": 72.44,
+   "end": 72.62
+  },
+  {
+   "word": "paycheck.",
+   "start": 72.62,
+   "end": 73.04
+  },
+  {
+   "word": "And",
+   "start": 73.82,
+   "end": 73.88
+  },
+  {
+   "word": "before",
+   "start": 73.88,
+   "end": 74.18
+  },
+  {
+   "word": "every",
+   "start": 74.18,
+   "end": 74.54
+  },
+  {
+   "word": "purchase,",
+   "start": 74.54,
+   "end": 75.0
+  },
+  {
+   "word": "she",
+   "start": 75.28,
+   "end": 75.34
+  },
+  {
+   "word": "asked",
+   "start": 75.34,
+   "end": 75.66
+  },
+  {
+   "word": "one",
+   "start": 75.66,
+   "end": 75.96
+  },
+  {
+   "word": "quiet",
+   "start": 75.96,
+   "end": 76.34
+  },
+  {
+   "word": "question.",
+   "start": 76.34,
+   "end": 76.84
+  },
+  {
+   "word": "How",
+   "start": 77.54,
+   "end": 77.64
+  },
+  {
+   "word": "many",
+   "start": 77.64,
+   "end": 77.86
+  },
+  {
+   "word": "hours",
+   "start": 77.86,
+   "end": 78.14
+  },
+  {
+   "word": "of",
+   "start": 78.14,
+   "end": 78.34
+  },
+  {
+   "word": "my",
+   "start": 78.34,
+   "end": 78.52
+  },
+  {
+   "word": "life",
+   "start": 78.52,
+   "end": 78.76
+  },
+  {
+   "word": "is",
+   "start": 78.76,
+   "end": 78.94
+  },
+  {
+   "word": "this",
+   "start": 78.94,
+   "end": 79.14
+  },
+  {
+   "word": "worth?",
+   "start": 79.14,
+   "end": 79.42
+  },
+  {
+   "word": "Money",
+   "start": 80.12,
+   "end": 80.24
+  },
+  {
+   "word": "you",
+   "start": 80.24,
+   "end": 80.44
+  },
+  {
+   "word": "earn",
+   "start": 80.44,
+   "end": 80.66
+  },
+  {
+   "word": "feels",
+   "start": 80.66,
+   "end": 80.94
+  },
+  {
+   "word": "heavier.",
+   "start": 80.94,
+   "end": 81.42
+  },
+  {
+   "word": "And",
+   "start": 82.04,
+   "end": 82.18
+  },
+  {
+   "word": "heavy",
+   "start": 82.18,
+   "end": 82.44
+  },
+  {
+   "word": "money",
+   "start": 82.44,
+   "end": 82.76
+  },
+  {
+   "word": "is",
+   "start": 82.76,
+   "end": 83.1
+  },
+  {
+   "word": "the",
+   "start": 83.1,
+   "end": 83.26
+  },
+  {
+   "word": "money",
+   "start": 83.26,
+   "end": 83.5
+  },
+  {
+   "word": "you",
+   "start": 83.5,
+   "end": 83.72
+  },
+  {
+   "word": "protect.",
+   "start": 83.72,
+   "end": 84.14
+  },
+  {
+   "word": "Somewhere",
+   "start": 84.66,
+   "end": 85.16
+  },
+  {
+   "word": "tonight,",
+   "start": 85.16,
+   "end": 85.6
+  },
+  {
+   "word": "a",
+   "start": 85.84,
+   "end": 85.92
+  },
+  {
+   "word": "child",
+   "start": 85.92,
+   "end": 86.24
+  },
+  {
+   "word": "is",
+   "start": 86.24,
+   "end": 86.44
+  },
+  {
+   "word": "about",
+   "start": 86.44,
+   "end": 86.66
+  },
+  {
+   "word": "to",
+   "start": 86.66,
+   "end": 86.84
+  },
+  {
+   "word": "earn",
+   "start": 86.84,
+   "end": 87.04
+  },
+  {
+   "word": "her",
+   "start": 87.04,
+   "end": 87.3
+  },
+  {
+   "word": "very",
+   "start": 87.3,
+   "end": 87.58
+  },
+  {
+   "word": "first",
+   "start": 87.58,
+   "end": 87.9
+  },
+  {
+   "word": "dollar.",
+   "start": 87.9,
+   "end": 88.24
+  }
+ ]
+}

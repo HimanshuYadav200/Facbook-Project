@@ -1,27 +1,207 @@
 {
- "_about": "explainer-fast sound pools. A plan (or a default) names a pool, e.g. \"whoosh\"; the renderer plays one variant, chosen by shot/graphic number so neighbours differ and re-renders sound the same. Any exact file name in library/sfx (e.g. \"whoosh_r3\") still works. gain = extra volume for files that are recorded quiet. Read by ExplainerFast.tsx, Graphics.tsx and engine/tools/check_plan.py. Files: library/sfx_incoming/review.md. Removed by the owner (annoying, off-theme): impact_r2.",
+ "_about": "explainer-fast sound pools. A plan (or a default) names a pool, e.g. \"whoosh\"; the renderer plays one variant, chosen by shot/graphic number so neighbours differ and re-renders sound the same. Any exact file name in library/sfx (e.g. \"whoosh_r3\") still works. gain = extra volume for files that are recorded quiet. Read by ExplainerFast.tsx, Graphics.tsx and engine/tools/check_plan.py. Files: library/sfx_incoming/review.md + review_2026-11-11.md. Removed by the owner (annoying, off-theme): impact_r2. 2026-11-11 (owner: SFX sounded cheap, too many, too loud): soft whooshes, realistic pools added, cartoon pools (boing, pop, sparkle) kept only for explicit use.",
  "pools": {
-  "whoosh": ["whoosh_r1", "whoosh_r2", "whoosh_r4", "whoosh_r5", "whoosh_r7"],
-  "whip": ["whoosh_r3", "whoosh_r8"],
-  "dive": ["whoosh_r6"],
-  "stamp": ["stamp_r1", "stamp_r2"],
-  "impact": ["impact_r1", "impact_r3"],
-  "cash": ["cash_r1", "cash_r2", "coins_r1", "coins_r2"],
-  "coins": ["coins_r1", "coins_r2"],
-  "pop": ["pop_r1", "pop_r2", "pop_r3"],
-  "ding": ["ding_r1", "ding_r2", "ding_r3"],
-  "tick": ["tick_r1"],
-  "boing": ["boing_r1", "boing_r2"],
-  "thud": ["thud_r1", "thud_r2"],
-  "slide": ["slide_r1", "slide_r2"],
-  "scratch": ["scratch_r1", "scratch_r2"],
-  "camera": ["camera_r1"],
-  "riser": ["riser_r1", "riser_r2"],
-  "crash": ["crash_r1", "crash_r2"],
-  "sparkle": ["sparkle_r1", "sparkle_r2"],
-  "crowd_laugh": ["crowd_laugh_r1", "crowd_laugh_r2"],
-  "crowd_whoa": ["crowd_ooh_r1", "crowd_gasp_r1", "crowd_gasp_r2"],
-  "applause": ["crowd_applause_r1", "crowd_applause_r2"]
+  "whoosh": [
+   "whoosh_r9",
+   "whoosh_r11",
+   "whoosh_r12",
+   "whoosh_r13",
+   "whoosh_r1",
+   "whoosh_r4"
+  ],
+  "whip": [
+   "whoosh_r3",
+   "whoosh_r8"
+  ],
+  "dive": [
+   "whoosh_r6",
+   "whoosh_r10"
+  ],
+  "stamp": [
+   "stamp_r1",
+   "stamp_r2",
+   "stamp_r3",
+   "stamp_r4"
+  ],
+  "impact": [
+   "impact_r1",
+   "impact_r3",
+   "impact_r6",
+   "impact_r7",
+   "impact_r9"
+  ],
+  "cash": [
+   "cash_r1",
+   "cash_r2",
+   "coins_r1",
+   "coins_r2",
+   "cash_r3"
+  ],
+  "coins": [
+   "coins_r1",
+   "coins_r2",
+   "coins_r3",
+   "coins_r4",
+   "coins_r5",
+   "coins_r6"
+  ],
+  "pop": [
+   "pop_r1",
+   "pop_r2",
+   "pop_r3"
+  ],
+  "ding": [
+   "ding_r1",
+   "ding_r2",
+   "ding_r3"
+  ],
+  "tick": [
+   "tick_r1"
+  ],
+  "boing": [
+   "boing_r1",
+   "boing_r2"
+  ],
+  "thud": [
+   "thud_r1",
+   "thud_r2"
+  ],
+  "slide": [
+   "slide_r1",
+   "slide_r2"
+  ],
+  "scratch": [
+   "scratch_r1",
+   "scratch_r2"
+  ],
+  "camera": [
+   "camera_r1",
+   "camera_r2",
+   "camera_r3"
+  ],
+  "riser": [
+   "riser_r1",
+   "riser_r2",
+   "riser_r3",
+   "riser_r4"
+  ],
+  "crash": [
+   "crash_r1",
+   "crash_r2"
+  ],
+  "sparkle": [
+   "sparkle_r1",
+   "sparkle_r2"
+  ],
+  "crowd_laugh": [
+   "crowd_laugh_r1",
+   "crowd_laugh_r2",
+   "crowd_laugh_r3"
+  ],
+  "crowd_whoa": [
+   "crowd_ooh_r1",
+   "crowd_gasp_r1",
+   "crowd_gasp_r2",
+   "crowd_gasp_r3",
+   "crowd_gasp_r4",
+   "crowd_murmur_r1"
+  ],
+  "applause": [
+   "crowd_applause_r1",
+   "crowd_applause_r2",
+   "crowd_applause_r3"
+  ],
+  "paper": [
+   "paper_r1",
+   "paper_r2",
+   "paper_r3",
+   "paper_r4",
+   "newspaper_r1",
+   "newspaper_r2"
+  ],
+  "writing": [
+   "writing_r1",
+   "writing_r2"
+  ],
+  "typewriter": [
+   "typewriter_r1",
+   "typewriter_r2",
+   "typewriter_r3"
+  ],
+  "gavel": [
+   "gavel_r1",
+   "gavel_r2",
+   "impact_r8"
+  ],
+  "vault": [
+   "vault_r1",
+   "vault_r2",
+   "gen_vault_slam"
+  ],
+  "door": [
+   "door_r1",
+   "door_r2",
+   "door_r4",
+   "jail_r1"
+  ],
+  "tension": [
+   "tension_r1",
+   "tension_r3",
+   "heartbeat_r1",
+   "impact_r6"
+  ],
+  "swell": [
+   "tension_r2",
+   "tension_r4",
+   "riser_r3",
+   "riser_r4"
+  ],
+  "heartbeat": [
+   "heartbeat_r1",
+   "heartbeat_r2"
+  ],
+  "gasp": [
+   "gasp_r1",
+   "gasp_r2",
+   "gasp_r3"
+  ],
+  "bills": [
+   "bills_r1",
+   "bills_r2",
+   "money_count_r1",
+   "money_count_r2",
+   "gen_money_stack"
+  ],
+  "sting": [
+   "reveal_r1",
+   "sting_r1"
+  ],
+  "siren": [
+   "siren_r1"
+  ],
+  "phone": [
+   "phone_r1"
+  ],
+  "handcuffs": [
+   "handcuffs_r1"
+  ],
+  "crowd_murmur": [
+   "crowd_murmur_r1",
+   "crowd_whisper_r1",
+   "room_r1"
+  ],
+  "crowd_angry": [
+   "crowd_angry_r1"
+  ],
+  "press": [
+   "crowd_press_r1",
+   "camera_r2"
+  ]
  },
- "gain": {"tick_r1": 1.4, "slide_r1": 1.4, "boing_r1": 0.6, "boing_r2": 0.6}
+ "gain": {
+  "tick_r1": 1.4,
+  "slide_r1": 1.4,
+  "boing_r1": 0.6,
+  "boing_r2": 0.6
+ }
 }

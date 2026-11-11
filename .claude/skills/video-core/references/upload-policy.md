@@ -27,6 +27,7 @@ Unverified (third-party only, don't rely on): a YouTube three-strike AI suspensi
 - [ ] Music licence recorded in `library/music.json`.
 - [ ] YouTube: AI disclosure = Yes; Made for kids = No; category set; title ≤ 70 characters.
 - [ ] Facebook: AI info label on; caption pasted; no hashtag spam.
+- [ ] US audience (§4): language English (US) set; posted at the `Post at` slot.
 
 ## 3. SEO: how `upload.md` is written
 
@@ -43,4 +44,35 @@ Unverified (third-party only, don't rely on): a YouTube three-strike AI suspensi
 
 **Tags (YouTube only)**: 8–15, most specific first: topic phrase, lesson phrase, format ("moral story", "stickman animation"), audience ("money tips for beginners").
 
-**Posting**: 3–4 a day is fine if every video is original; spread them (e.g. 8 am, 1 pm, 7 pm US Eastern). Reply to early comments; pin a comment with the question.
+**Posting**: 3–4 a day is fine if every video is original; spread them over the US slots in §4. Reply to early comments; pin a comment with the question.
+
+## 4. Reaching a US audience (all niches, every `upload.md`)
+
+Owner's goal: US viewers (higher ad rates). Added 2026-11-10 (session 4).
+
+**Posting times (US Eastern).** Spread a day's videos over these slots and put the slot in each `upload.md` (Eastern + India time; the owner posts from India):
+
+| Slot | Eastern (EST, Nov–Mar) | India (IST) | Eastern (EDT, Mar–Nov) → India |
+|---|---|---|---|
+| Morning | 8:00 AM | 6:30 PM | 8:00 AM → 5:30 PM |
+| Lunch | 12:30 PM | 11:00 PM | 12:30 PM → 10:00 PM |
+| Evening (best) | 7:00 PM | 5:30 AM next day | 7:00 PM → 4:30 AM next day |
+| Late evening | 9:00 PM | 7:30 AM next day | 9:00 PM → 6:30 AM next day |
+
+US clocks change on the 2nd Sunday of March and the 1st Sunday of November; India doesn't, so the India time moves by one hour. Use Meta Business Suite / YouTube Studio scheduling for the night slots.
+
+**Write for Americans** (script, title, caption): US dollars, US spelling and words (paycheck, mom, neighbor, savings account, 401(k), credit card, rent, grocery store), US settings (suburbs, diners, pickup trucks, school buses). No rupees, no UK spelling.
+Note: the earlier stickman runs use "neighbours"; new scripts use US spelling.
+
+**Settings in every `upload.md`:**
+- YouTube: Video language **English (United States)**; title/description language **English (United States)**.
+- Facebook: Page language English (US) (set once); post as a Reel from the niche's Page.
+- `Post at:` one slot from the table above (a day's videos never share a slot).
+
+**Hashtags:** 3–5 per post = the niche's base set (niche skill, "Upload text") + 1–2 story-specific. One US-flavoured tag only when it fits the story (#AmericanDream, #MiddleClass, #FirstJob). Never a stuffed list.
+
+**Engagement without bait:** the comment question goes in the caption (and the pinned comment), never in the narration. Never "share if you agree", "tag a friend", "type YES".
+
+**Paid boost (optional, owner's money):** Facebook "Boost" a post that is already doing well, audience = United States, age 25–60. Never needed for monetization.
+
+**Facebook Page setup (once per niche):** up to 3 categories. Never "Financial Service" / "Financial Planner": they claim we give financial advice. Page name, bio and categories live in the niche skill.

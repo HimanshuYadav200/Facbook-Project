@@ -1,0 +1,20 @@
+[
+ {
+  "id": "age_7",
+  "say": "7",
+  "kind": "illustrative",
+  "note": "story only: the child's age when mom kept wearing the old coat"
+ },
+ {
+  "id": "age_16",
+  "say": "16",
+  "kind": "illustrative",
+  "note": "story only: the child's age when they asked for a phone"
+ },
+ {
+  "id": "car_3_years",
+  "say": "3",
+  "kind": "illustrative",
+  "note": "story only: dad kept his old car 3 more years"
+ }
+]

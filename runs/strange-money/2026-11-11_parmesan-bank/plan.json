@@ -1,0 +1,448 @@
+{
+ "version": 1,
+ "style": "explainer-fast",
+ "music": {
+  "track": "the-end-soundaudio",
+  "volume": 0.05
+ },
+ "tailSeconds": 0.8,
+ "notes": "parmesan-bank v1: 29 shots; actors = green-keyed cut-outs (key_green.py); images sm4_ on meta.ai.",
+ "shots": [
+  {
+   "from": 0,
+   "img": "s_vault_hero.webp",
+   "cam": "pushIn",
+   "mg": [
+    {
+     "type": "label",
+     "text": "ITALY",
+     "y": 0.16,
+     "at": 1
+    },
+    {
+     "type": "counter",
+     "to": 500000,
+     "text": "wheels of cheese",
+     "y": 0.36,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "from": 12,
+   "img": "s_cheese_closeup.webp",
+   "cam": "tiltDown",
+   "sfx": "sparkle",
+   "mg": [
+    {
+     "type": "label",
+     "text": "Parmigiano Reggiano",
+     "y": 0.2,
+     "at": 16,
+     "size": 0.85
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "img": "bg_dairy.webp",
+   "cam": "pullOut",
+   "actors": [
+    {
+     "img": "g_cheesemaker_lift.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "idle": "shake",
+     "at": 22
+    }
+   ],
+   "mg": [
+    {
+     "type": "counter",
+     "to": 80,
+     "text": "pounds",
+     "y": 0.22,
+     "at": 24
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "img": "s_aging_shelves.webp",
+   "cam": "dive",
+   "mg": [
+    {
+     "type": "label",
+     "text": "12 months",
+     "y": 0.2,
+     "at": 35
+    },
+    {
+     "type": "label",
+     "text": "often 2 years",
+     "y": 0.38,
+     "rot": -4,
+     "at": 42
+    }
+   ]
+  },
+  {
+   "from": 47,
+   "img": "s_cows.webp",
+   "cam": "pushIn",
+   "hold": 0.2
+  },
+  {
+   "from": 53,
+   "img": "bg_dairy.webp",
+   "cam": "orbitR",
+   "actors": [
+    {
+     "img": "g_cheesemaker_worried.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "idle": "wobble"
+    }
+   ],
+   "mg": [
+    {
+     "type": "marks",
+     "text": "?!",
+     "y": 0.2,
+     "at": 54
+    }
+   ]
+  },
+  {
+   "from": 58,
+   "img": "s_money_shelf.webp",
+   "cam": "panL",
+   "mg": [
+    {
+     "type": "circle",
+     "x": 0.5,
+     "y": 0.62,
+     "size": 0.5,
+     "at": 59
+    }
+   ]
+  },
+  {
+   "from": 65,
+   "img": "s_cheese_clock.webp",
+   "cam": "craneDown"
+  },
+  {
+   "from": 68,
+   "img": "s_cheese_on_desk.webp",
+   "cam": "pushIn",
+   "mg": [
+    {
+     "type": "marks",
+     "text": "?",
+     "y": 0.2,
+     "at": 69
+    }
+   ]
+  },
+  {
+   "from": 74,
+   "img": "s_banker_laugh.webp",
+   "cam": "roll",
+   "sfx": "crowd_laugh",
+   "sfxVolume": 0.25
+  },
+  {
+   "from": 80,
+   "img": "s_bank_1950s.webp",
+   "cam": "tiltDown",
+   "mg": [
+    {
+     "type": "label",
+     "text": "1950s",
+     "y": 0.18,
+     "rot": 4,
+     "at": 82
+    }
+   ]
+  },
+  {
+   "from": 86,
+   "img": "bg_bank_lobby.webp",
+   "cam": "orbitL",
+   "actors": [
+    {
+     "img": "g_banker_thumbs.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.5,
+     "idle": "hop",
+     "enter": "slideR"
+    }
+   ],
+   "mg": [
+    {
+     "type": "label",
+     "text": "Credito Emiliano",
+     "y": 0.16,
+     "at": 86,
+     "size": 0.8
+    },
+    {
+     "type": "stamp",
+     "text": "YES!",
+     "y": 0.27,
+     "rot": -6,
+     "at": 89,
+     "size": 0.45
+    }
+   ]
+  },
+  {
+   "from": 91,
+   "img": "s_truck_delivery.webp",
+   "cam": "panR",
+   "hold": 0.2
+  },
+  {
+   "from": 97,
+   "img": "s_warehouse_giant.webp",
+   "cam": "craneUp",
+   "sfx": "riser"
+  },
+  {
+   "from": 106,
+   "img": "s_inspector_aisle.webp",
+   "cam": "orbitL",
+   "mg": [
+    {
+     "type": "circle",
+     "x": 0.27,
+     "y": 0.72,
+     "size": 0.35,
+     "at": 111
+    }
+   ]
+  },
+  {
+   "from": 115,
+   "img": "s_wheel_code.webp",
+   "cam": "pushIn",
+   "mg": [
+    {
+     "type": "pointer",
+     "x": 0.55,
+     "y": 0.5,
+     "dir": "left",
+     "at": 119
+    }
+   ]
+  },
+  {
+   "from": 128,
+   "img": "s_thief.webp",
+   "cam": "tiltUp",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "STOLEN!",
+     "y": 0.25,
+     "rot": -8,
+     "at": 130
+    }
+   ]
+  },
+  {
+   "from": 135,
+   "img": "bg_bank_lobby.webp",
+   "cam": "pullOut",
+   "actors": [
+    {
+     "img": "g_banker_point.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "slideL",
+     "idle": "lean"
+    }
+   ],
+   "mg": [
+    {
+     "type": "counter",
+     "to": 80,
+     "text": "% of its value",
+     "y": 0.22,
+     "at": 139
+    }
+   ]
+  },
+  {
+   "from": 146,
+   "img": "s_cash_handover.webp",
+   "cam": "dive",
+   "mg": [
+    {
+     "type": "money",
+     "dir": "rain"
+    }
+   ]
+  },
+  {
+   "from": 154,
+   "img": "bg_dairy.webp",
+   "cam": "pushIn",
+   "actors": [
+    {
+     "img": "g_cheesemaker_worried.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "idle": "shake",
+     "enter": "drop"
+    }
+   ],
+   "mg": [
+    {
+     "type": "marks",
+     "text": "?",
+     "y": 0.2,
+     "at": 155
+    }
+   ]
+  },
+  {
+   "from": 161,
+   "img": "s_cheese_sale.webp",
+   "cam": "panL",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "SOLD!",
+     "y": 0.22,
+     "at": 163
+    }
+   ]
+  },
+  {
+   "from": 166,
+   "img": "s_split_money.webp",
+   "cam": "orbitR",
+   "hold": 0.2,
+   "mg": [
+    {
+     "type": "money",
+     "dir": "right",
+     "size": 0.22,
+     "at": 171
+    }
+   ]
+  },
+  {
+   "from": 175,
+   "bg": "#f2b632",
+   "cam": "pushIn",
+   "fx": [
+    "punch"
+   ],
+   "mg": [
+    {
+     "type": "speedLines"
+    },
+    {
+     "type": "label",
+     "text": "THE TRICK",
+     "y": 0.4,
+     "at": 175
+    }
+   ]
+  },
+  {
+   "from": 178,
+   "img": "s_rusty_car.webp",
+   "cam": "craneDown",
+   "hold": 0.2,
+   "mg": [
+    {
+     "type": "arrow",
+     "dir": "down",
+     "x": 0.8,
+     "y": 0.28,
+     "size": 0.22,
+     "at": 180
+    }
+   ]
+  },
+  {
+   "from": 184,
+   "img": "s_broken_machine.webp",
+   "cam": "roll",
+   "fx": [
+    "shake"
+   ],
+   "sfx": "crash"
+  },
+  {
+   "from": 186,
+   "img": "s_cheese_glow.webp",
+   "cam": "pushIn",
+   "fx": [
+    "flash"
+   ],
+   "sfx": "sparkle",
+   "mg": [
+    {
+     "type": "arrow",
+     "dir": "up",
+     "x": 0.8,
+     "y": 0.3,
+     "size": 0.22,
+     "at": 187
+    }
+   ]
+  },
+  {
+   "from": 192,
+   "img": "s_scale.webp",
+   "cam": "tiltUp",
+   "mg": [
+    {
+     "type": "circle",
+     "x": 0.27,
+     "y": 0.55,
+     "size": 0.4,
+     "at": 193
+    }
+   ]
+  },
+  {
+   "from": 198,
+   "img": "bg_bank_lobby.webp",
+   "cam": "orbitL",
+   "actors": [
+    {
+     "img": "g_banker_proud.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "idle": "breathe"
+    }
+   ]
+  },
+  {
+   "from": 205,
+   "img": "s_vault_hero.webp",
+   "cam": "pullOut",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "NEVER LOST",
+     "y": 0.25,
+     "rot": -6,
+     "at": 206
+    }
+   ]
+  }
+ ]
+}

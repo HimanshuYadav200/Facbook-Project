@@ -1,0 +1,24 @@
+# STYLE (prepend to every prompt): Black and white pencil sketch illustration, vertical 9:16. Simple stickman characters with big round blank white heads, two small dot eyes, a small mouth, no nose, no hair (women have long hair), smooth white bodies with soft grey shading. Clean, detailed hand-drawn background in light grey. Soft vignette. Characters in the lower two thirds, simple top. No text, no words, no letters, no numbers, no logos anywhere.
+# CAST: MOM = stickman woman with long hair in a low bun, wearing a long grey winter coat with big round buttons (indoors: a grey knitted cardigan). DAD = stickman man in a checked flannel shirt and a flat cap. CHILD = at age 7 a small stickman kid in a striped T-shirt with a school backpack; at 16 a teen in a dark hoodie; grown up an adult in a cream sweater with rolled sleeves.
+01_hook: The grown-up child in a cream sweater sitting alone at a kitchen table in the evening, holding an old family photo of a mom, a dad and a small kid, thoughtful face, warm lamp light.
+02_grey_coat: Winter street with snow, the mom in her long grey coat with big round buttons holding the hand of the small kid in a striped T-shirt under a warm new jacket, walking to school.
+03_worn_sleeve: The mom in her long grey coat standing at the front door, looking down at a frayed worn sleeve and a missing button, small brave smile.
+04_new_shoes: Inside a shoe store, the small kid in a striped T-shirt trying on shiny new school shoes, happy, the mom in her long grey coat kneeling and watching with a soft smile.
+05_empty_plate: A small family dinner table, the small kid in a striped T-shirt eating a full plate, the dad in a checked flannel shirt and flat cap sitting with an empty plate and only a glass of water, smiling.
+06_just_enough: Night kitchen, the dad in a checked flannel shirt and flat cap scraping the last food from a pot onto the kid's plate, the pot nearly empty, the kid unaware and happy.
+07_ocean_postcard: The mom in a grey cardigan and the dad in a checked flannel shirt and flat cap standing at a fridge, looking at a pinned postcard picture of an ocean beach, wistful.
+08_braces: The small kid in a striped T-shirt smiling into a bathroom mirror showing new metal braces, the mom and dad behind in the doorway, proud.
+09_teen_phone: A school hallway, the teen in a dark hoodie standing alone watching a group of friends looking at their smartphones, wishful face.
+10_said_yes: Living room, the teen in a dark hoodie happily opening a gift box with a new phone, the mom in a grey cardigan and the dad in a checked flannel shirt and flat cap smiling together.
+11_old_car: A driveway, the dad in a checked flannel shirt and flat cap fixing an old dented car with the hood open, holding a wrench, tired but calm.
+12_didnt_see: The teen in a dark hoodie lying on a bed with headphones looking at a phone, through the open door in the background the mom and dad quietly sitting at the kitchen table at night.
+13_grown_bills: A small apartment, the grown-up child in a cream sweater with rolled sleeves sitting at a desk with a laptop and a pile of envelopes, paying bills, serious face.
+14_costs: A store, the grown-up child in a cream sweater holding a winter coat on a hanger in one hand and pushing a full grocery cart, surprised thoughtful face.
+15_hits_you: Evening, the grown-up child in a cream sweater standing still at a window with a cup of tea, looking out, a quiet realization on the face, warm sunset light.
+16_chose_you: A memory scene, the mom in her long grey coat and the dad in a checked flannel shirt and flat cap walking in a park, swinging the small kid in a striped T-shirt between their hands, all smiling.
+17_over_and_over: Night, the mom in a grey cardigan sewing a button back onto her old grey coat by lamp light, the dad in a checked flannel shirt asleep in a chair beside her.
+18_no_yes: Split picture: on the left the mom in her old grey coat walking past a shop window with a new coat in it; on the right the small kid in a striped T-shirt running happily in new shoes.
+19_call_them: The grown-up child in a cream sweater sitting on a sofa picking up a smartphone to make a call, gentle smile.
+20_thank_you: Split picture: on the left the grown-up child in a cream sweater on the phone with eyes closed, smiling; on the right the older mom with grey long hair in a bun and a grey cardigan on the phone in her kitchen, touched, hand on her heart.
+21_say_anyway: The grown-up child in a cream sweater sitting alone on a bench under a big tree at sunset, holding the old family photo, looking up at the sky, peaceful.
+22_old_coat_smiling: The older mom with long hair in a bun wearing her same old long grey coat with big round buttons, standing at a window at night, gently smiling, warm light inside.

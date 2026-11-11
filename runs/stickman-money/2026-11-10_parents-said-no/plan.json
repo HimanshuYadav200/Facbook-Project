@@ -1,0 +1,144 @@
+{
+ "version": 1,
+ "style": "stickman-calm",
+ "tailSeconds": 1.2,
+ "notes": "Music: the-end-soundaudio at 0.08. Seed #9, formula C. Moral at shot 18.",
+ "shots": [
+  {
+   "from": 0,
+   "type": "image",
+   "img": "01_hook.png",
+   "motion": "pushIn"
+  },
+  {
+   "from": 13,
+   "type": "image",
+   "img": "02_grey_coat.webp",
+   "motion": "panR"
+  },
+  {
+   "from": 26,
+   "type": "image",
+   "img": "03_worn_sleeve.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 33,
+   "type": "image",
+   "img": "04_new_shoes.webp",
+   "motion": "pullOut"
+  },
+  {
+   "from": 42,
+   "type": "image",
+   "img": "05_empty_plate.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 53,
+   "type": "image",
+   "img": "06_just_enough.webp",
+   "motion": "panL"
+  },
+  {
+   "from": 68,
+   "type": "image",
+   "img": "07_ocean_postcard.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 81,
+   "type": "image",
+   "img": "08_braces.webp",
+   "motion": "pullOut"
+  },
+  {
+   "from": 88,
+   "type": "image",
+   "img": "09_teen_phone.webp",
+   "motion": "panR"
+  },
+  {
+   "from": 99,
+   "type": "image",
+   "img": "10_said_yes.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 108,
+   "type": "image",
+   "img": "11_old_car.webp",
+   "motion": "panL"
+  },
+  {
+   "from": 119,
+   "type": "image",
+   "img": "12_didnt_see.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 134,
+   "type": "image",
+   "img": "13_grown_bills.webp",
+   "motion": "pullOut"
+  },
+  {
+   "from": 142,
+   "type": "image",
+   "img": "14_costs.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 156,
+   "type": "image",
+   "img": "15_hits_you.webp",
+   "motion": "panUp"
+  },
+  {
+   "from": 167,
+   "type": "image",
+   "img": "16_chose_you.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 174,
+   "type": "image",
+   "img": "17_over_and_over.webp",
+   "motion": "pullOut"
+  },
+  {
+   "from": 180,
+   "type": "image",
+   "img": "18_no_yes.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 193,
+   "type": "image",
+   "img": "19_call_them.webp",
+   "motion": "panR"
+  },
+  {
+   "from": 202,
+   "type": "image",
+   "img": "20_thank_you.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 215,
+   "type": "image",
+   "img": "21_say_anyway.webp",
+   "motion": "panUp"
+  },
+  {
+   "from": 225,
+   "type": "image",
+   "img": "22_old_coat_smiling.webp",
+   "motion": "pushIn"
+  }
+ ],
+ "music": {
+  "track": "the-end-soundaudio",
+  "volume": 0.08
+ }
+}

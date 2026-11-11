@@ -20,6 +20,10 @@ class Numbers(unittest.TestCase):
     def test_k_suffix_and_decimals(self):
         self.assertEqual(self.nums("$262K and 4.5%"), [("$", 262000.0), ("%", 4.5)])
 
+    def test_million_billion_words(self):
+        self.assertEqual(self.nums("$365 million, then 2.5 billion, but 3 billionaires."),
+                         [("$", 365e6), ("", 2.5e9), ("", 3.0)])
+
     def test_years_and_hyphenated_names_ignored(self):
         self.assertEqual(self.nums("In 2016, COVID-19 hit in 2020."), [])
 
@@ -55,6 +59,13 @@ class Refusals(unittest.TestCase):
         errors, _ = cp.check(self.make_run("Guaranteed forty thousand dollars here.", []), test=True)
         self.assertTrue(any("banned phrase" in e for e in errors))
         self.assertTrue(any("digits" in e for e in errors))
+
+    def test_million_after_digits_allowed_and_checked(self):
+        facts = [{"id": "a", "say": "$365 million", "source": "https://example.org"}]
+        errors, _ = cp.check(self.make_run("They lost $365 million that year.", facts), test=True)
+        self.assertEqual(errors, [])
+        errors, _ = cp.check(self.make_run("They lost $380 million that year.", facts), test=True)
+        self.assertTrue(any('"$380 million" is not in facts.json' in e for e in errors))
 
     def test_stale_words_refused(self):
         d = self.make_run("one two three four", [])

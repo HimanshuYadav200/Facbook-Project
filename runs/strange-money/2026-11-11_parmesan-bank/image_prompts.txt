@@ -1,0 +1,37 @@
+# STYLE (pasted IN FULL at the start of every prompt): Stylized 3D cartoon render, vertical 9:16, like a cozy animated movie or a miniature diorama: soft global illumination, warm rich saturated colors, rounded chunky shapes, slight depth of field. Present-day northern Italy. Characters are cute simple cartoon people with big round cream-colored heads, small black dot eyes, simple eyebrows, small mouths, no nose, and short rounded bean-shaped bodies with short arms and legs. No text, no letters, no numbers, no signs with writing, no logos anywhere.
+# CAST (never green clothes, so green-screen cut-outs work):
+#   cheesemaker = stocky man, white cheesemaker cap, white shirt, white apron, rosy cheeks, bushy brown moustache, blue jeans
+#   banker      = tall thin man, charcoal grey suit, round glasses, burgundy tie, neat black side-parted hair
+#   inspector   = warehouse worker in a white coat and white cap
+#   thief       = small sneaky person in a black turtleneck, black beanie, black eye mask
+# Green actors: "... standing alone on a plain flat solid bright green background (#00FF00), full body, whole figure visible with space around it, no shadow, no floor, nothing else in the image"
+# Files saved as ~/Downloads/sm4_<name>.<ext> then moved to incoming/ (g_* to img/green/)
+# name | prompt
+s_vault_hero | a huge round steel bank vault door swung open, revealing endless golden wheels of Parmesan cheese stacked on shelves inside, dramatic warm light spilling out, low angle, no people
+s_cheese_closeup | close-up of one big golden wheel of Parmigiano Reggiano cheese with a dotted pattern pressed into the rind (dots only, no letters), a wedge cut out showing crumbly grainy cheese, on a wooden board, dramatic side light
+bg_dairy | a cozy Italian cheese dairy room with big copper vats, white tiled walls, wooden shelves of cheese wheels in the background, morning light, no people, open floor space in the lower middle
+s_aging_shelves | a long aisle of tall wooden shelves stacked to the ceiling with golden cheese wheels aging, seen from above at a steep diving angle, soft light
+s_cows | cute cartoon brown and white dairy cows eating hay in a sunny barn in the Italian countryside, eye-level close view, a farmer pouring hay
+s_money_shelf | a wooden shelf of cheese wheels where each wheel has a bundle of paper banknotes (no numbers) tucked underneath, dusty and forgotten, dim light, close-up
+s_cheese_clock | a single cheese wheel sitting next to a big old wooden wall clock, cobwebs, dust floating in a light beam, sleepy mood
+s_cheese_on_desk | inside a modern bank office, the cheesemaker (stocky man, white cheesemaker cap, white apron, bushy brown moustache) proudly placing a huge cheese wheel on the desk of the banker (tall thin man, charcoal grey suit, round glasses, burgundy tie), the banker staring in shock
+s_banker_laugh | close-up of the banker (tall thin man, charcoal grey suit, round glasses, burgundy tie) laughing hard behind his office desk, holding his belly, tears in his eyes
+s_bank_1950s | a 1950s Italian bank building on a small town square with old cars and a scooter, warm faded vintage colors, people in 1950s clothes, a cheesemaker carrying a cheese wheel toward the door
+s_truck_delivery | the cheesemaker (stocky man, white cap, white apron, bushy brown moustache) unloading pale young cheese wheels from a small delivery truck at a big warehouse loading door, side angle
+s_warehouse_giant | a gigantic climate-controlled cheese warehouse with towering metal and wooden racks holding thousands of golden cheese wheels, tiny cartoon workers far below, wide aerial view
+s_inspector_aisle | a warehouse worker in a white coat and white cap walking along shelves of cheese wheels, tapping one wheel with a small hammer and listening closely, close-up, side angle
+s_wheel_code | extreme close-up of the side of a cheese wheel rind with a pattern of pressed dots and a small round brand mark (no readable letters or numbers), a magnifying glass over it
+s_thief | at night, a small sneaky thief (black turtleneck, black beanie, black eye mask) rolling a huge cheese wheel away from a warehouse, moonlight, a flashlight beam, low angle
+bg_bank_lobby | a bright modern Italian bank lobby with marble floor, wooden counter, potted plants, a big round vault door in the back wall, no people, open floor space in the lower middle
+s_cash_handover | close-up over a bank desk: the banker's hand (charcoal grey sleeve) handing a thick stack of paper banknotes (no numbers) to the cheesemaker's hand (white sleeve), a cheese wheel on the desk
+s_cheese_sale | a busy cheese market stall where happy customers buy big wedges of Parmesan, the banker (tall thin man, grey suit, round glasses) behind the counter selling cheese wheels, cheerful
+s_split_money | the banker (tall thin man, grey suit, round glasses) at a desk splitting a pile of paper banknotes (no numbers) into two stacks, pushing the bigger stack across the desk to the smiling cheesemaker (white cap, white apron, brown moustache)
+s_rusty_car | an old rusty broken-down car sinking into tall grass in a field, flat tires, orange rust, sad mood, low angle
+s_broken_machine | a broken old tractor with black smoke puffing out of its engine, a wheel fallen off, on a farm road, dramatic angle
+s_cheese_glow | one big aged golden Parmesan wheel on a velvet pillow glowing like treasure, sparkles and light rays around it, dark background
+s_scale | a big old brass balance scale: on one side a dark aged cheese wheel, on the other side a pile of gold coins, the cheese side heavier, warm light
+g_cheesemaker_lift | the cheesemaker (stocky man, white cheesemaker cap, white shirt, white apron, rosy cheeks, bushy brown moustache, blue jeans) straining to lift a huge heavy cheese wheel, red face, standing alone on a plain flat solid bright green background (#00FF00), full body, whole figure visible with space around it, no shadow, no floor, nothing else in the image
+g_cheesemaker_worried | the cheesemaker (same) scratching his head with a worried face, empty pockets turned out, standing alone on a plain flat solid bright green background (#00FF00), full body, whole figure visible with space around it, no shadow, no floor, nothing else in the image
+g_banker_point | the banker (tall thin man, charcoal grey suit, round glasses, burgundy tie, neat black side-parted hair) smiling and pointing up with one finger, standing alone on a plain flat solid bright green background (#00FF00), full body, whole figure visible with space around it, no shadow, no floor, nothing else in the image
+g_banker_thumbs | the banker (same) giving a big double thumbs up with a happy grin, standing alone on a plain flat solid bright green background (#00FF00), full body, whole figure visible with space around it, no shadow, no floor, nothing else in the image
+g_banker_proud | the banker (same) hugging a big golden cheese wheel proudly with a satisfied smile, standing alone on a plain flat solid bright green background (#00FF00), full body, whole figure visible with space around it, no shadow, no floor, nothing else in the image

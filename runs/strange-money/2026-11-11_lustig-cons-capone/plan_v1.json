@@ -1,0 +1,498 @@
+{
+ "version": 1,
+ "style": "explainer-fast",
+ "music": {
+  "track": "the-end-soundaudio",
+  "volume": 0.05
+ },
+ "tailSeconds": 0.8,
+ "notes": "Lustig cons Capone (seed #31, sequel to eiffel-tower-sale). 32 shots, actors = green-keyed cut-outs (key_green.py).",
+ "shots": [
+  {
+   "from": 0,
+   "img": "bg_chicago_street.webp",
+   "cam": "pushIn",
+   "actors": [
+    {
+     "img": "g_lustig_point.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "pop",
+     "idle": "bob",
+     "at": 1
+    }
+   ],
+   "mg": [
+    {
+     "type": "counter",
+     "to": 50000,
+     "text": "dollars",
+     "y": 0.2,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "img": "s_capone_desk.webp",
+   "cam": "tiltUp",
+   "fx": [
+    "punch"
+   ],
+   "sfx": "impact",
+   "mg": [
+    {
+     "type": "label",
+     "text": "Al Capone",
+     "y": 0.12,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "from": 14,
+   "img": "s_lustig_paid.webp",
+   "cam": "orbitR",
+   "sfx": "cash",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "PAID!",
+     "y": 0.38,
+     "rot": -8,
+     "at": 15
+    }
+   ]
+  },
+  {
+   "from": 19,
+   "img": "bg_hotel_room.webp",
+   "cam": "pullOut",
+   "hold": 0.2,
+   "actors": [
+    {
+     "img": "g_lustig_tiphat.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "slideL",
+     "idle": "lean"
+    }
+   ],
+   "mg": [
+    {
+     "type": "label",
+     "text": "Victor Lustig",
+     "y": 0.2,
+     "at": 19
+    }
+   ]
+  },
+  {
+   "from": 25,
+   "img": "s_eiffel_sold.webp",
+   "cam": "craneDown",
+   "sfx": "sparkle",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "SOLD!",
+     "y": 0.3,
+     "at": 28
+    }
+   ],
+   "hold": 0.25
+  },
+  {
+   "from": 33,
+   "img": "s_chicago_aerial.webp",
+   "cam": "dive",
+   "hold": 0.2,
+   "mg": [
+    {
+     "type": "label",
+     "text": "Chicago",
+     "y": 0.2,
+     "rot": 4,
+     "at": 33
+    }
+   ]
+  },
+  {
+   "from": 41,
+   "img": "s_capone_gang.webp",
+   "cam": "pushIn",
+   "fx": [
+    "shake"
+   ],
+   "sfx": "impact",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "THE BOSS",
+     "y": 0.2,
+     "rot": -6,
+     "at": 42
+    }
+   ]
+  },
+  {
+   "from": 48,
+   "img": "s_meeting_office.webp",
+   "cam": "panR"
+  },
+  {
+   "from": 55,
+   "img": "bg_capone_office.webp",
+   "cam": "tiltDown",
+   "actors": [
+    {
+     "img": "g_lustig_point.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "drop",
+     "idle": "bob",
+     "flip": true
+    }
+   ],
+   "mg": [
+    {
+     "type": "counter",
+     "to": 50000,
+     "text": "dollars",
+     "y": 0.2,
+     "at": 55
+    }
+   ]
+  },
+  {
+   "from": 58,
+   "bg": "#2f8f46",
+   "cam": "pushIn",
+   "hold": 0.3,
+   "fx": [
+    "punch"
+   ],
+   "mg": [
+    {
+     "type": "speedLines"
+    },
+    {
+     "type": "money",
+     "dir": "rain",
+     "size": 0.22
+    },
+    {
+     "type": "label",
+     "text": "2 months",
+     "y": 0.18,
+     "at": 59
+    },
+    {
+     "type": "stamp",
+     "text": "DOUBLE!",
+     "y": 0.42,
+     "at": 61
+    }
+   ]
+  },
+  {
+   "from": 65,
+   "img": "s_capone_suspicious.webp",
+   "cam": "pullOut",
+   "sfx": "scratch",
+   "hold": 0.15
+  },
+  {
+   "from": 68,
+   "img": "s_bodyguards.webp",
+   "cam": "tiltUp",
+   "fx": [
+    "shake"
+   ],
+   "sfx": "impact"
+  },
+  {
+   "from": 74,
+   "img": "s_cash_handover.webp",
+   "cam": "panL",
+   "mg": [
+    {
+     "type": "money",
+     "dir": "right",
+     "size": 0.22
+    }
+   ]
+  },
+  {
+   "from": 80,
+   "img": "bg_hotel_room.webp",
+   "cam": "orbitL",
+   "actors": [
+    {
+     "img": "g_lustig_shrug.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "pop",
+     "idle": "wobble"
+    }
+   ],
+   "mg": [
+    {
+     "type": "marks",
+     "text": "?!",
+     "y": 0.2,
+     "at": 80
+    }
+   ]
+  },
+  {
+   "from": 87,
+   "img": "s_money_safe.webp",
+   "cam": "pushIn",
+   "mg": [
+    {
+     "type": "circle",
+     "x": 0.55,
+     "y": 0.5,
+     "size": 0.6,
+     "at": 87
+    }
+   ]
+  },
+  {
+   "from": 88,
+   "img": "s_lustig_waiting.webp",
+   "cam": "craneUp"
+  },
+  {
+   "from": 94,
+   "img": "s_calendar.webp",
+   "cam": "roll",
+   "sfx": "riser",
+   "hold": 0.2,
+   "mg": [
+    {
+     "type": "label",
+     "text": "2 months later",
+     "y": 0.15,
+     "at": 94
+    }
+   ]
+  },
+  {
+   "from": 101,
+   "img": "bg_capone_office.webp",
+   "cam": "pushIn",
+   "actors": [
+    {
+     "img": "g_lustig_sad.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "slideR",
+     "idle": "breathe"
+    }
+   ],
+   "hold": 0.25
+  },
+  {
+   "from": 105,
+   "bg": "#8f2f2f",
+   "cam": "pullOut",
+   "fx": [
+    "shake"
+   ],
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "DEAL FAILED",
+     "y": 0.3,
+     "rot": -8,
+     "at": 106
+    },
+    {
+     "type": "arrow",
+     "dir": "down",
+     "y": 0.62,
+     "size": 0.3,
+     "at": 110
+    }
+   ]
+  },
+  {
+   "from": 114,
+   "img": "s_money_return.webp",
+   "cam": "orbitR",
+   "sfx": "slide",
+   "mg": [
+    {
+     "type": "money",
+     "dir": "left",
+     "size": 0.2
+    }
+   ]
+  },
+  {
+   "from": 119,
+   "img": "s_capone_stunned.webp",
+   "cam": "pushIn",
+   "fx": [
+    "punch"
+   ],
+   "sfx": "impact",
+   "mg": [
+    {
+     "type": "marks",
+     "text": "?!",
+     "x": 0.78,
+     "y": 0.15,
+     "at": 121
+    }
+   ]
+  },
+  {
+   "from": 129,
+   "img": "s_capone_impressed.webp",
+   "cam": "panR",
+   "sfx": "applause",
+   "sfxVolume": 0.25,
+   "mg": [
+    {
+     "type": "label",
+     "text": "honest man",
+     "y": 0.12,
+     "rot": -4,
+     "at": 133
+    }
+   ]
+  },
+  {
+   "from": 140,
+   "img": "s_reward.webp",
+   "cam": "dive",
+   "sfx": "cash",
+   "mg": [
+    {
+     "type": "counter",
+     "to": 5000,
+     "text": "dollars",
+     "y": 0.2,
+     "at": 141
+    }
+   ]
+  },
+  {
+   "from": 148,
+   "img": "s_lustig_wink.webp",
+   "cam": "pushIn",
+   "sfx": "sparkle",
+   "fx": [
+    "flash"
+   ]
+  },
+  {
+   "from": 155,
+   "img": "s_cash_pile.webp",
+   "cam": "orbitL",
+   "mg": [
+    {
+     "type": "cross",
+     "x": 0.5,
+     "y": 0.5,
+     "size": 0.6,
+     "at": 157
+    }
+   ]
+  },
+  {
+   "from": 160,
+   "img": "s_capone_angry.webp",
+   "cam": "tiltDown",
+   "fx": [
+    "shake"
+   ],
+   "sfx": "crash"
+  },
+  {
+   "from": 167,
+   "img": "s_handshake.webp",
+   "cam": "pushIn",
+   "sfx": "sparkle",
+   "mg": [
+    {
+     "type": "label",
+     "text": "trust",
+     "y": 0.15,
+     "at": 167
+    }
+   ]
+  },
+  {
+   "from": 171,
+   "img": "s_cash_pocket.webp",
+   "cam": "panL"
+  },
+  {
+   "from": 175,
+   "img": "bg_chicago_night.webp",
+   "cam": "pullOut",
+   "actors": [
+    {
+     "img": "g_lustig_stroll.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.5,
+     "enter": "slideL",
+     "idle": "bob"
+    }
+   ]
+  },
+  {
+   "from": 181,
+   "img": "s_capone_oblivious.webp",
+   "cam": "craneDown",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "CONNED",
+     "y": 0.22,
+     "rot": 8,
+     "at": 185
+    }
+   ]
+  },
+  {
+   "from": 189,
+   "img": "s_capone_gang.webp",
+   "cam": "orbitR",
+   "mg": [
+    {
+     "type": "circle",
+     "x": 0.5,
+     "y": 0.5,
+     "size": 0.5,
+     "at": 193
+    }
+   ]
+  },
+  {
+   "from": 198,
+   "img": "bg_chicago_street.webp",
+   "cam": "pushIn",
+   "actors": [
+    {
+     "img": "g_lustig_tiphat.png",
+     "x": 0.5,
+     "y": 0.93,
+     "h": 0.55,
+     "enter": "pop",
+     "idle": "breathe"
+    }
+   ]
+  }
+ ]
+}

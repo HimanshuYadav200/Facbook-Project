@@ -35,6 +35,13 @@ Built from `references/stickman-psychology/analysis.md` (viral calm stickman ree
 
 ## Upload text
 Write `upload.md` per run following `video-core/references/upload-policy.md` (example: `runs/stickman-money/2026-11-10_two-brothers-paycheck/upload.md`). Base tags: money lesson, saving money, personal finance for beginners, financial literacy, moral story, life lesson, stickman story + 4–6 story-specific ones.
+US audience: follow `upload-policy.md` §4 (Post at slot, English (US) settings, US words).
+Base hashtags (pick 3–4): #MoneyLessons #PersonalFinance #MoneyMindset #FinancialLiteracy #LifeLessons; rotate by story: #SavingMoney #EmergencyFund #PayYourselfFirst · #Parenting #RaisingKids #FamilyValues · #LifestyleCreep #CareerAdvice · #StickmanStory #MoralStory · #AmericanDream #MiddleClass (only when they fit).
+
+## Facebook Page
+- Name: owner's pick (suggested: Little Money Lessons, Quiet Money Stories, The Money Parables, Small Coins, Big Lessons).
+- Categories (max 3): **Digital creator**, **Education**, **Personal blog**. Not "Financial Service".
+- Bio (≤ 101 chars): "One short story. One money lesson. For anyone who wants to spend smarter and worry less. 🇺🇸"
 
 ## Topic bank
 `references/topics.md`: 100 seeds (formula, inspiration, who to share with, whether a real stat fits). Mark each used with the run id; don't run the same formula 3 times in a row. Seeds are shapes, never text to copy.

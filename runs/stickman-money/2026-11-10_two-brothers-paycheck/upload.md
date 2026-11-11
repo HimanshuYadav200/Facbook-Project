@@ -30,6 +30,7 @@ pay yourself first, saving money, money lesson, first paycheck, emergency fund, 
 - Altered or synthetic content: **Yes**
 - Made for kids: **No**
 - Category: Education
+- Video language + title/description language: **English (United States)**
 - Pinned comment: "Be honest: which brother were you at your first job? 👇"
 
 ## Facebook (Reel)
@@ -51,9 +52,14 @@ A fictional story for learning, not financial advice.
 - AI info label: **on**
 - Post as a Reel (native upload, no watermark)
 
+## US audience (upload-policy §4)
+- **Post at:** Late evening: 9:00 PM Eastern (7:30 AM India, next day). Schedule it in Meta Business Suite / YouTube Studio.
+- Optional paid boost if it does well: audience United States, age 25–60.
+
 ## Owner checklist
 - [ ] Watched once with sound
 - [ ] Music `the-end-soundaudio`: non-copyright (owner, 2026-11-10)
 - [ ] No real statistics in this video (no facts to review)
 - [ ] YouTube: AI disclosure Yes, Made for kids No
 - [ ] Facebook: AI info on
+- [ ] Language English (US) set; scheduled at the Post at slot

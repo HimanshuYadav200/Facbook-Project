@@ -970,6 +970,1250 @@
    "file_url": "https://assets.mixkit.co/active_storage/sfx/523/523.wav",
    "original": "Mixkit #523 \"Animated small group applause\"",
    "description": "small group applause and cheer (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "whoosh_r9",
+   "tags": [
+    "transition",
+    "cut",
+    "cinematic"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/cinematic/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/1492/1492.wav",
+   "original": "Mixkit #1492 \"Cinematic whoosh fast transition\"",
+   "description": "cinematic fast whoosh, soft cut (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "whoosh_r10",
+   "tags": [
+    "transition",
+    "cinematic"
+   ],
+   "mood": "dark",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/cinematic/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/1486/1486.wav",
+   "original": "Mixkit #1486 \"Cinematic tunnel reverb woosh\"",
+   "description": "tunnel reverb whoosh, dramatic cut (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "whoosh_r11",
+   "tags": [
+    "transition",
+    "cut",
+    "soft"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/whoosh/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/1489/1489.wav",
+   "original": "Mixkit #1489 \"Air woosh\"",
+   "description": "soft air woosh, gentle cut (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "whoosh_r12",
+   "tags": [
+    "transition",
+    "soft"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/transition/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/1474/1474.wav",
+   "original": "Mixkit #1474 \"Transition windy swoosh\"",
+   "description": "windy swoosh, light cut (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "whoosh_r13",
+   "tags": [
+    "transition",
+    "soft"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/transition/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/1168/1168.wav",
+   "original": "Mixkit #1168 \"Woosh wind\"",
+   "description": "wind woosh, soft cut (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "whoosh_r14",
+   "tags": [
+    "transition",
+    "mystery"
+   ],
+   "mood": "dark",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/transition/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/2615/2615.wav",
+   "original": "Mixkit #2615 \"Mighty mysterious swoosh\"",
+   "description": "mysterious swoosh, reveal cut (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "impact_r6",
+   "tags": [
+    "impact",
+    "suspense"
+   ],
+   "mood": "dark",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/impact/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/2917/2917.wav",
+   "original": "Mixkit #2917 \"Suspence cinematic impact\"",
+   "description": "suspense cinematic impact (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "impact_r7",
+   "tags": [
+    "impact",
+    "drum"
+   ],
+   "mood": "heavy",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/cinematic/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/563/563.wav",
+   "original": "Mixkit #563 \"Drum deep impact\"",
+   "description": "deep drum hit (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "impact_r8",
+   "tags": [
+    "impact",
+    "wood"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/impact/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/2182/2182.wav",
+   "original": "Mixkit #2182 \"Wood hard hit\"",
+   "description": "hard wood knock/hit (gavel-like) (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "impact_r9",
+   "tags": [
+    "impact",
+    "bass"
+   ],
+   "mood": "dark",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/hit/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/2300/2300.wav",
+   "original": "Mixkit #2300 \"Knocking sub bass\"",
+   "description": "knocking sub bass (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "heartbeat_r1",
+   "tags": [
+    "tension",
+    "heartbeat",
+    "impact"
+   ],
+   "mood": "dark",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/cinematic/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/498/498.wav",
+   "original": "Mixkit #498 \"Deep heartbeat impact\"",
+   "description": "deep heartbeat impact (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "heartbeat_r2",
+   "tags": [
+    "tension",
+    "heartbeat",
+    "bed"
+   ],
+   "mood": "dark",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/cinematic/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/497/497.wav",
+   "original": "Mixkit #497 \"Cinematic heartbeat ambience\"",
+   "description": "cinematic heartbeat ambience (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "tension_r1",
+   "tags": [
+    "tension",
+    "hit",
+    "glass"
+   ],
+   "mood": "dark",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/suspense/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/677/677.wav",
+   "original": "Mixkit #677 \"Cinematic glass hit suspense\"",
+   "description": "cinematic glass hit, suspense (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "tension_r2",
+   "tags": [
+    "tension",
+    "swell"
+   ],
+   "mood": "dark",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/suspense/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/786/786.wav",
+   "original": "Mixkit #786 \"Cinematic suspense swell\"",
+   "description": "cinematic suspense swell (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "tension_r3",
+   "tags": [
+    "tension",
+    "sweep",
+    "metal"
+   ],
+   "mood": "dark",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/suspense/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/670/670.wav",
+   "original": "Mixkit #670 \"Metallic sweep suspense\"",
+   "description": "metallic suspense sweep (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "tension_r4",
+   "tags": [
+    "tension",
+    "drumroll"
+   ],
+   "mood": "dark",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/suspense/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/577/577.wav",
+   "original": "Mixkit #577 \"Tension and suspense drum roll\"",
+   "description": "tension drum roll (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "riser_r3",
+   "tags": [
+    "riser",
+    "tension"
+   ],
+   "mood": "dark",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/cinematic/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/632/632.wav",
+   "original": "Mixkit #632 \"Cinematic drama riser\"",
+   "description": "cinematic drama riser (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "riser_r4",
+   "tags": [
+    "riser",
+    "swell"
+   ],
+   "mood": "dark",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/suspense/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/678/678.wav",
+   "original": "Mixkit #678 \"Trailer cinematic suspense swell\"",
+   "description": "trailer suspense swell (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "reveal_r1",
+   "tags": [
+    "reveal",
+    "sting",
+    "musical"
+   ],
+   "mood": "light",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/reveal/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/961/961.wav",
+   "original": "Mixkit #961 \"Musical reveal\"",
+   "description": "short musical reveal sting (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "paper_r1",
+   "tags": [
+    "paper",
+    "page"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/paper/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/1104/1104.wav",
+   "original": "Mixkit #1104 \"Page turn single\"",
+   "description": "single page turn (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "paper_r2",
+   "tags": [
+    "paper",
+    "shuffle"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/paper/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/2379/2379.wav",
+   "original": "Mixkit #2379 \"Papers being moved or wrinkling\"",
+   "description": "papers being moved (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "paper_r3",
+   "tags": [
+    "paper",
+    "crumple"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/paper/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/2996/2996.wav",
+   "original": "Mixkit #2996 \"Quick paper crumple sound\"",
+   "description": "quick paper crumple (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "paper_r4",
+   "tags": [
+    "paper",
+    "crinkle"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/paper/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/2385/2385.wav",
+   "original": "Mixkit #2385 \"Paper crinkle\"",
+   "description": "paper crinkle (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "writing_r1",
+   "tags": [
+    "writing",
+    "pen",
+    "sign"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/writing/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/2367/2367.wav",
+   "original": "Mixkit #2367 \"Writing with a pen on paper\"",
+   "description": "pen writing on paper (signature) (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "writing_r2",
+   "tags": [
+    "writing",
+    "pencil"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/paper/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/3194/3194.wav",
+   "original": "Mixkit #3194 \"Writing pencil\"",
+   "description": "pencil writing (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "typewriter_r1",
+   "tags": [
+    "typewriter",
+    "hit"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/typewriter/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/1384/1384.wav",
+   "original": "Mixkit #1384 \"Typewriter single mechanical hit\"",
+   "description": "single mechanical typewriter hit (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "typewriter_r2",
+   "tags": [
+    "typewriter",
+    "bell"
+   ],
+   "mood": "light",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/typewriter/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/1368/1368.wav",
+   "original": "Mixkit #1368 \"Typewriter return bell\"",
+   "description": "typewriter return bell (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "typewriter_r3",
+   "tags": [
+    "typewriter",
+    "typing"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/typewriter/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/1378/1378.wav",
+   "original": "Mixkit #1378 \"Data input on typewriter\"",
+   "description": "typing on a typewriter (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "coins_r3",
+   "tags": [
+    "coins",
+    "money"
+   ],
+   "mood": "light",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/money/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/1939/1939.wav",
+   "original": "Mixkit #1939 \"Coins handling\"",
+   "description": "handling coins (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "coins_r4",
+   "tags": [
+    "coins",
+    "money"
+   ],
+   "mood": "light",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/money/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/2003/2003.wav",
+   "original": "Mixkit #2003 \"Coins sound\"",
+   "description": "coins clinking (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "coins_r5",
+   "tags": [
+    "coins",
+    "money",
+    "bag"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/coins/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/3187/3187.wav",
+   "original": "Mixkit #3187 \"Bag of coins touch\"",
+   "description": "bag of coins touched (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "coins_r6",
+   "tags": [
+    "coins",
+    "money",
+    "flip"
+   ],
+   "mood": "light",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/coins/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/3183/3183.wav",
+   "original": "Mixkit #3183 \"Fluttering coin\"",
+   "description": "fluttering coin (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "atm_r1",
+   "tags": [
+    "money",
+    "button",
+    "machine"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/money/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/2841/2841.wav",
+   "original": "Mixkit #2841 \"Atm cash machine key press\"",
+   "description": "ATM key press (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "gasp_r1",
+   "tags": [
+    "gasp",
+    "reaction",
+    "male"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/gasp/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/966/966.wav",
+   "original": "Mixkit #966 \"Male astonished gasp\"",
+   "description": "male astonished gasp (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "gasp_r2",
+   "tags": [
+    "gasp",
+    "reaction",
+    "female"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/gasp/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/964/964.wav",
+   "original": "Mixkit #964 \"Female astonished gasp\"",
+   "description": "female astonished gasp (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "gasp_r3",
+   "tags": [
+    "gasp",
+    "reaction",
+    "female"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/gasp/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/968/968.wav",
+   "original": "Mixkit #968 \"Female surprised gasp\"",
+   "description": "female surprised gasp (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "crowd_laugh_r3",
+   "tags": [
+    "crowd",
+    "laugh"
+   ],
+   "mood": "light",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/crowd/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/423/423.wav",
+   "original": "Mixkit #423 \"Small man crowd laughing\"",
+   "description": "small group of men laughing (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "crowd_applause_r3",
+   "tags": [
+    "crowd",
+    "applause"
+   ],
+   "mood": "light",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/crowd/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/437/437.wav",
+   "original": "Mixkit #437 \"Small crowd ovation\"",
+   "description": "small crowd ovation (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "crowd_press_r1",
+   "tags": [
+    "crowd",
+    "press",
+    "camera"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/crowd/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/432/432.wav",
+   "original": "Mixkit #432 \"Reporters crowd and camera flashes\"",
+   "description": "reporters and camera flashes (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "crowd_angry_r1",
+   "tags": [
+    "crowd",
+    "angry"
+   ],
+   "mood": "dark",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/crowd/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/458/458.wav",
+   "original": "Mixkit #458 \"Angry male crowd ambience\"",
+   "description": "angry crowd murmur (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "room_r1",
+   "tags": [
+    "ambience",
+    "restaurant",
+    "bed"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/crowd/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/444/444.wav",
+   "original": "Mixkit #444 \"Restaurant crowd talking ambience\"",
+   "description": "restaurant crowd ambience (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "camera_r2",
+   "tags": [
+    "camera",
+    "shutter"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/camera/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/1430/1430.wav",
+   "original": "Mixkit #1430 \"Camera shutter hard click\"",
+   "description": "hard camera shutter click (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "camera_r3",
+   "tags": [
+    "camera",
+    "shutter",
+    "vintage"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/camera/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/1438/1438.wav",
+   "original": "Mixkit #1438 \"Vintage camera shutter\"",
+   "description": "vintage camera shutter (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "door_r1",
+   "tags": [
+    "door",
+    "slam"
+   ],
+   "mood": "heavy",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/door/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/194/194.wav",
+   "original": "Mixkit #194 \"Slamming a door\"",
+   "description": "door slammed (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "door_r2",
+   "tags": [
+    "door",
+    "metal",
+    "prison"
+   ],
+   "mood": "heavy",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/door/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/201/201.wav",
+   "original": "Mixkit #201 \"Prison metal door close\"",
+   "description": "prison metal door closing (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "door_r4",
+   "tags": [
+    "door",
+    "knock"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/door/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/197/197.wav",
+   "original": "Mixkit #197 \"Knocking on a thick wooden door\"",
+   "description": "knocking on a thick wooden door (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "siren_r1",
+   "tags": [
+    "siren",
+    "police"
+   ],
+   "mood": "dark",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/police/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/1643/1643.wav",
+   "original": "Mixkit #1643 \"Police siren US\"",
+   "description": "US police siren burst (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "tick_r3",
+   "tags": [
+    "clock",
+    "tick",
+    "timer"
+   ],
+   "mood": "tension",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/clock/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/1056/1056.wav",
+   "original": "Mixkit #1056 \"Ticking timer\"",
+   "description": "ticking timer (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "glass_r1",
+   "tags": [
+    "glass",
+    "clink",
+    "toast"
+   ],
+   "mood": "light",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/glass/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/2936/2936.wav",
+   "original": "Mixkit #2936 \"Wine glass clink\"",
+   "description": "wine glass clink (toast) (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "sting_r1",
+   "tags": [
+    "sting",
+    "news",
+    "transition"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Mixkit Sound Effects Free License (no redistribution of the file alone, no Content ID)",
+   "licence_url": "https://mixkit.co/license/#sfxFree",
+   "source": "https://mixkit.co/free-sound-effects/transition/",
+   "file_url": "https://assets.mixkit.co/active_storage/sfx/3089/3089.wav",
+   "original": "Mixkit #3089 \"Television news report transition\"",
+   "description": "TV news report transition sting (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "gavel_r1",
+   "tags": [
+    "gavel",
+    "court",
+    "impact"
+   ],
+   "mood": "heavy",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/Aerny/sounds/618138/",
+   "file_url": "https://cdn.freesound.org/previews/618/618138_1071564-hq.mp3",
+   "original": "freesound #618138 \"Gavel on wooden desk\" by Aerny",
+   "description": "gavel on a wooden desk (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "gavel_r2",
+   "tags": [
+    "gavel",
+    "court",
+    "impact"
+   ],
+   "mood": "heavy",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/slowscope/sounds/158699/",
+   "file_url": "https://cdn.freesound.org/previews/158/158699_966673-hq.mp3",
+   "original": "freesound #158699 \"Gavel Hammer court\" by slowscope",
+   "description": "court gavel hits (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "stamp_r3",
+   "tags": [
+    "stamp",
+    "impact"
+   ],
+   "mood": "heavy",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/eddies2000/sounds/448474/",
+   "file_url": "https://cdn.freesound.org/previews/448/448474_9090982-hq.mp3",
+   "original": "freesound #448474 \"es-stamp.wav\" by eddies2000",
+   "description": "rubber stamp (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "stamp_r4",
+   "tags": [
+    "stamp",
+    "impact"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/15FPanska_KristynaHaupt/sounds/461888/",
+   "file_url": "https://cdn.freesound.org/previews/461/461888_9681967-hq.mp3",
+   "original": "freesound #461888 \"17_stamp, rubber, plastic.wav\" by 15FPanska_KristynaHaupt",
+   "description": "rubber/plastic stamp (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "cash_r3",
+   "tags": [
+    "cash",
+    "register",
+    "money"
+   ],
+   "mood": "light",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/clubmydia+/sounds/584168/",
+   "file_url": "https://cdn.freesound.org/previews/584/584168_11720717-hq.mp3",
+   "original": "freesound #584168 \"old cash register open and close with a bing\" by clubmydia+",
+   "description": "old cash register open, close and bell (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "money_count_r1",
+   "tags": [
+    "money",
+    "bills",
+    "counting"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/visionear/sounds/565513/",
+   "file_url": "https://cdn.freesound.org/previews/565/565513_10869493-hq.mp3",
+   "original": "freesound #565513 \"Counting money handling US dollars Bills edlarez ...\" by visionear",
+   "description": "counting US dollar bills by hand (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "money_count_r2",
+   "tags": [
+    "money",
+    "bills",
+    "counting"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/sounds-mp3/sounds/538771/",
+   "file_url": "https://cdn.freesound.org/previews/538/538771_12003363-hq.mp3",
+   "original": "freesound #538771 \"Manual banknote counting.mp3\" by sounds-mp3",
+   "description": "manual banknote counting (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "bills_r1",
+   "tags": [
+    "money",
+    "bills",
+    "paper"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/danluxradium/sounds/767614/",
+   "file_url": "https://cdn.freesound.org/previews/767/767614_16156216-hq.mp3",
+   "original": "freesound #767614 \"Unfolding Dollar Bill\" by danluxradium",
+   "description": "unfolding a dollar bill (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "bills_r2",
+   "tags": [
+    "money",
+    "bills",
+    "flip"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/hopflog/sounds/40952/",
+   "file_url": "https://cdn.freesound.org/previews/40/40952_424982-hq.mp3",
+   "original": "freesound #40952 \"dollar bills flipping counting.wav\" by hopflog",
+   "description": "flipping dollar bills (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "vault_r1",
+   "tags": [
+    "vault",
+    "lock",
+    "bank"
+   ],
+   "mood": "tension",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/Pixeliota/sounds/678254/",
+   "file_url": "https://cdn.freesound.org/previews/678/678254_7806746-hq.mp3",
+   "original": "freesound #678254 \"Bank Vault Combination Lock Sound - V6\" by Pixeliota",
+   "description": "bank vault combination lock (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "vault_r2",
+   "tags": [
+    "vault",
+    "door",
+    "metal"
+   ],
+   "mood": "heavy",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/AudioPapkin/sounds/814977/",
+   "file_url": "https://cdn.freesound.org/previews/814/814977_8698658-hq.mp3",
+   "original": "freesound #814977 \"Closing large metal door-002\" by AudioPapkin",
+   "description": "large metal door closing (vault) (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "handcuffs_r1",
+   "tags": [
+    "handcuffs",
+    "police",
+    "arrest"
+   ],
+   "mood": "dark",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/Mbytemama93/sounds/666604/",
+   "file_url": "https://cdn.freesound.org/previews/666/666604_14511033-hq.mp3",
+   "original": "freesound #666604 \"cuffs locking.mp3\" by Mbytemama93",
+   "description": "handcuffs locking (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "jail_r1",
+   "tags": [
+    "jail",
+    "door",
+    "metal"
+   ],
+   "mood": "heavy",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/TurtleLG/sounds/80449/",
+   "file_url": "https://cdn.freesound.org/previews/80/80449_914292-hq.mp3",
+   "original": "freesound #80449 \"JailDoorClose.wav\" by TurtleLG",
+   "description": "jail cell door closing (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "phone_r1",
+   "tags": [
+    "phone",
+    "ring",
+    "vintage"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/mycompasstv/sounds/456433/",
+   "file_url": "https://cdn.freesound.org/previews/456/456433_3902754-hq.mp3",
+   "original": "freesound #456433 \"Old Rotary Phone Ringing - Western Electric Bell ...\" by mycompasstv",
+   "description": "old rotary phone ringing (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "morse_r1",
+   "tags": [
+    "telegraph",
+    "morse",
+    "message"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/SkibkaMusic/sounds/478969/",
+   "file_url": "https://cdn.freesound.org/previews/478/478969_6607652-hq.mp3",
+   "original": "freesound #478969 \"Morse_Code_SS_HQ.wav\" by SkibkaMusic",
+   "description": "morse code beeps (telegraph) (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "crowd_gasp_r3",
+   "tags": [
+    "crowd",
+    "gasp",
+    "reaction"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/HowardV/sounds/264376/",
+   "file_url": "https://cdn.freesound.org/previews/264/264376_1654262-hq.mp3",
+   "original": "freesound #264376 \"small crowd gasp shock surprise\" by HowardV",
+   "description": "small crowd gasp of shock (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "crowd_gasp_r4",
+   "tags": [
+    "crowd",
+    "gasp",
+    "reaction"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/ShangusBurger/sounds/763876/",
+   "file_url": "https://cdn.freesound.org/previews/763/763876_11744683-hq.mp3",
+   "original": "freesound #763876 \"CRWDReac_Crowd Gasping In Surprise, Voiced 02_Sha...\" by ShangusBurger",
+   "description": "crowd gasping in surprise (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "crowd_murmur_r1",
+   "tags": [
+    "crowd",
+    "murmur",
+    "reaction"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/mglennsound/sounds/678671/",
+   "file_url": "https://cdn.freesound.org/previews/678/678671_14787385-hq.mp3",
+   "original": "freesound #678671 \"AF Crowd Suprised Murmur 1.wav\" by mglennsound",
+   "description": "crowd surprised murmur (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "crowd_whisper_r1",
+   "tags": [
+    "crowd",
+    "whisper",
+    "bed"
+   ],
+   "mood": "tension",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/kyles/sounds/452955/",
+   "file_url": "https://cdn.freesound.org/previews/452/452955_612689-hq.mp3",
+   "original": "freesound #452955 \"crowd int light whisper murmur hush medium room m...\" by kyles",
+   "description": "hushed whispering crowd (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "newspaper_r1",
+   "tags": [
+    "paper",
+    "newspaper",
+    "page"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/rambler52/sounds/332111/",
+   "file_url": "https://cdn.freesound.org/previews/332/332111_2291385-hq.mp3",
+   "original": "freesound #332111 \"newspaper_pageturn1.wav\" by rambler52",
+   "description": "newspaper page turn (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "newspaper_r2",
+   "tags": [
+    "paper",
+    "newspaper"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/isapozhnik/sounds/488673/",
+   "file_url": "https://cdn.freesound.org/previews/488/488673_4505001-hq.mp3",
+   "original": "freesound #488673 \"Rustling a newspaper.wav\" by isapozhnik",
+   "description": "rustling a newspaper (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "rat_r1",
+   "tags": [
+    "animal",
+    "rat",
+    "squeak"
+   ],
+   "mood": "light",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/toefur/sounds/288941/",
+   "file_url": "https://cdn.freesound.org/previews/288/288941_34567-hq.mp3",
+   "original": "freesound #288941 \"rat-squeak.wav\" by toefur",
+   "description": "rat squeak (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "rat_r2",
+   "tags": [
+    "animal",
+    "rat",
+    "squeak"
+   ],
+   "mood": "light",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/Zabuhailo/sounds/143125/",
+   "file_url": "https://cdn.freesound.org/previews/143/143125_2580450-hq.mp3",
+   "original": "freesound #143125 \"ratSqueak.wav\" by Zabuhailo",
+   "description": "rat squeak (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "footsteps_r1",
+   "tags": [
+    "footsteps",
+    "marble",
+    "walk"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "CC0 1.0 (public domain, via freesound.org)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://freesound.org/people/simong1006/sounds/544602/",
+   "file_url": "https://cdn.freesound.org/previews/544/544602_9630213-hq.mp3",
+   "original": "freesound #544602 \"Footsteps marble NYC Interior Lobby Foot step foo...\" by simong1006",
+   "description": "footsteps in a marble lobby (recorded; trimmed, mono 44.1 kHz, peak -1 dBFS)"
+  },
+  {
+   "name": "gen_vault_slam",
+   "tags": [
+    "vault",
+    "door",
+    "impact",
+    "generated"
+   ],
+   "mood": "heavy",
+   "loop": false,
+   "licence": "Stability AI Community License (generated locally with Stable Audio 3 Small SFX; commercial use needs free registration with Stability AI, under $1M yearly revenue)",
+   "licence_url": "https://stability.ai/community-license-agreement",
+   "source": "engine/tools/gen_sfx.py (Stable Audio 3 Small SFX)",
+   "prompt": "heavy steel bank vault door slams shut, deep metallic boom, realistic foley",
+   "seed": 1467496784,
+   "seconds": 3.0,
+   "cfg": 1.0,
+   "description": "generated: heavy steel bank vault door slams shut, deep metallic boom, realistic foley (mono 44.1 kHz, peak -1 dBFS, 1.50 s)"
+  },
+  {
+   "name": "gen_money_stack",
+   "tags": [
+    "money",
+    "bills",
+    "impact",
+    "generated"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Stability AI Community License (generated locally with Stable Audio 3 Small SFX; commercial use needs free registration with Stability AI, under $1M yearly revenue)",
+   "licence_url": "https://stability.ai/community-license-agreement",
+   "source": "engine/tools/gen_sfx.py (Stable Audio 3 Small SFX)",
+   "prompt": "thick stack of paper banknotes dropped on a wooden desk, realistic foley",
+   "seed": 474129816,
+   "seconds": 1.5,
+   "cfg": 1.0,
+   "description": "generated: thick stack of paper banknotes dropped on a wooden desk, realistic foley (mono 44.1 kHz, peak -1 dBFS, 1.50 s)"
+  },
+  {
+   "name": "gen_cheese_wheel",
+   "tags": [
+    "cheese",
+    "thud",
+    "generated"
+   ],
+   "mood": "neutral",
+   "loop": false,
+   "licence": "Stability AI Community License (generated locally with Stable Audio 3 Small SFX; commercial use needs free registration with Stability AI, under $1M yearly revenue)",
+   "licence_url": "https://stability.ai/community-license-agreement",
+   "source": "engine/tools/gen_sfx.py (Stable Audio 3 Small SFX)",
+   "prompt": "large heavy wheel of hard cheese set down on a wooden shelf, dull thud, realistic foley",
+   "seed": 1590349816,
+   "seconds": 1.5,
+   "cfg": 1.0,
+   "description": "generated: large heavy wheel of hard cheese set down on a wooden shelf, dull thud, realistic foley (mono 44.1 kHz, peak -1 dBFS, 1.50 s)"
+  },
+  {
+   "name": "gen_rats_scurry",
+   "tags": [
+    "rat",
+    "animal",
+    "generated"
+   ],
+   "mood": "dark",
+   "loop": false,
+   "licence": "Stability AI Community License (generated locally with Stable Audio 3 Small SFX; commercial use needs free registration with Stability AI, under $1M yearly revenue)",
+   "licence_url": "https://stability.ai/community-license-agreement",
+   "source": "engine/tools/gen_sfx.py (Stable Audio 3 Small SFX)",
+   "prompt": "many rats scurrying and squeaking in a sewer, realistic",
+   "seed": 3128223,
+   "seconds": 3.0,
+   "cfg": 1.0,
+   "description": "generated: many rats scurrying and squeaking in a sewer, realistic (mono 44.1 kHz, peak -1 dBFS, 1.89 s)"
+  },
+  {
+   "name": "gen_coin_spin",
+   "tags": [
+    "coins",
+    "money",
+    "generated"
+   ],
+   "mood": "light",
+   "loop": false,
+   "licence": "Stability AI Community License (generated locally with Stable Audio 3 Small SFX; commercial use needs free registration with Stability AI, under $1M yearly revenue)",
+   "licence_url": "https://stability.ai/community-license-agreement",
+   "source": "engine/tools/gen_sfx.py (Stable Audio 3 Small SFX)",
+   "prompt": "single coin spinning on a marble table then settling, realistic foley",
+   "seed": 1402337901,
+   "seconds": 3.0,
+   "cfg": 1.0,
+   "description": "generated: single coin spinning on a marble table then settling, realistic foley (mono 44.1 kHz, peak -1 dBFS, 2.14 s)"
   }
  ]
 }

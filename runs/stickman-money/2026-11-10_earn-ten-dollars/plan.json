@@ -1,0 +1,144 @@
+{
+ "version": 1,
+ "style": "stickman-calm",
+ "tailSeconds": 1.2,
+ "notes": "Seed #3 formula B. Music: the-end-soundaudio at 0.08.",
+ "shots": [
+  {
+   "from": 0,
+   "type": "image",
+   "img": "01_gift.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 15,
+   "type": "image",
+   "img": "02_mall.webp",
+   "motion": "panR"
+  },
+  {
+   "from": 24,
+   "type": "image",
+   "img": "03_bear_candy.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 31,
+   "type": "image",
+   "img": "04_shoes_toy.webp",
+   "motion": "panL"
+  },
+  {
+   "from": 40,
+   "type": "image",
+   "img": "05_money_gone.webp",
+   "motion": "pullOut"
+  },
+  {
+   "from": 52,
+   "type": "image",
+   "img": "06_gloves.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 64,
+   "type": "image",
+   "img": "07_earn_request.webp",
+   "motion": "panR"
+  },
+  {
+   "from": 77,
+   "type": "image",
+   "img": "08_big_garden.webp",
+   "motion": "panUp"
+  },
+  {
+   "from": 87,
+   "type": "image",
+   "img": "09_pulling.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 100,
+   "type": "image",
+   "img": "10_blisters.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 108,
+   "type": "image",
+   "img": "11_clean_garden.webp",
+   "motion": "pullOut"
+  },
+  {
+   "from": 117,
+   "type": "image",
+   "img": "12_paid.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 132,
+   "type": "image",
+   "img": "13_under_pillow.webp",
+   "motion": "panL"
+  },
+  {
+   "from": 144,
+   "type": "image",
+   "img": "14_why.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 158,
+   "type": "image",
+   "img": "15_what_it_cost.webp",
+   "motion": "pullOut"
+  },
+  {
+   "from": 169,
+   "type": "image",
+   "img": "16_forgotten_toys.webp",
+   "motion": "panDown"
+  },
+  {
+   "from": 181,
+   "type": "image",
+   "img": "17_scale.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 198,
+   "type": "image",
+   "img": "18_paycheck.webp",
+   "motion": "panR"
+  },
+  {
+   "from": 206,
+   "type": "image",
+   "img": "19_store.webp",
+   "motion": "pushIn"
+  },
+  {
+   "from": 215,
+   "type": "image",
+   "img": "20_hours.webp",
+   "motion": "pullOut"
+  },
+  {
+   "from": 224,
+   "type": "image",
+   "img": "21_porch.webp",
+   "motion": "panUp"
+  },
+  {
+   "from": 237,
+   "type": "image",
+   "img": "22_new_child.webp",
+   "motion": "pushIn"
+  }
+ ],
+ "music": {
+  "track": "the-end-soundaudio",
+  "volume": 0.08
+ }
+}

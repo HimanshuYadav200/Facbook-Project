@@ -30,6 +30,7 @@ victor lustig, man who sold the eiffel tower, eiffel tower scam, eiffel tower so
 - Altered or synthetic content: **Yes**
 - Made for kids: **No**
 - Category: Education
+- Video language + title/description language: **English (United States)**
 - Pinned comment: "Lustig later conned Al Capone too. Want that story next? 👇"
 
 ## Facebook (Reel)
@@ -51,9 +52,14 @@ Sources: Wikipedia (Victor Lustig, Eiffel Tower); Smithsonian Magazine.
 - AI info label: **on**
 - Post as a Reel (native upload, no watermark)
 
+## US audience (upload-policy §4)
+- **Post at:** Evening: 7:00 PM Eastern (5:30 AM India, next day); separate Page from stickman. Schedule it in Meta Business Suite / YouTube Studio.
+- Optional paid boost if it does well: audience United States, age 25–60.
+
 ## Owner checklist
 - [ ] Watched once with sound
 - [ ] Facts: `lustig_1925` and `poisson_bribe` need your manual tick (story only, no amounts; sources disagree on money and dates, so the video names none)
 - [ ] Music `the-end-soundaudio`: non-copyright (owner, 2026-11-10)
 - [ ] YouTube: AI disclosure Yes, Made for kids No
 - [ ] Facebook: AI info on
+- [ ] Language English (US) set; scheduled at the Post at slot

@@ -1,0 +1,32 @@
+{
+ "version": 1,
+ "style": "stickman-calm",
+ "tailSeconds": 1.2,
+ "notes": "Music: the-end-soundaudio at 0.08 (same mix as two-brothers-paycheck). Shot cuts on sentence starts; short sentences merged so every shot is >= 2 s.",
+ "shots": [
+  {"from": 0, "type": "image", "img": "01_same_raise.webp", "motion": "pushIn"},
+  {"from": 15, "type": "image", "img": "02_raise_letter.webp", "motion": "pullOut"},
+  {"from": 19, "type": "image", "img": "03_ben_celebrates.webp", "motion": "panUp"},
+  {"from": 29, "type": "image", "img": "04_big_house.webp", "motion": "pullOut"},
+  {"from": 36, "type": "image", "img": "05_second_car.webp", "motion": "panR"},
+  {"from": 46, "type": "image", "img": "06_furniture.webp", "motion": "pullOut"},
+  {"from": 53, "type": "image", "img": "07_porch_step.webp", "motion": "pushIn"},
+  {"from": 65, "type": "image", "img": "08_pizza.webp", "motion": "panL"},
+  {"from": 77, "type": "image", "img": "09_saving.webp", "motion": "pushIn"},
+  {"from": 92, "type": "image", "img": "10_fence_doubt.webp", "motion": "panR"},
+  {"from": 106, "type": "image", "img": "11_company_sold.webp", "motion": "pullOut"},
+  {"from": 113, "type": "image", "img": "12_new_boss.webp", "motion": "pushIn"},
+  {"from": 121, "type": "image", "img": "13_shouting.webp", "motion": "panL"},
+  {"from": 129, "type": "image", "img": "14_mortgage_due.webp", "motion": "pushIn"},
+  {"from": 145, "type": "image", "img": "15_says_yes.webp", "motion": "panDown"},
+  {"from": 157, "type": "image", "img": "16_her_savings.webp", "motion": "pushIn"},
+  {"from": 172, "type": "image", "img": "17_says_no.webp", "motion": "panR"},
+  {"from": 185, "type": "image", "img": "18_walks_out.webp", "motion": "pullOut"},
+  {"from": 197, "type": "image", "img": "19_fence_evening.webp", "motion": "pushIn"},
+  {"from": 216, "type": "image", "img": "20_maya_smiles.webp", "motion": "panL"},
+  {"from": 226, "type": "image", "img": "21_way_out.webp", "motion": "pullOut"},
+  {"from": 236, "type": "image", "img": "22_freedom.webp", "motion": "panUp"},
+  {"from": 246, "type": "image", "img": "23_first_raise.webp", "motion": "pushIn"}
+ ],
+ "music": {"track": "the-end-soundaudio", "volume": 0.08}
+}

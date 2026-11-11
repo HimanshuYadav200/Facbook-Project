@@ -171,8 +171,11 @@ const Caption: React.FC<{ words: Word[]; y: number }> = ({ words, y }) => {
 };
 
 // One whoosh per shot change (a pool in sounds.json); the kind follows the move (dive = flying pass-by).
-function cutSound(s: Shot): string | null {
+// Automatic whoosh on every other cut only (owner 2026-11-11: a sound on every cut was too busy).
+// A plan can force one on any cut with cutSfx, or silence one with cutSfx: null.
+function cutSound(s: Shot, i: number): string | null {
   if (s.cutSfx !== undefined) return s.cutSfx;
+  if (i % 2 === 0) return null;
   if (s.cam === "dive" || s.cam === "craneDown") return "dive";
   if (s.cam === "whip") return "whip";
   return "whoosh";
@@ -187,21 +190,21 @@ export const ExplainerFast: React.FC<Props> = ({ words, duration, plan }) => {
   const frame = useCurrentFrame();
   let cur = 0;
   starts.forEach((f, i) => { if (f <= frame) cur = i; });
-  // Measured on the Eiffel run with the recorded sounds: whooshes ~9 dB and hits ~6-8 dB under the voice
-  // (reference channel: 7-14 dB under).
-  const cutVol = plan.cutSfxVolume ?? 0.22;
+  // Was 0.22 / 0.35 / 0.3 (whooshes ~9 dB, hits ~6-8 dB under the voice); owner 2026-11-11: too loud,
+  // so all three are ~3 dB lower now (reference channel: 7-14 dB under).
+  const cutVol = plan.cutSfxVolume ?? 0.14;
   return (
     <AbsoluteFill style={{ background: "#111" }}>
       {shots.map((s, i) => {
         const from = starts[i];
         const to = i + 1 < starts.length ? starts[i + 1] : end;
         const len = Math.max(1, to - from);
-        const cut = i > 0 ? cutSound(s) : null;
+        const cut = i > 0 ? cutSound(s, i) : null;
         return (
           <Sequence key={i} from={from} durationInFrames={len + (i + 1 < shots.length ? FADE : 0)}>
-            <ShotLayer s={s} i={i} len={len} fadeIn={i > 0} startSec={startSecs[i]} words={words} mgVol={plan.mgVolume ?? 0.35} />
+            <ShotLayer s={s} i={i} len={len} fadeIn={i > 0} startSec={startSecs[i]} words={words} mgVol={plan.mgVolume ?? 0.25} />
             {cut ? <Sfx name={cut} seed={i} volume={cutVol} /> : null}
-            {s.sfx ? <Sfx name={s.sfx} seed={i} volume={s.sfxVolume ?? 0.3} /> : null}
+            {s.sfx ? <Sfx name={s.sfx} seed={i} volume={s.sfxVolume ?? 0.22} /> : null}
           </Sequence>
         );
       })}

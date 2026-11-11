@@ -1,0 +1,1029 @@
+{
+ "duration": 50.175,
+ "voice": "am_puck",
+ "speed": 1.15,
+ "sentence_gap": 0.0,
+ "match": 0.956,
+ "words": [
+  {
+   "word": "A",
+   "start": 0.0,
+   "end": 0.193
+  },
+  {
+   "word": "con",
+   "start": 0.193,
+   "end": 0.387
+  },
+  {
+   "word": "man",
+   "start": 0.387,
+   "end": 0.58
+  },
+  {
+   "word": "once",
+   "start": 0.58,
+   "end": 0.8
+  },
+  {
+   "word": "borrowed",
+   "start": 0.8,
+   "end": 1.1
+  },
+  {
+   "word": "$50,000",
+   "start": 1.1,
+   "end": 1.86
+  },
+  {
+   "word": "from",
+   "start": 1.86,
+   "end": 2.26
+  },
+  {
+   "word": "Al",
+   "start": 2.26,
+   "end": 2.46
+  },
+  {
+   "word": "Capone,",
+   "start": 2.46,
+   "end": 2.74
+  },
+  {
+   "word": "did",
+   "start": 2.88,
+   "end": 2.96
+  },
+  {
+   "word": "absolutely",
+   "start": 2.96,
+   "end": 3.3
+  },
+  {
+   "word": "nothing",
+   "start": 3.3,
+   "end": 3.58
+  },
+  {
+   "word": "with",
+   "start": 3.58,
+   "end": 3.8
+  },
+  {
+   "word": "it,",
+   "start": 3.8,
+   "end": 3.92
+  },
+  {
+   "word": "and",
+   "start": 3.92,
+   "end": 4.04
+  },
+  {
+   "word": "got",
+   "start": 4.04,
+   "end": 4.2
+  },
+  {
+   "word": "paid",
+   "start": 4.2,
+   "end": 4.38
+  },
+  {
+   "word": "for",
+   "start": 4.38,
+   "end": 4.62
+  },
+  {
+   "word": "it.",
+   "start": 4.62,
+   "end": 4.96
+  },
+  {
+   "word": "You",
+   "start": 5.08,
+   "end": 5.1
+  },
+  {
+   "word": "see,",
+   "start": 5.1,
+   "end": 5.26
+  },
+  {
+   "word": "this",
+   "start": 5.38,
+   "end": 5.38
+  },
+  {
+   "word": "was",
+   "start": 5.38,
+   "end": 5.5
+  },
+  {
+   "word": "Victor",
+   "start": 5.5,
+   "end": 5.78
+  },
+  {
+   "word": "Lustig,",
+   "start": 5.78,
+   "end": 6.1
+  },
+  {
+   "word": "the",
+   "start": 6.24,
+   "end": 6.28
+  },
+  {
+   "word": "same",
+   "start": 6.28,
+   "end": 6.44
+  },
+  {
+   "word": "man",
+   "start": 6.44,
+   "end": 6.6
+  },
+  {
+   "word": "who",
+   "start": 6.6,
+   "end": 6.74
+  },
+  {
+   "word": "sold",
+   "start": 6.74,
+   "end": 6.92
+  },
+  {
+   "word": "the",
+   "start": 6.92,
+   "end": 7.08
+  },
+  {
+   "word": "Eiffel",
+   "start": 7.08,
+   "end": 7.3
+  },
+  {
+   "word": "Tower.",
+   "start": 7.3,
+   "end": 7.54
+  },
+  {
+   "word": "Now",
+   "start": 7.82,
+   "end": 7.9
+  },
+  {
+   "word": "he",
+   "start": 7.9,
+   "end": 8.02
+  },
+  {
+   "word": "was",
+   "start": 8.02,
+   "end": 8.08
+  },
+  {
+   "word": "in",
+   "start": 8.08,
+   "end": 8.24
+  },
+  {
+   "word": "Chicago,",
+   "start": 8.24,
+   "end": 8.5
+  },
+  {
+   "word": "and",
+   "start": 8.5,
+   "end": 8.76
+  },
+  {
+   "word": "Al",
+   "start": 8.76,
+   "end": 8.94
+  },
+  {
+   "word": "Capone",
+   "start": 8.94,
+   "end": 9.2
+  },
+  {
+   "word": "was",
+   "start": 9.2,
+   "end": 9.34
+  },
+  {
+   "word": "the",
+   "start": 9.34,
+   "end": 9.46
+  },
+  {
+   "word": "boss",
+   "start": 9.46,
+   "end": 9.62
+  },
+  {
+   "word": "of",
+   "start": 9.62,
+   "end": 9.78
+  },
+  {
+   "word": "the",
+   "start": 9.78,
+   "end": 9.86
+  },
+  {
+   "word": "Chicago",
+   "start": 9.86,
+   "end": 10.16
+  },
+  {
+   "word": "mob.",
+   "start": 10.16,
+   "end": 10.5
+  },
+  {
+   "word": "Lustig",
+   "start": 10.94,
+   "end": 11.16
+  },
+  {
+   "word": "came",
+   "start": 11.16,
+   "end": 11.32
+  },
+  {
+   "word": "to",
+   "start": 11.32,
+   "end": 11.44
+  },
+  {
+   "word": "him",
+   "start": 11.44,
+   "end": 11.54
+  },
+  {
+   "word": "with",
+   "start": 11.54,
+   "end": 11.64
+  },
+  {
+   "word": "a",
+   "start": 11.64,
+   "end": 11.74
+  },
+  {
+   "word": "deal.",
+   "start": 11.74,
+   "end": 11.92
+  },
+  {
+   "word": "\"Give",
+   "start": 12.16,
+   "end": 12.22
+  },
+  {
+   "word": "me",
+   "start": 12.22,
+   "end": 12.34
+  },
+  {
+   "word": "$50,000,",
+   "start": 12.34,
+   "end": 13.22
+  },
+  {
+   "word": "and",
+   "start": 13.22,
+   "end": 13.42
+  },
+  {
+   "word": "in",
+   "start": 13.42,
+   "end": 13.54
+  },
+  {
+   "word": "2",
+   "start": 13.54,
+   "end": 13.66
+  },
+  {
+   "word": "months,",
+   "start": 13.66,
+   "end": 13.82
+  },
+  {
+   "word": "I'll",
+   "start": 13.82,
+   "end": 14.04
+  },
+  {
+   "word": "double",
+   "start": 14.04,
+   "end": 14.18
+  },
+  {
+   "word": "it.\"",
+   "start": 14.18,
+   "end": 14.42
+  },
+  {
+   "word": "Capone",
+   "start": 14.6,
+   "end": 14.76
+  },
+  {
+   "word": "was",
+   "start": 14.76,
+   "end": 14.9
+  },
+  {
+   "word": "suspicious.",
+   "start": 14.9,
+   "end": 15.28
+  },
+  {
+   "word": "Cheating",
+   "start": 15.5,
+   "end": 15.6
+  },
+  {
+   "word": "him",
+   "start": 15.6,
+   "end": 15.84
+  },
+  {
+   "word": "could",
+   "start": 15.84,
+   "end": 15.94
+  },
+  {
+   "word": "get",
+   "start": 15.94,
+   "end": 16.04
+  },
+  {
+   "word": "you",
+   "start": 16.04,
+   "end": 16.14
+  },
+  {
+   "word": "killed.",
+   "start": 16.14,
+   "end": 16.34
+  },
+  {
+   "word": "But",
+   "start": 16.48,
+   "end": 16.56
+  },
+  {
+   "word": "he",
+   "start": 16.56,
+   "end": 16.66
+  },
+  {
+   "word": "handed",
+   "start": 16.66,
+   "end": 16.82
+  },
+  {
+   "word": "over",
+   "start": 16.82,
+   "end": 17.02
+  },
+  {
+   "word": "the",
+   "start": 17.02,
+   "end": 17.16
+  },
+  {
+   "word": "cash.",
+   "start": 17.16,
+   "end": 17.4
+  },
+  {
+   "word": "So",
+   "start": 17.62,
+   "end": 17.66
+  },
+  {
+   "word": "what",
+   "start": 17.66,
+   "end": 17.78
+  },
+  {
+   "word": "did",
+   "start": 17.78,
+   "end": 17.92
+  },
+  {
+   "word": "Lustig",
+   "start": 17.92,
+   "end": 18.2
+  },
+  {
+   "word": "do",
+   "start": 18.2,
+   "end": 18.36
+  },
+  {
+   "word": "with",
+   "start": 18.36,
+   "end": 18.5
+  },
+  {
+   "word": "it?",
+   "start": 18.5,
+   "end": 18.64
+  },
+  {
+   "word": "Nothing.",
+   "start": 18.78,
+   "end": 19.0
+  },
+  {
+   "word": "He",
+   "start": 19.92,
+   "end": 20.02
+  },
+  {
+   "word": "locked",
+   "start": 20.02,
+   "end": 20.18
+  },
+  {
+   "word": "it",
+   "start": 20.18,
+   "end": 20.32
+  },
+  {
+   "word": "away",
+   "start": 20.32,
+   "end": 20.5
+  },
+  {
+   "word": "and",
+   "start": 20.5,
+   "end": 20.68
+  },
+  {
+   "word": "waited.",
+   "start": 20.68,
+   "end": 20.92
+  },
+  {
+   "word": "2",
+   "start": 21.28,
+   "end": 21.38
+  },
+  {
+   "word": "months",
+   "start": 21.38,
+   "end": 21.5
+  },
+  {
+   "word": "later,",
+   "start": 21.5,
+   "end": 21.76
+  },
+  {
+   "word": "he",
+   "start": 21.76,
+   "end": 21.88
+  },
+  {
+   "word": "went",
+   "start": 21.88,
+   "end": 22.02
+  },
+  {
+   "word": "back",
+   "start": 22.02,
+   "end": 22.18
+  },
+  {
+   "word": "to",
+   "start": 22.18,
+   "end": 22.3
+  },
+  {
+   "word": "Capone",
+   "start": 22.3,
+   "end": 22.56
+  },
+  {
+   "word": "with",
+   "start": 22.56,
+   "end": 22.72
+  },
+  {
+   "word": "terrible",
+   "start": 22.72,
+   "end": 23.02
+  },
+  {
+   "word": "news.",
+   "start": 23.02,
+   "end": 23.3
+  },
+  {
+   "word": "The",
+   "start": 23.48,
+   "end": 23.56
+  },
+  {
+   "word": "deal",
+   "start": 23.56,
+   "end": 23.7
+  },
+  {
+   "word": "had",
+   "start": 23.7,
+   "end": 23.84
+  },
+  {
+   "word": "failed,",
+   "start": 23.84,
+   "end": 24.08
+  },
+  {
+   "word": "and",
+   "start": 24.08,
+   "end": 24.28
+  },
+  {
+   "word": "he",
+   "start": 24.28,
+   "end": 24.4
+  },
+  {
+   "word": "had",
+   "start": 24.4,
+   "end": 24.48
+  },
+  {
+   "word": "lost",
+   "start": 24.48,
+   "end": 24.68
+  },
+  {
+   "word": "everything.",
+   "start": 24.68,
+   "end": 25.12
+  },
+  {
+   "word": "\"But",
+   "start": 25.42,
+   "end": 25.5
+  },
+  {
+   "word": "here's",
+   "start": 25.5,
+   "end": 25.7
+  },
+  {
+   "word": "your",
+   "start": 25.7,
+   "end": 25.8
+  },
+  {
+   "word": "money",
+   "start": 25.8,
+   "end": 25.92
+  },
+  {
+   "word": "back.\"",
+   "start": 25.92,
+   "end": 26.22
+  },
+  {
+   "word": "Capone",
+   "start": 26.5,
+   "end": 26.64
+  },
+  {
+   "word": "was",
+   "start": 26.64,
+   "end": 26.76
+  },
+  {
+   "word": "stunned.",
+   "start": 26.76,
+   "end": 27.02
+  },
+  {
+   "word": "Who",
+   "start": 27.18,
+   "end": 27.24
+  },
+  {
+   "word": "gives",
+   "start": 27.24,
+   "end": 27.38
+  },
+  {
+   "word": "money",
+   "start": 27.38,
+   "end": 27.52
+  },
+  {
+   "word": "back",
+   "start": 27.52,
+   "end": 27.72
+  },
+  {
+   "word": "to",
+   "start": 27.72,
+   "end": 27.84
+  },
+  {
+   "word": "Al",
+   "start": 27.84,
+   "end": 28.0
+  },
+  {
+   "word": "Capone?",
+   "start": 28.0,
+   "end": 28.28
+  },
+  {
+   "word": "He",
+   "start": 28.28,
+   "end": 28.46
+  },
+  {
+   "word": "was",
+   "start": 28.46,
+   "end": 28.58
+  },
+  {
+   "word": "so",
+   "start": 28.58,
+   "end": 28.72
+  },
+  {
+   "word": "impressed",
+   "start": 28.72,
+   "end": 28.96
+  },
+  {
+   "word": "by",
+   "start": 28.96,
+   "end": 29.16
+  },
+  {
+   "word": "this",
+   "start": 29.16,
+   "end": 29.28
+  },
+  {
+   "word": "honest",
+   "start": 29.28,
+   "end": 29.52
+  },
+  {
+   "word": "man",
+   "start": 29.52,
+   "end": 29.76
+  },
+  {
+   "word": "that",
+   "start": 29.76,
+   "end": 29.88
+  },
+  {
+   "word": "he",
+   "start": 29.88,
+   "end": 29.98
+  },
+  {
+   "word": "handed",
+   "start": 29.98,
+   "end": 30.22
+  },
+  {
+   "word": "Lustig",
+   "start": 30.22,
+   "end": 30.5
+  },
+  {
+   "word": "$5,000,",
+   "start": 30.5,
+   "end": 31.18
+  },
+  {
+   "word": "just",
+   "start": 31.18,
+   "end": 31.62
+  },
+  {
+   "word": "to",
+   "start": 31.62,
+   "end": 31.76
+  },
+  {
+   "word": "help",
+   "start": 31.76,
+   "end": 31.88
+  },
+  {
+   "word": "him",
+   "start": 31.88,
+   "end": 32.02
+  },
+  {
+   "word": "get",
+   "start": 32.02,
+   "end": 32.14
+  },
+  {
+   "word": "by.",
+   "start": 32.14,
+   "end": 32.36
+  },
+  {
+   "word": "And",
+   "start": 32.64,
+   "end": 32.7
+  },
+  {
+   "word": "that",
+   "start": 32.7,
+   "end": 32.82
+  },
+  {
+   "word": "was",
+   "start": 32.82,
+   "end": 32.92
+  },
+  {
+   "word": "the",
+   "start": 32.92,
+   "end": 33.06
+  },
+  {
+   "word": "plan",
+   "start": 33.06,
+   "end": 33.24
+  },
+  {
+   "word": "all",
+   "start": 33.24,
+   "end": 33.4
+  },
+  {
+   "word": "along.",
+   "start": 33.4,
+   "end": 33.7
+  },
+  {
+   "word": "Lustig",
+   "start": 34.02,
+   "end": 34.2
+  },
+  {
+   "word": "never",
+   "start": 34.2,
+   "end": 34.36
+  },
+  {
+   "word": "wanted",
+   "start": 34.36,
+   "end": 34.6
+  },
+  {
+   "word": "the",
+   "start": 34.6,
+   "end": 34.74
+  },
+  {
+   "word": "$50,000.",
+   "start": 34.74,
+   "end": 35.7
+  },
+  {
+   "word": "Stealing",
+   "start": 35.9,
+   "end": 36.14
+  },
+  {
+   "word": "from",
+   "start": 36.14,
+   "end": 36.42
+  },
+  {
+   "word": "Capone",
+   "start": 36.42,
+   "end": 36.7
+  },
+  {
+   "word": "would",
+   "start": 36.7,
+   "end": 36.86
+  },
+  {
+   "word": "get",
+   "start": 36.86,
+   "end": 37.0
+  },
+  {
+   "word": "him",
+   "start": 37.0,
+   "end": 37.14
+  },
+  {
+   "word": "killed.",
+   "start": 37.14,
+   "end": 37.36
+  },
+  {
+   "word": "He",
+   "start": 38.36,
+   "end": 38.44
+  },
+  {
+   "word": "wanted",
+   "start": 38.44,
+   "end": 38.7
+  },
+  {
+   "word": "Capone's",
+   "start": 38.7,
+   "end": 39.26
+  },
+  {
+   "word": "trust,",
+   "start": 39.26,
+   "end": 39.52
+  },
+  {
+   "word": "and",
+   "start": 39.52,
+   "end": 39.78
+  },
+  {
+   "word": "a",
+   "start": 39.78,
+   "end": 39.88
+  },
+  {
+   "word": "reward",
+   "start": 39.88,
+   "end": 40.18
+  },
+  {
+   "word": "that",
+   "start": 40.18,
+   "end": 40.42
+  },
+  {
+   "word": "nobody",
+   "start": 40.42,
+   "end": 40.76
+  },
+  {
+   "word": "would",
+   "start": 40.76,
+   "end": 41.08
+  },
+  {
+   "word": "ever",
+   "start": 41.08,
+   "end": 41.3
+  },
+  {
+   "word": "come",
+   "start": 41.3,
+   "end": 41.58
+  },
+  {
+   "word": "looking",
+   "start": 41.58,
+   "end": 41.82
+  },
+  {
+   "word": "for.",
+   "start": 41.82,
+   "end": 42.14
+  },
+  {
+   "word": "Capone",
+   "start": 42.52,
+   "end": 42.78
+  },
+  {
+   "word": "never",
+   "start": 42.78,
+   "end": 43.04
+  },
+  {
+   "word": "found",
+   "start": 43.04,
+   "end": 43.34
+  },
+  {
+   "word": "out",
+   "start": 43.34,
+   "end": 43.6
+  },
+  {
+   "word": "he",
+   "start": 43.6,
+   "end": 43.82
+  },
+  {
+   "word": "had",
+   "start": 43.82,
+   "end": 43.92
+  },
+  {
+   "word": "been",
+   "start": 43.92,
+   "end": 44.1
+  },
+  {
+   "word": "conned.",
+   "start": 44.1,
+   "end": 44.64
+  },
+  {
+   "word": "Lustig",
+   "start": 45.12,
+   "end": 45.4
+  },
+  {
+   "word": "had",
+   "start": 45.4,
+   "end": 45.56
+  },
+  {
+   "word": "robbed",
+   "start": 45.56,
+   "end": 45.82
+  },
+  {
+   "word": "the",
+   "start": 45.82,
+   "end": 46.02
+  },
+  {
+   "word": "most",
+   "start": 46.02,
+   "end": 46.22
+  },
+  {
+   "word": "dangerous",
+   "start": 46.22,
+   "end": 46.66
+  },
+  {
+   "word": "man",
+   "start": 46.66,
+   "end": 47.02
+  },
+  {
+   "word": "in",
+   "start": 47.02,
+   "end": 47.3
+  },
+  {
+   "word": "Chicago,",
+   "start": 47.3,
+   "end": 47.72
+  },
+  {
+   "word": "by",
+   "start": 47.72,
+   "end": 48.12
+  },
+  {
+   "word": "giving",
+   "start": 48.12,
+   "end": 48.32
+  },
+  {
+   "word": "him",
+   "start": 48.32,
+   "end": 48.56
+  },
+  {
+   "word": "his",
+   "start": 48.56,
+   "end": 48.7
+  },
+  {
+   "word": "money",
+   "start": 48.7,
+   "end": 48.92
+  },
+  {
+   "word": "back.",
+   "start": 48.92,
+   "end": 49.28
+  }
+ ]
+}

@@ -27,4 +27,6 @@ Only through `finance_calc.py` (tested): `invest`, `change`, `drawdown`, `cagr`,
 - No predictions, no advice, no hype ("guaranteed", "can't lose", "buy now", "will go up" → refused by check_plan). Description ends with "Not financial advice."
 
 ## Before upload
-`review/facts_review.md`: table of every claim → number → source link → data file. The owner can tick each one. Manual-check facts first.
+1. **Auto check:** give each sourced fact a short `"search"` query and, for text facts, `"key"`: 2–3 terms a page must contain (`["Capone", "Lustig", "5,000"]`). Pick keys that prove the claim, not just the topic. Then `P engine/tools/fact_check.py runs/<niche>/<id> --all --apply` (~1 Tavily credit per fact, cached 30 days). CONFIRMED = found on 2+ independent sites; `--apply` clears their manual marks.
+2. ONE SITE / NOT FOUND facts: try a better `search`/`key` once; if still weak, reword the script to what sources do say ("the bank says…") or keep the manual mark for the owner.
+3. `review/facts_review.md`: table of every claim → number → source link → data file, manual-check facts first; `review/fact_check.md` next to it.

@@ -1,0 +1,25 @@
+# STYLE (first prompt only; later prompts start "Next image, vertical 9:16, exact same pencil sketch style and same characters, no text, no numbers:"): Black and white pencil sketch illustration, vertical 9:16. Simple stickman characters with big round blank white heads, two small dot eyes, a small mouth, no nose, no hair (women have long hair), smooth white bodies with soft grey shading. Clean, detailed hand-drawn background in light grey. Soft vignette. No text, no words, no letters, no numbers, no logos anywhere. Characters in the lower two thirds, top of the picture kept simple.
+# CAST: BEN = stickman in a checked flannel shirt and a baseball cap. MAYA = stickwoman with long hair, round glasses and a knitted cardigan. NEW BOSS = tall stickman in a dark suit and a striped tie, frowning.
+01_same_raise: Ben and Maya, two neighbours, standing at the low wooden fence between their two small matching houses on a quiet street, each holding an open letter, both smiling.
+02_raise_letter: Close view of Maya's hands holding an open letter, a small happy smile, soft morning light from a window, the letter blank with no writing visible.
+03_ben_celebrates: Ben jumping with joy on the lawn of his small house, both arms raised, the letter in one hand.
+04_big_house: Ben standing proudly in front of a much bigger two-storey house with a wide driveway, arms spread wide, moving boxes on the lawn.
+05_second_car: Ben in front of a big double garage with two shiny cars inside, holding a very thick stack of papers under his arm, smiling a little nervously.
+06_furniture: Ben standing alone in a huge living room with a big new sofa, a large new TV and expensive lamps, most of the room empty and echoing.
+07_porch_step: Maya kneeling on the porch of her same small old house, fixing a wooden step with a hammer, calm and content.
+08_pizza: Maya and two small stick children with big round heads sitting at a simple pizza place table, sharing one pizza, laughing.
+09_saving: Maya at her small kitchen table at night with a laptop, dropping a folded paper into a small piggy bank, calm and focused, warm lamp glow.
+10_fence_doubt: Ben leaning on the fence between the houses, shaking his head with a puzzled smile, Maya on the other side calmly watering plants.
+11_company_sold: Two businessmen in suits shaking hands across a long boardroom table, a big glass office building outside the window, grey cloudy sky.
+12_new_boss: The new boss, a tall stickman in a dark suit and striped tie, walking stiffly into an open-plan office, frowning, workers at desks looking up nervously.
+13_shouting: The new boss shouting and pointing in a meeting room, Ben and Maya and other workers sitting around the table looking down, tense.
+14_mortgage_due: Ben sitting at the kitchen table of his big house at night, head in his hands, a pile of bills and envelopes in front of him, one dim lamp.
+15_says_yes: Ben alone at his desk in an empty office on a sunny weekend, tired, the new boss standing behind him with crossed arms, Ben nodding.
+16_her_savings: Maya sitting on her small sofa at home, looking at a small savings book in her hands, a calm, relieved smile, warm afternoon light.
+17_says_no: Maya standing calmly in the new boss's office, one hand raised politely, the boss behind his desk looking shocked.
+18_walks_out: Maya walking out through the glass doors of the office building into bright sunshine, holding a small cardboard box, peaceful face.
+19_fence_evening: Evening, Ben standing at the low wooden fence in front of Maya's small house, tired and sad, shoulders down, porch light on.
+20_maya_smiles: Maya on her porch steps smiling kindly at Ben across the fence, explaining gently with an open hand, evening light.
+21_way_out: Split picture: on the left Ben inside his big dark house looking out of a window like a cage, on the right Maya opening a garden gate onto a sunny open road.
+22_freedom: Maya sitting peacefully on her porch at sunset with a cup of tea, birds in the sky, the big house far away down the street in shadow.
+23_first_raise: Wide view of a small young stickman in a plain work shirt sitting at a desk in a bright office, smiling at an open blank letter, big window behind him (2nd try; the 1st came back as a big off-style close-up).
