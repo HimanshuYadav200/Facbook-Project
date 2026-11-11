@@ -1,0 +1,357 @@
+{
+ "version": 1,
+ "style": "explainer-fast",
+ "music": {
+  "track": "the-end-soundaudio",
+  "volume": 0.05
+ },
+ "tailSeconds": 0.8,
+ "notes": "Lucas toy rights v1: 36 shots, no actors (all s_* scenes), new SFX mix (whoosh every other cut, realistic pools; no gen_* sounds until the Stability licence is confirmed), voice am_puck 1.05 + gap 0.2.",
+ "shots": [
+  {
+   "from": 0,
+   "img": "s_studio_lot.webp",
+   "cam": "pushIn",
+   "mg": [
+    {
+     "type": "label",
+     "text": "1970s",
+     "y": 0.2,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "from": 3,
+   "img": "s_lucas_desk.webp",
+   "cam": "tiltDown",
+   "sfx": "typewriter"
+  },
+  {
+   "from": 6,
+   "img": "s_push_money.webp",
+   "cam": "panL",
+   "sfx": "bills"
+  },
+  {
+   "from": 10,
+   "img": "s_toy_box.webp",
+   "cam": "dive",
+   "fx": [
+    "punch"
+   ],
+   "sfx": "swell"
+  },
+  {
+   "from": 17,
+   "img": "s_lucas_portrait.webp",
+   "cam": "craneUp",
+   "mg": [
+    {
+     "type": "label",
+     "text": "George Lucas",
+     "y": 0.2,
+     "at": 17
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "img": "s_drivein.webp",
+   "cam": "orbitL",
+   "sfx": "applause"
+  },
+  {
+   "from": 26,
+   "img": "s_exec_office.webp",
+   "cam": "pullOut",
+   "mg": [
+    {
+     "type": "money",
+     "dir": "rain",
+     "at": 31
+    }
+   ]
+  },
+  {
+   "from": 36,
+   "img": "s_contract.webp",
+   "cam": "pushIn",
+   "sfx": "writing",
+   "mg": [
+    {
+     "type": "counter",
+     "to": 150000,
+     "text": "dollar fee",
+     "y": 0.25,
+     "at": 38
+    }
+   ]
+  },
+  {
+   "from": 43,
+   "img": "s_two_fingers.webp",
+   "cam": "panR"
+  },
+  {
+   "from": 52,
+   "img": "s_film_reels.webp",
+   "cam": "tiltUp",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "SEQUELS",
+     "y": 0.3,
+     "at": 52
+    }
+   ]
+  },
+  {
+   "from": 55,
+   "img": "s_toy_shelf.webp",
+   "cam": "craneDown",
+   "hold": 0.2,
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "TOYS",
+     "y": 0.3,
+     "at": 56
+    }
+   ]
+  },
+  {
+   "from": 59,
+   "img": "s_exec_laugh.webp",
+   "cam": "orbitR",
+   "sfx": "crowd_laugh"
+  },
+  {
+   "from": 67,
+   "img": "s_handshake.webp",
+   "cam": "pushIn",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "DEAL",
+     "y": 0.3,
+     "at": 68
+    }
+   ]
+  },
+  {
+   "from": 71,
+   "img": "s_marquee.webp",
+   "cam": "craneUp",
+   "hold": 0.2,
+   "mg": [
+    {
+     "type": "label",
+     "text": "May 25, 1977",
+     "y": 0.2,
+     "at": 72
+    }
+   ]
+  },
+  {
+   "from": 76,
+   "img": "s_audience.webp",
+   "cam": "pullOut",
+   "sfx": "crowd_whoa"
+  },
+  {
+   "from": 79,
+   "img": "s_lines_aerial.webp",
+   "cam": "dive"
+  },
+  {
+   "from": 84,
+   "img": "s_kid_saber.webp",
+   "cam": "panL"
+  },
+  {
+   "from": 89,
+   "img": "s_kid_robot.webp",
+   "cam": "tiltDown"
+  },
+  {
+   "from": 93,
+   "img": "s_factory_empty.webp",
+   "cam": "roll",
+   "sfx": "tension",
+   "mg": [
+    {
+     "type": "marks",
+     "at": 94
+    }
+   ]
+  },
+  {
+   "from": 98,
+   "img": "s_factory_empty.webp",
+   "cam": "pushIn",
+   "zoom": 1.25,
+   "focus": [
+    0.5,
+    0.7
+   ],
+   "mg": [
+    {
+     "type": "cross",
+     "x": 0.5,
+     "y": 0.65,
+     "at": 99
+    }
+   ]
+  },
+  {
+   "from": 102,
+   "img": "s_xmas_store.webp",
+   "cam": "orbitL"
+  },
+  {
+   "from": 107,
+   "img": "s_empty_box.webp",
+   "cam": "dive",
+   "fx": [
+    "punch"
+   ],
+   "sfx": "paper"
+  },
+  {
+   "from": 110,
+   "img": "s_certificate.webp",
+   "cam": "pushIn"
+  },
+  {
+   "from": 118,
+   "img": "s_mailbox.webp",
+   "cam": "panR",
+   "mg": [
+    {
+     "type": "label",
+     "text": "June 1978",
+     "y": 0.2,
+     "at": 118
+    }
+   ]
+  },
+  {
+   "from": 121,
+   "img": "s_checkout2.webp",
+   "cam": "craneDown",
+   "hold": 0.2,
+   "sfx": "cash"
+  },
+  {
+   "from": 125,
+   "img": "s_toy_aisle.webp",
+   "cam": "tiltUp",
+   "mg": [
+    {
+     "type": "speedLines",
+     "at": 126
+    }
+   ]
+  },
+  {
+   "from": 129,
+   "img": "s_money_mountain.webp",
+   "cam": "craneUp",
+   "mg": [
+    {
+     "type": "money",
+     "dir": "rain",
+     "at": 135
+    }
+   ]
+  },
+  {
+   "from": 139,
+   "img": "s_vault_toys.webp",
+   "cam": "pullOut",
+   "sfx": "vault"
+  },
+  {
+   "from": 144,
+   "img": "s_lucas_portrait.webp",
+   "cam": "pushIn",
+   "zoom": 1.2,
+   "sfx": "sting"
+  },
+  {
+   "from": 147,
+   "img": "s_theater_empty.webp",
+   "cam": "panL"
+  },
+  {
+   "from": 154,
+   "img": "s_birthday.webp",
+   "cam": "orbitR"
+  },
+  {
+   "from": 158,
+   "img": "s_xmas_morning.webp",
+   "cam": "tiltDown"
+  },
+  {
+   "from": 163,
+   "img": "s_theater_empty.webp",
+   "cam": "pushIn",
+   "zoom": 1.15,
+   "mg": [
+    {
+     "type": "cross",
+     "x": 0.5,
+     "y": 0.3,
+     "at": 164
+    }
+   ]
+  },
+  {
+   "from": 169,
+   "img": "s_toy_shelf.webp",
+   "cam": "craneUp",
+   "sfx": "swell",
+   "mg": [
+    {
+     "type": "circle",
+     "x": 0.5,
+     "y": 0.45,
+     "at": 169
+    }
+   ]
+  },
+  {
+   "from": 174,
+   "img": "s_boardroom.webp",
+   "cam": "pullOut",
+   "mg": [
+    {
+     "type": "label",
+     "text": "2012",
+     "y": 0.2,
+     "at": 175
+    }
+   ],
+   "hold": 0.4
+  },
+  {
+   "from": 180,
+   "img": "s_money_mountain.webp",
+   "cam": "dive",
+   "fx": [
+    "shake"
+   ],
+   "sfx": "impact",
+   "mg": [
+    {
+     "type": "stamp",
+     "text": "$4.05 BILLION",
+     "y": 0.3,
+     "at": 181
+    }
+   ]
+  }
+ ]
+}

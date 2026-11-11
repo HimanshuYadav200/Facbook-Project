@@ -1,0 +1,36 @@
+# STYLE (sent in FULL with every prompt): Stylized 3D cartoon render, vertical 9:16, like a cozy animated movie or a miniature diorama: soft global illumination, warm rich saturated colours, rounded chunky shapes, slight depth of field. 1970s America. Characters are cute simple cartoon people with big round cream-coloured heads, small black dot eyes, simple eyebrows, small mouths, no nose, short rounded bean-shaped bodies. No text, no letters, no numbers, no logos, no signs with writing.
+# CAST: filmmaker = young man, short dark brown beard, dark wavy hair, big round glasses, blue-and-brown checked flannel shirt, jeans.
+#       executive = studio boss in a grey three-piece suit, slicked-back grey hair, thick black-rimmed glasses.
+# No real film characters, no real logos: toys are generic (a glowing toy laser sword, a small round toy robot, a toy spaceship, a tall furry plush creature).
+s_studio_lot: an old 1970s Hollywood studio backlot at golden hour, big hangar-like sound stages, a vintage car, the filmmaker walking in with a rolled-up script under his arm, wide shot
+s_lucas_desk: the filmmaker sitting at a cluttered wooden desk at night, typing on a typewriter, a desk lamp, sketches of spaceships pinned on the wall, eye-level medium shot
+s_push_money: close-up over a big executive desk: the filmmaker's hand calmly pushing a tall stack of green cash back across the desk, the executive's surprised face blurred in the background
+s_toy_box: an open cardboard box on a table overflowing with glowing generic space toys: a toy laser sword, a small round toy robot, a toy spaceship, warm magical light coming out of the box, low angle
+s_lucas_portrait: dramatic low-angle portrait of the filmmaker, arms crossed, confident small smile, a spotlight behind him in a dark sound stage
+s_drivein: a 1970s drive-in cinema at dusk packed with vintage cars, a big blank glowing screen, people cheering out of car windows, aerial view
+s_exec_office: a huge 1970s studio boss office, wood panels, the executive behind an enormous desk, the filmmaker sitting small in a chair in front of it, wide shot from behind the filmmaker
+s_contract: top-down close-up of a contract on a desk being signed with a fountain pen, a cup of coffee, the paper shows only blurry lines, no readable words
+s_two_fingers: the filmmaker holding up two fingers with a sly smile, standing in the executive's office, medium close-up
+s_film_reels: a tall stack of shiny metal film reel cans in a dusty storage room, light beams through a window, low angle
+s_toy_shelf: a long toy store shelf full of generic space toys in boxes (toy robots, toy spaceships, toy laser swords), dramatic low angle looking up at the shelf
+s_exec_laugh: three studio executives in suits laughing around a boardroom table, one holding up a tiny toy spaceship between two fingers, smoke-free, warm lamp light
+s_handshake: close-up of the executive and the filmmaker shaking hands over a desk, golden light, shallow depth of field
+s_marquee: a 1970s movie theater exterior at night with a glowing bulb marquee (no letters on it), crowds of excited people in 1970s clothes, low angle
+s_audience: a dark movie theater audience seen from the screen side, faces lit blue, mouths open in amazement, kids holding popcorn
+s_lines_aerial: aerial view of a very long queue of people wrapping around a whole city block to a movie theater, summer 1977, cars on the streets
+s_kid_saber: a happy kid in a striped t-shirt swinging a glowing blue toy laser sword in a 1970s living room, motion and glow, low angle
+s_kid_robot: a kid hugging a small round toy robot and a tall furry brown plush creature on a bed, posters without text on the wall
+s_factory_empty: a big toy factory with empty conveyor belts and stacks of unfinished grey toy parts, worried workers scratching their heads, wide shot
+s_xmas_store: a busy 1970s department store toy section at Christmas, garlands and a tree, parents with shopping bags, snow outside the windows
+s_empty_box: top-down close-up of an open cardboard toy box that is completely empty inside except one folded paper, on a Christmas table with wrapping paper
+s_certificate: a kid on Christmas morning holding up a plain paper certificate (no readable text) with a puzzled but hopeful face, a tree behind
+s_mailbox: a kid sitting on the curb next to a mailbox, chin in hands, waiting, spring street, flowers, months passing feeling
+s_checkout: smiling parents at a 1970s store checkout with a pile of identical flat cardboard boxes, the cashier ringing up, cash register with no numbers
+s_toy_aisle: a gigantic modern toy store aisle stretching far away, full of generic space toys, games and t-shirts, kids running, wide shot
+s_money_mountain: a mountain of green cash with toy robots and toy spaceships on top, golden light, coins falling, low angle
+s_vault_toys: the filmmaker standing in front of an open giant round bank vault door full of toys and cash, small proud smile, wide shot
+s_theater_empty: an empty movie theater after the show, rows of red seats, dark screen, spilled popcorn on the floor, one usher sweeping
+s_birthday: a kid's birthday party, the kid unwrapping a toy spaceship, friends cheering, a cake with no candles, party hats
+s_xmas_morning: kids opening presents under a Christmas tree, a toy robot and a toy laser sword coming out of the wrapping paper, warm morning light
+s_boardroom: a modern glass skyscraper boardroom at sunset, two businessmen in suits shaking hands over a signed contract, a city skyline behind, no logos
+s_checkout2: second try, cartoon style
