@@ -4,11 +4,12 @@
   "say": "500,000",
   "what": "Wheels of Parmigiano Reggiano the bank keeps in its warehouses (Credem cheese-warehouse head Giancarlo Ravanetti to CNN, May 2026: 'we keep 500,000'). Older sources: warehouse capacity 440,000 wheels (HBS 2015, Wikipedia); USDA 2009 said the warehouses held 440,000.",
   "source": "https://edition.cnn.com/2026/05/02/food/italy-cheese-bank-parmigiano-reggiano-intl ; https://www.library.hbs.edu/working-knowledge/a-bank-that-takes-parmesan-as-collateral-the-cheese-stands-a-loan ; https://en.wikipedia.org/wiki/Credito_Emiliano",
-  "check": "manual: 500,000 is the newest figure (CNN 2026, one source, the bank's own warehouse head); older sources say 440,000 (capacity). Tick if you accept the 2026 figure, else change the hook to 440,000",
+  "check": "auto-confirmed 2026-11-11 by fact_check.py (2+ sites, see review/fact_check.md)",
   "search": "Credem Parmigiano Reggiano bank vault wheels",
   "key": [
    "Credem"
-  ]
+  ],
+  "check_was": "manual: 500,000 is the newest figure (CNN 2026, one source, the bank's own warehouse head); older sources say 440,000 (capacity). Tick if you accept the 2026 figure, else change the hook to 440,000"
  },
  {
   "id": "wheel_weight",
@@ -81,11 +82,12 @@
   "say": "the bank says it has never lost a single euro on these loans",
   "what": "Ravanetti (Credem) to CNN: the bank 'has never lost a single euro on these loans'. HBS: only 1% of the cheese needs a value downgrade vs an industry average of 10%.",
   "source": "https://edition.cnn.com/2026/05/02/food/italy-cheese-bank-parmigiano-reggiano-intl",
-  "check": "manual: the bank's own claim in one source (CNN 2026); the script attributes it ('the bank says')",
+  "check": "auto-confirmed 2026-11-11 by fact_check.py (2+ sites, see review/fact_check.md)",
   "search": "Credem cheese bank never lost a euro loans Parmigiano",
   "key": [
    "Credem",
    "never lost"
-  ]
+  ],
+  "check_was": "manual: the bank's own claim in one source (CNN 2026); the script attributes it ('the bank says')"
  }
 ]

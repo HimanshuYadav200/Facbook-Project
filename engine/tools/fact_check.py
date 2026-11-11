@@ -1,12 +1,14 @@
-"""Check a run's facts on the web with Tavily, so the owner doesn't have to open every source by hand.
+"""Check a run's facts on the web with Tavily + Exa, so the owner doesn't have to open every source by hand.
 
 Usage: engine/.venv/bin/python engine/tools/fact_check.py runs/<niche>/<id> [--all] [--apply]
   default: only facts marked "check": "manual ..." (the ones the owner had to tick by hand)
   --all:   every fact except illustrative (story-only) ones
   --apply: facts confirmed by 2+ independent sites lose their manual mark in facts.json
            (backup facts.json.bak-<time> first; the old note is kept as "check_was")
-Writes review/fact_check.md (verdict + sources per fact). One Tavily credit per fact (free tier: 1,000/month);
-answers are cached in engine/cache/tavily/ for 30 days, so re-runs cost nothing.
+Writes review/fact_check.md (verdict + sources per fact). Per fact: one Tavily search (1 credit; free 1,000/month
+per key, full page text) and one Exa search ($0.007; free $10/month, ranked passages for the fact). Two different
+search engines find more independent sites. If one engine fails (no key, out of credits) the other still runs.
+Answers are cached in engine/cache/tavily/ and engine/cache/exa/ for 30 days, so re-runs cost nothing.
 
 Better checks: give each fact a short "search" query ("Victor Lustig Al Capone $5,000") and, for text facts,
 "key": 2-3 terms a page must contain to back it (["Capone", "Lustig", "5,000"]). Without them the tool builds a
@@ -15,7 +17,8 @@ Verdicts:
   CONFIRMED  - the fact's number (or, for text facts, most of its key words) is on 2+ independent sites
   ONE SITE   - found on only one site: weak, read it
   NOT FOUND  - no result has it: the claim may be wrong, or worded differently; read the sources
-Keys: TAVILY_API_KEY in .env (TAVILY_API_KEY_BACKUP is tried when the first is out of credits). Never printed.
+Keys in .env: TAVILY_API_KEY (TAVILY_API_KEY_BACKUP is tried when the first is out of credits), EXA_API_KEY.
+Never printed. Exa usage follows Exa's build-with-exa skill: query + objective + highlights, nothing else.
 """
 import argparse
 import datetime
@@ -33,24 +36,33 @@ import requests
 from check_plan import parse_numbers
 from fetch_data import CACHE, FetchError, env
 
-URL = "https://api.tavily.com/search"
+TAVILY_URL = "https://api.tavily.com/search"
+EXA_URL = "https://api.exa.ai/search"
 STOP = set("the a an and or of to in on for with that this was were is are be by as at from it its their they "
            "them his her he she so but not than then into about after before over very really do does did".split())
 
 
-def search(query):
+def _cache(engine, body):
+    return CACHE / engine / (hashlib.sha1(json.dumps(body, sort_keys=True).encode()).hexdigest()[:16] + ".json")
+
+
+def _fresh(path):
+    return path.exists() and time.time() - path.stat().st_mtime < 30 * 86400
+
+
+def tavily(query):
     """Tavily search (basic depth = 1 credit), cached. Raises FetchError on any bad reply."""
-    path = CACHE / "tavily" / (hashlib.sha1(query.encode()).hexdigest()[:16] + ".json")
-    if path.exists() and time.time() - path.stat().st_mtime < 30 * 86400:
-        return json.loads(path.read_text())
     # full page text: the short snippet often cuts off before the number
     body = {"query": query, "search_depth": "basic", "max_results": 6, "include_answer": True,
             "include_raw_content": "text"}
+    path = _cache("tavily", body)
+    if _fresh(path):
+        return json.loads(path.read_text())
     for name in ("TAVILY_API_KEY", "TAVILY_API_KEY_BACKUP"):
         key = env(name, required=name == "TAVILY_API_KEY")
         if not key:
             continue
-        r = requests.post(URL, json=body, headers={"Authorization": f"Bearer {key}"}, timeout=60)
+        r = requests.post(TAVILY_URL, json=body, headers={"Authorization": f"Bearer {key}"}, timeout=60)
         if r.status_code in (401, 429, 432, 433):  # bad key / rate or credit limit: try the backup key
             print(f"  {name}: HTTP {r.status_code}, trying the next key", file=sys.stderr)
             continue
@@ -63,6 +75,51 @@ def search(query):
         path.write_text(json.dumps(reply))
         return reply
     raise FetchError("tavily: no working key (out of credits?)")
+
+
+def exa(query, objective):
+    """Exa search, cached. The request Exa recommends for a pipeline step: query + objective + highlights
+    (default 10 results, type auto). Raises FetchError on any bad reply or a missing key."""
+    body = {"query": query, "type": "auto", "objective": objective, "contents": {"highlights": True}}
+    path = _cache("exa", body)
+    if _fresh(path):
+        return json.loads(path.read_text())
+    r = requests.post(EXA_URL, json=body, headers={"x-api-key": env("EXA_API_KEY")}, timeout=60)
+    if r.status_code != 200:
+        raise FetchError(f"exa: HTTP {r.status_code}")  # 401 bad key, 402 out of credit, 429 rate limit
+    reply = r.json()
+    if not isinstance(reply.get("results"), list):
+        raise FetchError("exa: reply has no results list")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(reply))
+    return reply
+
+
+def objective_for(fact):
+    """What the Exa search is for: confirm or contradict exactly what the video says."""
+    return (f"Confirm or contradict this claim from a video script: \"{fact['say']}\". Rank primary sources, "
+            "official records and reputable news or reference sites first; exclude forums and content farms. "
+            "Pull the exact figures, names and dates the pages give for it.")
+
+
+def pages(fact):
+    """[(url, text)] from every engine that works, the Tavily summary, and notes on engines that failed."""
+    out, notes, answer = [], [], ""
+    q = query_for(fact)
+    try:
+        t = tavily(q)
+        answer = t.get("answer") or ""
+        out += [(x["url"], f"{x.get('title', '')} {x.get('content', '')} {x.get('raw_content') or ''}") for x in t["results"]]
+    except FetchError as e:
+        notes.append(str(e))
+    try:
+        x = exa(q, objective_for(fact))
+        out += [(y["url"], f"{y.get('title') or ''} {' '.join(y.get('highlights') or [])}") for y in x["results"]]
+    except FetchError as e:
+        notes.append(str(e))
+    if len(notes) == 2:
+        raise FetchError("; ".join(notes))
+    return out, answer, notes
 
 
 def site(url):
@@ -106,11 +163,12 @@ def query_for(fact):
     return " ".join(terms[:10])
 
 
-def judge(fact, reply):
+def judge(fact, found):
+    """found = [(url, page text)] from all engines; one vote per site."""
     sites = {}
-    for res in reply["results"]:
-        if supports(fact, f"{res.get('title', '')} {res.get('content', '')} {res.get('raw_content') or ''}"):
-            sites.setdefault(site(res["url"]), res["url"])
+    for url, text in found:
+        if supports(fact, text):
+            sites.setdefault(site(url), url)
     verdict = "CONFIRMED" if len(sites) >= 2 else "ONE SITE" if sites else "NOT FOUND"
     return verdict, sites
 
@@ -128,30 +186,33 @@ def main(argv=None):
         return 1
     todo = [f for f in facts if f.get("kind") != "illustrative" and f.get("say")
             and (a.all or "manual" in str(f.get("check", "")).lower())]
-    print(f"{len(todo)} fact(s) to check (up to {len(todo)} Tavily credits; cached answers are free)")
+    print(f"{len(todo)} fact(s) to check (up to {len(todo)} Tavily credits + {len(todo)} Exa searches; cached answers are free)")
 
-    rows, confirmed = [], set()
+    rows, confirmed, warned = [], set(), set()
     for f in todo:
         try:
-            reply = search(query_for(f))
+            found, answer, notes = pages(f)
         except FetchError as e:
             print(f"ERROR: {f['id']}: {e}", file=sys.stderr)
             return 1
-        verdict, sites = judge(f, reply)
+        for n in set(notes) - warned:
+            print(f"warning: {n} (continuing with the other engine)", file=sys.stderr)
+            warned.add(n)
+        verdict, sites = judge(f, found)
         if verdict == "CONFIRMED":
             confirmed.add(f["id"])
         print(f"{verdict:10} {f['id']}: {', '.join(sites) or '-'}")
         found = "<br>".join(f"[{s}]({u})" for s, u in sites.items()) or "–"
-        answer = (reply.get("answer") or "").replace("|", "/").replace("\n", " ")[:300]
+        answer = answer.replace("|", "/").replace("\n", " ")[:300]
         rows.append(f"| {verdict} | {f['id']} | {f['say']} | {found} | {answer} |")
 
     out = run / "review" / "fact_check.md"
     out.parent.mkdir(exist_ok=True)
     today = datetime.date.today().isoformat()
     out.write_text("\n".join([
-        f"# Fact check (Tavily): {run.name}", "",
+        f"# Fact check (Tavily + Exa): {run.name}", "",
         f"{today}. CONFIRMED = on 2+ independent sites. Read ONE SITE / NOT FOUND rows before upload.", "",
-        "| verdict | id | video says | sites that back it | search engine's summary (not proof) |",
+        "| verdict | id | video says | sites that back it | Tavily's summary (not proof) |",
         "|---|---|---|---|---|", *rows, ""]))
     print(f"-> {out}")
 

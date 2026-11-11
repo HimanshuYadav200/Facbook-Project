@@ -1,4 +1,4 @@
-"""Tests for fact_check's matching (no network): numbers, key terms, independent sites, short queries."""
+"""Tests for fact_check (no network): numbers, key terms, independent sites, short queries, one engine failing."""
 import sys
 import unittest
 from pathlib import Path
@@ -8,7 +8,7 @@ import fact_check as fc  # noqa: E402
 
 
 def reply(*pages):
-    return {"results": [{"url": u, "title": "", "content": t} for u, t in pages]}
+    return list(pages)  # judge takes [(url, page text)]
 
 
 class FactCheck(unittest.TestCase):
@@ -26,7 +26,7 @@ class FactCheck(unittest.TestCase):
         f = {"say": "20,000"}
         r = reply(("https://www.yahoo.com/a", "20,000 rats"), ("https://news.yahoo.com/b", "20,000 rats"))
         self.assertEqual(fc.judge(f, r)[0], "ONE SITE")
-        r["results"].append({"url": "https://en.wikipedia.org/x", "title": "", "content": "over 20,000 rats"})
+        r.append(("https://en.wikipedia.org/x", "over 20,000 rats"))
         self.assertEqual(fc.judge(f, r)[0], "CONFIRMED")
 
     def test_query_uses_search_field_or_short_keywords(self):
@@ -34,6 +34,22 @@ class FactCheck(unittest.TestCase):
         q = fc.query_for({"say": "Victor Lustig sold the Eiffel Tower", "what": "A long description. More."})
         self.assertLessEqual(len(q.split()), 10)
         self.assertIn("Victor Lustig", q)
+
+    def test_one_engine_failing_keeps_the_other(self):
+        orig = fc.tavily, fc.exa
+        try:
+            def broken(*a):
+                raise fc.FetchError("tavily: HTTP 432")
+            fc.tavily = broken
+            fc.exa = lambda q, o: {"results": [{"url": "https://a.org/x", "title": "t", "highlights": ["20,000 rats"]}]}
+            found, _, notes = fc.pages({"say": "20,000"})
+            self.assertEqual(found, [("https://a.org/x", "t 20,000 rats")])
+            self.assertEqual(notes, ["tavily: HTTP 432"])
+            fc.exa = broken
+            with self.assertRaises(fc.FetchError):
+                fc.pages({"say": "20,000"})
+        finally:
+            fc.tavily, fc.exa = orig
 
 
 if __name__ == "__main__":

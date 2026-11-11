@@ -25,24 +25,26 @@
   "id": "baltimore",
   "say": "At a contractor's facility in the Port of Baltimore the rear seats were removed and the rear window glass replaced with metal panels before the vans went to dealers as cargo vans.",
   "source": "https://en.wikipedia.org/wiki/Chicken_tax ; https://www.thetruthaboutcars.com/2013/09/u-s-customs-calls-fords-importing-transit-connect-as-passenger-vehicle-manipulation-of-chicken-tax-tariff/",
-  "check": "manual: sources disagree on what happened to the seats (Wikipedia: shredded and recycled in Ohio; TTAC 2013: saved to sell as an option), so the script only says they were pulled out",
+  "check": "auto-confirmed 2026-11-11 by fact_check.py (2+ sites, see review/fact_check.md)",
   "search": "Ford Transit Connect Baltimore rear seats removed cargo van customs",
   "key": [
    "Baltimore",
    "seats"
-  ]
+  ],
+  "check_was": "manual: sources disagree on what happened to the seats (Wikipedia: shredded and recycled in Ohio; TTAC 2013: saved to sell as an option), so the script only says they were pulled out"
  },
  {
   "id": "cost_saving",
   "say": "The conversion cost hundreds of dollars per van but saved thousands in tax per van.",
   "source": "https://en.wikipedia.org/wiki/Chicken_tax ; https://www.thetruthaboutcars.com/2013/09/u-s-customs-calls-fords-importing-transit-connect-as-passenger-vehicle-manipulation-of-chicken-tax-tariff/",
-  "check": "manual: 'hundreds' (conversion cost) is from Wikipedia only; TTAC confirms 'thousands of dollars' saved per vehicle but gives no conversion cost",
+  "check": "auto-confirmed 2026-11-11 by fact_check.py (2+ sites, see review/fact_check.md)",
   "search": "Ford Transit Connect chicken tax passenger van seats removed cost per van",
   "key": [
    "seats",
    "hundreds",
    "thousands"
-  ]
+  ],
+  "check_was": "manual: 'hundreds' (conversion cost) is from Wikipedia only; TTAC confirms 'thousands of dollars' saved per vehicle but gives no conversion cost"
  },
  {
   "id": "cbp_2013",

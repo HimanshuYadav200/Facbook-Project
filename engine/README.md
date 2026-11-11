@@ -26,7 +26,7 @@ Keys in the project `.env`: `ALPHA_VANTAGE_API_KEY`, `FRED_API_KEY`, `TIINGO_API
 | `render.sh` | Remotion render (Node 22) → out/raw.mp4 |
 | `finish.py` | −14 LUFS + length + true peak (≤ −1 dB) + black-frame checks → out/final.mp4 |
 | `contact_sheet.py` | review sheets (one frame per shot) |
-| `fact_check.py` | Tavily web search per fact → `review/fact_check.md` (CONFIRMED on 2+ sites / ONE SITE / NOT FOUND); `--apply` clears manual marks of confirmed facts (backup first). `TAVILY_API_KEY` (+ `_BACKUP`) in .env |
+| `fact_check.py` | Tavily + Exa web search per fact → `review/fact_check.md` (CONFIRMED on 2+ sites / ONE SITE / NOT FOUND); `--apply` clears manual marks of confirmed facts (backup first). `TAVILY_API_KEY` (+ `_BACKUP`) and `EXA_API_KEY` in .env; one engine failing doesn't stop the other |
 | `facts_review.py` | facts table for the owner's manual check |
 | `make_sfx.py` | generated SFX (whooshes, impacts, sparkle…) + Kokoro crowd reactions; skips files that exist |
 | `gen_sfx.py` | text prompt → custom SFX with the local Stable Audio 3 Small SFX model → `library/sfx/<name>.wav` + licence entry in `sfx.json` (never overwrites) |

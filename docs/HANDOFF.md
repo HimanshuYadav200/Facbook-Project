@@ -40,6 +40,7 @@ A local, Claude-directed engine that makes **faceless vertical short videos** fo
 5. Merge branch `session-3-niches` into `main` when happy (Claude can do it).
 
 ## 6. Next steps
+0. (Session 4 cont. 7) Exa added to fact_check.py (v1.9); all 9 manual facts of the 4 strange-money videos auto-confirmed and cleared.
 0. (Session 4 cont. 6) Engine fixes done (ARCHITECTURE v1.8): `fact_check.py` (Tavily auto fact check; facts get `search` + `key`), `meta_save.js`, match_images by name, blinks under hair/glasses, `$365 million` allowed, true-peak check, 2-line labels, money `y`. 68 tests. Owner: pick a voice from `~/Downloads/voice_samples_strange_money/`; read the Eiffel (+0.1 dB peak) note. The 4 stickman videos still have their old eyes.json (re-run find_eyes + re-render only if the owner wants blinks added).
 0. (Session 4) SFX overhaul done 2026-11-11: 147 sounds, local Stable Audio 3 (`engine/tools/gen_sfx.py`, model in `~/tools/stable-audio-3`), quieter/fewer explainer-fast sounds. Owner: register with Stability AI; download Sonniss GDC 2026 zips by hand. See CONTEXT session 4 (cont. 4).
 0. (Session 4) Strange-money: 4 more videos done 2026-11-11 (Lustig-Capone, Ford van seats, Hanoi rats, Parmesan bank), each waiting on owner fact ticks; next in the first-week order: #105, #32, #4, #70. Engine issue list: CONTEXT session 4 (cont. 3). Run agents in serial browser mode (heat).
