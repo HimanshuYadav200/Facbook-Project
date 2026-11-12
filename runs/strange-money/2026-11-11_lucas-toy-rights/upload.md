@@ -60,7 +60,6 @@ Sources: Wikipedia; No Film School; /Film; Mental Floss; The Walt Disney Company
 - [ ] Watched once with sound (new voice speed: am_puck 1.05 + short pauses)
 - [ ] Facts: all 9 auto-confirmed on 2+ sites (`review/fact_check.md`); nothing to tick by hand
 - [ ] Music `the-end-soundaudio`: non-copyright (owner, 2026-11-10)
-- [ ] No generated (`gen_*`) sounds in this video (Stability licence still pending)
 - [ ] YouTube: AI disclosure Yes, Made for kids No
 - [ ] Facebook: AI info on
 - [ ] Language English (US) set; scheduled at the Post at slot

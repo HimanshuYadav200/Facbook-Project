@@ -23,7 +23,7 @@ Next strange-money topics (first-week order in `niche-strange-money/references/t
 |---|---|
 | Tools | `engine/tools/`: new_run, fetch_data, finance_calc, voice, **meta_save.js**, match_images, key_green, find_eyes, check_plan, render.sh, finish, contact_sheet, **fact_check**, facts_review, make_sfx, **gen_sfx**. Table: `engine/README.md` |
 | Fact checking | `fact_check.py`: Tavily + Exa per fact (facts carry `search` + `key`), `review/fact_check.md`, `--apply` clears manual marks. Keys in `.env`: `TAVILY_API_KEY`, `TAVILY_API_KEY_BACKUP` (2 × 1,000 free/month), `EXA_API_KEY` ($10 free/month ≈ 1,400 searches). Run it **before** recording the voice. |
-| Voice | strange-money: Lucas video used **`am_puck` 1.05 + `--sentence-gap 0.2`** (~184 wpm; owner said 1.15 was too fast). The niche skill still says 1.15: **owner to confirm the new default**, then update `niche-strange-money/SKILL.md`. Samples: `~/Downloads/voice_samples_strange_money/` |
+| Voice | strange-money default: **`am_puck` 1.05 + `--sentence-gap 0.2`** (~185 wpm; owner confirmed 2026-11-12). Samples: `~/Downloads/voice_samples_strange_money/` |
 | SFX | 147 sounds in `library/sfx/` (Mixkit + freesound CC0 + 5 generated `gen_*`). explainer-fast mix: whoosh every other cut, quieter (cut 0.14 / mg 0.25 / sfx 0.22), realistic pools in `sounds.json`. Local model **Stable Audio 3 Small SFX** in `~/tools/stable-audio-3` (`gen_sfx.py`, runs inside the sandbox, offline). **Mixkit files never shared alone, no Content ID; `*.wav` git-ignored.** |
 | Checks | check_plan: numbers vs facts.json (`$365 million` allowed; counters read number + word), graphics ≥ 1 s. finish: −14 LUFS, length, **true peak ≤ −1 dB**, black frames |
 | Images | Meta AI via Claude in Chrome + `meta_save.js` (one prompt at a time; saves the **last** image on the page, refuses byte-identical repeats; 2 images per browser batch). ~32 images ≈ 25–30 min per video |
@@ -32,8 +32,8 @@ Next strange-money topics (first-week order in `niche-strange-money/references/t
 
 ## 4. Waiting on the owner
 1. **Push to GitHub** (command above).
-2. **Stability AI licence**: applied, no confirmation yet → keep `gen_*` sounds out of uploaded videos until it arrives.
-3. Confirm the strange-money voice default (am_puck 1.05 + gap 0.2?).
+2. ~~Stability AI licence~~: **activated 2026-11-12** → `gen_*` sounds may be used in uploads.
+3. ~~Voice default~~: confirmed am_puck 1.05 + gap 0.2 (in the niche skill).
 4. Watch + upload: Lucas video (`~/Downloads/strange_money_lucas_toy_rights.mp4`, `upload.md` says 12:30 PM Eastern) and the others; stickman videos still need their illustrative facts ticked.
 5. Eiffel video peaks at +0.1 dB (clips slightly): re-finish/re-render only if the owner wants.
 6. Optional: Sonniss GDC 2026 SFX zips (5 links in CONTEXT session 4 cont. 4) downloaded by hand → Claude picks sounds.

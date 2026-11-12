@@ -15,8 +15,8 @@ Built from `references/Ricks-clips/analysis.md` (viral animated explainer shorts
 ## Defaults
 | Setting | Value |
 |---|---|
-| Voice | `am_puck`, speed 1.15, no sentence gap → ~210 wpm (draft 1 pick; auditions in `references/Ricks-clips/voice-auditions/`, `am_echo` is the runner-up) |
-| Script length | 170–230 words → 50–65 s |
+| Voice | `am_puck`, speed **1.05**, `--sentence-gap 0.2` → ~185 wpm (owner 2026-11-12: 1.15 was too fast; first used in lucas-toy-rights; older auditions in `references/Ricks-clips/voice-auditions/`, `am_echo` is the runner-up) |
+| Script length | 170–200 words → 55–65 s at the slower voice (230 words would run ~75 s, over the 70 s limit) |
 | Shots | a new picture every ~1.5–2 s → ~30–35 shots |
 | Music | very low or none (reference: almost inaudible) |
 
