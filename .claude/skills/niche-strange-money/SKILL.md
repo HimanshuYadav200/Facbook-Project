@@ -40,7 +40,12 @@ Built from `references/Ricks-clips/analysis.md` (viral animated explainer shorts
 `upload.md` per run following `video-core/references/upload-policy.md`. Add a **"Sources:"** line in the description. Base tags: strange history, money facts, true story, scam history, how it worked, animated explainer + 4–6 story-specific ones.
 US audience: follow `upload-policy.md` §4 (Post at slot, English (US) settings, US words; prefer US-linked stories in the first week where the order allows).
 Base hashtags (pick 3): #TrueStory #History #MoneyFacts #Scam #ConArtist + 1–2 story-specific (#AmericanHistory when it is a US story).
-Facebook Page categories (max 3): **Digital creator**, **Education**, **Entertainment website**.
+Facebook Page categories (max 3): **Digital creator**, **Education**, **Entertainment website**. Not "Financial Service".
+
+## Facebook Page
+- Name: owner's pick (suggested: Strange Money Stories, Money Gone Weird, The Money Oddities, Weird Money Files, True Money Tales).
+- Bio (≤ 101 chars): "True money stories so strange they sound fake. Scams, loopholes and wild deals, explained fast. 🇺🇸"
+- Reply to comments as the Page, not the personal profile.
 
 ## Topic bank
 `references/topics.md`. Mark each used with the run id.

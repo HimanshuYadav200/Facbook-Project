@@ -1,71 +1,69 @@
-# Session Handoff (end of session 3, 2026-11-10)
+# Session Handoff (end of session 4, 2026-11-12)
 
 > **New chat? Read this file first.** It is the complete, compact state of the project.
-> Then, as needed: `docs/CONTEXT.md` (requirements, every decision, session log) · `docs/ARCHITECTURE.md` (how the engine works, change log) · `.claude/skills/video-core/SKILL.md` (how to make a video, exact commands) · `engine/README.md` (setup + tools).
-> Rules (from `CLAUDE.md`): **plan → owner agrees → build**; log every decision in `docs/CONTEXT.md`; follow the "Coding rules" in `CLAUDE.md`.
+> Then, as needed: `docs/CONTEXT.md` (requirements, every decision, session log) · `docs/ARCHITECTURE.md` (how the engine works, change log, now v1.9) · `.claude/skills/video-core/SKILL.md` (how to make a video, exact commands) · `engine/README.md` (setup + tools).
+> Rules (from `CLAUDE.md`): **plan → owner agrees → build**; log every decision in `docs/CONTEXT.md`; follow the "Coding rules" in `CLAUDE.md`. Commit only when the owner asks.
 
 ---
 
 ## 1. What we're building
-A local, Claude-directed engine that makes **faceless vertical short videos** for **Facebook and YouTube**, uploaded **manually** by the owner. One skill per **niche** (content) and per **style** (look); Claude drives every step. Free / open-source first, runs on the owner's MacBook Pro (M5, 24 GB). Brain = Claude Code on the owner's personal Pro plan. Target: **3–4 reels/day per niche**, every video original (YouTube "inauthentic content" + Meta "unoriginal content" rules: `video-core/references/upload-policy.md`).
+A local, Claude-directed engine that makes **faceless vertical short videos** for **Facebook and YouTube**, uploaded **manually** by the owner, aimed at a **US audience**. One skill per **niche** (content) and per **style** (look); Claude drives every step. Free / open-source first, runs on the owner's MacBook Pro (M5, 24 GB). Brain = Claude Code on the owner's Pro plan. Owner's plan: ~60 reels per niche on 3 Facebook Pages, scheduled over a month (3–4 a day per Page, at different US times).
 
-## 2. Niches: readiness for posting
-| Niche | Style | Length | Status | First video | Before posting at volume |
-|---|---|---|---|---|---|
-| **strange-money**: true strange money stories, scams, loopholes; fast excited explainer | `explainer-fast` (AI 3D-cartoon images, camera moves incl. 3D tilts, green-keyed cut-out actors, **motion graphics**, recorded SFX pools, 1–3-word captions) | 45–70 s | **Ready.** Owner approved look + motion graphics + SFX | `runs/strange-money/2026-11-10_eiffel-tower-sale/out/final.mp4` (= `~/Downloads/strange_money_eiffel_sfx2.mp4`) + `upload.md` (SEO) | Owner ticks 2 manual facts in its `facts.json`; topic bank being grown to ~120 (see §5); pick voice (default `am_puck` 1.15) |
-| **stickman-money**: calm stickman parables, one money lesson | `stickman-calm` (grey pencil-sketch images, slow camera, dissolves, karaoke captions, blinks, optional owner-supplied clips) | ~1:30 | **Ready** ("done for now") | `runs/stickman-money/2026-11-10_two-brothers-paycheck/out/final.mp4` (v4, 87.7 s) + `upload.md`. **Session 4: 3 more** (earn-ten-dollars, same-raise, parents-said-no), each with `upload.md` | Owner watches the 3 new videos + ticks their illustrative facts; 4 of 100 seeds used; fixes proposed for blinks/matching/image helper (CONTEXT session 4); Meta AI *video* isn't available in Claude's browser (owner supplies clips if wanted) |
-| **skulsy-finance**: Skulsy cartoon skeleton + real USA finance data | `vintage-story` / `flat-fastcut` | 2:00–2:48 | **Not ready.** Only two short tests (43 s, 18 s) | `runs/skulsy-finance/2026-11-09_test-*` | Needs a production-length video, owner feedback, `TIINGO_API_KEY` + `SEC_USER_AGENT` in `.env` (real market data) |
+## 2. Niches
+| Niche | Style | Length | Status | Videos made (all in `runs/<niche>/`, copies in `~/Downloads/`) |
+|---|---|---|---|---|
+| **strange-money**: true strange money stories, scams, loopholes | `explainer-fast` | 45–70 s | **Ready, producing.** Facebook Page being set up (name/bio/categories in the niche skill; cover + profile in `library/brand/strange-money/` and `~/Downloads/strange_money_fb_*.png`) | 6: eiffel-tower-sale, lustig-cons-capone, ford-van-seats, hanoi-rat-bounty, parmesan-bank, **lucas-toy-rights** (newest, made with all session-4 fixes: slower voice, new SFX, auto fact check) |
+| **stickman-money**: calm stickman parables, one money lesson | `stickman-calm` | ~1:30 | **Ready.** Page art in `library/brand/stickman-money/` | 4: two-brothers-paycheck, earn-ten-dollars, same-raise, parents-said-no |
+| **skulsy-finance**: Skulsy skeleton + real USA finance data | `vintage-story` / `flat-fastcut` | 2:00–2:48 | **Not ready** (two short tests only) | needs a full video, owner feedback, `TIINGO_API_KEY` + `SEC_USER_AGENT` in `.env` |
 
-## 3. Engine state
+Next strange-money topics (first-week order in `niche-strange-money/references/topics.md`): **#32 Poyais**, #4 Pepsi Harrier jet, #70 Hoover free flights, #5 Yap stone money … (#31, #50, #2, #92, #105 used).
+
+## 3. Engine state (69 tests pass: `engine/.venv/bin/python -m unittest discover -s engine/tests`)
 | Area | State |
 |---|---|
-| Tools | `engine/tools/`: new_run, fetch_data, finance_calc, voice (Kokoro + whisper), match_images, check_plan, render.sh, finish (−14 LUFS), contact_sheet, facts_review, make_sfx, find_eyes (blinks), key_green (green-screen cut-outs). **53 tests pass**: `engine/.venv/bin/python -m unittest discover -s engine/tests` |
-| Renderer | `engine/remotion/` (Remotion 4.0.537, Node 22). Styles: vintage-story, flat-fastcut, stickman-calm, explainer-fast (`ExplainerFast.tsx`, `Graphics.tsx`, `sounds.json`) |
-| explainer-fast extras | `mg` motion graphics per shot (stamp, label, counter, arrow, money, speedLines, marks, cross, circle, pointer; no own wobble; each ≥ 1 s on screen, checker-enforced), `bg` colour-card shots, `hold` (delay a cut 0–0.6 s), sound pools with per-cut variants; default volumes cut 0.22 / mg 0.35 / sfx 0.3 (measured: whooshes ~9 dB, hits ~6–8 dB under voice) |
-| SFX library | `library/sfx/`: 21 generated + **47 recorded** (`*_r*`, Mixkit free licence + freesound CC0) → `library/sfx.json`, `library/sfx_incoming/review.md`, `preview.wav`. Owner removed `impact_r2`. **Mixkit licence: never share the files on their own, never use Content ID**; `*.wav` is git-ignored |
-| Music | `library/music/the-end-soundaudio.mp3` (owner: non-copyright) |
-| Images | Meta AI driven by Claude in Chrome (one chat per video; `saveNewest`, 2 images per batch). ~32 images per strange-money video ≈ 20 min: the throughput bottleneck at 3–4 videos/day |
-| Blender | 5.3 installed (Homebrew). Test in the Eiffel run's `blender_test/`. **Parked for R&D** (output too crude); next try: Blender MCP with real models/textures |
-| Git | Local repo, **not pushed**. Session 3 work committed on branch `session-3-niches` (221663d), not yet merged into `main`. Commit only when the owner asks |
+| Tools | `engine/tools/`: new_run, fetch_data, finance_calc, voice, **meta_save.js**, match_images, key_green, find_eyes, check_plan, render.sh, finish, contact_sheet, **fact_check**, facts_review, make_sfx, **gen_sfx**. Table: `engine/README.md` |
+| Fact checking | `fact_check.py`: Tavily + Exa per fact (facts carry `search` + `key`), `review/fact_check.md`, `--apply` clears manual marks. Keys in `.env`: `TAVILY_API_KEY`, `TAVILY_API_KEY_BACKUP` (2 × 1,000 free/month), `EXA_API_KEY` ($10 free/month ≈ 1,400 searches). Run it **before** recording the voice. |
+| Voice | strange-money: Lucas video used **`am_puck` 1.05 + `--sentence-gap 0.2`** (~184 wpm; owner said 1.15 was too fast). The niche skill still says 1.15: **owner to confirm the new default**, then update `niche-strange-money/SKILL.md`. Samples: `~/Downloads/voice_samples_strange_money/` |
+| SFX | 147 sounds in `library/sfx/` (Mixkit + freesound CC0 + 5 generated `gen_*`). explainer-fast mix: whoosh every other cut, quieter (cut 0.14 / mg 0.25 / sfx 0.22), realistic pools in `sounds.json`. Local model **Stable Audio 3 Small SFX** in `~/tools/stable-audio-3` (`gen_sfx.py`, runs inside the sandbox, offline). **Mixkit files never shared alone, no Content ID; `*.wav` git-ignored.** |
+| Checks | check_plan: numbers vs facts.json (`$365 million` allowed; counters read number + word), graphics ≥ 1 s. finish: −14 LUFS, length, **true peak ≤ −1 dB**, black frames |
+| Images | Meta AI via Claude in Chrome + `meta_save.js` (one prompt at a time; saves the **last** image on the page, refuses byte-identical repeats; 2 images per browser batch). ~32 images ≈ 25–30 min per video |
+| Blinks | find_eyes handles hair over the head + round glasses (the 4 old stickman videos still have old `eyes.json`; re-render only if the owner asks) |
+| Git | Branch `session-3-niches`; remote `origin` = github.com/HimanshuYadav200/Facbook-Project (empty until the owner pushes). **Push was blocked for Claude**: owner runs `git push -u origin main && git push -u origin session-3-niches` |
 
-## 4. Decided, not yet done
-- **Local SFX model: Stable Audio 3 Small SFX** (owner, 2026-11-10: "we will go with the sfx local model", for future niches). Only commercially usable local option found (Stability Community License: free under $1M yearly revenue). Others (MMAudio, AudioGen, AudioLDM 2, Tango) are non-commercial. **Owner first:** (1) Hugging Face account → accept terms on `stabilityai/stable-audio-3-small-sfx`; (2) register with Stability AI for commercial use; (3) HF read token → `hf auth login`. **Then Claude:** install in a **separate venv** (`~/tools/stable-audio-3`, MLX path; it pins torch 2.7.1, so not in `engine/.venv`), test on the M5, add a `make_sfx`-style generator, licence entries in `sfx.json`. Research details: CONTEXT.md session log cont. 15.
-- **Topic bank (strange-money): done.** `.claude/skills/niche-strange-money/references/topics.md` has **120 seeds** (S 25, L 24, B 24, O 24, D 23) with `Key facts` + `Sources`, series links (Lustig 1→21→31 Capone, Ponzi 8↔46, Prohibition 66→67→68…), a rejects list and a **first-week order** (21 videos, 3/day, type never twice in a row; starts with #31 Lustig cons Capone). Flagged: #10 (living private person: no name or skip), #11 tulips (tell "legend vs record"), #26 Gillette razor myth (tell "the story is backwards"), #27 cobra bounty + #28 salami fraud excluded, #30 Woolworth hook corrected. Weak sources to fix during research: #55, #57, #60, #62, #90. Every seed still needs its own research pass into `facts.json` (Wikipedia + 1 more source, read in full).
+## 4. Waiting on the owner
+1. **Push to GitHub** (command above).
+2. **Stability AI licence**: applied, no confirmation yet → keep `gen_*` sounds out of uploaded videos until it arrives.
+3. Confirm the strange-money voice default (am_puck 1.05 + gap 0.2?).
+4. Watch + upload: Lucas video (`~/Downloads/strange_money_lucas_toy_rights.mp4`, `upload.md` says 12:30 PM Eastern) and the others; stickman videos still need their illustrative facts ticked.
+5. Eiffel video peaks at +0.1 dB (clips slightly): re-finish/re-render only if the owner wants.
+6. Optional: Sonniss GDC 2026 SFX zips (5 links in CONTEXT session 4 cont. 4) downloaded by hand → Claude picks sounds.
+7. skulsy-finance: Tiingo key + SEC contact; feedback on the tests.
 
-## 5. Waiting on the owner
-1. strange-money: tick facts `lustig_1925` + `poisson_bribe` (manual), choose a title from `upload.md`, upload.
-2. Local SFX model accounts (§4).
-3. skulsy-finance: Tiingo key + SEC contact in `.env`; feedback on the two tests.
-4. GitHub repo (private recommended): Claude lists files first; Mixkit WAVs must stay out.
-5. Merge branch `session-3-niches` into `main` when happy (Claude can do it).
+## 5. Next steps
+1. Produce more strange-money videos from the first-week order (video-core + niche + style skills). Facts → `fact_check.py --all` → script → voice → plan → images → check → render → finish → review → upload.md.
+2. Stickman-money videos for the owner's 60-per-niche plan (seed bank: `niche-stickman-money/references/topics.md`, 4 of 100 used).
+3. Later scope: multi-angle AI animation, Blender R&D, blinks on explainer actors, more voices, skulsy-finance.
 
-## 6. Next steps
-0. (Session 4 cont. 7) Exa added to fact_check.py (v1.9); all 9 manual facts of the 4 strange-money videos auto-confirmed and cleared.
-0. (Session 4 cont. 6) Engine fixes done (ARCHITECTURE v1.8): `fact_check.py` (Tavily auto fact check; facts get `search` + `key`), `meta_save.js`, match_images by name, blinks under hair/glasses, `$365 million` allowed, true-peak check, 2-line labels, money `y`. 68 tests. Owner: pick a voice from `~/Downloads/voice_samples_strange_money/`; read the Eiffel (+0.1 dB peak) note. The 4 stickman videos still have their old eyes.json (re-run find_eyes + re-render only if the owner wants blinks added).
-0. (Session 4) SFX overhaul done 2026-11-11: 147 sounds, local Stable Audio 3 (`engine/tools/gen_sfx.py`, model in `~/tools/stable-audio-3`), quieter/fewer explainer-fast sounds. Owner: register with Stability AI; download Sonniss GDC 2026 zips by hand. See CONTEXT session 4 (cont. 4).
-0. (Session 4) Strange-money: 4 more videos done 2026-11-11 (Lustig-Capone, Ford van seats, Hanoi rats, Parmesan bank), each waiting on owner fact ticks; next in the first-week order: #105, #32, #4, #70. Engine issue list: CONTEXT session 4 (cont. 3). Run agents in serial browser mode (heat).
-0. (Session 4) Stickman-money: parallel agents work (one per video, own Chrome tab, render lock in `runs/stickman-money/.render.lock`). Owner to decide on the 4 engine/skill fixes listed in CONTEXT.md session 4.
-1. Produce strange-money videos from the first-week order in topics.md (video-core skill + niche/style skills).
-2. Stability AI licence applied for (no confirmation yet): keep `gen_*` sounds out of uploads until it arrives.
-3. Later scope (logged): multi-angle AI animation, Blender R&D, blinks on explainer actors, Lustig redesign (resembles a board-game mascot), more voices.
+## 6. Traps (read before working)
+- **Render outside the sandbox** (`render.sh` with sandbox disabled; owner allowed it). Take `runs/<niche>/.render.lock` (mkdir) when agents run in parallel.
+- **Heat:** 4 parallel meta.ai tabs + renders overheated the Mac → one browser tab at a time.
+- **Browser tool limits:** one JS call stops after 45 s (`metaSave.wait(38000)`, call twice); a browser batch with 4 image prompts times out → 2 per batch.
+- **Meta AI:** reloads old images under new addresses as the chat grows (meta_save.js handles it); refuses look-alikes of protected characters (e.g. "furry plush creature" = Chewbacca); sometimes drifts to realistic people (say "NOT realistic people"); adds the main character to scenes uninvited; invents text → check the contact sheet.
+- Labels are upper-cased: "1970s" shows as "1970S".
+- **zsh doesn't word-split `$VAR`**; no `timeout` on macOS; ffmpeg has **no drawtext**; PIL/librosa not installed (no new packages without owner OK).
+- Never overwrite renders/plans: back up as `out/v1_final.mp4`, `plan_v1.json` first.
+- Kokoro: "A I" not "AI"; amounts as digits (`$365 million`, never `$365M`); every on-screen number must be in `facts.json`.
+- `.env` keys are never printed or committed. Owner previews: QuickTime/VLC (some players are silent).
 
-## 7. Traps (read before working)
-- **Render outside the sandbox** (`render.sh` with sandbox disabled; owner allowed it). Otherwise headless Chrome can't reach Remotion.
-- **zsh doesn't word-split `$VAR`**; `$n:l` is a zsh modifier. No `timeout` on macOS. ffmpeg here has **no drawtext**; PIL and librosa aren't installed (no new packages without owner OK).
-- Never overwrite renders/plans: back up as `out/<tag>_final.mp4`, `plan_<tag>.json` first (the Eiffel run has v1, v2, mg1, mg2, sfx1 versions).
-- Meta AI: invented text/numbers in images → check the contact sheet; a late image arrives as "2 new candidates".
-- Kokoro: write "A I" not "AI"; numbers as digits in the script (checker); every on-screen number must be in `facts.json`.
-- Blender headless: physics needs `bpy.ops.ptcache.bake_all(bake=True)`; `transform_apply` defaults also apply location.
-- Owner preview without sound: use QuickTime/VLC.
-
-## 8. Folder map
+## 7. Folder map
 ```
 CLAUDE.md               project rules + coding rules
 .env                    API keys (never commit/print)
 docs/                   HANDOFF (this), CONTEXT, ARCHITECTURE, analyses
-.claude/skills/         video-core, style-*, niche-* (skulsy-finance, stickman-money, strange-money)
+.claude/skills/         video-core (+ references/upload-policy.md, data-honesty.md), style-*, niche-*
 engine/                 tools/, tests/, remotion/, .venv/ (Python 3.12)
-library/                sfx/ + sfx.json + sfx_incoming/, music/ + music.json
-references/             per-niche reference reels + analysis.md (skulsy-finance, stickman-psychology, Ricks-clips)
-runs/<niche>/<date>_<slug>/   one folder per video: script, facts.json, voice, words, plan, img, review, out, upload.md, log.md
+library/                sfx/ + sfx.json, music/, brand/<niche>/ (Page art)
+references/             per-niche reference reels + analysis.md
+runs/<niche>/<date>_<slug>/   one folder per video: brief, script, facts.json, voice, words, plan, img, review, out, upload.md, log.md
+~/tools/stable-audio-3  local SFX model (separate venv, outside the project)
 ```
