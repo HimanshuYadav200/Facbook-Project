@@ -28,10 +28,10 @@ Next strange-money topics (first-week order in `niche-strange-money/references/t
 | Checks | check_plan: numbers vs facts.json (`$365 million` allowed; counters read number + word), graphics ≥ 1 s. finish: −14 LUFS, length, **true peak ≤ −1 dB**, black frames |
 | Images | Meta AI via Claude in Chrome + `meta_save.js` (one prompt at a time; saves the **last** image on the page, refuses byte-identical repeats; 2 images per browser batch). ~32 images ≈ 25–30 min per video |
 | Blinks | find_eyes handles hair over the head + round glasses (the 4 old stickman videos still have old `eyes.json`; re-render only if the owner asks) |
-| Git | Branch `session-3-niches`; remote `origin` = github.com/HimanshuYadav200/Facbook-Project (empty until the owner pushes). **Push was blocked for Claude**: owner runs `git push -u origin main && git push -u origin session-3-niches` |
+| Git | Remote `origin` = github.com/HimanshuYadav200/Facbook-Project; **both branches pushed 2026-11-12** (`main` + `session-3-niches`, tracking set). All session 3–4 work is on `session-3-niches`; `main` on GitHub is still the older state → merge when the owner wants (PR link: github.com/HimanshuYadav200/Facbook-Project/pull/new/session-3-niches). Pushing from Claude was blocked by auto mode: the owner runs `! git push` |
 
 ## 4. Waiting on the owner
-1. **Push to GitHub** (command above).
+1. ~~Push to GitHub~~: done 2026-11-12. Later: merge `session-3-niches` into `main`, then `! git push`.
 2. ~~Stability AI licence~~: **activated 2026-11-12** → `gen_*` sounds may be used in uploads.
 3. ~~Voice default~~: confirmed am_puck 1.05 + gap 0.2 (in the niche skill).
 4. Watch + upload: Lucas video (`~/Downloads/strange_money_lucas_toy_rights.mp4`, `upload.md` says 12:30 PM Eastern) and the others; stickman videos still need their illustrative facts ticked.
